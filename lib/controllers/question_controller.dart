@@ -95,7 +95,7 @@ class QuestionController extends GetxController
   void nextQuestion() {
     if (_questionNumber.value < _questions.length) {
       _isAnswered = false;
-      _pageController.nextPage(
+      _pageController.animateToPage(2,
           duration: Duration(milliseconds: 250), curve: Curves.ease);
 
       // Reset the counter
@@ -105,7 +105,7 @@ class QuestionController extends GetxController
       // Once timer is finish go to the next qn
       _animationController.forward().whenComplete(nextQuestion);
     }
-    //if the question number
+    //if the user has somehow answered the last question
     else {
       Get.to(ScoreScreen());
     }
