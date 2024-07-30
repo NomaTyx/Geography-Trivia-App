@@ -30,30 +30,43 @@ class Body extends StatelessWidget {
                 child: ProgressBar(),
               ),
               SizedBox(height: kDefaultPadding),
-              Padding(
-                padding:
-                const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                child: Obx(
-                      () => Text.rich(
-                    TextSpan(
-                      text:
-                      "Question ${_questionController.questionNumber.value}",
-                      style: Theme.of(context)
-                          .textTheme
-                          .headlineMedium
-                          ?.copyWith(color: kSecondaryColor),
-                      children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                    padding:
+                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                    child: Obx(
+                          () => Text.rich(
                         TextSpan(
-                          text: "/${_questionController.questions.length}",
+                          text:
+                          "Question ${_questionController.questionNumber.value}",
                           style: Theme.of(context)
                               .textTheme
-                              .headlineSmall
+                              .headlineMedium
                               ?.copyWith(color: kSecondaryColor),
+                          children: [
+                            TextSpan(
+                              text: "/${_questionController.questions.length}",
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headlineSmall
+                                  ?.copyWith(color: kSecondaryColor),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
+                  Container(
+                    height: 40,
+                    child: ElevatedButton(
+                        onPressed: () {print("pressed");},
+                        child: Text("Done"),
+
+                    ),
+                  ),
+                ],
               ),
               Divider(thickness: 0),
               SizedBox(height: kDefaultPadding),
