@@ -45,7 +45,7 @@ class SettingsScreen extends StatelessWidget {
                 onPressed: () {
                   Get.to(HomeScreen());
                   },
-                child: Text('BACK TO HOME SCREEN')
+                child: Text('CLOSE SETTINGS')
             )
           ],
         ),
