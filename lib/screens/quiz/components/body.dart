@@ -72,6 +72,7 @@ class Body extends StatelessWidget {
               ),
               Divider(thickness: 0),
               SizedBox(height: kDefaultPadding),
+              //this is where the questions are turned into pages
               Expanded(
                 child: PageView.builder(
                   // disables swiping to the next question
