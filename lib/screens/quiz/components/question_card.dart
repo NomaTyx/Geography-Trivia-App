@@ -45,7 +45,8 @@ class QuestionCard extends StatelessWidget {
                 (index) => Option(
               index: index,
               text: question.options[index],
-              press: () => _controller.checkAns(question, index),
+              //you can add multiple commands in a => if you put them in {}
+              press: () => {_controller.checkAns(question, index), print("penis")}
             ),
           ),
         ],
