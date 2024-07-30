@@ -18,6 +18,7 @@ class NoMoreQuestionsScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const Center(
@@ -26,26 +27,25 @@ class NoMoreQuestionsScreen extends StatelessWidget {
                 radius: 40.0,
               ),
             ),
-            Divider(
-              height: 30,
-              color: Colors.grey[800],
-            ),
             const Center(
               child: Text(
-                'LEADERBOARD',
+                'Somehow you\'ve run out of questions. Come back later in case we add more!',
+                textAlign: TextAlign.center,
                 style: TextStyle(
-                  letterSpacing: 2.0,
-                  fontSize: 30.0,
+                  letterSpacing: 1.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.blue,
                 ),
               ),
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Get.to(HomeScreen());
-                },
-                child: Text('BACK TO HOME SCREEN')
+            Center(
+              child: ElevatedButton(
+                  onPressed: () {
+                    Get.to(HomeScreen());
+                  },
+                  child: Text('BACK TO HOME SCREEN')
+              ),
             )
           ],
         ),
