@@ -49,16 +49,22 @@ class HomeScreen extends StatelessWidget {
               height: 75,
               color: Colors.grey[800],
             ),
+
+            //PLAY BUTTON
             titleButton(context, 'PLAY', QuizScreen()),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
             ),
+
+            //SETTINGS BUTTON
             titleButton(context, 'SETTINGS', SettingsScreen()),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
             ),
+
+            //LEADERBOARD BUTTON
             titleButton(context, 'LEADERBOARD', LeaderboardScreen()),
           ],
         ),

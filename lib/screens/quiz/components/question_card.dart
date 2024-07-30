@@ -18,6 +18,8 @@ class QuestionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     QuestionController _controller = Get.put(QuestionController());
+
+    //this place actually displays all the questions.
     return Container(
       margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
       padding: EdgeInsets.all(kDefaultPadding),
@@ -25,6 +27,7 @@ class QuestionCard extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(25),
       ),
+
       child: Column(
         children: [
           Text(
@@ -35,6 +38,7 @@ class QuestionCard extends StatelessWidget {
                 ?.copyWith(color: kBlackColor),
           ),
           SizedBox(height: kDefaultPadding / 2),
+
           //I have no idea what the ... is doing there tbh but the code breaks without it
           ...List.generate(
             question.options.length,
