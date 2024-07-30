@@ -28,7 +28,7 @@ class QuestionController extends GetxController
         answer: question['answer_index']),
   )
       .toList();
-  List<Question> get questions => this._questions;
+  List<Question> get questionList => this._questions;
 
   bool _isAnswered = false;
   bool get hasAnsweredCurrentQuestion => this._isAnswered;
