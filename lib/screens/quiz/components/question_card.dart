@@ -37,16 +37,16 @@ class QuestionCard extends StatelessWidget {
                 .titleLarge
                 ?.copyWith(color: kBlackColor),
           ),
-          SizedBox(height: kDefaultPadding / 2),
 
-          //I have no idea what the ... is doing there tbh but the code breaks without it
+          SizedBox(height: kDefaultPadding / 2),
+          //the ... represents each element in a collection individually
           ...List.generate(
             question.options.length,
-                (index) => Option(
+                (index) => QuizOption(
               index: index,
               text: question.options[index],
               //you can add multiple commands in a => if you put them in {}
-              press: () => {_controller.checkAns(question, index), print("penis")}
+              press: () => {_controller.checkAns(question, index)}
             ),
           ),
         ],

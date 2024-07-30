@@ -4,8 +4,8 @@ import 'package:geography_trivia_app/controllers/question_controller.dart';
 
 import '../../../constants.dart';
 
-class Option extends StatelessWidget {
-  const Option({
+class QuizOption extends StatelessWidget {
+  const QuizOption({
     Key? key,
     required this.text,
     required this.index,
