@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/constants.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:geography_trivia_app/screens/quiz/components/progress_bar.dart';
+import 'package:geography_trivia_app/screens/score/score_screen.dart';
 import 'package:get/get.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
@@ -58,12 +59,13 @@ class Body extends StatelessWidget {
                       ),
                     ),
                   ),
+
+                  //Done button!
                   Container(
                     height: 40,
                     child: ElevatedButton(
-                        onPressed: () {print("pressed");},
+                        onPressed: () {Get.to(() => ScoreScreen());},
                         child: Text("Done"),
-
                     ),
                   ),
                 ],
