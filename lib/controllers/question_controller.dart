@@ -31,15 +31,15 @@ class QuestionController extends GetxController
   List<Question> get questions => this._questions;
 
   bool _isAnswered = false;
-  bool get isAnswered => this._isAnswered;
+  bool get hasAnsweredCurrentQuestion => this._isAnswered;
 
   late int _correctAns;
-  int get correctAns => this._correctAns;
+  int get correctAnswer => this._correctAns;
 
   late int _selectedAns;
-  int get selectedAns => this._selectedAns;
+  int get selectedAnswer => this._selectedAns;
 
-  // for more about obs please check documentation
+  // rxints are like events, I think???? https://pub.dev/documentation/flutter_super/latest/flutter_super/RxInt-class.html
   RxInt _questionNumber = 1.obs;
   RxInt get questionNumber => this._questionNumber;
 
