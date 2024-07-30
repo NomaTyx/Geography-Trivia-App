@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geography_trivia_app/screens/settings_screen.dart';
 import 'package:get/get.dart';
 import '../../controllers/question_controller.dart';
 import 'components/body.dart';
@@ -16,7 +17,18 @@ class QuizScreen extends StatelessWidget {
         elevation: 0,
         actions: [
           //the skip button
-          TextButton(onPressed: _controller.nextQuestion, child: Text("Skip")),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              IconButton(
+                onPressed: () {
+                  Get.to(() => SettingsScreen());
+                  },
+                icon: Icon(Icons.settings),
+              ),
+              TextButton(onPressed: _controller.nextQuestion, child: Text("Skip")),
+            ],
+          ),
         ],
       ),
       body: Body(),
