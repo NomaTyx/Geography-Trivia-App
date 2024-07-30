@@ -15,21 +15,18 @@ class QuizScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        actions: [
-          //the skip button
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              IconButton(
-                onPressed: () {
-                  Get.to(() => SettingsScreen());
-                  },
-                icon: Icon(Icons.settings),
-              ),
-              TextButton(onPressed: _controller.nextQuestion, child: Text("Skip")),
-            ],
-          ),
-        ],
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              onPressed: () {
+                Get.to(() => SettingsScreen());
+              },
+              icon: Icon(Icons.settings),
+            ),
+            TextButton(onPressed: _controller.nextQuestion, child: Text("Skip")),
+          ],
+        ),
       ),
       body: Body(),
     );
