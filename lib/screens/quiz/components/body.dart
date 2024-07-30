@@ -24,9 +24,9 @@ class Body extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
+              const Padding(
                 padding:
-                const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: ProgressBar(),
               ),
               SizedBox(height: kDefaultPadding),
@@ -59,7 +59,7 @@ class Body extends StatelessWidget {
               SizedBox(height: kDefaultPadding),
               Expanded(
                 child: PageView.builder(
-                  // Block swipe to next qn
+                  // disables swiping to the next question
                   physics: NeverScrollableScrollPhysics(),
                   controller: _questionController.pageController,
                   onPageChanged: _questionController.updateTheQnNum,
