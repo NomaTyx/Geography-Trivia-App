@@ -5,6 +5,7 @@ import 'package:geography_trivia_app/screens/quiz/components/progress_bar.dart';
 import 'package:geography_trivia_app/screens/score/score_screen.dart';
 import 'package:get/get.dart';
 import 'package:websafe_svg/websafe_svg.dart';
+import 'dart:math';
 
 import 'progress_bar.dart';
 import 'question_card.dart';
@@ -47,13 +48,7 @@ class Body extends StatelessWidget {
                               .headlineMedium
                               ?.copyWith(color: kSecondaryColor),
                           children: [
-                            TextSpan(
-                              text: "/${_questionController.questionList.length}",
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headlineSmall
-                                  ?.copyWith(color: kSecondaryColor),
-                            ),
+                            //only keeping this in here to remind myself that i can have it in there.
                           ],
                         ),
                       ),
@@ -83,7 +78,7 @@ class Body extends StatelessWidget {
 
                   //this section creates a new page on the fly whenever it loads a page (I HOPE)
                   itemBuilder: (context, index) => QuestionCard(
-                      question: _questionController.questionList[index]),
+                      question: _questionController.questionList[Random().nextInt(_questionController.questionList.length)]),
                 ),
               ),
             ],
