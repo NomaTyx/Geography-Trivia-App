@@ -95,8 +95,7 @@ class QuestionController extends GetxController
   void nextQuestion() {
     if (_questionNumber.value < _questions.length) {
       _isAnswered = false;
-      _pageController.animateToPage(2,
-          duration: Duration(milliseconds: 250), curve: Curves.ease);
+      _pageController.nextPage(duration: Duration(milliseconds: 250), curve: Curves.ease);
 
       // Reset the counter
       _animationController.reset();
