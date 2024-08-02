@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/screens/leaderboard_screen.dart';
 import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
 import 'package:geography_trivia_app/screens/settings_screen.dart';
+import 'package:geography_trivia_app/screens/welcome/difficulty_selection_screen.dart';
 import 'package:get/get.dart';
 
 double dividerHeight = 35;
@@ -51,7 +52,7 @@ class HomeScreen extends StatelessWidget {
             ),
 
             //PLAY BUTTON
-            titleButton(context, 'PLAY', QuizScreen()),
+            titleButton(context, 'PLAY', DifficultySelectionScreen()),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
