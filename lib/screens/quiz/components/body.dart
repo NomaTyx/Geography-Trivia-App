@@ -79,7 +79,9 @@ class Body extends StatelessWidget {
                   physics: NeverScrollableScrollPhysics(),
                   controller: _questionController.pageController,
                   onPageChanged: _questionController.updateTheQnNum,
-                  itemCount: _questionController.questionList.length,
+                  //itemCount: _questionController.questionList.length,
+
+                  //this section creates a new page on the fly whenever it loads a page (I HOPE)
                   itemBuilder: (context, index) => QuestionCard(
                       question: _questionController.questionList[index]),
                 ),
