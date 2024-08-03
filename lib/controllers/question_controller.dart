@@ -33,6 +33,9 @@ class QuestionController extends GetxController
   bool _isAnswered = false;
   bool get hasAnsweredCurrentQuestion => this._isAnswered;
 
+  late int _selectedDifficulty;
+  int get selectedDifficulty => this._selectedDifficulty;
+
   late int _correctAns;
   int get correctAnswer => this._correctAns;
 
@@ -112,5 +115,10 @@ class QuestionController extends GetxController
 
   void updateTheQnNum(int index) {
     _questionNumber.value = index + 1;
+  }
+
+  void setDifficulty(int difficultyToSet) {
+    _selectedDifficulty = difficultyToSet;
+    print("The difficulty has been set to $difficultyToSet");
   }
 }
