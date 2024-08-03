@@ -88,7 +88,17 @@ class Body extends StatelessWidget {
                     else {
                       print("The difficulty is hard!");
                     }
-                    return QuestionCard(question: _questionController.questionList[Random().nextInt(_questionController.questionList.length)]);
+                    while(true) {
+                      print("iterating");
+                      var pickedQuestion = _questionController.questionList[Random()
+                          .nextInt(
+                          _questionController.questionList.length)];
+                      print("The picked question's difficulty is ${pickedQuestion.difficulty}");
+                      if (pickedQuestion.difficulty == _questionController.selectedDifficulty) {
+                        return QuestionCard(
+                            question: pickedQuestion);
+                      }
+                    }
                   },
                 ),
               ),
