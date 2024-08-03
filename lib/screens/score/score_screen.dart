@@ -8,7 +8,7 @@ import 'package:flutter_svg/svg.dart';
 class ScoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    QuestionController _qnController = Get.put(QuestionController());
+    QuestionController questionController = Get.put(QuestionController());
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
@@ -26,7 +26,7 @@ class ScoreScreen extends StatelessWidget {
               ),
               Spacer(),
               Text(
-                "You got ${_qnController.numOfCorrectAns} points!",
+                "You got ${questionController.numOfCorrectAns * questionController.selectedDifficulty} points!",
                 style: Theme.of(context)
                     .textTheme
                     .headlineMedium
