@@ -3,6 +3,7 @@ import 'package:geography_trivia_app/screens/leaderboard_screen.dart';
 import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
 import 'package:geography_trivia_app/screens/settings_screen.dart';
 import 'package:get/get.dart';
+import 'package:geography_trivia_app/controllers/question_controller.dart';
 
 double dividerHeight = 35;
 
@@ -81,6 +82,7 @@ Widget titleButton(BuildContext context, String buttonText, int difficultyValue)
       onPressed: () {
         //TODO make a variable for difficulty selection and tie it into here. 1 is easy, 2 is medium, 3 is hard. this is subject to change tho.
         print(difficultyValue);
+        QuestionController().setDifficulty(difficultyValue);
         Get.to(() => QuizScreen());
       },
       style: ButtonStyle(
