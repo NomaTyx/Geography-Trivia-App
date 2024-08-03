@@ -9,8 +9,8 @@ import 'package:geography_trivia_app/screens/score/score_screen.dart';
 
 class QuestionController extends GetxController
     with GetSingleTickerProviderStateMixin {
-  // Lets animated our progress bar
 
+  //animate progressbar
   late AnimationController _animationController;
   late Animation _animation;
   // so that we can access our animation outside
