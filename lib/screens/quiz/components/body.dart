@@ -88,6 +88,7 @@ class Body extends StatelessWidget {
                     else {
                       print("The difficulty is hard!");
                     }
+                    //TODO: check if there are any questions of a given difficulty in the list.
                     while(true) {
                       print("iterating");
                       var pickedQuestion = _questionController.questionList[Random()
