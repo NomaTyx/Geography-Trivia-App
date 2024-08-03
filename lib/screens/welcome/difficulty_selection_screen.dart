@@ -75,6 +75,7 @@ class DifficultySelectionScreen extends StatelessWidget {
 }
 
 Widget titleButton(BuildContext context, String buttonText, int difficultyValue) {
+  QuestionController _controller = Get.put(QuestionController());
   return Container(
     width: 900,
     height: 75,
@@ -82,7 +83,8 @@ Widget titleButton(BuildContext context, String buttonText, int difficultyValue)
       onPressed: () {
         //TODO make a variable for difficulty selection and tie it into here. 1 is easy, 2 is medium, 3 is hard. this is subject to change tho.
         print(difficultyValue);
-        QuestionController().setDifficulty(difficultyValue);
+        _controller.setDifficulty(difficultyValue);
+        print("The difficulty is ${_controller.selectedDifficulty}.");
         Get.to(() => QuizScreen());
       },
       style: ButtonStyle(
