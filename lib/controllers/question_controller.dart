@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:geography_trivia_app/models/questions.dart';
+import 'package:geography_trivia_app/question_list.dart';
 import 'package:geography_trivia_app/screens/score/score_screen.dart';
 
 // We use get package for our state management

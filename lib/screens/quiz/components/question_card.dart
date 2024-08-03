@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
-import 'package:geography_trivia_app/models/questions.dart';
+import 'package:geography_trivia_app/question_list.dart';
 
 import '../../../constants.dart';
 import 'option.dart';
