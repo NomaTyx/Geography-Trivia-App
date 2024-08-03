@@ -6,6 +6,7 @@ class Question {
   Question({required this.id, this.question = "what is a default question?", this.answer = 1, this.options = const ["yes", "no", "maybe", "so"], this.difficulty = 1});
 }
 
+//the difficulty variable in the questions may become obsolete, depending on how I end up handling it.
 const List sample_data = [
   {
     "id": 1,
