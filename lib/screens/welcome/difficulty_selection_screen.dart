@@ -52,21 +52,21 @@ class DifficultySelectionScreen extends StatelessWidget {
             ),
 
             //PLAY BUTTON
-            titleButton(context, 'EASY', 1),
+            customButton(context, 'EASY', 1),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
             ),
 
             //SETTINGS BUTTON
-            titleButton(context, 'MEDIUM', 2),
+            customButton(context, 'MEDIUM', 2),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
             ),
 
             //LEADERBOARD BUTTON
-            titleButton(context, 'HARD', 3),
+            customButton(context, 'HARD', 3),
           ],
         ),
       ),
@@ -74,7 +74,7 @@ class DifficultySelectionScreen extends StatelessWidget {
   }
 }
 
-Widget titleButton(BuildContext context, String buttonText, int difficultyValue) {
+Widget customButton(BuildContext context, String buttonText, int difficultyValue) {
   QuestionController _controller = Get.put(QuestionController());
   return Container(
     width: 900,
