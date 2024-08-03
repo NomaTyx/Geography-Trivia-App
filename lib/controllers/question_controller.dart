@@ -25,7 +25,8 @@ class QuestionController extends GetxController
         id: question['id'],
         question: question['question'],
         options: question['options'],
-        answer: question['answer_index']),
+        answer: question['answer_index'],
+        difficulty: question['difficulty']),
   )
       .toList();
   List<Question> get questionList => this._questions;
