@@ -18,6 +18,7 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // So that we have access to our controller
+    //get.put is a function that lets us access the same instance of our controller class in any file. basically put get.put in any file you want to access the difficulty value.
     QuestionController _questionController = Get.put(QuestionController());
     return Stack(
       children: [
@@ -77,8 +78,18 @@ class Body extends StatelessWidget {
                   //itemCount: _questionController.questionList.length,
 
                   //this section creates a new page on the fly whenever it loads a page (I HOPE)
-                  itemBuilder: (context, index) => QuestionCard(
-                      question: _questionController.questionList[Random().nextInt(_questionController.questionList.length)]),
+                  itemBuilder: (context, index) {
+                    if(_questionController.selectedDifficulty == 1) {
+                      print("The difficulty is easy!");
+                    }
+                    else if (_questionController.selectedDifficulty == 2) {
+                      print("the difficulty is medium!");
+                    }
+                    else {
+                      print("The difficulty is hard!");
+                    }
+                    return QuestionCard(question: _questionController.questionList[Random().nextInt(_questionController.questionList.length)]);
+                  },
                 ),
               ),
             ],
