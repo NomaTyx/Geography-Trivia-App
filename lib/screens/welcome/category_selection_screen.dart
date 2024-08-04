@@ -15,6 +15,7 @@ class CategorySelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       backgroundColor: Colors.grey[800],
       appBar: AppBar(
         automaticallyImplyLeading: true,
