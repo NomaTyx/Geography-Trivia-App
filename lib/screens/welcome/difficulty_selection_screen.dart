@@ -82,10 +82,7 @@ Widget customButton(BuildContext context, String buttonText, int difficultyValue
     height: 75,
     child: ElevatedButton(
       onPressed: () {
-        //TODO make a variable for difficulty selection and tie it into here. 1 is easy, 2 is medium, 3 is hard. this is subject to change tho.
-        print(difficultyValue);
         _controller.setDifficulty(difficultyValue);
-        print("The difficulty is ${_controller.selectedDifficulty}.");
         _controller.beginQuiz();
         Get.to(() => QuizScreen());
       },
