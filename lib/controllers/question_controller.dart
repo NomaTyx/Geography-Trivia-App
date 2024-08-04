@@ -26,7 +26,8 @@ class QuestionController extends GetxController
         question: question['question'],
         options: question['options'],
         answer: question['answer_index'],
-        difficulty: question['difficulty']),
+        difficulty: question['difficulty'],
+        category: question['category']),
   )
       .toList();
   List<Question> get questionList => this._questions;
@@ -36,6 +37,9 @@ class QuestionController extends GetxController
 
   late int _selectedDifficulty;
   int get selectedDifficulty => this._selectedDifficulty;
+
+  late int _selectedCategory;
+  int get selectedCategory => this._selectedCategory;
 
   late int _correctAns;
   int get correctAnswer => this._correctAns;
@@ -125,5 +129,10 @@ class QuestionController extends GetxController
   void setDifficulty(int difficultyToSet) {
     _selectedDifficulty = difficultyToSet;
     print("The difficulty has been set to $difficultyToSet");
+  }
+
+  void setCategory(int categoryToSet) {
+    _selectedCategory = categoryToSet;
+    print("The category has been set to $categoryToSet");
   }
 }
