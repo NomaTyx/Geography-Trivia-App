@@ -79,27 +79,16 @@ class Body extends StatelessWidget {
 
                   //this section creates a new page on the fly whenever it loads a page (I HOPE)
                   itemBuilder: (context, index) {
-                    if(_questionController.selectedDifficulty == 1) {
-                      print("The difficulty is easy!");
-                    }
-                    else if (_questionController.selectedDifficulty == 2) {
-                      print("the difficulty is medium!");
-                    }
-                    else {
-                      print("The difficulty is hard!");
-                    }
                     //TODO: check if there are any questions of a given difficulty in the list.
-                    while(true) {
-                      print("iterating");
-                      var pickedQuestion = _questionController.questionList[Random()
-                          .nextInt(
-                          _questionController.questionList.length)];
-                      print("The picked question's difficulty is ${pickedQuestion.difficulty}");
-                      if (pickedQuestion.difficulty == _questionController.selectedDifficulty) {
+                    //TODO: remove questions from the list once it's answered correctly
+                    for (int i = 0; i < _questionController.questionList.length; i++) {
+                      //TODO check for question category too
+                      if (_questionController.questionList[i].difficulty == _questionController.selectedDifficulty) {
                         return QuestionCard(
-                            question: pickedQuestion);
+                            question: _questionController.questionList[i]);
                       }
                     }
+                    return null;
                   },
                 ),
               ),

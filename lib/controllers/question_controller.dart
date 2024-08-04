@@ -53,6 +53,7 @@ class QuestionController extends GetxController
   // called immediately after the widget is allocated memory
   @override
   void onInit() {
+    _questions.shuffle(Random());
     // Our animation duration is 60 s
     // so our plan is to fill the progress bar within 60s
     _animationController =
