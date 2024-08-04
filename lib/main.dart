@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
 import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
 import 'package:get/get.dart';
-
 import 'screens/welcome/welcome_screen.dart';
 
 void main() {
