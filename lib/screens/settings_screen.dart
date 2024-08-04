@@ -42,6 +42,16 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             ElevatedButton(
+                onPressed: () {print("add functionality lmao");},
+                child: Text(
+                  'DEV TOOL: CLEAR QUESTION MEMORY'
+                ),
+            ),
+            Divider(
+              height: 30,
+              color: Colors.grey[800],
+            ),
+            ElevatedButton(
                 onPressed: () {
                   Get.back();
                   },
