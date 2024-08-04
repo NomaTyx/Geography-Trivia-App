@@ -43,7 +43,7 @@ class SettingsScreen extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  Get.to(HomeScreen());
+                  Get.back();
                   },
                 child: Text('CLOSE SETTINGS')
             )
