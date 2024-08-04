@@ -13,13 +13,15 @@ class DifficultySelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        automaticallyImplyLeading: true,
+        title: const Text("Geography App"),
+        centerTitle: true,
+        backgroundColor: Colors.purple,
+        elevation: 0.0,
+      ),
       backgroundColor: Colors.grey[800],
-      // appBar: AppBar(
-      //   title: const Text("Geography App"),
-      //   centerTitle: true,
-      //   backgroundColor: Colors.purple,
-      //   elevation: 0.0,
-      // ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
         child: Column(
@@ -85,6 +87,7 @@ Widget customButton(BuildContext context, String buttonText, int difficultyValue
         print(difficultyValue);
         _controller.setDifficulty(difficultyValue);
         print("The difficulty is ${_controller.selectedDifficulty}.");
+        _controller.beginQuiz();
         Get.to(() => QuizScreen());
       },
       style: ButtonStyle(
