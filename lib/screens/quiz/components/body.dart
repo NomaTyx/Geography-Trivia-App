@@ -83,7 +83,8 @@ class Body extends StatelessWidget {
                     //TODO: remove questions from the list once it's answered correctly
                     for (int i = 0; i < _questionController.questionList.length; i++) {
                       //TODO check for question category too
-                      if (_questionController.questionList[i].difficulty == _questionController.selectedDifficulty) {
+                      if (_questionController.questionList[i].difficulty == _questionController.selectedDifficulty
+                      && _questionController.questionList[i].category == _questionController.selectedCategory) {
                         return QuestionCard(
                             question: _questionController.questionList[i]);
                       }
