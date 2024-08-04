@@ -84,8 +84,7 @@ Widget customButton(BuildContext context, String buttonText, int category) {
     height: 75,
     child: ElevatedButton(
       onPressed: () {
-        _controller.setDifficulty(category);
-        print("The difficulty is ${_controller.selectedDifficulty}.");
+        _controller.setCategory(category);
         Get.to(() => DifficultySelectionScreen());
       },
       style: ButtonStyle(
