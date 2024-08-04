@@ -54,6 +54,10 @@ class QuestionController extends GetxController
   @override
   void onInit() {
     _questions.shuffle(Random());
+    super.onInit();
+  }
+
+  void beginQuiz() {
     // Our animation duration is 60 s
     // so our plan is to fill the progress bar within 60s
     _animationController =
@@ -68,7 +72,6 @@ class QuestionController extends GetxController
     // Once 60s is completed go to the next qn
     _animationController.forward().whenComplete(nextQuestion);
     _pageController = PageController();
-    super.onInit();
   }
 
   // // called just before the Controller is deleted from memory
