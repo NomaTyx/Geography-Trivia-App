@@ -16,6 +16,12 @@ class CategorySelectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[800],
+      appBar: AppBar(
+        automaticallyImplyLeading: true,
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+      ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
         child: Column(

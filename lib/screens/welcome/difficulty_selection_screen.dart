@@ -16,9 +16,8 @@ class DifficultySelectionScreen extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        title: const Text("Geography App"),
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.transparent,
         elevation: 0.0,
       ),
       backgroundColor: Colors.grey[800],
