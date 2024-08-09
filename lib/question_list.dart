@@ -17,6 +17,14 @@ const List sample_data = [
     "category": 1,
   },
   {
+    "id": 1,
+    "question": "CAT 1, EASY: PLACEHOLDER EASY QUESTION #2",
+    "options": ['wrong', 'right', 'wrong', 'wrong'],
+    "answer_index": 1,
+    "difficulty": 1,
+    "category": 1,
+  },
+  {
     "id": 2,
     "question": "CAT 3, MEDIUM: PLACEHOLDER MEDIUM QUESTION #1",
     "options": ['wrong', 'wrong', 'right', 'wrong'],

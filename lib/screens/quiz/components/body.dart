@@ -84,9 +84,14 @@ class Body extends StatelessWidget {
                     for (int i = 0; i < _questionController.questionList.length; i++) {
                       //TODO check for question category too
                       if (_questionController.questionList[i].difficulty == _questionController.selectedDifficulty
-                      && _questionController.questionList[i].category == _questionController.selectedCategory) {
+                      && _questionController.questionList[i].category == _questionController.select dCategory) {
+                        if (!_questionController.answeredQuestions.contains(_questionController.questionList[i])) {
                         return QuestionCard(
                             question: _questionController.questionList[i]);
+                        }
+                        else {
+                          print("this question was found!!");
+                        }
                       }
                     }
                     return null;

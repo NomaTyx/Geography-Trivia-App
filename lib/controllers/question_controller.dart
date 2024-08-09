@@ -32,6 +32,9 @@ class QuestionController extends GetxController
       .toList();
   List<Question> get questionList => this._questions;
 
+  late List<Question> _answeredQuestionsList = [];
+  List<Question> get answeredQuestions => this._answeredQuestionsList;
+
   bool _isAnswered = false;
   bool get hasAnsweredCurrentQuestion => this._isAnswered;
 
@@ -92,7 +95,10 @@ class QuestionController extends GetxController
     _correctAns = question.answer;
     _selectedAns = selectedIndex;
 
-    if (_correctAns == _selectedAns) _numOfCorrectAns++;
+    if (_correctAns == _selectedAns) {
+      _numOfCorrectAns++;
+      _answeredQuestionsList.add(question);
+    }
 
     // It will stop the counter
     _animationController.stop();
@@ -134,5 +140,9 @@ class QuestionController extends GetxController
   void setCategory(int categoryToSet) {
     _selectedCategory = categoryToSet;
     print("The category has been set to $categoryToSet");
+  }
+
+  void markQuestionAnswered() {
+
   }
 }
