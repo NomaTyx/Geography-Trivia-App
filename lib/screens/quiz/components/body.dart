@@ -4,6 +4,7 @@ import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:geography_trivia_app/screens/quiz/components/progress_bar.dart';
 import 'package:geography_trivia_app/screens/score/score_screen.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 import 'dart:math';
 
@@ -80,17 +81,18 @@ class Body extends StatelessWidget {
                   //this section creates a new page on the fly whenever it loads a page (I HOPE)
                   itemBuilder: (context, index) {
                     //TODO: check if there are any questions of a given difficulty in the list.
-                    //TODO: remove questions from the list once it's answered correctly
                     for (int i = 0; i < _questionController.questionList.length; i++) {
-                      //TODO check for question category too
-                      if (_questionController.questionList[i].difficulty == _questionController.selectedDifficulty
-                      && _questionController.questionList[i].category == _questionController.select dCategory) {
-                        if (!_questionController.answeredQuestions.contains(_questionController.questionList[i])) {
-                        return QuestionCard(
+                      var currentQuestion = _questionController.questionList[i];
+
+                      if (currentQuestion.difficulty == _questionController.selectedDifficulty
+                      && currentQuestion.category == _questionController.selectedCategory) {
+                        if (!_questionController.answeredQuestions.contains(currentQuestion)) {
+                          return QuestionCard(
                             question: _questionController.questionList[i]);
                         }
                         else {
                           print("this question was found!!");
+                          _questionController.answeredQuestions.add(currentQuestion);
                         }
                       }
                     }
