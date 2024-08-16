@@ -80,9 +80,11 @@ class CategorySelectionScreen extends StatelessWidget {
 Widget customButton(BuildContext context, String buttonText, int category) {
   QuestionController _controller;
   if(!Get.isRegistered<QuestionController>()) {
+    //get.put is a function that lets us access the same instance of our controller class in any file. basically put get.put in any file you want to access the difficulty value.
     _controller = Get.put(QuestionController());
   }
   else{
+    //get.find lets us find a controller of the given type.
     _controller = Get.find<QuestionController>();
   }
   return Container(

@@ -32,8 +32,16 @@ class ScoreScreen extends StatelessWidget {
                     .headlineMedium
                     ?.copyWith(color: kSecondaryColor),
               ),
+              Spacer(),
+              Text(
+                "Your total score is ${questionController.totalScore} points!",
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineMedium
+                    ?.copyWith(color: kSecondaryColor),
+              ),
               Spacer(flex: 3),
-              ElevatedButton(onPressed: () {Get.to(() => HomeScreen());}, child: Text('RETURN TO HOME SCREEN')),
+              ElevatedButton(onPressed: () {Get.to(HomeScreen());}, child: Text('RETURN TO HOME SCREEN')),
             ],
           ),
         ],

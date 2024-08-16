@@ -19,8 +19,10 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     late QuestionController _questionController;
-    //get.put is a function that lets us access the same instance of our controller class in any file. basically put get.put in any file you want to access the difficulty value.
 
+    late bool foundQuestion;
+
+    //get.find lets us access an already created instance of a controller.
     _questionController = Get.find<QuestionController>();
     return Stack(
       children: [
@@ -81,18 +83,16 @@ class Body extends StatelessWidget {
 
                   //this section creates a new page on the fly whenever it loads a page (I HOPE)
                   itemBuilder: (context, index) {
-                    //TODO: check if there are any questions of a given difficulty in the list.
+                    foundQuestion = false;
                     for (int i = 0; i < _questionController.questionList.length; i++) {
                       var currentQuestion = _questionController.questionList[i];
 
                       if (currentQuestion.difficulty == _questionController.selectedDifficulty
                       && currentQuestion.category == _questionController.selectedCategory) {
                         if (!_questionController.answeredQuestions.contains(currentQuestion)) {
+                          foundQuestion = true;
                           return QuestionCard(
                             question: _questionController.questionList[i]);
-                        }
-                        else {
-                          print("this question was found!!");
                         }
                       }
                     }

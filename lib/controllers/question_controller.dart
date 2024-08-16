@@ -57,14 +57,32 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   int _numOfCorrectAns = 0;
   int get numOfCorrectAns => this._numOfCorrectAns;
 
+  RxInt _totalScore = 0.obs;
+  RxInt get totalScore => this._totalScore;
+
   // called immediately after the widget is allocated memory
   @override
   void onInit() {
     _questions.shuffle(Random());
+
+    //sets the local variables equal to the stored value if it exists
     if(GetStorage().hasData("answeredQuestionsList")) {
       _answeredQuestionsList = GetStorage().read("answeredQuestionsList");
-      print(_answeredQuestionsList);
     }
+    if(GetStorage().hasData("totalScore")) {
+      _totalScore = GetStorage().read("totalScore");
+    }
+
+    //every time answeredQuestionsList changes, this will be called.
+    ever(_answeredQuestionsList, (_) {
+      GetStorage().write('answeredQuestionsList', _answeredQuestionsList);
+      print("written to storage");
+    });
+
+    ever(_totalScore, (_){
+      GetStorage().write('totalScore', _totalScore.toInt());
+    });
+
     super.onInit();
   }
 
@@ -86,12 +104,6 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     // Once 60s is completed go to the next qn
     _animationController.forward().whenComplete(nextQuestion);
     _pageController = PageController();
-
-    //every time answeredQuestionsList changes, this will be called.
-    ever(_answeredQuestionsList, (_) {
-      GetStorage().write('answeredQuestionsList', _answeredQuestionsList.toList());
-      print("written to storage");
-    });
   }
 
   // // called just before the Controller is deleted from memory
