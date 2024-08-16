@@ -78,7 +78,13 @@ class CategorySelectionScreen extends StatelessWidget {
 }
 
 Widget customButton(BuildContext context, String buttonText, int category) {
-  QuestionController _controller = Get.put(QuestionController());
+  QuestionController _controller;
+  if(!Get.isRegistered<QuestionController>()) {
+    _controller = Get.put(QuestionController());
+  }
+  else{
+    _controller = Get.find<QuestionController>();
+  }
   return Container(
     width: 900,
     height: 75,

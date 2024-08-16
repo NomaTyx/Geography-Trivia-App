@@ -76,7 +76,7 @@ class DifficultySelectionScreen extends StatelessWidget {
 }
 
 Widget customButton(BuildContext context, String buttonText, int difficultyValue) {
-  QuestionController _controller = Get.put(QuestionController());
+  QuestionController _controller = Get.find<QuestionController>();
   return Container(
     width: 900,
     height: 75,

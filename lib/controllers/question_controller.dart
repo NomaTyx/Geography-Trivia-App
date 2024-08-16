@@ -8,8 +8,7 @@ import 'package:get_storage/get_storage.dart';
 
 // We use get package for our state management
 
-class QuestionController extends GetxController
-    with GetSingleTickerProviderStateMixin {
+class QuestionController extends GetxController with GetSingleTickerProviderStateMixin {
 
   //animate progressbar
   late AnimationController _animationController;
@@ -70,15 +69,18 @@ class QuestionController extends GetxController
   }
 
   void beginQuiz() {
-    // Our animation duration is 60 s
-    // so our plan is to fill the progress bar within 60s
-    _animationController =
-        AnimationController(duration: Duration(seconds: 60), vsync: this);
-    _animation = Tween<double>(begin: 0, end: 1).animate(_animationController)
-      ..addListener(() {
-        // update like setState
-        update();
-      });
+    try {
+      _animationController =
+          AnimationController(duration: Duration(seconds: 60), vsync: this);
+      _animation = Tween<double>(begin: 0, end: 1).animate(_animationController)
+        ..addListener(() {
+          // update like setState
+          update();
+        });
+    }
+    catch (e) {
+      print("animationController already exists");
+    }
 
     // start our animation
     // Once 60s is completed go to the next qn
@@ -110,6 +112,8 @@ class QuestionController extends GetxController
       _numOfCorrectAns++;
       _answeredQuestionsList.add(question);
     }
+
+    answeredQuestions.add(question);
 
     // It will stop the counter
     _animationController.stop();

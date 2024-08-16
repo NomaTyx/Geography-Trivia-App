@@ -17,7 +17,7 @@ class QuestionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    QuestionController _controller = Get.put(QuestionController());
+    QuestionController _controller = Get.find<QuestionController>();
 
     //this place actually displays all the questions.
     return Container(

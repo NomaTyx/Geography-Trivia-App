@@ -18,9 +18,10 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // So that we have access to our controller
+    late QuestionController _questionController;
     //get.put is a function that lets us access the same instance of our controller class in any file. basically put get.put in any file you want to access the difficulty value.
-    QuestionController _questionController = Get.put(QuestionController());
+
+    _questionController = Get.find<QuestionController>();
     return Stack(
       children: [
         WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.fill),
@@ -92,7 +93,6 @@ class Body extends StatelessWidget {
                         }
                         else {
                           print("this question was found!!");
-                          _questionController.answeredQuestions.add(currentQuestion);
                         }
                       }
                     }
