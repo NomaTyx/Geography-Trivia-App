@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/question_list.dart';
 import 'package:geography_trivia_app/screens/score/score_screen.dart';
+import 'package:get_storage/get_storage.dart';
 
 // We use get package for our state management
 
@@ -32,7 +33,7 @@ class QuestionController extends GetxController
       .toList();
   List<Question> get questionList => this._questions;
 
-  late List<Question> _answeredQuestionsList = [];
+  late RxList<Question> _answeredQuestionsList = <Question>[].obs;
   List<Question> get answeredQuestions => this._answeredQuestionsList;
 
   bool _isAnswered = false;
@@ -61,6 +62,10 @@ class QuestionController extends GetxController
   @override
   void onInit() {
     _questions.shuffle(Random());
+    if(GetStorage().hasData("answeredQuestionsList")) {
+      _answeredQuestionsList = GetStorage().read("answeredQuestionsList");
+      print(_answeredQuestionsList);
+    }
     super.onInit();
   }
 
@@ -79,6 +84,12 @@ class QuestionController extends GetxController
     // Once 60s is completed go to the next qn
     _animationController.forward().whenComplete(nextQuestion);
     _pageController = PageController();
+
+    //every time answeredQuestionsList changes, this will be called.
+    ever(_answeredQuestionsList, (_) {
+      GetStorage().write('answeredQuestionsList', _answeredQuestionsList.toList());
+      print("written to storage");
+    });
   }
 
   // // called just before the Controller is deleted from memory
@@ -143,6 +154,6 @@ class QuestionController extends GetxController
   }
 
   void markQuestionAnswered() {
-
+    
   }
 }
