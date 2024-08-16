@@ -43,7 +43,7 @@ class LeaderboardScreen extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  Get.to(HomeScreen());
+                  Get.to(() => HomeScreen());
                 },
                 child: Text('BACK TO HOME SCREEN')
             )

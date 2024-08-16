@@ -33,7 +33,7 @@ class ScoreScreen extends StatelessWidget {
                     ?.copyWith(color: kSecondaryColor),
               ),
               Spacer(flex: 3),
-              ElevatedButton(onPressed: () {Get.to(HomeScreen());}, child: Text('RETURN TO HOME SCREEN')),
+              ElevatedButton(onPressed: () {Get.to(() => HomeScreen());}, child: Text('RETURN TO HOME SCREEN')),
             ],
           ),
         ],

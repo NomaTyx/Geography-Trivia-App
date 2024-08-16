@@ -139,7 +139,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     }
     //if the user has somehow answered the last question
     else {
-      Get.to(ScoreScreen());
+      Get.to(() => ScoreScreen());
     }
   }
 

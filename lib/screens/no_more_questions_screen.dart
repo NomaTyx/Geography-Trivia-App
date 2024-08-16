@@ -42,7 +42,7 @@ class NoMoreQuestionsScreen extends StatelessWidget {
             Center(
               child: ElevatedButton(
                   onPressed: () {
-                    Get.to(HomeScreen());
+                    Get.to(() => HomeScreen());
                   },
                   child: Text('BACK TO HOME SCREEN')
               ),

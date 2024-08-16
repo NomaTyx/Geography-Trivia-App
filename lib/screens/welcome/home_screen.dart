@@ -83,7 +83,7 @@ Widget titleButton(BuildContext context, String buttonText, onPressMethod) {
     height: 75,
     child: ElevatedButton(
       onPressed: () {
-        Get.to(onPressMethod);
+        Get.to(() => onPressMethod);
         },
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all<Color>(Colors.grey),
