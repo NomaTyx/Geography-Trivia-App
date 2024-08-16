@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/widgets.dart';
+import 'package:geography_trivia_app/screens/no_more_questions_screen.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/question_list.dart';
 import 'package:geography_trivia_app/screens/score/score_screen.dart';
@@ -138,21 +139,21 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   }
 
   void nextQuestion() {
-    if (_questionNumber.value < _questions.length) {
-      _isAnswered = false;
-      _pageController.nextPage(duration: Duration(milliseconds: 250), curve: Curves.ease);
+    _isAnswered = false;
+    _pageController.nextPage(duration: Duration(milliseconds: 250), curve: Curves.ease);
 
       // Reset the counter
-      _animationController.reset();
+    _animationController.reset();
 
-      // Then start it again
-      // Once timer is finish go to the next qn
-      _animationController.forward().whenComplete(nextQuestion);
-    }
+
     //if the user has somehow answered the last question
-    else {
+    if(findValidQuestion() == -1) {
       Get.to(() => ScoreScreen());
     }
+
+    // Then start it again
+    // Once timer is finish go to the next qn
+    _animationController.forward().whenComplete(nextQuestion);
   }
 
   void updateTheQnNum(int index) {
@@ -169,7 +170,27 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     print("The category has been set to $categoryToSet");
   }
 
-  void markQuestionAnswered() {
-    
+  int findValidQuestion() {
+    for (int i = 0; i < questionList.length; i++) {
+      var currentQuestion = questionList[i];
+      if (currentQuestion.difficulty == selectedDifficulty && currentQuestion.category == selectedCategory) {
+        if (!answeredQuestions.contains(currentQuestion)) {
+          return i;
+        }
+      }
+    }
+    return -1;
+  }
+
+  void clearStorage() {
+    _answeredQuestionsList.clear();
+    print("the list is ${_answeredQuestionsList.length} long");
+    print("cleared storage");
+  }
+
+  void resetScore() {
+    _totalScore = 0.obs;
+    GetStorage().write('totalScore', 0);
+    print("reset score");
   }
 }

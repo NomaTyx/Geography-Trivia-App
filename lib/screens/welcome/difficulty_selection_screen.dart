@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/screens/leaderboard_screen.dart';
+import 'package:geography_trivia_app/screens/no_more_questions_screen.dart';
 import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
 import 'package:geography_trivia_app/screens/settings_screen.dart';
 import 'package:get/get.dart';
@@ -84,7 +85,13 @@ Widget customButton(BuildContext context, String buttonText, int difficultyValue
       onPressed: () {
         _controller.setDifficulty(difficultyValue);
         _controller.beginQuiz();
-        Get.to(() => QuizScreen());
+        if(_controller.findValidQuestion() == -1)
+        {
+          Get.to(() => NoMoreQuestionsScreen());
+        }
+        else {
+          Get.to(() => QuizScreen());
+        }
       },
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all<Color>(Colors.grey),

@@ -4,6 +4,10 @@ class Question {
   final List<String> options;
 
   Question({required this.id, required this.question, this.answer = 1, this.options = const [], this.difficulty = 1, this.category = 1});
+
+  String ToString(Question question) {
+    return "question: ${this.question}";
+  }
 }
 
 //the difficulty variable in the questions may become obsolete, depending on how I end up handling it.

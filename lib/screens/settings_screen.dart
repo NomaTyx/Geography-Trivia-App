@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
 import 'package:get/get.dart';
 
@@ -7,6 +8,12 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    QuestionController _controller;
+    if(Get.isRegistered<QuestionController>())
+       _controller = Get.find<QuestionController>();
+    else {
+      _controller = Get.put(QuestionController());
+    }
     return Scaffold(
       backgroundColor: Colors.grey[800],
       // appBar: AppBar(
@@ -42,7 +49,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             ElevatedButton(
-                onPressed: () {print("add functionality lmao");},
+              onPressed: () {_controller.clearStorage();},
                 child: Text(
                   'DEV TOOL: CLEAR QUESTION MEMORY'
                 ),
@@ -50,6 +57,12 @@ class SettingsScreen extends StatelessWidget {
             Divider(
               height: 30,
               color: Colors.grey[800],
+            ),
+            ElevatedButton(
+              onPressed: () {_controller.resetScore();},
+              child: Text(
+                  'DEV TOOL: RESET TOTAL SCORE'
+              ),
             ),
             ElevatedButton(
                 onPressed: () {

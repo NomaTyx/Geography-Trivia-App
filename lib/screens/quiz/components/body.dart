@@ -79,20 +79,13 @@ class Body extends StatelessWidget {
                   onPageChanged: _questionController.updateTheQnNum,
                   //itemCount: _questionController.questionList.length,
 
-                  //this section creates a new page on the fly whenever it loads a page (I HOPE)
+                  //this section creates a new page on the fly whenever it loads a page (IM PRETTY SURE)
                   itemBuilder: (context, index) {
-                    for (int i = 0; i < _questionController.questionList.length; i++) {
-                      var currentQuestion = _questionController.questionList[i];
-
-                      if (currentQuestion.difficulty == _questionController.selectedDifficulty
-                      && currentQuestion.category == _questionController.selectedCategory) {
-                        if (!_questionController.answeredQuestions.contains(currentQuestion)) {
-                          return QuestionCard(
-                            question: _questionController.questionList[i]);
-                        }
-                      }
+                    if (_questionController.findValidQuestion() != -1) {
+                      return QuestionCard(
+                          question: _questionController.questionList[_questionController.findValidQuestion()]);
+                      return null;
                     }
-                    return null;
                   },
                 ),
               ),
