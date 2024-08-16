@@ -20,8 +20,6 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     late QuestionController _questionController;
 
-    late bool foundQuestion;
-
     //get.find lets us access an already created instance of a controller.
     _questionController = Get.find<QuestionController>();
     return Stack(
@@ -83,14 +81,12 @@ class Body extends StatelessWidget {
 
                   //this section creates a new page on the fly whenever it loads a page (I HOPE)
                   itemBuilder: (context, index) {
-                    foundQuestion = false;
                     for (int i = 0; i < _questionController.questionList.length; i++) {
                       var currentQuestion = _questionController.questionList[i];
 
                       if (currentQuestion.difficulty == _questionController.selectedDifficulty
                       && currentQuestion.category == _questionController.selectedCategory) {
                         if (!_questionController.answeredQuestions.contains(currentQuestion)) {
-                          foundQuestion = true;
                           return QuestionCard(
                             question: _questionController.questionList[i]);
                         }
