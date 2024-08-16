@@ -38,6 +38,7 @@ dependencies:
   websafe_svg: ^3.0.1+1
   get: ^4.6.6
   audioplayers: ^6.0.0
+  get_storage: ^2.1.1
 
 dev_dependencies:
   flutter_test:
