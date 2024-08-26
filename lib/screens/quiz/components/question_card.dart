@@ -8,21 +8,21 @@ import 'option.dart';
 
 class QuestionCard extends StatelessWidget {
   const QuestionCard({
-    Key? key,
+    super.key,
     // it means we have to pass this
     required this.question,
-  }) : super(key: key);
+  });
 
   final Question question;
 
   @override
   Widget build(BuildContext context) {
-    QuestionController _controller = Get.find<QuestionController>();
+    QuestionController controller = Get.find<QuestionController>();
 
     //this place actually displays all the questions.
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-      padding: EdgeInsets.all(kDefaultPadding),
+      margin: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+      padding: const EdgeInsets.all(kDefaultPadding),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(25),
@@ -38,7 +38,7 @@ class QuestionCard extends StatelessWidget {
                 ?.copyWith(color: kBlackColor),
           ),
 
-          SizedBox(height: kDefaultPadding / 2),
+          const SizedBox(height: kDefaultPadding / 2),
           //the ... represents each element in a collection individually
           //this line generates a generically-typed list out of the list of question options, then represents them individually with '...'
           ...List.generate(
@@ -47,7 +47,7 @@ class QuestionCard extends StatelessWidget {
               index: index,
               text: question.options[index],
               //you can add multiple commands in a => if you put them in {}
-              press: () => {_controller.checkAns(question, index)}
+              press: () => {controller.checkAns(question, index)}
             ),
           ),
         ],

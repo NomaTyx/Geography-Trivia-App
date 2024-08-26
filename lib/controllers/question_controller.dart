@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/widgets.dart';
-import 'package:geography_trivia_app/screens/no_more_questions_screen.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/question_list.dart';
 import 'package:geography_trivia_app/screens/score/score_screen.dart';
@@ -15,12 +14,12 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   late AnimationController _animationController;
   late Animation _animation;
   // so that we can access our animation outside
-  Animation get animation => this._animation;
+  Animation get animation => _animation;
 
   late PageController _pageController;
-  PageController get pageController => this._pageController;
+  PageController get pageController => _pageController;
 
-  List<Question> _questions = sample_data
+  final List<Question> _questions = sample_data
       .map(
         (question) => Question(
         id: question['id'],
@@ -31,35 +30,35 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
         category: question['category']),
   )
       .toList();
-  List<Question> get questionList => this._questions;
+  List<Question> get questionList => _questions;
 
   late RxList<Question> _answeredQuestionsList = <Question>[].obs;
-  List<Question> get answeredQuestions => this._answeredQuestionsList;
+  List<Question> get answeredQuestions => _answeredQuestionsList;
 
   bool _isAnswered = false;
-  bool get hasAnsweredCurrentQuestion => this._isAnswered;
+  bool get hasAnsweredCurrentQuestion => _isAnswered;
 
   late int _selectedDifficulty;
-  int get selectedDifficulty => this._selectedDifficulty;
+  int get selectedDifficulty => _selectedDifficulty;
 
   late int _selectedCategory;
-  int get selectedCategory => this._selectedCategory;
+  int get selectedCategory => _selectedCategory;
 
   late int _correctAns;
-  int get correctAnswer => this._correctAns;
+  int get correctAnswer => _correctAns;
 
   late int _selectedAns;
-  int get selectedAnswer => this._selectedAns;
+  int get selectedAnswer => _selectedAns;
 
   // rxints are like events, I think???? https://pub.dev/documentation/flutter_super/latest/flutter_super/RxInt-class.html
-  RxInt _questionNumber = 1.obs;
-  RxInt get questionNumber => this._questionNumber;
+  final RxInt _questionNumber = 1.obs;
+  RxInt get questionNumber => _questionNumber;
 
   int _numOfCorrectAns = 0;
-  int get numOfCorrectAns => this._numOfCorrectAns;
+  int get numOfCorrectAns => _numOfCorrectAns;
 
   RxInt _totalScore = 0.obs;
-  RxInt get totalScore => this._totalScore;
+  RxInt get totalScore => _totalScore;
 
   // called immediately after the widget is allocated memory
   @override
@@ -90,7 +89,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   void beginQuiz() {
     try {
       _animationController =
-          AnimationController(duration: Duration(seconds: 60), vsync: this);
+          AnimationController(duration: const Duration(seconds: 60), vsync: this);
       _animation = Tween<double>(begin: 0, end: 1).animate(_animationController)
         ..addListener(() {
           // update like setState
@@ -133,14 +132,14 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     update();
 
     // Once user select an ans after 3s it will go to the next qn
-    Future.delayed(Duration(seconds: 1), () {
+    Future.delayed(const Duration(seconds: 1), () {
       nextQuestion();
     });
   }
 
   void nextQuestion() {
     _isAnswered = false;
-    _pageController.nextPage(duration: Duration(milliseconds: 250), curve: Curves.ease);
+    _pageController.nextPage(duration: const Duration(milliseconds: 250), curve: Curves.ease);
 
       // Reset the counter
     _animationController.reset();
@@ -148,7 +147,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
 
     //if the user has somehow answered the last question
     if(findValidQuestion() == -1) {
-      Get.to(() => ScoreScreen());
+      Get.to(() => const ScoreScreen());
     }
 
     // Then start it again

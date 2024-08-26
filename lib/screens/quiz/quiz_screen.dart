@@ -5,9 +5,11 @@ import '../../controllers/question_controller.dart';
 import 'components/body.dart';
 
 class QuizScreen extends StatelessWidget {
+  const QuizScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    QuestionController _controller = Get.find<QuestionController>();
+    QuestionController controller = Get.find<QuestionController>();
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -20,15 +22,15 @@ class QuizScreen extends StatelessWidget {
           children: [
             IconButton(
               onPressed: () {
-                Get.to(() => SettingsScreen());
+                Get.to(() => const SettingsScreen());
               },
-              icon: Icon(Icons.settings),
+              icon: const Icon(Icons.settings),
             ),
-            TextButton(onPressed: _controller.nextQuestion, child: Text("Skip")),
+            TextButton(onPressed: controller.nextQuestion, child: const Text("Skip")),
           ],
         ),
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }

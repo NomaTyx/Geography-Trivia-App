@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:geography_trivia_app/screens/leaderboard_screen.dart';
 import 'package:geography_trivia_app/screens/no_more_questions_screen.dart';
 import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
-import 'package:geography_trivia_app/screens/settings_screen.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 
@@ -77,20 +75,20 @@ class DifficultySelectionScreen extends StatelessWidget {
 }
 
 Widget customButton(BuildContext context, String buttonText, int difficultyValue) {
-  QuestionController _controller = Get.find<QuestionController>();
-  return Container(
+  QuestionController controller = Get.find<QuestionController>();
+  return SizedBox(
     width: 900,
     height: 75,
     child: ElevatedButton(
       onPressed: () {
-        _controller.setDifficulty(difficultyValue);
-        _controller.beginQuiz();
-        if(_controller.findValidQuestion() == -1)
+        controller.setDifficulty(difficultyValue);
+        controller.beginQuiz();
+        if(controller.findValidQuestion() == -1)
         {
-          Get.to(() => NoMoreQuestionsScreen());
+          Get.to(() => const NoMoreQuestionsScreen());
         }
         else {
-          Get.to(() => QuizScreen());
+          Get.to(() => const QuizScreen());
         }
       },
       style: ButtonStyle(

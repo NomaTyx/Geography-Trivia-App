@@ -4,24 +4,21 @@ import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:geography_trivia_app/screens/quiz/components/progress_bar.dart';
 import 'package:geography_trivia_app/screens/score/score_screen.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:websafe_svg/websafe_svg.dart';
-import 'dart:math';
 
-import 'progress_bar.dart';
 import 'question_card.dart';
 
 class Body extends StatelessWidget {
   const Body({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    late QuestionController _questionController;
+    late QuestionController questionController;
 
     //get.find lets us access an already created instance of a controller.
-    _questionController = Get.find<QuestionController>();
+    questionController = Get.find<QuestionController>();
     return Stack(
       children: [
         WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.fill),
@@ -34,7 +31,7 @@ class Body extends StatelessWidget {
                 EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: ProgressBar(),
               ),
-              SizedBox(height: kDefaultPadding),
+              const SizedBox(height: kDefaultPadding),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -45,12 +42,12 @@ class Body extends StatelessWidget {
                           () => Text.rich(
                         TextSpan(
                           text:
-                          "Question ${_questionController.questionNumber.value}",
+                          "Question ${questionController.questionNumber.value}",
                           style: Theme.of(context)
                               .textTheme
                               .headlineMedium
                               ?.copyWith(color: kSecondaryColor),
-                          children: [
+                          children: const [
                             //only keeping this in here to remind myself that i can have it in there.
                           ],
                         ),
@@ -59,33 +56,34 @@ class Body extends StatelessWidget {
                   ),
 
                   //Done button!
-                  Container(
+                  SizedBox(
                     height: 40,
                     child: ElevatedButton(
-                        onPressed: () {Get.to(() => ScoreScreen());},
-                        child: Text("Done"),
+                        onPressed: () {Get.to(() => const ScoreScreen());},
+                        child: const Text("Done"),
                     ),
                   ),
                 ],
               ),
-              Divider(thickness: 0),
-              SizedBox(height: kDefaultPadding),
+              const Divider(thickness: 0),
+              const SizedBox(height: kDefaultPadding),
               //this is where the questions are turned into pages
               Expanded(
                 child: PageView.builder(
                   // disables swiping to the next question
-                  physics: NeverScrollableScrollPhysics(),
-                  controller: _questionController.pageController,
-                  onPageChanged: _questionController.updateTheQnNum,
+                  physics: const NeverScrollableScrollPhysics(),
+                  controller: questionController.pageController,
+                  onPageChanged: questionController.updateTheQnNum,
                   //itemCount: _questionController.questionList.length,
 
                   //this section creates a new page on the fly whenever it loads a page (IM PRETTY SURE)
                   itemBuilder: (context, index) {
-                    if (_questionController.findValidQuestion() != -1) {
+                    if (questionController.findValidQuestion() != -1) {
                       return QuestionCard(
-                          question: _questionController.questionList[_questionController.findValidQuestion()]);
+                          question: questionController.questionList[questionController.findValidQuestion()]);
                       return null;
                     }
+                    return null;
                   },
                 ),
               ),

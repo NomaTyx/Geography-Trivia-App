@@ -6,11 +6,11 @@ import '../../../constants.dart';
 
 class QuizOption extends StatelessWidget {
   const QuizOption({
-    Key? key,
+    super.key,
     required this.text,
     required this.index,
     required this.press,
-  }) : super(key: key);
+  });
   final String text;
   final int index;
   final VoidCallback press;
@@ -39,8 +39,8 @@ class QuizOption extends StatelessWidget {
           return InkWell(
             onTap: press,
             child: Container(
-              margin: EdgeInsets.only(top: kDefaultPadding),
-              padding: EdgeInsets.all(kDefaultPadding),
+              margin: const EdgeInsets.only(top: kDefaultPadding),
+              padding: const EdgeInsets.all(kDefaultPadding),
               decoration: BoxDecoration(
                 border: Border.all(color: getTheRightColor()),
                 borderRadius: BorderRadius.circular(15),

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/screens/leaderboard_screen.dart';
-import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
 import 'package:geography_trivia_app/screens/settings_screen.dart';
 import 'package:geography_trivia_app/screens/welcome/category_selection_screen.dart';
-import 'package:geography_trivia_app/screens/welcome/difficulty_selection_screen.dart';
 import 'package:get/get.dart';
 
 double dividerHeight = 35;
@@ -12,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return Scaffold(
       backgroundColor: Colors.grey[800],
       // appBar: AppBar(
@@ -53,21 +51,21 @@ class HomeScreen extends StatelessWidget {
             ),
 
             //PLAY BUTTON
-            titleButton(context, 'PLAY', CategorySelectionScreen()),
+            titleButton(context, 'PLAY', const CategorySelectionScreen()),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
             ),
 
             //SETTINGS BUTTON
-            titleButton(context, 'SETTINGS', SettingsScreen()),
+            titleButton(context, 'SETTINGS', const SettingsScreen()),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
             ),
 
             //LEADERBOARD BUTTON
-            titleButton(context, 'LEADERBOARD', LeaderboardScreen()),
+            titleButton(context, 'LEADERBOARD', const LeaderboardScreen()),
           ],
         ),
       ),
@@ -78,7 +76,7 @@ class HomeScreen extends StatelessWidget {
 
 
 Widget titleButton(BuildContext context, String buttonText, onPressMethod) {
-  return Container(
+  return SizedBox(
     width: 900,
     height: 75,
     child: ElevatedButton(

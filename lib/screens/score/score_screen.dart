@@ -6,6 +6,8 @@ import 'package:get/get.dart';
 import 'package:flutter_svg/svg.dart';
 
 class ScoreScreen extends StatelessWidget {
+  const ScoreScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     QuestionController questionController = Get.find<QuestionController>();
@@ -16,7 +18,7 @@ class ScoreScreen extends StatelessWidget {
           SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.fill),
           Column(
             children: [
-              Spacer(flex: 3),
+              const Spacer(flex: 3),
               Text(
                 "Score",
                 style: Theme.of(context)
@@ -24,7 +26,7 @@ class ScoreScreen extends StatelessWidget {
                     .displaySmall
                     ?.copyWith(color: kSecondaryColor),
               ),
-              Spacer(),
+              const Spacer(),
               Text(
                 "You got ${questionController.numOfCorrectAns * questionController.selectedDifficulty} points!",
                 style: Theme.of(context)
@@ -32,7 +34,7 @@ class ScoreScreen extends StatelessWidget {
                     .headlineMedium
                     ?.copyWith(color: kSecondaryColor),
               ),
-              Spacer(),
+              const Spacer(),
               Text(
                 "Your total score is ${questionController.totalScore} points!",
                 style: Theme.of(context)
@@ -40,8 +42,8 @@ class ScoreScreen extends StatelessWidget {
                     .headlineMedium
                     ?.copyWith(color: kSecondaryColor),
               ),
-              Spacer(flex: 3),
-              ElevatedButton(onPressed: () {Get.to(HomeScreen());}, child: Text('RETURN TO HOME SCREEN')),
+              const Spacer(flex: 3),
+              ElevatedButton(onPressed: () {Get.to(const HomeScreen());}, child: const Text('RETURN TO HOME SCREEN')),
             ],
           ),
         ],

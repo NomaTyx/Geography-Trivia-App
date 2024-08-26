@@ -3,20 +3,21 @@
 
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
-import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
 import 'package:get/get.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
