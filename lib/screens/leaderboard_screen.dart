@@ -42,6 +42,12 @@ class LeaderboardScreen extends StatelessWidget {
               ),
             ),
             ElevatedButton(
+              onPressed: () {
+                print("schloctor cocktopus");
+              },
+              child: const Text('TESTING LAMO')
+            ),
+            ElevatedButton(
                 onPressed: () {
                   Get.to(() => const HomeScreen());
                 },
