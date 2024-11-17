@@ -1,1 +1,25 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"geography-app-leaderboard","appId":"1:702116438595:android:936458105784fe73642af6","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"geography-app-leaderboard","configurations":{"android":"1:702116438595:android:936458105784fe73642af6","ios":"1:702116438595:ios:950be7d37eca2745642af6"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "geography-app-leaderboard",
+          "appId": "1:702116438595:android:936458105784fe73642af6",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "geography-app-leaderboard",
+          "configurations": {
+            "android": "1:702116438595:android:936458105784fe73642af6",
+            "ios": "1:702116438595:ios:950be7d37eca2745642af6"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "singleProjectMode": true
+  }
+}

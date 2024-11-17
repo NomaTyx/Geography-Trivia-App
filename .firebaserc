@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "development": "geography-app-leaderboard",
+    "default": "geography-app-leaderboard"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

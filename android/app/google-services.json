@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "702116438595",
     "project_id": "geography-app-leaderboard",
-    "storage_bucket": "geography-app-leaderboard.appspot.com"
+    "storage_bucket": "geography-app-leaderboard.firebasestorage.app"
   },
   "client": [
     {

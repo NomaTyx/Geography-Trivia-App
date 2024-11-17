@@ -183,8 +183,6 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
 
   void clearStorage() {
     _answeredQuestionsList.clear();
-    print("the list is ${_answeredQuestionsList.length} long");
-    print("cleared storage");
   }
 
   void resetScore() {
