@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
+import 'package:geography_trivia_app/controllers/leaderboard_controller.dart';
 import 'package:get/get.dart';
 
 class LeaderboardScreen extends StatelessWidget {
@@ -43,9 +44,9 @@ class LeaderboardScreen extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                print("schloctor cocktopus");
+                SignInDialog(context);
               },
-              child: const Text('TESTING LAMO')
+              child: const Text('SIGN IN')
             ),
             ElevatedButton(
                 onPressed: () {
@@ -56,6 +57,28 @@ class LeaderboardScreen extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Future<void> SignInDialog(BuildContext context)
+  {
+    return showDialog<void>(
+      context: context,
+      builder: (BuildContext context) => const AlertDialog(
+        title: Text('sign in please!'),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              TextField(
+                decoration: InputDecoration(hintText: 'enter your email'),
+              ),
+              TextField(
+                decoration: InputDecoration(hintText: 'enter your desired password'),
+              )
+            ],
+          ),
+        )
+      )
     );
   }
 }

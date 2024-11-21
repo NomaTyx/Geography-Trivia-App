@@ -14,6 +14,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(const MyApp());
+  await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
 }
 
 class MyApp extends StatelessWidget {
