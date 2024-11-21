@@ -81,7 +81,6 @@ class Body extends StatelessWidget {
                     if (questionController.findValidQuestion() != -1) {
                       return QuestionCard(
                           question: questionController.questionList[questionController.findValidQuestion()]);
-                      return null;
                     }
                     return null;
                   },

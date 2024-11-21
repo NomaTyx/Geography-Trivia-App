@@ -45,27 +45,35 @@ class CategorySelectionScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Divider(
-              height: 75,
-              color: Colors.grey[800],
-            ),
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.all(8),
+                children: <Widget>[
+                  Divider(
+                    height: 75,
+                    color: Colors.grey[800],
+                  ),
 
-            //PLAY BUTTON
-            customButton(context, 'cat 1', 1),
-            Divider(
-              height: dividerHeight,
-              color: Colors.grey[800],
-            ),
+                  //PLAY BUTTON
+                  customButton(context, 'cat 1', 1),
+                  Divider(
+                    height: dividerHeight,
+                    color: Colors.grey[800],
+                  ),
 
-            //SETTINGS BUTTON
-            customButton(context, 'cat 2', 2),
-            Divider(
-              height: dividerHeight,
-              color: Colors.grey[800],
-            ),
+                  //SETTINGS BUTTON
+                  customButton(context, 'cat 2', 2),
+                  Divider(
+                    height: dividerHeight,
+                    color: Colors.grey[800],
+                  ),
 
-            //LEADERBOARD BUTTON
-            customButton(context, 'cat 3', 3),
+                  //LEADERBOARD BUTTON
+                  customButton(context, 'cat 3', 3),
+                ]
+              )
+            )
+
           ],
         ),
       ),
