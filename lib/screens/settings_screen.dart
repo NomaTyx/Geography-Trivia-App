@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:get/get.dart';
@@ -68,6 +69,18 @@ class SettingsScreen extends StatelessWidget {
                   Get.back();
                   },
                 child: const Text('CLOSE SETTINGS')
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  FirebaseAuth.instance
+                      .authStateChanges()
+                      .listen((User? user) {
+                    if (user != null) {
+                      print(user.uid);
+                    }
+                  });
+                  },
+                child: const Text('TESTING LMAO')
             )
           ],
         ),
