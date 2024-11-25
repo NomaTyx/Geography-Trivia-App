@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/screens/signup_screen.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
-import 'package:geography_trivia_app/controllers/leaderboard_controller.dart';
+import 'package:geography_trivia_app/controllers/auth_services.dart';
 import 'package:get/get.dart';
 
 class LeaderboardScreen extends StatelessWidget {

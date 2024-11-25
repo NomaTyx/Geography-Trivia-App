@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:geography_trivia_app/controllers/auth_services.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:get/get.dart';
 
@@ -8,12 +9,15 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    QuestionController controller;
+    QuestionController questionController;
     if(Get.isRegistered<QuestionController>()) {
-      controller = Get.find<QuestionController>();
+      questionController = Get.find<QuestionController>();
     } else {
-      controller = Get.put(QuestionController());
+      questionController = Get.put(QuestionController());
     }
+
+    AuthServices authServices = Get.put(AuthServices()) ?? Get.find<AuthServices>();
+
     return Scaffold(
       backgroundColor: Colors.grey[800],
       // appBar: AppBar(
@@ -30,7 +34,7 @@ class SettingsScreen extends StatelessWidget {
             const Center(
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/toge.jpg'),
-                radius: 40.0,
+                radius: 80.0,
               ),
             ),
             Divider(
@@ -49,7 +53,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             ElevatedButton(
-              onPressed: () {controller.clearStorage();},
+              onPressed: () {questionController.clearStorage();},
                 child: const Text(
                   'DEV TOOL: CLEAR QUESTION MEMORY'
                 ),
@@ -59,9 +63,9 @@ class SettingsScreen extends StatelessWidget {
               color: Colors.grey[800],
             ),
             ElevatedButton(
-              onPressed: () {controller.resetScore();},
+              onPressed: () {questionController.resetScore();},
               child: const Text(
-                  'DEV TOOL: RESET TOTAL SCORE'
+                  'DEV TOOL: RESET TOTAL SCORE.'
               ),
             ),
             ElevatedButton(
@@ -72,16 +76,31 @@ class SettingsScreen extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  FirebaseAuth.instance
-                      .authStateChanges()
-                      .listen((User? user) {
+                  FirebaseAuth.instance.authStateChanges().listen((User? user) {
                     if (user != null) {
                       print(user.uid);
+                      print(user.email);
                     }
                   });
                   },
                 child: const Text('TESTING LMAO')
-            )
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  print(authServices.deviceID);
+                  },
+                child: const Text('show device id')
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  FirebaseAuth.instance.authStateChanges().listen((User? user) {
+                    if (user != null) {
+                      authServices.logOut();
+                    }
+                  });
+                },
+                child: const Text('SIGN OUT')
+            ),
           ],
         ),
       ),

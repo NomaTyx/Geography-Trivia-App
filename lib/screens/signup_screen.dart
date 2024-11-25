@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:geography_trivia_app/controllers/leaderboard_controller.dart';
+import 'package:geography_trivia_app/controllers/auth_services.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:get/get.dart';
 
@@ -16,15 +16,15 @@ class SignUpScreen extends StatefulWidget {
 class _MyAppState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
-    LeaderboardController lbController;
+    AuthServices authServices;
 
-    if(!Get.isRegistered<LeaderboardController>()) {
+    if(!Get.isRegistered<AuthServices>()) {
       //get.put is a function that lets us access the same instance of our controller class in any file. basically put get.put in any file you want to access the difficulty value.
-      lbController = Get.put(LeaderboardController());
+      authServices = Get.put(AuthServices());
     }
     else{
       //get.find lets us find a controller of the given type.
-      lbController = Get.find<LeaderboardController>();
+      authServices = Get.find<AuthServices>();
     }
 
     String email = '', password = '';
@@ -82,7 +82,7 @@ class _MyAppState extends State<SignUpScreen> {
               color: Colors.grey[800],
             ),
             ElevatedButton(
-                onPressed: () {lbController.signUp(email, password);},
+                onPressed: () {authServices.signUp(email, password);},
                 child: Text("Create account"))
           ],
         ),

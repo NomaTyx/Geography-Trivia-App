@@ -13,7 +13,7 @@ class Question {
 //the difficulty variable in the questions may become obsolete, depending on how I end up handling it.
 const List sample_data = [
   {
-    "id": 1,
+    "id": 0,
     "question": "CAT 1, EASY: PLACEHOLDER EASY QUESTION #1",
     "options": ['wrong', 'right', 'wrong', 'wrong'],
     "answer_index": 1,
