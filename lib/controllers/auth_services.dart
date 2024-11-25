@@ -1,26 +1,30 @@
-import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:android_id/android_id.dart';
+import 'package:device_info_plus/device_info_plus.dart';
+import 'dart:io';
 
-class LeaderboardController extends GetxController with GetSingleTickerProviderStateMixin {
+class AuthServices extends GetxController with GetSingleTickerProviderStateMixin {
   FirebaseAuth auth = FirebaseAuth.instance;
-  Stream<User?> get onAuthStateChanged => auth.authStateChanges();
-
-  User? user;
+  String? deviceID;
+  String? playerName;
 
   Future<void> signUp(String email, String password) async {
     try {
       await auth.createUserWithEmailAndPassword(email: email, password: password);
+      print("trying to sign user up");
     } catch (e) {
-      print("Error: signup failed");
+      print("failed to sign user in");
     }
   }
 
   Future<void> logIn(String email, String password) async {
     try {
       await auth.signInWithEmailAndPassword(email: email, password: password);
+      print("trying to log in");
     } catch (e) {
-      print("Error: login failed");
+      print("failed to log user in");
     }
   }
 
@@ -33,9 +37,44 @@ class LeaderboardController extends GetxController with GetSingleTickerProviderS
   }
 
   Future<String?> getCurrentUID() async {
-    if(auth.currentUser != null)
-      {
+    if(auth.currentUser != null) {
         return auth.currentUser!.uid;
+    }
+    return '0';
+  }
+
+  bool isLoggedIn() {
+    if(auth.currentUser != null)
+      return true;
+
+    return false;
+  }
+
+  Future<void> logOut() async {
+    if(auth.currentUser != null) {
+      auth.signOut();
+    }
+  }
+
+  Future<void> findDeviceID() async {
+    String deviceName;
+    String deviceVersion;
+    String? identifier;
+    final DeviceInfoPlugin deviceInfoPlugin = new DeviceInfoPlugin();
+    try {
+      if (Platform.isAndroid) {
+        var build = await deviceInfoPlugin.androidInfo;
+        deviceID = build.id; //UUID for Android
+      } else if (Platform.isIOS) {
+        var data = await deviceInfoPlugin.iosInfo;
+        deviceID = data.identifierForVendor; //UUID for iOS
       }
+    } catch (e) {
+      print('Failed to get platform version');
+    }
+  }
+
+  void UpdatePlayerName(String value) {
+    playerName = value;
   }
 }
