@@ -57,6 +57,7 @@ class NameScreen extends StatelessWidget {
             ElevatedButton(
                 onPressed: () => {
                   if(name != '') {
+                    //TODO: add a player data controller and have it put the player's name in there.
                     Get.to(RegionScreen())
                   }
                   else {
@@ -81,25 +82,59 @@ class NameScreen extends StatelessWidget {
       ),
     );
   }
-
-  //gets device ID by manufacturer (which are supposedly unique), appends @gmail.com, and uses those as a username and password.
-  void AuthenticateUser() {
-    // ?? means returns the left value unless it's null, in which case it returns the right value.
-    //make sure this line actually works
-    AuthServices authServices = Get.put(AuthServices()) ?? Get.find<AuthServices>();
-
-    try {
-      authServices.logIn("${authServices.deviceID}@gmail.com", "${authServices.deviceID}123");
-    } catch (e) {
-      authServices.signUp("${authServices.deviceID}@gmail.com", "${authServices.deviceID}123");
-    }
-  }
 }
 
 class RegionScreen extends StatelessWidget {
   const RegionScreen({super.key});
 
+  @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    String region = '';
+    return Scaffold(
+        backgroundColor: Colors.grey[800],
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            const Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/toge.jpg'),
+                radius: 80.0,
+              ),
+            ),
+            Divider(
+              height: 30,
+              color: Colors.grey[800],
+            ),
+            const Center(
+              child: Text(
+                'And now pick your region.',
+                style: TextStyle(
+                  letterSpacing: 2.0,
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+            ),
+            Divider(
+              height: 30,
+              color: Colors.grey[800],
+            ),
+            //TODO this needs to be a dropdown
+            Divider(
+              height: 30,
+              color: Colors.grey[800],
+            ),
+            ElevatedButton(
+                onPressed: () => {
+
+                },
+                child: Text("Done"))
+          ],
+        ),
+      ),
+    );
   }
 }
