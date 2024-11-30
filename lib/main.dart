@@ -10,22 +10,24 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:geography_trivia_app/screens/welcome/initial_authentication_screen.dart';
 import 'package:get/get.dart';
+import 'controllers/player_data_controller.dart';
 import 'firebase_options.dart';
 import 'package:geography_trivia_app/controllers/auth_services.dart';
 
+bool currentDeviceExists = false;
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  AuthServices authServices = Get.put(AuthServices()) ?? Get.find<AuthServices>();
-
-  authServices.findDeviceID();
+  PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+  await playerDataController.findDeviceID();
+  currentDeviceExists = await playerDataController.deviceExists();
 
   runApp(const MyApp());
-
-  await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
 }
 
 class MyApp extends StatelessWidget {
@@ -46,7 +48,6 @@ class HomeController extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AuthServices authServices = Get.put(AuthServices());
-    return authServices.isLoggedIn() ? HomeScreen() : NameScreen();
+    return currentDeviceExists ? HomeScreen() : NameScreen();
   }
 }
