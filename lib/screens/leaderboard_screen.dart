@@ -38,12 +38,6 @@ class LeaderboardScreen extends StatelessWidget {
               ),
             ),
             ElevatedButton(
-              onPressed: () {
-                Get.to(() => SignUpScreen());
-              },
-              child: const Text('SIGN IN')
-            ),
-            ElevatedButton(
                 onPressed: () {
                   Get.to(() => const HomeScreen());
                 },
