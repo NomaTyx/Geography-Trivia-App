@@ -24,10 +24,6 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
     };
 
     firestore.collection("users").doc("$deviceID").set(user);
-
-// Add a new document with a generated ID
-//     firestore.collection("users").add(user).then((DocumentReference doc) =>
-//         print('DocumentSnapshot added with ID: ${doc.id}'));
   }
 
   Future<String> findDeviceID() async {
@@ -61,6 +57,16 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
       onError: (e) => print("Error getting document: $e"),
     );
     return exists;
+  }
+
+  void setPlayerName(String name) {
+    playerName = name;
+    print("the player's name is $playerName");
+  }
+
+  void setPlayerRegion(String region) {
+     playerRegion = region;
+     print("the player's region is $playerRegion");
   }
 
   Future<void> updatePlayerScore() async {
