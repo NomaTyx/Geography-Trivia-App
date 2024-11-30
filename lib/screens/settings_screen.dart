@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/controllers/auth_services.dart';
+import 'package:geography_trivia_app/controllers/player_data_controller.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:get/get.dart';
 
@@ -76,14 +77,17 @@ class SettingsScreen extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  FirebaseAuth.instance.authStateChanges().listen((User? user) {
-                    if (user != null) {
-                      print(user.uid);
-                      print(user.email);
-                    }
-                  });
+                  PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+                  playerDataController.addUser();
                   },
-                child: const Text('TESTING LMAO')
+                child: const Text('add placeholder user')
+            ),
+            ElevatedButton(
+                onPressed: () async {
+                  PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+                  print(await playerDataController.deviceExists());
+                },
+                child: const Text('does usergetting work')
             ),
             ElevatedButton(
                 onPressed: () {
