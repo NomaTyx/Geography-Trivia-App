@@ -5,6 +5,8 @@ import 'package:android_id/android_id.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'dart:io';
 
+
+//this class is currently not being used in the app. it's only still here because i spent like five hours on it, and theoretically i might want to add accounts in the future.
 class AuthServices extends GetxController with GetSingleTickerProviderStateMixin {
   FirebaseAuth auth = FirebaseAuth.instance;
   String? deviceID;
@@ -72,9 +74,5 @@ class AuthServices extends GetxController with GetSingleTickerProviderStateMixin
     } catch (e) {
       print('Failed to get platform version');
     }
-  }
-
-  void UpdatePlayerName(String value) {
-    playerName = value;
   }
 }
