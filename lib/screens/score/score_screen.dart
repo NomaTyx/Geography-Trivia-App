@@ -4,13 +4,21 @@ import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
 import 'package:get/get.dart';
 import 'package:flutter_svg/svg.dart';
+import '../../controllers/player_data_controller.dart';
 
 class ScoreScreen extends StatelessWidget {
   const ScoreScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     QuestionController questionController = Get.find<QuestionController>();
+    PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+
+    int score = questionController.numOfCorrectAns * questionController.selectedDifficulty;
+
+    playerDataController.addToPlayerScore(score);
+
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
@@ -28,7 +36,7 @@ class ScoreScreen extends StatelessWidget {
               ),
               const Spacer(),
               Text(
-                "You got ${questionController.numOfCorrectAns * questionController.selectedDifficulty} points!",
+                "You got $score points!",
                 style: Theme.of(context)
                     .textTheme
                     .headlineMedium
@@ -36,7 +44,7 @@ class ScoreScreen extends StatelessWidget {
               ),
               const Spacer(),
               Text(
-                "Your total score is ${questionController.totalScore} points!",
+                "Your total score is ${playerDataController.playerScoreTotal} points!",
                 style: Theme.of(context)
                     .textTheme
                     .headlineMedium

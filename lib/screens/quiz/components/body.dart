@@ -69,7 +69,7 @@ class Body extends StatelessWidget {
               const SizedBox(height: kDefaultPadding),
               //this is where the questions are turned into pages
               Expanded(
-                child: PageView.builder(
+                child: new PageView.builder(
                   // disables swiping to the next question
                   physics: const NeverScrollableScrollPhysics(),
                   controller: questionController.pageController,

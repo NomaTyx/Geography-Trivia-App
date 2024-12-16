@@ -10,14 +10,9 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    QuestionController questionController;
-    if(Get.isRegistered<QuestionController>()) {
-      questionController = Get.find<QuestionController>();
-    } else {
-      questionController = Get.put(QuestionController());
-    }
-
+    QuestionController questionController = Get.put(QuestionController()) ?? Get.find<QuestionController>();
     AuthServices authServices = Get.put(AuthServices()) ?? Get.find<AuthServices>();
+    PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
 
     return Scaffold(
       backgroundColor: Colors.grey[800],
@@ -64,7 +59,7 @@ class SettingsScreen extends StatelessWidget {
               color: Colors.grey[800],
             ),
             ElevatedButton(
-              onPressed: () {questionController.resetScore();},
+              onPressed: () {playerDataController.resetScore();},
               child: const Text(
                   'DEV TOOL: RESET TOTAL SCORE.'
               ),
@@ -77,33 +72,27 @@ class SettingsScreen extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
                   playerDataController.addUser();
                   },
                 child: const Text('add placeholder user')
             ),
             ElevatedButton(
                 onPressed: () async {
-                  PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
                   print(await playerDataController.deviceExists());
                 },
                 child: const Text('does usergetting work')
             ),
             ElevatedButton(
                 onPressed: () {
-                  print(authServices.deviceID);
+                  print(playerDataController.deviceID);
                   },
                 child: const Text('show device id')
             ),
             ElevatedButton(
                 onPressed: () {
-                  FirebaseAuth.instance.authStateChanges().listen((User? user) {
-                    if (user != null) {
-                      authServices.logOut();
-                    }
-                  });
+                  print(playerDataController.playerName);
                 },
-                child: const Text('SIGN OUT')
+                child: const Text('show player name')
             ),
           ],
         ),

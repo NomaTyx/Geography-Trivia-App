@@ -1,7 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:android_id/android_id.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'dart:io';
 
@@ -59,9 +57,6 @@ class AuthServices extends GetxController with GetSingleTickerProviderStateMixin
   }
 
   Future<void> findDeviceID() async {
-    String deviceName;
-    String deviceVersion;
-    String? identifier;
     final DeviceInfoPlugin deviceInfoPlugin = new DeviceInfoPlugin();
     try {
       if (Platform.isAndroid) {

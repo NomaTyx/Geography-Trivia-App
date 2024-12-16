@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:geography_trivia_app/controllers/auth_services.dart';
-import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:get/get.dart';
 
 FirebaseAuth auth = FirebaseAuth.instance;
 
+//completely deprecated screen. don't use unless you're adding sign-in functions.
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 

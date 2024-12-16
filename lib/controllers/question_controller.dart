@@ -57,9 +57,6 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   int _numOfCorrectAns = 0;
   int get numOfCorrectAns => _numOfCorrectAns;
 
-  RxInt _totalScore = 0.obs;
-  RxInt get totalScore => _totalScore;
-
   // called immediately after the widget is allocated memory
   @override
   void onInit() {
@@ -69,18 +66,11 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     if(GetStorage().hasData("answeredQuestionsList")) {
       _answeredQuestionsList = GetStorage().read("answeredQuestionsList");
     }
-    if(GetStorage().hasData("totalScore")) {
-      _totalScore = GetStorage().read("totalScore");
-    }
 
     //every time answeredQuestionsList changes, this will be called.
     ever(_answeredQuestionsList, (_) {
       GetStorage().write('answeredQuestionsList', _answeredQuestionsList);
       print("written to storage");
-    });
-
-    ever(_totalScore, (_){
-      GetStorage().write('totalScore', _totalScore.toInt());
     });
 
     super.onInit();
@@ -167,6 +157,12 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   void setCategory(int categoryToSet) {
     _selectedCategory = categoryToSet;
     print("The category has been set to $categoryToSet");
+
+    resetRoundScore();
+  }
+
+  void resetRoundScore() {
+    _numOfCorrectAns = 0;
   }
 
   int findValidQuestion() {
@@ -183,11 +179,5 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
 
   void clearStorage() {
     _answeredQuestionsList.clear();
-  }
-
-  void resetScore() {
-    _totalScore = 0.obs;
-    GetStorage().write('totalScore', 0);
-    print("reset score");
   }
 }

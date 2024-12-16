@@ -1,18 +1,13 @@
 //https://www.youtube.com/watch?v=Nhy0VWAMsFU this is the tutorial i followed
 //i am a hack fraud and the whole scaffolding of the app is from this tutorial.
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:geography_trivia_app/screens/settings_screen.dart';
-import 'package:geography_trivia_app/screens/signup_screen.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:geography_trivia_app/screens/welcome/initial_authentication_screen.dart';
 import 'package:get/get.dart';
 import 'controllers/player_data_controller.dart';
 import 'firebase_options.dart';
-import 'package:geography_trivia_app/controllers/auth_services.dart';
 
 bool currentDeviceExists = false;
 

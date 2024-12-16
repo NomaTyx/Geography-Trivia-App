@@ -1,9 +1,6 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:geography_trivia_app/screens/signup_screen.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
 import 'package:get/get.dart';
-import 'package:geography_trivia_app/controllers/auth_services.dart';
 
 import '../../controllers/player_data_controller.dart';
 
@@ -13,7 +10,7 @@ class NameScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
-    String name = '';
+    String name = 'timmy';
 
     return Scaffold(
       backgroundColor: Colors.grey[800],
@@ -100,11 +97,10 @@ class NameScreen extends StatelessWidget {
 class RegionScreen extends StatelessWidget {
   RegionScreen({super.key});
   final List<String> regionList = <String>['Africa', 'Asia', 'Europe', 'North America', 'Oceania', 'South America', 'Antarctica'];
-  PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+  final PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
 
   @override
   Widget build(BuildContext context) {
-    String region = '';
     return Scaffold(
         backgroundColor: Colors.grey[800],
       body: Padding(
@@ -145,7 +141,7 @@ class RegionScreen extends StatelessWidget {
                   return Container(
                     height: 50,
                     child: ElevatedButton(
-                      child: Text('${regionList[index]}'),
+                      child: Text(regionList[index]),
                       onPressed: () {
                         if(regionList[index] != "Antarctica") {
                           playerDataController.setPlayerRegion(regionList[index]);
