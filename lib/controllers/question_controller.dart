@@ -166,6 +166,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     _numOfCorrectAns = 0;
   }
 
+  //todo redo this function so that on startup it makes a list of all the questions the user has already answered.
   int findValidQuestion() {
     for (int i = 0; i < questionList.length; i++) {
       var currentQuestion = questionList[i];
