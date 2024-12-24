@@ -62,9 +62,10 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   void onInit() {
     _questions.shuffle(Random());
 
+    //probably do some weird thign like making a temporary list and then casting back and forth
     //sets the local variables equal to the stored value if it exists
     if(GetStorage().hasData("answeredQuestionsList")) {
-      _answeredQuestionsList = GetStorage().read("answeredQuestionsList");
+      _answeredQuestionsList.value = GetStorage().read("answeredQuestionsList").cast<Question>();
     }
 
     //every time answeredQuestionsList changes, this will be called.
