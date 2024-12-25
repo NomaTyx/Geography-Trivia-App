@@ -5,11 +5,12 @@ import 'dart:io';
 import 'package:get_storage/get_storage.dart';
 
 class PlayerDataController extends GetxController with GetSingleTickerProviderStateMixin {
-  FirebaseFirestore firestore = FirebaseFirestore.instance;
+  FirebaseFirestore playerDatabase = FirebaseFirestore.instance;
   String? deviceID;
   String? playerName;
   String? playerRegion;
   RxInt playerScoreTotal = 0.obs;
+  List<Map> topPlayersList = <Map>[];
 
   @override
   void onInit() {
@@ -35,7 +36,7 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
       "DeviceID": await findDeviceID(),
     };
 
-    firestore.collection("users").doc("$deviceID").set(user);
+    playerDatabase.collection("users").doc("$deviceID").set(user);
   }
 
   Future<String> findDeviceID() async {
@@ -58,7 +59,7 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
 
   Future<bool> deviceExists() async {
     bool exists = false;
-    var doc = await firestore.collection("users").doc(deviceID).get();
+    var doc = await playerDatabase.collection("users").doc(deviceID).get();
     exists = doc.exists;
     if (exists) {
       Map<String, dynamic> data = doc.data()!;
@@ -84,15 +85,28 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
     playerScoreTotal += score;
     print("score total is $playerScoreTotal");
     final data = {"Score": playerScoreTotal.value};
-    firestore.collection("users").doc(deviceID).set(data, SetOptions(merge: true));
+    playerDatabase.collection("users").doc(deviceID).set(data, SetOptions(merge: true));
   }
 
   void resetScore() {
     playerScoreTotal = 0.obs;
     GetStorage().write('totalScore', 0);
     final data = {"Score": 0};
-    firestore.collection("users").doc(deviceID).set(data, SetOptions(merge: true));
+    playerDatabase.collection("users").doc(deviceID).set(data, SetOptions(merge: true));
     print("score resetted");
+  }
+
+  Future<void> FindTopPlayers(int numOfPlayers) async {
+    final docRef = await playerDatabase.collection("users");
+    await docRef.orderBy("Score", descending: true).limit(numOfPlayers).get().then(
+        (querySnapshot) {
+          topPlayersList.clear();
+          for (var docSnapshot in querySnapshot.docs) {
+            //.data() is a map of data
+            topPlayersList.add(docSnapshot.data());
+          }
+        }
+    );
   }
 }
 
