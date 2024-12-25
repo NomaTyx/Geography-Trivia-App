@@ -1,6 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:geography_trivia_app/controllers/auth_services.dart';
 import 'package:geography_trivia_app/controllers/player_data_controller.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:get/get.dart';
@@ -11,7 +9,6 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     QuestionController questionController = Get.put(QuestionController()) ?? Get.find<QuestionController>();
-    AuthServices authServices = Get.put(AuthServices()) ?? Get.find<AuthServices>();
     PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
 
     return Scaffold(
