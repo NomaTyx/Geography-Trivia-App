@@ -38,6 +38,15 @@ dependencies:
   websafe_svg: ^3.0.1+1
   get: ^4.6.6
   audioplayers: ^6.0.0
+  get_storage: ^2.1.1
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  firebase_database: ^11.0.4
+  flutter_bloc: ^8.1.5
+  flutter_svg: any
+  cloud_firestore: ^5.5.0
+  device_info_plus: ^10.1.2
+  android_id: ^0.4.0
 
 dev_dependencies:
   flutter_test:

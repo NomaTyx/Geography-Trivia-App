@@ -1,24 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:geography_trivia_app/screens/leaderboard_screen.dart';
-import 'package:geography_trivia_app/screens/settings_screen.dart';
-import 'package:geography_trivia_app/screens/welcome/category_selection_screen.dart';
+import 'package:geography_trivia_app/screens/no_more_questions_screen.dart';
+import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
 import 'package:get/get.dart';
+import 'package:geography_trivia_app/controllers/question_controller.dart';
 
 double dividerHeight = 35;
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class DifficultySelectionScreen extends StatelessWidget {
+  const DifficultySelectionScreen({super.key});
 
   @override
-  Widget build(BuildContext context) { 
+  Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        automaticallyImplyLeading: true,
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+      ),
       backgroundColor: Colors.grey[800],
-      // appBar: AppBar(
-      //   title: const Text("Geography App"),
-      //   centerTitle: true,
-      //   backgroundColor: Colors.purple,
-      //   elevation: 0.0,
-      // ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
         child: Column(
@@ -36,7 +37,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const Center(
               child: Text(
-                'GEOGRAPHY APP',
+                'CHOOSE QUESTION DIFFICULTY',
                 style: TextStyle(
                   letterSpacing: 2.0,
                   fontSize: 30.0,
@@ -51,21 +52,21 @@ class HomeScreen extends StatelessWidget {
             ),
 
             //PLAY BUTTON
-            titleButton(context, 'PLAY', const CategorySelectionScreen()),
+            customButton(context, 'EASY', 1),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
             ),
 
             //SETTINGS BUTTON
-            titleButton(context, 'SETTINGS', const SettingsScreen()),
+            customButton(context, 'MEDIUM', 2),
             Divider(
               height: dividerHeight,
               color: Colors.grey[800],
             ),
 
             //LEADERBOARD BUTTON
-            titleButton(context, 'LEADERBOARD', const LeaderboardScreen()),
+            customButton(context, 'HARD', 3),
           ],
         ),
       ),
@@ -73,16 +74,23 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-
-
-Widget titleButton(BuildContext context, String buttonText, onPressMethod) {
+Widget customButton(BuildContext context, String buttonText, int difficultyValue) {
+  QuestionController controller = Get.find<QuestionController>();
   return SizedBox(
     width: 900,
     height: 75,
     child: ElevatedButton(
       onPressed: () {
-        Get.to(onPressMethod);
-        },
+        controller.setDifficulty(difficultyValue);
+        controller.beginQuiz();
+        if(controller.findValidQuestion() == -1)
+        {
+          Get.to(() => const NoMoreQuestionsScreen());
+        }
+        else {
+          Get.to(() => const QuizScreen());
+        }
+      },
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all<Color>(Colors.grey),
       ),

@@ -4,12 +4,11 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
 
 class ProgressBar extends StatelessWidget {
   const ProgressBar({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class ProgressBar extends StatelessWidget {
       width: double.infinity,
       height: 35,
       decoration: BoxDecoration(
-        border: Border.all(color: Color(0xFF3F4768), width: 3),
+        border: Border.all(color: const Color(0xFF3F4768), width: 3),
         borderRadius: BorderRadius.circular(50),
       ),
       child: GetBuilder<QuestionController>(

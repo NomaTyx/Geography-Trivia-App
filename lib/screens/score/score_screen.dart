@@ -4,11 +4,21 @@ import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
 import 'package:get/get.dart';
 import 'package:flutter_svg/svg.dart';
+import '../../controllers/player_data_controller.dart';
 
 class ScoreScreen extends StatelessWidget {
+  const ScoreScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    QuestionController _qnController = Get.put(QuestionController());
+
+    QuestionController questionController = Get.find<QuestionController>();
+    PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+
+    int score = questionController.numOfCorrectAns * questionController.selectedDifficulty;
+
+    playerDataController.addToPlayerScore(score);
+
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
@@ -16,7 +26,7 @@ class ScoreScreen extends StatelessWidget {
           SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.fill),
           Column(
             children: [
-              Spacer(flex: 3),
+              const Spacer(flex: 3),
               Text(
                 "Score",
                 style: Theme.of(context)
@@ -24,16 +34,24 @@ class ScoreScreen extends StatelessWidget {
                     .displaySmall
                     ?.copyWith(color: kSecondaryColor),
               ),
-              Spacer(),
+              const Spacer(),
               Text(
-                "${_qnController.correctAns * 10}/${_qnController.questions.length * 10}",
+                "You got $score points!",
                 style: Theme.of(context)
                     .textTheme
                     .headlineMedium
                     ?.copyWith(color: kSecondaryColor),
               ),
-              Spacer(flex: 3),
-              ElevatedButton(onPressed: () {Get.to(HomeScreen());}, child: Text('RETURN TO HOME SCREEN')),
+              const Spacer(),
+              Text(
+                "Your total score is ${playerDataController.playerScoreTotal} points!",
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineMedium
+                    ?.copyWith(color: kSecondaryColor),
+              ),
+              const Spacer(flex: 3),
+              ElevatedButton(onPressed: () {Get.to(const HomeScreen());}, child: const Text('RETURN TO HOME SCREEN')),
             ],
           ),
         ],

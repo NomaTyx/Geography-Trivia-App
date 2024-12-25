@@ -4,13 +4,13 @@ import 'package:geography_trivia_app/controllers/question_controller.dart';
 
 import '../../../constants.dart';
 
-class Option extends StatelessWidget {
-  const Option({
-    Key? key,
+class QuizOption extends StatelessWidget {
+  const QuizOption({
+    super.key,
     required this.text,
     required this.index,
     required this.press,
-  }) : super(key: key);
+  });
   final String text;
   final int index;
   final VoidCallback press;
@@ -21,11 +21,11 @@ class Option extends StatelessWidget {
         init: QuestionController(),
         builder: (qnController) {
           Color getTheRightColor() {
-            if (qnController.isAnswered) {
-              if (index == qnController.correctAns) {
+            if (qnController.hasAnsweredCurrentQuestion) {
+              if (index == qnController.correctAnswer) {
                 return kGreenColor;
-              } else if (index == qnController.selectedAns &&
-                  qnController.selectedAns != qnController.correctAns) {
+              } else if (index == qnController.selectedAnswer &&
+                  qnController.selectedAnswer != qnController.correctAnswer) {
                 return kRedColor;
               }
             }
@@ -39,8 +39,8 @@ class Option extends StatelessWidget {
           return InkWell(
             onTap: press,
             child: Container(
-              margin: EdgeInsets.only(top: kDefaultPadding),
-              padding: EdgeInsets.all(kDefaultPadding),
+              margin: const EdgeInsets.only(top: kDefaultPadding),
+              padding: const EdgeInsets.all(kDefaultPadding),
               decoration: BoxDecoration(
                 border: Border.all(color: getTheRightColor()),
                 borderRadius: BorderRadius.circular(15),
