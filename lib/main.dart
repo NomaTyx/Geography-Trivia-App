@@ -21,6 +21,8 @@ void main() async {
   PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
   await playerDataController.findDeviceID();
   currentDeviceExists = await playerDataController.deviceExists();
+  //make a public leaderboardSize variable?
+  await playerDataController.FindTopPlayers(10);
 
   runApp(const MyApp());
 }
