@@ -27,7 +27,10 @@ class QuizScreen extends StatelessWidget {
               },
               icon: const Icon(Icons.settings),
             ),
-            TextButton(onPressed: controller.nextQuestion, child: const Text("Skip")),
+            TextButton(
+                onPressed: controller.nextQuestion,
+                child: const Text("Skip")
+            ),
           ],
         ),
       ),

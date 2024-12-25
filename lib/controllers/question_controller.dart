@@ -32,8 +32,8 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
       .toList();
   List<Question> get questionList => _questions;
 
-  late RxList<Question> _answeredQuestionsList = <Question>[].obs;
-  List<Question> get answeredQuestions => _answeredQuestionsList;
+  late RxList<int> _answeredQuestionsIDList = <int>[].obs;
+  List<int> get answeredQuestions => _answeredQuestionsIDList;
 
   bool _isAnswered = false;
   bool get hasAnsweredCurrentQuestion => _isAnswered;
@@ -65,12 +65,12 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     //probably do some weird thign like making a temporary list and then casting back and forth
     //sets the local variables equal to the stored value if it exists
     if(GetStorage().hasData("answeredQuestionsList")) {
-      _answeredQuestionsList.value = GetStorage().read("answeredQuestionsList").cast<Question>();
+      _answeredQuestionsIDList.value = GetStorage().read("answeredQuestionsList").cast<int>();
     }
 
     //every time answeredQuestionsList changes, this will be called.
-    ever(_answeredQuestionsList, (_) {
-      GetStorage().write('answeredQuestionsList', _answeredQuestionsList);
+    ever(_answeredQuestionsIDList, (_) {
+      GetStorage().write('answeredQuestionsList', _answeredQuestionsIDList);
       print("written to storage");
     });
 
@@ -113,10 +113,10 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
 
     if (_correctAns == _selectedAns) {
       _numOfCorrectAns++;
-      _answeredQuestionsList.add(question);
+      _answeredQuestionsIDList.add(question.id);
     }
 
-    answeredQuestions.add(question);
+    answeredQuestions.add(question.id);
 
     // It will stop the counter
     _animationController.stop();
@@ -171,7 +171,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     for (int i = 0; i < questionList.length; i++) {
       var currentQuestion = questionList[i];
       if (currentQuestion.difficulty == selectedDifficulty && currentQuestion.category == selectedCategory) {
-        if (!answeredQuestions.contains(currentQuestion)) {
+        if (!answeredQuestions.contains(currentQuestion.id)) {
           return i;
         }
       }
@@ -180,6 +180,6 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   }
 
   void clearStorage() {
-    _answeredQuestionsList.clear();
+    _answeredQuestionsIDList.clear();
   }
 }
