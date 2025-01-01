@@ -10,6 +10,7 @@ class CategorySelectionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //todo: make scrollable
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.grey[800],

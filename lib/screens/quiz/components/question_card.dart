@@ -37,7 +37,7 @@ class QuestionCard extends StatelessWidget {
                 .titleLarge
                 ?.copyWith(color: kBlackColor),
           ),
-
+          //todo: image goes here. placeholder image is ketchup
           const SizedBox(height: kDefaultPadding / 2),
           //the ... represents each element in a collection individually
           //this line generates a generically-typed list out of the list of question options, then represents them individually with '...'
