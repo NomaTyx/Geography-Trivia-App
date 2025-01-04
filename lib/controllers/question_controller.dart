@@ -19,6 +19,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   late PageController _pageController;
   PageController get pageController => _pageController;
 
+  //generates a list of questions from the file
   final List<Question> _questions = sample_data
       .map(
         (question) => Question(
@@ -27,7 +28,8 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
         options: question['options'],
         answer: question['answer_index'],
         difficulty: question['difficulty'],
-        category: question['category']),
+        category: question['category'],
+        imageQuestion: question['imageQuestion']),
   )
       .toList();
   List<Question> get questionList => _questions;
@@ -41,8 +43,8 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   late int _selectedDifficulty;
   int get selectedDifficulty => _selectedDifficulty;
 
-  late int _selectedCategory;
-  int get selectedCategory => _selectedCategory;
+  late String _selectedCategory;
+  String get selectedCategory => _selectedCategory;
 
   late int _correctAns;
   int get correctAnswer => _correctAns;
@@ -106,6 +108,8 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   }
 
   void checkAns(Question question, int selectedIndex) {
+    //todo: put point gain animation thing here. goes somewhere on screen idk
+    //todo: after 20 questions, direct user to question finished screen
     // because once user press any option then it will run
     _isAnswered = true;
     _correctAns = question.answer;
@@ -155,7 +159,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     print("The difficulty has been set to $difficultyToSet");
   }
 
-  void setCategory(int categoryToSet) {
+  void setCategory(String categoryToSet) {
     _selectedCategory = categoryToSet;
     print("The category has been set to $categoryToSet");
 
@@ -172,6 +176,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
       var currentQuestion = questionList[i];
       if (currentQuestion.difficulty == selectedDifficulty && currentQuestion.category == selectedCategory) {
         if (!answeredQuestions.contains(currentQuestion.id)) {
+          print("imagequestion is ${currentQuestion.imageQuestion}");
           return i;
         }
       }
