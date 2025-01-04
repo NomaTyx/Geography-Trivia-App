@@ -56,21 +56,21 @@ class CategorySelectionScreen extends StatelessWidget {
                   ),
 
                   //PLAY BUTTON
-                  customButton(context, 'cat 1', "placeholder cat 1"),
+                  customButton(context, 'cat 1', 1),
                   Divider(
                     height: dividerHeight,
                     color: Colors.grey[800],
                   ),
 
                   //SETTINGS BUTTON
-                  customButton(context, 'cat 2', "placeholder cat 2"),
+                  customButton(context, 'cat 2', 2),
                   Divider(
                     height: dividerHeight,
                     color: Colors.grey[800],
                   ),
 
                   //LEADERBOARD BUTTON
-                  customButton(context, 'cat 3', "placeholder cat 3"),
+                  customButton(context, 'cat 3', 3),
                 ]
               )
             )
@@ -82,9 +82,16 @@ class CategorySelectionScreen extends StatelessWidget {
   }
 }
 
-Widget customButton(BuildContext context, String buttonText, String category) {
-  QuestionController controller = Get.put(QuestionController()) ?? Get.find<QuestionController>();
-
+Widget customButton(BuildContext context, String buttonText, int category) {
+  QuestionController controller;
+  if(!Get.isRegistered<QuestionController>()) {
+    //get.put is a function that lets us access the same instance of our controller class in any file. basically put get.put in any file you want to access the difficulty value.
+    controller = Get.put(QuestionController());
+  }
+  else{
+    //get.find lets us find a controller of the given type.
+    controller = Get.find<QuestionController>();
+  }
   return SizedBox(
     width: 900,
     height: 75,
