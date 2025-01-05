@@ -28,30 +28,32 @@ class QuestionCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(25),
       ),
 
-      child: Column(
+      child: ListView(
         children: [
-          Text(
-            question.question,
-            style: Theme.of(context)
-                .textTheme
-                .titleLarge
-                ?.copyWith(color: kBlackColor),
-          ),
-          //todo: image goes here. placeholder image is ketchup
-          const SizedBox(height: kDefaultPadding / 2),
-          //the ... represents each element in a collection individually
-          //this line generates a generically-typed list out of the list of question options, then represents them individually with '...'
-          ...List.generate(
-            question.options.length,
-                (index) => QuizOption(
-              index: index,
-              text: question.options[index],
-              //you can add multiple commands in a => if you put them in {}
-              press: () => {controller.checkAns(question, index)}
+          Column(children: [
+            Text(
+              question.question,
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge
+                  ?.copyWith(color: kBlackColor),
             ),
-          ),
-        ],
-      ),
+            //todo: put image here in the future if necessary
+            const SizedBox(height: kDefaultPadding / 2),
+            //the ... represents each element in a collection individually
+            //this line generates a generically-typed list out of the list of question options, then represents them individually with '...'
+            ...List.generate(
+              question.options.length,
+                  (index) => QuizOption(
+                  index: index,
+                  text: question.options[index],
+                  //you can add multiple commands in a => if you put them in {}
+                  press: () => {controller.checkAns(question, index)}
+              ),
+            ),
+          ],),
+        ]
+      )
     );
   }
 }
