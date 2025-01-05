@@ -10,7 +10,8 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) { 
+  Widget build(BuildContext context) {
+    print("hello");
     return Scaffold(
       backgroundColor: Colors.grey[800],
       // appBar: AppBar(

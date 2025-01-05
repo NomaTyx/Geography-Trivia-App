@@ -10,7 +10,7 @@ class CategorySelectionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //todo: make scrollable
+    QuestionController questionController = Get.put(QuestionController());
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.grey[800],
@@ -46,33 +46,23 @@ class CategorySelectionScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Expanded(
-              child: ListView(
-                padding: const EdgeInsets.all(8),
-                children: <Widget>[
-                  Divider(
-                    height: 75,
-                    color: Colors.grey[800],
+            ListView.separated(
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(9),
+              itemCount: questionController.categoryList.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Container(
+                  height: 50,
+                  child: ElevatedButton(
+                    child: Text(questionController.categoryList[index]),
+                    onPressed: () {
+                      questionController.setCategory(questionController.categoryList[index]);
+                      Get.to(() => const DifficultySelectionScreen());
+                    },
                   ),
-
-                  //PLAY BUTTON
-                  customButton(context, 'cat 1', "placeholder cat 1"),
-                  Divider(
-                    height: dividerHeight,
-                    color: Colors.grey[800],
-                  ),
-
-                  //SETTINGS BUTTON
-                  customButton(context, 'cat 2', "placeholder cat 2"),
-                  Divider(
-                    height: dividerHeight,
-                    color: Colors.grey[800],
-                  ),
-
-                  //LEADERBOARD BUTTON
-                  customButton(context, 'cat 3', "placeholder cat 3"),
-                ]
-              )
+                );
+              },
+              separatorBuilder: (BuildContext context, int index) => const Divider(),
             )
 
           ],

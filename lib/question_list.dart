@@ -2,9 +2,8 @@ class Question {
   final int id, answer, difficulty;
   final String question, category;
   final List<String> options;
-  final bool imageQuestion;
 
-  Question({required this.id, required this.question, this.answer = 1, this.options = const [], this.difficulty = 1, this.category = "placeholder cat 1", this.imageQuestion = false});
+  Question({required this.id, required this.question, this.answer = 1, this.options = const [], this.difficulty = 1, this.category = "placeholder cat 1"});
 
   String ToString(Question question) {
     return "question: ${this.question}";
@@ -13,69 +12,6 @@ class Question {
 
 //the difficulty variable in the questions may become obsolete, depending on how I end up handling it.
 const List sample_data = [
-  {
-    "id": 0,
-    "question": "CAT 1, EASY: PLACEHOLDER EASY QUESTION #1",
-    "options": ['wrong', 'right', 'wrong', 'wrong'],
-    "answer_index": 1,
-    "difficulty": 1,
-    "category": "placeholder cat 1",
-    "imageQuestion": true,
-  },
-  {
-    "id": 1,
-    "question": "CAT 1, EASY: PLACEHOLDER EASY QUESTION #2",
-    "options": ['wrong', 'right', 'wrong', 'wrong'],
-    "answer_index": 1,
-    "difficulty": 1,
-    "category": "placeholder cat 1",
-    "imageQuestion": true,
-  },
-  {
-    "id": 2,
-    "question": "CAT 3, MEDIUM: PLACEHOLDER MEDIUM QUESTION #1",
-    "options": ['wrong', 'wrong', 'right', 'wrong'],
-    "answer_index": 2,
-    "difficulty": 2,
-    "category": "placeholder cat 3",
-    "imageQuestion": false,
-  },
-  {
-    "id": 3,
-    "question": "CAT 2 HARD: PLACEHOLDER HARD QUESTION #1",
-    "options": ['wrong', 'wrong', 'right', 'wrong'],
-    "answer_index": 2,
-    "difficulty": 3,
-    "category": "placeholder cat 2",
-    "imageQuestion": false,
-  },
-  {
-    "id": 4,
-    "question": " CAT 2 MEDIUM: PLACEHOLDER MEDIUM QUESTION #2",
-    "options": ['wrong', 'wrong', 'right', 'wrong'],
-    "answer_index": 2,
-    "difficulty": 2,
-    "category": "placeholder cat 2",
-    "imageQuestion": false,
-  },
-  {
-    "id": 5,
-    "question": "CAT 3 EASY: PLACEHOLDER EASY QUESTION #2",
-    "options": ['wrong', 'right', 'wrong', 'wrong'],
-    "answer_index": 1,
-    "difficulty": 1,
-    "category": "placeholder cat 3",
-    "imageQuestion": false,
-  },
-  {
-    "id": 6,
-    "question": "CAT 1 HARD: PLACEHOLDER HARD QUESTION #2",
-    "options": ['right', 'wrong', 'wrong', 'wrong'],
-    "answer_index": 0,
-    "difficulty": 3,
-    "category": "placeholder cat 1",
-    "imageQuestion": false,
-  },
   {
     "id": 320,
     "question": "The \"Nowruz\" festival marks the start of the new year in which calendar?\n",
@@ -87,7 +23,7 @@ const List sample_data = [
     ],
     "answer_index": 1,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 321,
@@ -100,7 +36,7 @@ const List sample_data = [
     ],
     "answer_index": 1,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 322,
@@ -113,7 +49,7 @@ const List sample_data = [
     ],
     "answer_index": 0,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 323,
@@ -126,7 +62,7 @@ const List sample_data = [
     ],
     "answer_index": 1,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 324,
@@ -139,7 +75,7 @@ const List sample_data = [
     ],
     "answer_index": 1,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 325,
@@ -152,7 +88,7 @@ const List sample_data = [
     ],
     "answer_index": 3,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 326,
@@ -165,7 +101,7 @@ const List sample_data = [
     ],
     "answer_index": 1,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 327,
@@ -178,7 +114,7 @@ const List sample_data = [
     ],
     "answer_index": 0,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 328,
@@ -191,7 +127,7 @@ const List sample_data = [
     ],
     "answer_index": 1,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 329,
@@ -204,7 +140,7 @@ const List sample_data = [
     ],
     "answer_index": 0,
     "category": "Culture",
-    "difficulty": 2
+    "difficulty": 2,
   },
   {
     "id": 330,
@@ -215,10 +151,21 @@ const List sample_data = [
       "Zhou",
       "Ming"
     ],
-    "answer_index": "1",
+    "answer_index": 1,
     "category": "Culture",
-    "difficulty": 3
+    "difficulty": 3,
   },
-
-
+  {
+    "id": 330,
+    "question": "placeholder lamo",
+    "options": [
+      "Tang",
+      "CORRECT",
+      "Zhou",
+      "Ming"
+    ],
+    "answer_index": 1,
+    "category": "Capitals",
+    "difficulty": 1,
+  },
 ];

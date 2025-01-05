@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/question_list.dart';
@@ -21,18 +20,20 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
 
   //generates a list of questions from the file
   final List<Question> _questions = sample_data
-      .map(
-        (question) => Question(
-        id: question['id'],
-        question: question['question'],
-        options: question['options'],
-        answer: question['answer_index'],
-        difficulty: question['difficulty'],
-        category: question['category'],
-        imageQuestion: question['imageQuestion']),
-  )
-      .toList();
+        .map(
+          (question) => Question(
+          id: question['id'],
+          question: question['question'],
+          options: question['options'],
+          answer: question['answer_index'],
+          difficulty: question['difficulty'],
+          category: question['category']),
+    )
+        .toList();
   List<Question> get questionList => _questions;
+
+  final List<String> _categories = ["Capitals", "Geography", "Languages", "History", "Culture"];
+  List<String> get categoryList => _categories;
 
   late RxList<int> _answeredQuestionsIDList = <int>[].obs;
   List<int> get answeredQuestions => _answeredQuestionsIDList;
@@ -62,6 +63,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   // called immediately after the widget is allocated memory
   @override
   void onInit() {
+
     _questions.shuffle(Random());
 
     //probably do some weird thign like making a temporary list and then casting back and forth
@@ -80,7 +82,6 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   }
 
   void beginQuiz() {
-    //todo: animation controller is broke lmao
     try {
       _animationController =
           AnimationController(duration: const Duration(seconds: 60), vsync: this);
@@ -96,6 +97,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
 
     // start our animation
     // Once 60s is completed go to the next question
+    _animationController.reset();
     _animationController.forward().whenComplete(nextQuestion);
     _pageController = PageController();
   }
@@ -103,9 +105,9 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   // // called just before the Controller is deleted from memory
   @override
   void onClose() {
-    super.onClose();
     _animationController.dispose();
     _pageController.dispose();
+    super.onClose();
   }
 
   void checkAns(Question question, int selectedIndex) {
@@ -170,13 +172,11 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     _numOfCorrectAns = 0;
   }
 
-  //todo redo this function so that on startup it makes a list of all the questions the user has already answered.
   int findValidQuestion() {
     for (int i = 0; i < questionList.length; i++) {
       var currentQuestion = questionList[i];
       if (currentQuestion.difficulty == selectedDifficulty && currentQuestion.category == selectedCategory) {
         if (!answeredQuestions.contains(currentQuestion.id)) {
-          print("imagequestion is ${currentQuestion.imageQuestion}");
           return i;
         }
       }
