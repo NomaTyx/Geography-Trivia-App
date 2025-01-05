@@ -1,10 +1,10 @@
 class Question {
-  final int id, answer, difficulty, category;
-  final String question;
+  final int id, answer, difficulty;
+  final String question, category;
   final List<String> options;
   final bool imageQuestion;
 
-  Question({required this.id, required this.question, this.answer = 1, this.options = const [], this.difficulty = 1, this.category = 1, this.imageQuestion = false});
+  Question({required this.id, required this.question, this.answer = 1, this.options = const [], this.difficulty = 1, this.category = "placeholder cat 1", this.imageQuestion = false});
 
   String ToString(Question question) {
     return "question: ${this.question}";
@@ -19,7 +19,7 @@ const List sample_data = [
     "options": ['wrong', 'right', 'wrong', 'wrong'],
     "answer_index": 1,
     "difficulty": 1,
-    "category": 1,
+    "category": "placeholder cat 1",
     "imageQuestion": true,
   },
   {
@@ -28,7 +28,7 @@ const List sample_data = [
     "options": ['wrong', 'right', 'wrong', 'wrong'],
     "answer_index": 1,
     "difficulty": 1,
-    "category": 1,
+    "category": "placeholder cat 1",
     "imageQuestion": true,
   },
   {
@@ -37,7 +37,7 @@ const List sample_data = [
     "options": ['wrong', 'wrong', 'right', 'wrong'],
     "answer_index": 2,
     "difficulty": 2,
-    "category": 3,
+    "category": "placeholder cat 3",
     "imageQuestion": false,
   },
   {
@@ -46,7 +46,7 @@ const List sample_data = [
     "options": ['wrong', 'wrong', 'right', 'wrong'],
     "answer_index": 2,
     "difficulty": 3,
-    "category": 2,
+    "category": "placeholder cat 2",
     "imageQuestion": false,
   },
   {
@@ -55,7 +55,7 @@ const List sample_data = [
     "options": ['wrong', 'wrong', 'right', 'wrong'],
     "answer_index": 2,
     "difficulty": 2,
-    "category": 2,
+    "category": "placeholder cat 2",
     "imageQuestion": false,
   },
   {
@@ -64,7 +64,7 @@ const List sample_data = [
     "options": ['wrong', 'right', 'wrong', 'wrong'],
     "answer_index": 1,
     "difficulty": 1,
-    "category": 3,
+    "category": "placeholder cat 3",
     "imageQuestion": false,
   },
   {
@@ -73,7 +73,21 @@ const List sample_data = [
     "options": ['right', 'wrong', 'wrong', 'wrong'],
     "answer_index": 0,
     "difficulty": 3,
-    "category": 1,
+    "category": "placeholder cat 1",
     "imageQuestion": false,
   },
+  {
+    "id": 329,
+    "question": "The \"Lantern Festival\" in China marks the end of which celebration?\n",
+    "options": [
+      "Spring Festival",
+      "Harvest Festival",
+      "Mid-Autumn Festival",
+      "Double Ninth Festival"
+    ],
+    "answer_index": 0,
+    "category": "Culture",
+    "difficulty": "Medium"
+  }
+
 ];

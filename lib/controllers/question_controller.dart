@@ -43,8 +43,8 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   late int _selectedDifficulty;
   int get selectedDifficulty => _selectedDifficulty;
 
-  late int _selectedCategory;
-  int get selectedCategory => _selectedCategory;
+  late String _selectedCategory;
+  String get selectedCategory => _selectedCategory;
 
   late int _correctAns;
   int get correctAnswer => _correctAns;
@@ -80,6 +80,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   }
 
   void beginQuiz() {
+    //todo: animation controller is broke lmao
     try {
       _animationController =
           AnimationController(duration: const Duration(seconds: 60), vsync: this);
@@ -94,7 +95,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     }
 
     // start our animation
-    // Once 60s is completed go to the next qn
+    // Once 60s is completed go to the next question
     _animationController.forward().whenComplete(nextQuestion);
     _pageController = PageController();
   }
@@ -158,7 +159,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     print("The difficulty has been set to $difficultyToSet");
   }
 
-  void setCategory(int categoryToSet) {
+  void setCategory(String categoryToSet) {
     _selectedCategory = categoryToSet;
     print("The category has been set to $categoryToSet");
 
