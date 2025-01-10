@@ -12,7 +12,6 @@ class SettingsScreen extends StatelessWidget {
     PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
 
     return Scaffold(
-      backgroundColor: Colors.grey[800],
       // appBar: AppBar(
       //   title: const Text("Geography App"),
       //   centerTitle: true,
@@ -31,8 +30,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Divider(
-              height: 30,
-              color: Colors.grey[800],
+              height: 30
             ),
             const Center(
               child: Text(
@@ -52,8 +50,7 @@ class SettingsScreen extends StatelessWidget {
                 ),
             ),
             Divider(
-              height: 30,
-              color: Colors.grey[800],
+              height: 30
             ),
             ElevatedButton(
               onPressed: () {playerDataController.resetScore();},

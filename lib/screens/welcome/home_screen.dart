@@ -13,7 +13,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     print("hello");
     return Scaffold(
-      backgroundColor: Colors.grey[800],
       // appBar: AppBar(
       //   title: const Text("Geography App"),
       //   centerTitle: true,
@@ -25,19 +24,12 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const Center(
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/toge.jpg'),
-                radius: 40.0,
-              ),
-            ),
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
             const Center(
               child: Text(
-                'GEOGRAPHY APP',
+                'International IQ',
                 style: TextStyle(
                   letterSpacing: 2.0,
                   fontSize: 30.0,
@@ -47,27 +39,33 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Divider(
-              height: 75,
-              color: Colors.grey[800],
+              height: 75
             ),
 
             //PLAY BUTTON
             titleButton(context, 'PLAY', const CategorySelectionScreen()),
             Divider(
-              height: dividerHeight,
-              color: Colors.grey[800],
+              height: dividerHeight
             ),
 
             //SETTINGS BUTTON
             titleButton(context, 'SETTINGS', const SettingsScreen()),
             Divider(
-              height: dividerHeight,
-              color: Colors.grey[800],
+              height: dividerHeight
             ),
-
             //LEADERBOARD BUTTON
             titleButton(context, 'LEADERBOARD', const LeaderboardScreen()),
+            Divider(
+                height: dividerHeight
+            ),
+            const Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/originalAssets/globe.png'),
+                radius: 120.0,
+              ),
+            ),
           ],
+
         ),
       ),
     );

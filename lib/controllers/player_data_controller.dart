@@ -40,7 +40,7 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
   }
 
   Future<String> findDeviceID() async {
-    final DeviceInfoPlugin deviceInfoPlugin = new DeviceInfoPlugin();
+    final DeviceInfoPlugin deviceInfoPlugin = DeviceInfoPlugin();
     try {
       if (Platform.isAndroid) {
         var build = await deviceInfoPlugin.androidInfo;
@@ -96,7 +96,7 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
     print("score resetted");
   }
 
-  Future<void> FindTopPlayers(int numOfPlayers) async {
+  Future<void> findTopPlayers(int numOfPlayers) async {
     final docRef = await playerDatabase.collection("users");
     await docRef.orderBy("Score", descending: true).limit(numOfPlayers).get().then(
         (querySnapshot) {

@@ -19,7 +19,6 @@ class DifficultySelectionScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
       ),
-      backgroundColor: Colors.grey[800],
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
         child: Column(
@@ -33,7 +32,6 @@ class DifficultySelectionScreen extends StatelessWidget {
             ),
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
             const Center(
               child: Text(
@@ -48,21 +46,18 @@ class DifficultySelectionScreen extends StatelessWidget {
             ),
             Divider(
               height: 75,
-              color: Colors.grey[800],
             ),
 
             //PLAY BUTTON
             customButton(context, 'EASY', 1),
             Divider(
               height: dividerHeight,
-              color: Colors.grey[800],
             ),
 
             //SETTINGS BUTTON
             customButton(context, 'MEDIUM', 2),
             Divider(
               height: dividerHeight,
-              color: Colors.grey[800],
             ),
 
             //LEADERBOARD BUTTON

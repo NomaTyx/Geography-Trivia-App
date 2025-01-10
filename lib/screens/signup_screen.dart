@@ -29,7 +29,6 @@ class _MyAppState extends State<SignUpScreen> {
 
     String email = '', password = '';
     return Scaffold(
-      backgroundColor: Colors.grey[800],
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
         child: Column(
@@ -42,8 +41,7 @@ class _MyAppState extends State<SignUpScreen> {
               ),
             ),
             Divider(
-              height: 30,
-              color: Colors.grey[800],
+              height: 30
             ),
             const Center(
               child: Text(
@@ -57,8 +55,7 @@ class _MyAppState extends State<SignUpScreen> {
               ),
             ),
             Divider(
-              height: 30,
-              color: Colors.grey[800],
+              height: 30
             ),
             TextField(
               decoration: InputDecoration(hintText: 'enter your email address'),
@@ -68,7 +65,6 @@ class _MyAppState extends State<SignUpScreen> {
             ),
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
             TextField(
               //specifically not asking them to confirm a password because im not a PUSSY (also idk how to do it)
@@ -79,7 +75,6 @@ class _MyAppState extends State<SignUpScreen> {
             ),
             Divider(
               height: 80,
-              color: Colors.grey[800],
             ),
             ElevatedButton(
                 onPressed: () {authServices.signUp(email, password);},

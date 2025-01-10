@@ -13,7 +13,6 @@ class CategorySelectionScreen extends StatelessWidget {
     QuestionController questionController = Get.put(QuestionController());
     return Scaffold(
       extendBodyBehindAppBar: true,
-      backgroundColor: Colors.grey[800],
       appBar: AppBar(
         automaticallyImplyLeading: true,
         centerTitle: true,
@@ -33,7 +32,6 @@ class CategorySelectionScreen extends StatelessWidget {
             ),
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
             const Center(
               child: Text(

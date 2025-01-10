@@ -13,7 +13,6 @@ class LeaderboardScreen extends StatelessWidget {
     PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
 
     return Scaffold(
-      backgroundColor: Colors.grey[800],
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
         child: Column(
@@ -26,8 +25,7 @@ class LeaderboardScreen extends StatelessWidget {
               ),
             ),
             Divider(
-              height: 30,
-              color: Colors.grey[800],
+              height: 30
             ),
             const Center(
               child: Text(
@@ -98,7 +96,7 @@ class LeaderboardScreen extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () async {
-                  await playerDataController.FindTopPlayers(10);
+                  await playerDataController.findTopPlayers(10);
                 },
                 child: const Text('test top 10 list')
             )

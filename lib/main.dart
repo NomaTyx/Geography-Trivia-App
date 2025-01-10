@@ -22,7 +22,7 @@ void main() async {
   await playerDataController.findDeviceID();
   currentDeviceExists = await playerDataController.deviceExists();
   //make a public leaderboardSize variable?
-  await playerDataController.FindTopPlayers(10);
+  await playerDataController.findTopPlayers(10);
 
   runApp(const MyApp());
 }
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
+      theme: new ThemeData(scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 248, 1)),
       home: const HomeController(),
     );
   }

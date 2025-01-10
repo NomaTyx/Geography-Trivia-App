@@ -44,8 +44,9 @@ class AuthServices extends GetxController with GetSingleTickerProviderStateMixin
   }
 
   bool isLoggedIn() {
-    if(auth.currentUser != null)
+    if(auth.currentUser != null) {
       return true;
+    }
 
     return false;
   }
@@ -57,7 +58,7 @@ class AuthServices extends GetxController with GetSingleTickerProviderStateMixin
   }
 
   Future<void> findDeviceID() async {
-    final DeviceInfoPlugin deviceInfoPlugin = new DeviceInfoPlugin();
+    final DeviceInfoPlugin deviceInfoPlugin = DeviceInfoPlugin();
     try {
       if (Platform.isAndroid) {
         var build = await deviceInfoPlugin.androidInfo;

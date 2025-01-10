@@ -8,7 +8,6 @@ class NoMoreQuestionsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[800],
       // appBar: AppBar(
       //   title: const Text("Geography App"),
       //   centerTitle: true,

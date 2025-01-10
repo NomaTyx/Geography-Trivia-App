@@ -13,8 +13,6 @@ class NameScreen extends StatelessWidget {
     String name = 'timmy';
 
     return Scaffold(
-      backgroundColor: Colors.grey[800],
-
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
 
@@ -31,7 +29,6 @@ class NameScreen extends StatelessWidget {
 
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
 
             const Center(
@@ -48,7 +45,6 @@ class NameScreen extends StatelessWidget {
 
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
 
             TextField(
@@ -60,7 +56,6 @@ class NameScreen extends StatelessWidget {
 
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
 
             ElevatedButton(
@@ -102,7 +97,6 @@ class RegionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[800],
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
         child: Column(
@@ -116,7 +110,6 @@ class RegionScreen extends StatelessWidget {
             ),
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
             const Center(
               child: Text(
@@ -131,7 +124,6 @@ class RegionScreen extends StatelessWidget {
             ),
             Divider(
               height: 30,
-              color: Colors.grey[800],
             ),
             ListView.separated(
                 shrinkWrap: true,
