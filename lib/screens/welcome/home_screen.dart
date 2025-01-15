@@ -11,7 +11,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("hello");
+    //local variables go here i think
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
+
     return Scaffold(
       // appBar: AppBar(
       //   title: const Text("Geography App"),
@@ -24,9 +28,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Divider(
-              height: 30,
-            ),
+            Divider(height: 30, thickness: 0),
             const Center(
               child: Text(
                 'International IQ',
@@ -34,45 +36,41 @@ class HomeScreen extends StatelessWidget {
                   letterSpacing: 2.0,
                   fontSize: 30.0,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'Acme',
                   color: Colors.blue,
                 ),
               ),
             ),
-            Divider(
-              height: 75
-            ),
-
-            //PLAY BUTTON
-            titleButton(context, 'PLAY', const CategorySelectionScreen()),
-            Divider(
-              height: dividerHeight
-            ),
-
-            //SETTINGS BUTTON
-            titleButton(context, 'SETTINGS', const SettingsScreen()),
-            Divider(
-              height: dividerHeight
-            ),
-            //LEADERBOARD BUTTON
-            titleButton(context, 'LEADERBOARD', const LeaderboardScreen()),
-            Divider(
-                height: dividerHeight
-            ),
             const Center(
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/originalAssets/globe.png'),
-                radius: 120.0,
+              child: Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage(
+                        'assets/originalAssets/globe.png'),
+                    radius: 120.0,
+                  )
+              ),
+            ),
+            Center(
+              child: SizedBox(
+                width: width * 0.8,
+                height: height * 0.35,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    titleButton(context, 'PLAY', const CategorySelectionScreen()),
+                    titleButton(context, 'SETTINGS', const SettingsScreen()),
+                    titleButton(context, 'LEADERBOARD', const LeaderboardScreen()),
+                  ],
+                ),
               ),
             ),
           ],
-
         ),
       ),
     );
   }
 }
-
-
 
 Widget titleButton(BuildContext context, String buttonText, onPressMethod) {
   return SizedBox(
@@ -81,7 +79,7 @@ Widget titleButton(BuildContext context, String buttonText, onPressMethod) {
     child: ElevatedButton(
       onPressed: () {
         Get.to(onPressMethod);
-        },
+      },
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all<Color>(Colors.grey),
       ),
