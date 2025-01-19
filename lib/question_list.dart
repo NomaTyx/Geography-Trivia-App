@@ -3,7 +3,13 @@ class Question {
   final String question, category;
   final List<String> options;
 
-  Question({required this.id, required this.question, this.answer = 1, this.options = const [], this.difficulty = 1, this.category = "placeholder cat 1"});
+  Question(
+      {required this.id,
+      required this.question,
+      this.answer = 1,
+      this.options = const [],
+      this.difficulty = 1,
+      this.category = "placeholder cat 1"});
 
   String ToString(Question question) {
     return "question: ${this.question}";
@@ -363,7 +369,7 @@ const List sample_data = [
   },
   {
     "id": 43,
-    "question": "What is the capital of Qatar?\nA) \nB) \nC) \nD) *\n",
+    "question": "What is the capital of Qatar?",
     "options": ["Lusail", "Doha", "Al Rayyan", "Al Wakrah"],
     "answer_index": 1,
     "category": "Capitals",
@@ -1581,7 +1587,7 @@ const List sample_data = [
   {
     "id": 192,
     "question":
-    "The \"Carnival of Venice\" is an iconic festival in which country?",
+        "The \"Carnival of Venice\" is an iconic festival in which country?",
     "options": ["France", "Italy", "Portugal", "Spain"],
     "answer_index": 0,
     "category": "Culture",
@@ -1590,7 +1596,7 @@ const List sample_data = [
   {
     "id": 193,
     "question":
-    "\"Hanukkah,\" a Jewish holiday, is primarily observed in which country?",
+        "\"Hanukkah,\" a Jewish holiday, is primarily observed in which country?",
     "options": ["Argentina", "Canada", "Israel", "United States"],
     "answer_index": 2,
     "category": "Culture",
@@ -1599,7 +1605,7 @@ const List sample_data = [
   {
     "id": 194,
     "question":
-    "Where is the festival \"Oktoberfest\" traditionally celebrated?",
+        "Where is the festival \"Oktoberfest\" traditionally celebrated?",
     "options": ["Austria", "Denmark", "Germany", "Switzerland"],
     "answer_index": 2,
     "category": "Culture",
@@ -1608,7 +1614,7 @@ const List sample_data = [
   {
     "id": 195,
     "question":
-    "The \"Cherry Blossom Festival\" is most famously celebrated in which country?",
+        "The \"Cherry Blossom Festival\" is most famously celebrated in which country?",
     "options": ["China", "Japan", "South Korea", "Vietnam"],
     "answer_index": 1,
     "category": "Culture",
@@ -1617,7 +1623,7 @@ const List sample_data = [
   {
     "id": 196,
     "question":
-    "Which country is known for the \"Carnival\" in Rio de Janeiro?",
+        "Which country is known for the \"Carnival\" in Rio de Janeiro?",
     "options": ["Argentina", "Brazil", "Colombia", "Venezuela"],
     "answer_index": 1,
     "category": "Culture",
@@ -1626,7 +1632,7 @@ const List sample_data = [
   {
     "id": 197,
     "question":
-    "The \"Thanksgiving\" holiday is most closely associated with which country?",
+        "The \"Thanksgiving\" holiday is most closely associated with which country?",
     "options": ["Australia", " Canada", "United Kingdom", "United States"],
     "answer_index": 3,
     "category": "Culture",
@@ -1635,7 +1641,7 @@ const List sample_data = [
   {
     "id": 198,
     "question":
-    "\"La Tomatina,\" a tomato-throwing festival, takes place in which country?",
+        "\"La Tomatina,\" a tomato-throwing festival, takes place in which country?",
     "options": ["Greece", "Italy", "Portugal", "Spain"],
     "answer_index": 3,
     "category": "Culture",
@@ -1644,7 +1650,7 @@ const List sample_data = [
   {
     "id": 199,
     "question":
-    "\"St. Patrick's Day\" is a celebration originating from which country?",
+        "\"St. Patrick's Day\" is a celebration originating from which country?",
     "options": ["England", "Ireland", "Scotland", "Wales"],
     "answer_index": 1,
     "category": "Culture",
@@ -1661,7 +1667,7 @@ const List sample_data = [
   {
     "id": 201,
     "question":
-    "Where is the festival \"Durga Puja\" predominantly celebrated?",
+        "Where is the festival \"Durga Puja\" predominantly celebrated?",
     "options": ["Bangladesh", "Bhutan", "India", "Nepal"],
     "answer_index": 2,
     "category": "Culture",
@@ -1670,7 +1676,7 @@ const List sample_data = [
   {
     "id": 202,
     "question":
-    "The \"Day of the Dead\" or \"Día de los Muertos\" originates from which country?",
+        "The \"Day of the Dead\" or \"Día de los Muertos\" originates from which country?",
     "options": ["Argentina", "Mexico", "Peru", "Spain"],
     "answer_index": 1,
     "category": "Culture",
@@ -1703,7 +1709,7 @@ const List sample_data = [
   {
     "id": 206,
     "question":
-    "In which country is the festival \"Carnaval de Oruro\" celebrated?\n",
+        "In which country is the festival \"Carnaval de Oruro\" celebrated?\n",
     "options": ["Argentina", "Bolivia", "Ecuador", "Peru"],
     "answer_index": 1,
     "category": "Culture",
@@ -1712,7 +1718,7 @@ const List sample_data = [
   {
     "id": 207,
     "question":
-    "Where did the tradition of the \"Christmas tree\" originate?\n",
+        "Where did the tradition of the \"Christmas tree\" originate?\n",
     "options": ["Germany", "France", "United Kingdom", "Italy"],
     "answer_index": 0,
     "category": "Culture",
@@ -1742,7 +1748,7 @@ const List sample_data = [
   {
     "id": 210,
     "question":
-    "\"Tet,\" the Vietnamese New Year, marks the start of which calendar?",
+        "\"Tet,\" the Vietnamese New Year, marks the start of which calendar?",
     "options": [
       "Solar Calendar",
       "Lunar Calendar",
@@ -1756,7 +1762,7 @@ const List sample_data = [
   {
     "id": 211,
     "question":
-    "Which country is known for its traditional \"Highland Games\"?",
+        "Which country is known for its traditional \"Highland Games\"?",
     "options": ["England", "Ireland", "Scotland", "Wales"],
     "answer_index": 2,
     "category": "Culture",
@@ -1765,7 +1771,7 @@ const List sample_data = [
   {
     "id": 212,
     "question":
-    "Where is the \"Mardi Gras\" festival most famously celebrated in the United States?",
+        "Where is the \"Mardi Gras\" festival most famously celebrated in the United States?",
     "options": ["California", "Florida", "Louisiana", "Texas"],
     "answer_index": 2,
     "category": "Culture",
@@ -1790,7 +1796,7 @@ const List sample_data = [
   {
     "id": 215,
     "question":
-    "The \"Lantern Festival\" marks the end of which country's New Year celebrations?\n",
+        "The \"Lantern Festival\" marks the end of which country's New Year celebrations?\n",
     "options": ["China", "Japan", "South Korea", "Thailand"],
     "answer_index": 0,
     "category": "Culture",
@@ -1799,7 +1805,7 @@ const List sample_data = [
   {
     "id": 216,
     "question":
-    "\"Boxing Day\" is traditionally celebrated in which country?\n",
+        "\"Boxing Day\" is traditionally celebrated in which country?\n",
     "options": ["United Kingdom", "United States", " Canada", "Australia"],
     "answer_index": 0,
     "category": "Culture",
@@ -1824,7 +1830,7 @@ const List sample_data = [
   {
     "id": 219,
     "question":
-    "In which country is the \"Songkran\" water festival celebrated?\n",
+        "In which country is the \"Songkran\" water festival celebrated?\n",
     "options": [" Laos", "Vietnam", "Thailand", "Cambodia"],
     "answer_index": 2,
     "category": "Culture",
@@ -1849,7 +1855,7 @@ const List sample_data = [
   {
     "id": 222,
     "question":
-    "The \"Samba Parade\" is a key event in which country's Carnival celebrations?",
+        "The \"Samba Parade\" is a key event in which country's Carnival celebrations?",
     "options": ["Argentina", "Brazil", "Colombia", "Venezuela"],
     "answer_index": 1,
     "category": "Culture",
@@ -1866,7 +1872,7 @@ const List sample_data = [
   {
     "id": 224,
     "question":
-    "The \"Song Festival\" is a cultural event in which Baltic country?",
+        "The \"Song Festival\" is a cultural event in which Baltic country?",
     "options": [" Latvia", "Estonia", "Lithuania", "Poland"],
     "answer_index": 1,
     "category": "Culture",
@@ -1875,7 +1881,7 @@ const List sample_data = [
   {
     "id": 225,
     "question":
-    "Which country hosts the annual \"Tulip Festival\" in Keukenhof Gardens?",
+        "Which country hosts the annual \"Tulip Festival\" in Keukenhof Gardens?",
     "options": ["Belgium", "Netherlands", "France", "Germany"],
     "answer_index": 1,
     "category": "Culture",
@@ -1884,7 +1890,7 @@ const List sample_data = [
   {
     "id": 226,
     "question":
-    "The \"Day of Silence\" or \"Nyepi\" is celebrated in which country?",
+        "The \"Day of Silence\" or \"Nyepi\" is celebrated in which country?",
     "options": ["Philippines", "Thailand", "Malaysia", "Indonesia"],
     "answer_index": 3,
     "category": "Culture",
@@ -1893,7 +1899,7 @@ const List sample_data = [
   {
     "id": 227,
     "question":
-    "\"Carnaval de Negros y Blancos\" is celebrated in which South American country?",
+        "\"Carnaval de Negros y Blancos\" is celebrated in which South American country?",
     "options": ["Venezuela", "Colombia", " Ecuador", "Peru"],
     "answer_index": 1,
     "category": "Culture",
@@ -1910,7 +1916,7 @@ const List sample_data = [
   {
     "id": 229,
     "question":
-    "Gion Matsuri\" is a famous festival held in which Japanese city?",
+        "Gion Matsuri\" is a famous festival held in which Japanese city?",
     "options": ["Tokyo", "Osaka", "Kyoto", "Nagoya"],
     "answer_index": 2,
     "category": "Culture",
@@ -1927,7 +1933,7 @@ const List sample_data = [
   {
     "id": 231,
     "question":
-    "\"Inti Raymi\" is a sun festival celebrated in which country?\n",
+        "\"Inti Raymi\" is a sun festival celebrated in which country?\n",
     "options": ["Bolivia", "Chile", "Ecuador", "Peru"],
     "answer_index": 3,
     "category": "Culture",
@@ -1968,7 +1974,7 @@ const List sample_data = [
   {
     "id": 236,
     "question":
-    "\"Boryeong Mud Festival,\" a unique summer event, takes place in which country?",
+        "\"Boryeong Mud Festival,\" a unique summer event, takes place in which country?",
     "options": ["Japan", "South Korea", "China", "Vietnam"],
     "answer_index": 1,
     "category": "Culture",
@@ -1977,7 +1983,7 @@ const List sample_data = [
   {
     "id": 237,
     "question":
-    "\"Semana Santa\" (Holy Week) is widely celebrated in which country?",
+        "\"Semana Santa\" (Holy Week) is widely celebrated in which country?",
     "options": ["Spain", "Italy", "Mexico", "Brazil"],
     "answer_index": 0,
     "category": "Culture",
@@ -1994,7 +2000,7 @@ const List sample_data = [
   {
     "id": 239,
     "question":
-    "\"Carnival of Ivrea,\" known for its Battle of Oranges, is celebrated in which country?",
+        "\"Carnival of Ivrea,\" known for its Battle of Oranges, is celebrated in which country?",
     "options": ["France", "Spain", "Portugal", "Italy"],
     "answer_index": 3,
     "category": "Culture",
@@ -2003,7 +2009,7 @@ const List sample_data = [
   {
     "id": 240,
     "question":
-    "Which country celebrates the \"Bonfire Night\" or \"Guy Fawkes Night\"?",
+        "Which country celebrates the \"Bonfire Night\" or \"Guy Fawkes Night\"?",
     "options": ["United States", "Canada", "United Kingdom", "Ireland"],
     "answer_index": 2,
     "category": "Culture",
@@ -2012,7 +2018,7 @@ const List sample_data = [
   {
     "id": 241,
     "question":
-    "The \"Fallas Festival,\" famous for its massive sculptures, takes place in which city?",
+        "The \"Fallas Festival,\" famous for its massive sculptures, takes place in which city?",
     "options": ["Madrid", "Barcelona", "Valencia", "Seville"],
     "answer_index": 2,
     "category": "Culture",
@@ -2021,7 +2027,7 @@ const List sample_data = [
   {
     "id": 242,
     "question":
-    "\"Carnival of Quebec\" is a winter festival celebrated in which country?",
+        "\"Carnival of Quebec\" is a winter festival celebrated in which country?",
     "options": ["Canada", "United States", "France", "Belgium"],
     "answer_index": 0,
     "category": "Culture",
@@ -2038,7 +2044,7 @@ const List sample_data = [
   {
     "id": 244,
     "question":
-    "\"Hanami\" is the tradition of flower viewing in which country?",
+        "\"Hanami\" is the tradition of flower viewing in which country?",
     "options": ["Japan", "China", "South Korea", "Vietnam"],
     "answer_index": 0,
     "category": "Culture",
@@ -2055,7 +2061,7 @@ const List sample_data = [
   {
     "id": 246,
     "question":
-    "The \"Song and Dance Festival\" is held every five years in which Baltic country?",
+        "The \"Song and Dance Festival\" is held every five years in which Baltic country?",
     "options": ["Estonia", "Lithuania", "Latvia", "Poland"],
     "answer_index": 0,
     "category": "Culture",
@@ -2064,7 +2070,7 @@ const List sample_data = [
   {
     "id": 247,
     "question":
-    "\"Día de la Raza\" or \"Day of the Race\" is celebrated in which region?",
+        "\"Día de la Raza\" or \"Day of the Race\" is celebrated in which region?",
     "options": ["North America", "Europe", "Latin America", "Southeast Asia"],
     "answer_index": 2,
     "category": "Culture",
@@ -2073,7 +2079,7 @@ const List sample_data = [
   {
     "id": 248,
     "question":
-    "Which country celebrates the \"Spring Festival,\" also known as Chinese New Year?\n",
+        "Which country celebrates the \"Spring Festival,\" also known as Chinese New Year?\n",
     "options": ["Japan", "China", "South Korea", "Taiwan"],
     "answer_index": 1,
     "category": "Culture",
@@ -2082,7 +2088,7 @@ const List sample_data = [
   {
     "id": 249,
     "question":
-    "The \"Lòi Krathong\" festival of lights is celebrated in which country?",
+        "The \"Lòi Krathong\" festival of lights is celebrated in which country?",
     "options": ["Laos", "Vietnam", "Thailand", "Cambodia"],
     "answer_index": 2,
     "category": "Culture",
@@ -2099,7 +2105,7 @@ const List sample_data = [
   {
     "id": 251,
     "question":
-    "The \"Čechia Harvest Festival\" celebrates autumn traditions in which country?\n",
+        "The \"Čechia Harvest Festival\" celebrates autumn traditions in which country?\n",
     "options": [" Czech Republic", "Slovakia", "Hungary", "Austria"],
     "answer_index": 0,
     "category": "Culture",
@@ -2108,7 +2114,7 @@ const List sample_data = [
   {
     "id": 252,
     "question":
-    "Which country celebrates \"White Nights Festival,\" a summer event?",
+        "Which country celebrates \"White Nights Festival,\" a summer event?",
     "options": ["Norway", "Sweden", "Russia", "Finland"],
     "answer_index": 2,
     "category": "Culture",
@@ -2117,7 +2123,7 @@ const List sample_data = [
   {
     "id": 253,
     "question":
-    "\"Venice Film Festival,\" the oldest of its kind, is held in which country?",
+        "\"Venice Film Festival,\" the oldest of its kind, is held in which country?",
     "options": ["France", "Italy", "Spain", "Germany"],
     "answer_index": 1,
     "category": "Culture",
@@ -2134,7 +2140,7 @@ const List sample_data = [
   {
     "id": 255,
     "question":
-    "\"Inti Raymi,\" the Festival of the Sun, is celebrated in which country?",
+        "\"Inti Raymi,\" the Festival of the Sun, is celebrated in which country?",
     "options": ["Bolivia", "Peru", "Ecuador", "Chile"],
     "answer_index": 1,
     "category": "Culture",
@@ -2143,7 +2149,7 @@ const List sample_data = [
   {
     "id": 256,
     "question":
-    "\"Junkanoo,\" a traditional street parade, is celebrated in which country?",
+        "\"Junkanoo,\" a traditional street parade, is celebrated in which country?",
     "options": ["Jamaica", "Trinidad and Tobago", "Bahamas", "Barbados"],
     "answer_index": 2,
     "category": "Culture",
@@ -2152,7 +2158,7 @@ const List sample_data = [
   {
     "id": 257,
     "question":
-    "The \"Timkat Festival\" celebrates Epiphany in which African country?",
+        "The \"Timkat Festival\" celebrates Epiphany in which African country?",
     "options": ["Sudan", "Kenya", "Ethiopia", "Eritrea"],
     "answer_index": 2,
     "category": "Culture",
@@ -2169,7 +2175,7 @@ const List sample_data = [
   {
     "id": 259,
     "question":
-    "\"Pahiyas Festival,\" known for its colorful displays, is celebrated in which country?",
+        "\"Pahiyas Festival,\" known for its colorful displays, is celebrated in which country?",
     "options": ["Malaysia", "Philippines", "Indonesia", "Thailand"],
     "answer_index": 1,
     "category": "Culture",
@@ -2178,7 +2184,7 @@ const List sample_data = [
   {
     "id": 260,
     "question":
-    "The \"Obando Fertility Rites\" is a unique festival in which country?",
+        "The \"Obando Fertility Rites\" is a unique festival in which country?",
     "options": [" India", "Sri Lanka", "Philippines", "Indonesia"],
     "answer_index": 2,
     "category": "Culture",
@@ -2187,7 +2193,7 @@ const List sample_data = [
   {
     "id": 261,
     "question":
-    "The \"Harbin Ice Festival\" is held annually in which country?",
+        "The \"Harbin Ice Festival\" is held annually in which country?",
     "options": ["South Korea", "Japan", "Russia", "China"],
     "answer_index": 3,
     "category": "Culture",
@@ -2209,7 +2215,7 @@ const List sample_data = [
   {
     "id": 263,
     "question":
-    "\"Carnival Tuesday\" is most famously celebrated in which country?",
+        "\"Carnival Tuesday\" is most famously celebrated in which country?",
     "options": ["Trinidad and Tobago", "Venezuela", "Brazil", "Colombia"],
     "answer_index": 0,
     "category": "Culture",
@@ -2226,7 +2232,7 @@ const List sample_data = [
   {
     "id": 265,
     "question":
-    "Which country celebrates the \"Holi Hai Festival of Colors\"?\n",
+        "Which country celebrates the \"Holi Hai Festival of Colors\"?\n",
     "options": ["India", "Bangladesh", "Nepal", "Sri Lanka"],
     "answer_index": 0,
     "category": "Culture",
@@ -2235,7 +2241,7 @@ const List sample_data = [
   {
     "id": 266,
     "question":
-    "\"Golden Eagle Festival\" is an event that celebrates hunting traditions in which country?",
+        "\"Golden Eagle Festival\" is an event that celebrates hunting traditions in which country?",
     "options": ["Kazakhstan", "Russia", "Mongolia", "Kyrgyzstan"],
     "answer_index": 2,
     "category": "Culture",
@@ -2244,7 +2250,7 @@ const List sample_data = [
   {
     "id": 267,
     "question":
-    "The 'Loi Krathong' festival is celebrated by floating what on water?\n",
+        "The 'Loi Krathong' festival is celebrated by floating what on water?\n",
     "options": ["Boats", "Lanterns", "Candles", "Flowers"],
     "answer_index": 2,
     "category": "Culture",
@@ -2253,7 +2259,7 @@ const List sample_data = [
   {
     "id": 268,
     "question":
-    "The 'Day of Silence' or 'Nyepi' is observed in which country?\n",
+        "The 'Day of Silence' or 'Nyepi' is observed in which country?\n",
     "options": ["Malaysia", "Thailand", "Indonesia", "Philippines"],
     "answer_index": 2,
     "category": "Culture",
@@ -2278,7 +2284,7 @@ const List sample_data = [
   {
     "id": 271,
     "question":
-    "'Seollal,' the Lunar New Year, is a major holiday in which country?\n",
+        "'Seollal,' the Lunar New Year, is a major holiday in which country?\n",
     "options": ["Vietnam", "China", "Japan", "South Korea"],
     "answer_index": 3,
     "category": "Culture",
@@ -2287,7 +2293,7 @@ const List sample_data = [
   {
     "id": 272,
     "question":
-    "'Vesak,' the celebration of Buddha's birth, is celebrated in which country?\n",
+        "'Vesak,' the celebration of Buddha's birth, is celebrated in which country?\n",
     "options": ["Sri Lanka", "Myanmar", "Thailand", "India"],
     "answer_index": 0,
     "category": "Culture",
@@ -2330,7 +2336,7 @@ const List sample_data = [
   {
     "id": 276,
     "question":
-    "'Lunar New Year' is widely celebrated in East Asia. Which zodiac animal starts the cycle?\n",
+        "'Lunar New Year' is widely celebrated in East Asia. Which zodiac animal starts the cycle?\n",
     "options": ["Rat", "Ox", "Tiger", "Rabbit"],
     "answer_index": 0,
     "category": "Culture",
@@ -2339,7 +2345,7 @@ const List sample_data = [
   {
     "id": 277,
     "question":
-    "'Seollal,' the Lunar New Year festival, is celebrated in which country?\n",
+        "'Seollal,' the Lunar New Year festival, is celebrated in which country?\n",
     "options": ["South Korea", "China", "Vietnam", "Japan"],
     "answer_index": 0,
     "category": "Culture",
@@ -2348,7 +2354,7 @@ const List sample_data = [
   {
     "id": 278,
     "question":
-    "'Golden Week' is a collection of holidays celebrated in which country?\n",
+        "'Golden Week' is a collection of holidays celebrated in which country?\n",
     "options": ["Japan", "South Korea", "China", "Taiwan"],
     "answer_index": 0,
     "category": "Culture",
@@ -2357,7 +2363,7 @@ const List sample_data = [
   {
     "id": 279,
     "question":
-    "Which festival involves the tradition of building and floating large paper lanterns on water?\n",
+        "Which festival involves the tradition of building and floating large paper lanterns on water?\n",
     "options": [
       "Loi Krathong",
       "Carnival of Venice",
@@ -2371,7 +2377,7 @@ const List sample_data = [
   {
     "id": 280,
     "question":
-    "'Feria de Abril,' a spring fair, is celebrated in which Spanish city?\n",
+        "'Feria de Abril,' a spring fair, is celebrated in which Spanish city?\n",
     "options": ["Barcelona", "Valencia", "Madrid", "Seville"],
     "answer_index": 3,
     "category": "Culture",
@@ -2396,7 +2402,7 @@ const List sample_data = [
   {
     "id": 283,
     "question":
-    "Which South American country celebrates the 'Fiesta de la Vendimia,' a festival focused on grape harvest?\n",
+        "Which South American country celebrates the 'Fiesta de la Vendimia,' a festival focused on grape harvest?\n",
     "options": ["Argentina", "Chile", "Peru", "Brazil"],
     "answer_index": 0,
     "category": "Culture",
@@ -2405,7 +2411,7 @@ const List sample_data = [
   {
     "id": 284,
     "question":
-    "The 'Baisakhi Festival' is associated with the harvest in which country?\n",
+        "The 'Baisakhi Festival' is associated with the harvest in which country?\n",
     "options": ["Pakistan", "India", "Nepal", "Bangladesh"],
     "answer_index": 1,
     "category": "Culture",
@@ -2422,7 +2428,7 @@ const List sample_data = [
   {
     "id": 286,
     "question":
-    "The 'Diwali' festival, known as the festival of lights, is celebrated primarily by which religion?\n",
+        "The 'Diwali' festival, known as the festival of lights, is celebrated primarily by which religion?\n",
     "options": ["Islam", "Hinduism", "Buddhism", "Sikhism"],
     "answer_index": 1,
     "category": "Culture",
@@ -2444,7 +2450,7 @@ const List sample_data = [
   {
     "id": 288,
     "question":
-    "'Semana Santa' or Holy Week is most elaborately celebrated in which country?\n",
+        "'Semana Santa' or Holy Week is most elaborately celebrated in which country?\n",
     "options": ["Brazil", "Mexico", "Spain", "Argentina"],
     "answer_index": 2,
     "category": "Culture",
@@ -2453,7 +2459,7 @@ const List sample_data = [
   {
     "id": 289,
     "question":
-    "The 'Lunar New Year' is widely celebrated in East Asia. Which zodiac animal starts the cycle?\n",
+        "The 'Lunar New Year' is widely celebrated in East Asia. Which zodiac animal starts the cycle?\n",
     "options": ["Rat", "Ox", "Tiger", "Rabbit"],
     "answer_index": 0,
     "category": "Culture",
@@ -2475,7 +2481,7 @@ const List sample_data = [
   {
     "id": 291,
     "question":
-    "The 'Sapporo Snow Festival' is held annually in which country?\n",
+        "The 'Sapporo Snow Festival' is held annually in which country?\n",
     "options": ["Japan", "South Korea", "China", "Mongolia"],
     "answer_index": 0,
     "category": "Culture",
@@ -2492,7 +2498,7 @@ const List sample_data = [
   {
     "id": 293,
     "question":
-    "'Feria de Abril,' a spring fair, is celebrated in which Spanish city?\n",
+        "'Feria de Abril,' a spring fair, is celebrated in which Spanish city?\n",
     "options": ["Barcelona", "Valencia", "Madrid", "Seville"],
     "answer_index": 3,
     "category": "Culture",
@@ -2501,7 +2507,7 @@ const List sample_data = [
   {
     "id": 294,
     "question":
-    "Which country celebrates the 'Spring Festival' as its most significant holiday?\n",
+        "Which country celebrates the 'Spring Festival' as its most significant holiday?\n",
     "options": ["Japan", "Vietnam", "China", "South Korea"],
     "answer_index": 2,
     "category": "Culture",
@@ -2518,7 +2524,7 @@ const List sample_data = [
   {
     "id": 296,
     "question":
-    "'Lożi Krathong' involves floating small boats made of what material?\n",
+        "'Lożi Krathong' involves floating small boats made of what material?\n",
     "options": ["Wood", "Banana leaves", "Paper", "Plastic"],
     "answer_index": 1,
     "category": "Culture",
@@ -2527,7 +2533,7 @@ const List sample_data = [
   {
     "id": 297,
     "question":
-    "The 'Carnival of Barranquilla' is a UNESCO-recognized festival in which country?\n",
+        "The 'Carnival of Barranquilla' is a UNESCO-recognized festival in which country?\n",
     "options": ["Venezuela", "Ecuador", "Colombia", "Peru"],
     "answer_index": 2,
     "category": "Culture",
@@ -2536,7 +2542,7 @@ const List sample_data = [
   {
     "id": 298,
     "question":
-    "'Inti Raymi,' celebrated in Cusco, pays homage to which deity?\n",
+        "'Inti Raymi,' celebrated in Cusco, pays homage to which deity?\n",
     "options": ["Rain god", "Sun god", "Earth goddess", "Sky god"],
     "answer_index": 1,
     "category": "Culture",
@@ -2545,7 +2551,7 @@ const List sample_data = [
   {
     "id": 299,
     "question":
-    "The 'Song Festival' is a national event in which Baltic country?\n",
+        "The 'Song Festival' is a national event in which Baltic country?\n",
     "options": ["Estonia", "Lithuania", "Latvia", "Finland"],
     "answer_index": 0,
     "category": "Culture",
@@ -2588,7 +2594,7 @@ const List sample_data = [
   {
     "id": 303,
     "question":
-    "The 'Midsummer Festival' is prominently celebrated in which Scandinavian country?\n",
+        "The 'Midsummer Festival' is prominently celebrated in which Scandinavian country?\n",
     "options": ["Norway", "Sweden", "Denmark", "Finland"],
     "answer_index": 1,
     "category": "Culture",
@@ -2605,7 +2611,7 @@ const List sample_data = [
   {
     "id": 305,
     "question":
-    "'Krampusnacht,' a unique tradition, originated in which country?\n",
+        "'Krampusnacht,' a unique tradition, originated in which country?\n",
     "options": ["Austria", "Germany", "Switzerland", "Hungary"],
     "answer_index": 0,
     "category": "Culture",
@@ -2614,7 +2620,7 @@ const List sample_data = [
   {
     "id": 306,
     "question":
-    "Which country celebrates 'White Nights Festival' during the summer solstice?\n",
+        "Which country celebrates 'White Nights Festival' during the summer solstice?\n",
     "options": ["Russia", "Norway", "Sweden", "Finland"],
     "answer_index": 0,
     "category": "Culture",
@@ -2623,7 +2629,7 @@ const List sample_data = [
   {
     "id": 307,
     "question":
-    "'Tet Nguyen Dan,' the Vietnamese New Year, is celebrated with:\n",
+        "'Tet Nguyen Dan,' the Vietnamese New Year, is celebrated with:\n",
     "options": [
       "Fireworks and lanterns",
       "Water fights",
@@ -2637,7 +2643,7 @@ const List sample_data = [
   {
     "id": 308,
     "question":
-    "The 'Highland Games' are a traditional festival in which country?\n",
+        "The 'Highland Games' are a traditional festival in which country?\n",
     "options": ["Scotland", "Ireland", "Wales", "England"],
     "answer_index": 0,
     "category": "Culture",
@@ -2646,7 +2652,7 @@ const List sample_data = [
   {
     "id": 309,
     "question":
-    "'Junkanoo' parades in the Bahamas are traditionally held on:\n",
+        "'Junkanoo' parades in the Bahamas are traditionally held on:\n",
     "options": [
       "Christmas Day and New Year’s Day",
       "Easter Sunday",
@@ -2673,7 +2679,7 @@ const List sample_data = [
   {
     "id": 311,
     "question":
-    "\"Golden Week\" in Japan combines multiple holidays. Which is NOT one of them?\n",
+        "\"Golden Week\" in Japan combines multiple holidays. Which is NOT one of them?\n",
     "options": [
       "Showa Day",
       "Constitution Memorial Day",
@@ -2687,7 +2693,7 @@ const List sample_data = [
   {
     "id": 312,
     "question":
-    "The \"Día de la Raza\" or \"Day of the Race\" celebrates cultural diversity in which region?\n",
+        "The \"Día de la Raza\" or \"Day of the Race\" celebrates cultural diversity in which region?\n",
     "options": [
       "Southeast Asia",
       "Latin America",
@@ -2701,7 +2707,7 @@ const List sample_data = [
   {
     "id": 313,
     "question":
-    "The \"Mid-Autumn Festival\" in China traditionally involves eating what?\n",
+        "The \"Mid-Autumn Festival\" in China traditionally involves eating what?\n",
     "options": ["Dumplings", "Noodles", "Mooncakes", "Spring rolls"],
     "answer_index": 2,
     "category": "Culture",
@@ -2710,7 +2716,7 @@ const List sample_data = [
   {
     "id": 314,
     "question":
-    "The \"Carnival of Venice\" traditionally ends before which religious observance?\n",
+        "The \"Carnival of Venice\" traditionally ends before which religious observance?\n",
     "options": ["Easter", "Lent", "Advent", "Pentecost"],
     "answer_index": 1,
     "category": "Culture",
@@ -2719,7 +2725,7 @@ const List sample_data = [
   {
     "id": 315,
     "question":
-    "\"Songkran,\" the Thai New Year, involves what unique activity?\n",
+        "\"Songkran,\" the Thai New Year, involves what unique activity?\n",
     "options": [
       "Throwing water",
       "Releasing lanterns",
@@ -2733,7 +2739,7 @@ const List sample_data = [
   {
     "id": 316,
     "question":
-    "\"Sinulog Festival,\" held in Cebu, honors which Christian figure?\n",
+        "\"Sinulog Festival,\" held in Cebu, honors which Christian figure?\n",
     "options": [
       "Virgin Mary",
       "Santo Niño (Child Jesus)",
@@ -2747,7 +2753,7 @@ const List sample_data = [
   {
     "id": 317,
     "question":
-    "The \"Dragon Boat Festival\" in China commemorates which historical figure?\n",
+        "The \"Dragon Boat Festival\" in China commemorates which historical figure?\n",
     "options": ["Confucius", "Qu Yuan", "Sun Tzu", "Liu Bang"],
     "answer_index": 1,
     "category": "Culture",
@@ -2756,7 +2762,7 @@ const List sample_data = [
   {
     "id": 318,
     "question":
-    "Which flower is a symbol of the Japanese \"Hanami\" festival?\n",
+        "Which flower is a symbol of the Japanese \"Hanami\" festival?\n",
     "options": ["Chrysanthemum", "Cherry blossom", "Lotus", "Plum blossom"],
     "answer_index": 1,
     "category": "Culture",
@@ -2765,7 +2771,7 @@ const List sample_data = [
   {
     "id": 319,
     "question":
-    "The \"Midsummer Festival\" in Sweden typically features what activity?\n",
+        "The \"Midsummer Festival\" in Sweden typically features what activity?\n",
     "options": [
       "Dancing around a maypole",
       "Building bonfires",
@@ -2779,7 +2785,7 @@ const List sample_data = [
   {
     "id": 320,
     "question":
-    "The \"Nowruz\" festival marks the start of the new year in which calendar?\n",
+        "The \"Nowruz\" festival marks the start of the new year in which calendar?\n",
     "options": [
       "Julian Calendar",
       "Persian Calendar",
@@ -2793,7 +2799,7 @@ const List sample_data = [
   {
     "id": 321,
     "question":
-    "\"Vesak,\" celebrating Buddha's birthday, is primarily observed in which country?\n",
+        "\"Vesak,\" celebrating Buddha's birthday, is primarily observed in which country?\n",
     "options": ["Thailand", "Sri Lanka", "Myanmar", "Cambodia"],
     "answer_index": 1,
     "category": "Culture",
@@ -2802,7 +2808,7 @@ const List sample_data = [
   {
     "id": 322,
     "question":
-    "The \"Carnival of Binche,\" known for its Gilles performers, is celebrated in which country?\n",
+        "The \"Carnival of Binche,\" known for its Gilles performers, is celebrated in which country?\n",
     "options": ["Belgium", "Netherlands", "France", "Switzerland"],
     "answer_index": 0,
     "category": "Culture",
@@ -2811,7 +2817,7 @@ const List sample_data = [
   {
     "id": 323,
     "question":
-    "\"Bonfire Night\" or \"Guy Fawkes Night\" commemorates an event in which year?\n",
+        "\"Bonfire Night\" or \"Guy Fawkes Night\" commemorates an event in which year?\n",
     "options": ["1588", "1605", "1649", "1707"],
     "answer_index": 1,
     "category": "Culture",
@@ -2833,7 +2839,7 @@ const List sample_data = [
   {
     "id": 325,
     "question":
-    "\"Boryeong Mud Festival\" in South Korea promotes what activity?\n",
+        "\"Boryeong Mud Festival\" in South Korea promotes what activity?\n",
     "options": [
       "Mud wrestling",
       "Mud baths",
@@ -2847,7 +2853,7 @@ const List sample_data = [
   {
     "id": 326,
     "question":
-    "The \"White Nights Festival\" in Russia is primarily celebrated in which city?\n",
+        "The \"White Nights Festival\" in Russia is primarily celebrated in which city?\n",
     "options": ["Moscow", "Saint Petersburg", "Sochi", "Kazan"],
     "answer_index": 1,
     "category": "Culture",
@@ -2864,7 +2870,7 @@ const List sample_data = [
   {
     "id": 328,
     "question":
-    "The \"Golden Eagle Festival\" in Mongolia showcases what traditional activity?\n",
+        "The \"Golden Eagle Festival\" in Mongolia showcases what traditional activity?\n",
     "options": [
       "Horse racing",
       "Eagle hunting",
@@ -2878,7 +2884,7 @@ const List sample_data = [
   {
     "id": 329,
     "question":
-    "The \"Lantern Festival\" in China marks the end of which celebration?\n",
+        "The \"Lantern Festival\" in China marks the end of which celebration?\n",
     "options": [
       "Spring Festival",
       "Harvest Festival",
@@ -2892,7 +2898,7 @@ const List sample_data = [
   {
     "id": 330,
     "question":
-    "\"Lunar New Year\" originated in which ancient Chinese dynasty?\n",
+        "\"Lunar New Year\" originated in which ancient Chinese dynasty?\n",
     "options": ["Tang", "Han", "Zhou", "Ming"],
     "answer_index": 1,
     "category": "Culture",
@@ -2901,7 +2907,7 @@ const List sample_data = [
   {
     "id": 331,
     "question":
-    "The \"Thaipusam\" festival, involving body piercings as a form of devotion, is celebrated in which country?\n",
+        "The \"Thaipusam\" festival, involving body piercings as a form of devotion, is celebrated in which country?\n",
     "options": ["India", "Malaysia", "Sri Lanka", "Singapore"],
     "answer_index": 1,
     "category": "Culture",
@@ -2910,7 +2916,7 @@ const List sample_data = [
   {
     "id": 332,
     "question":
-    "The \"Kalash Festival,\" honoring deities in Greek-inspired rituals, is celebrated in which region?\n",
+        "The \"Kalash Festival,\" honoring deities in Greek-inspired rituals, is celebrated in which region?\n",
     "options": ["Pakistan", "Afghanistan", "India", "Iran"],
     "answer_index": 0,
     "category": "Culture",
@@ -2919,7 +2925,7 @@ const List sample_data = [
   {
     "id": 333,
     "question":
-    "The \"Día de San Fermín,\" which includes bull running, is celebrated in which city?\n",
+        "The \"Día de San Fermín,\" which includes bull running, is celebrated in which city?\n",
     "options": ["Seville", "Valencia", "Pamplona", "Madrid"],
     "answer_index": 2,
     "category": "Culture",
@@ -2928,7 +2934,7 @@ const List sample_data = [
   {
     "id": 334,
     "question":
-    "The \"Pushkar Camel Fair\" in India is held in which Indian state?\n",
+        "The \"Pushkar Camel Fair\" in India is held in which Indian state?\n",
     "options": ["Rajasthan", "Gujarat", "Uttar Pradesh", "Madhya Pradesh"],
     "answer_index": 0,
     "category": "Culture",
@@ -2937,7 +2943,7 @@ const List sample_data = [
   {
     "id": 335,
     "question":
-    "\"Inti Raymi,\" the Incan Festival of the Sun, is held at which historic site?\n",
+        "\"Inti Raymi,\" the Incan Festival of the Sun, is held at which historic site?\n",
     "options": [
       "Machu Picchu",
       "Sacsayhuamán",
@@ -2951,7 +2957,7 @@ const List sample_data = [
   {
     "id": 336,
     "question":
-    "Which Persian king is associated with the origins of \"Nowruz\"?\n",
+        "Which Persian king is associated with the origins of \"Nowruz\"?\n",
     "options": ["Darius the Great", "Cyrus the Great", "Xerxes", "Artaxerxes"],
     "answer_index": 1,
     "category": "Culture",
@@ -2960,7 +2966,7 @@ const List sample_data = [
   {
     "id": 337,
     "question":
-    "\"Carnival of Ivrea,\" a festival involving an orange-throwing battle, is held in which region of Italy?\n",
+        "\"Carnival of Ivrea,\" a festival involving an orange-throwing battle, is held in which region of Italy?\n",
     "options": ["Lombardy", "Piedmont", "Veneto", "Emilia-Romagna"],
     "answer_index": 1,
     "category": "Culture",
@@ -2969,7 +2975,7 @@ const List sample_data = [
   {
     "id": 338,
     "question":
-    "The \"Golden Eagle Festival\" is celebrated by which ethnic group in Mongolia?\n",
+        "The \"Golden Eagle Festival\" is celebrated by which ethnic group in Mongolia?\n",
     "options": ["Khalkha Mongols", "Kazakhs", "Uzbeks", "Buryats"],
     "answer_index": 1,
     "category": "Culture",
@@ -2978,7 +2984,7 @@ const List sample_data = [
   {
     "id": 339,
     "question":
-    "\"Bon Om Touk,\" Cambodia's Water Festival, celebrates what natural phenomenon?\n",
+        "\"Bon Om Touk,\" Cambodia's Water Festival, celebrates what natural phenomenon?\n",
     "options": [
       "Reverse flow of the Tonle Sap River",
       "Monsoon season ending",
@@ -2992,7 +2998,7 @@ const List sample_data = [
   {
     "id": 340,
     "question":
-    "Which ancient Mayan city is the focal point of the \"Equinox Festival\"?\n",
+        "Which ancient Mayan city is the focal point of the \"Equinox Festival\"?\n",
     "options": ["Tikal", "Chichen Itza", "Copan", "Palenque"],
     "answer_index": 1,
     "category": "Culture",
@@ -3009,7 +3015,7 @@ const List sample_data = [
   {
     "id": 342,
     "question":
-    "The \"Midsummer Festival\" in Latvia is traditionally called:\n",
+        "The \"Midsummer Festival\" in Latvia is traditionally called:\n",
     "options": ["Jani", "Kupala", "Ligo", "Saulgriezi"],
     "answer_index": 2,
     "category": "Culture",
@@ -3018,7 +3024,7 @@ const List sample_data = [
   {
     "id": 343,
     "question":
-    "The \"Timkat Festival\" in Ethiopia reenacts which biblical event?\n",
+        "The \"Timkat Festival\" in Ethiopia reenacts which biblical event?\n",
     "options": ["Baptism of Jesus", "Last Supper", "Resurrection", "Exodus"],
     "answer_index": 0,
     "category": "Culture",
@@ -3027,7 +3033,7 @@ const List sample_data = [
   {
     "id": 344,
     "question":
-    "\"Tet,\" the Vietnamese Lunar New Year, features which traditional food?\n",
+        "\"Tet,\" the Vietnamese Lunar New Year, features which traditional food?\n",
     "options": [
       "Banh Tet (sticky rice cake)",
       "Pho (noodle soup)",
@@ -3041,7 +3047,7 @@ const List sample_data = [
   {
     "id": 345,
     "question":
-    "\"Gion Matsuri\" in Kyoto is celebrated with large floats called:\n",
+        "\"Gion Matsuri\" in Kyoto is celebrated with large floats called:\n",
     "options": ["Yamaboko", "Mikoshi", "Dashi", "Omikoshi"],
     "answer_index": 0,
     "category": "Culture",
@@ -3050,7 +3056,7 @@ const List sample_data = [
   {
     "id": 346,
     "question":
-    "The \"Rose Festival\" in Bulgaria is celebrated in which valley?\n",
+        "The \"Rose Festival\" in Bulgaria is celebrated in which valley?\n",
     "options": [
       "Thracian Valley",
       "Valley of Roses",
@@ -3077,7 +3083,7 @@ const List sample_data = [
   {
     "id": 348,
     "question":
-    "\"Carnaval de Negros y Blancos\" in Colombia originated in which city?\n",
+        "\"Carnaval de Negros y Blancos\" in Colombia originated in which city?\n",
     "options": ["Pasto", "Cali", "Medellin", "Bogota"],
     "answer_index": 0,
     "category": "Culture",
@@ -3086,7 +3092,7 @@ const List sample_data = [
   {
     "id": 349,
     "question":
-    "\"White Nights Festival,\" celebrated during the summer solstice, occurs in which city?\n",
+        "\"White Nights Festival,\" celebrated during the summer solstice, occurs in which city?\n",
     "options": ["Moscow", "Helsinki", "Saint Petersburg", "Oslo"],
     "answer_index": 2,
     "category": "Culture",
@@ -3134,7 +3140,7 @@ const List sample_data = [
   {
     "id": 353,
     "question":
-    "The \"Carnival of Binche\" in Belgium features performers dressed as:\n",
+        "The \"Carnival of Binche\" in Belgium features performers dressed as:\n",
     "options": ["Clowns", "Gilles", "Jesters", "Harlequins"],
     "answer_index": 1,
     "category": "Culture",
@@ -3143,7 +3149,7 @@ const List sample_data = [
   {
     "id": 354,
     "question":
-    "\"Inti Raymi,\" the Festival of the Sun, aligns with which celestial event?\n",
+        "\"Inti Raymi,\" the Festival of the Sun, aligns with which celestial event?\n",
     "options": [
       "Summer solstice",
       "Winter solstice",
@@ -3157,7 +3163,7 @@ const List sample_data = [
   {
     "id": 355,
     "question":
-    "The \"Loy Krathong\" festival in Thailand involves floating what in rivers?\n",
+        "The \"Loy Krathong\" festival in Thailand involves floating what in rivers?\n",
     "options": [
       "Banana-leaf boats",
       "Candles in jars",
@@ -3171,7 +3177,7 @@ const List sample_data = [
   {
     "id": 356,
     "question":
-    "The \"Día de Muertos\" (Day of the Dead) altar includes what traditional element?\n",
+        "The \"Día de Muertos\" (Day of the Dead) altar includes what traditional element?\n",
     "options": ["Sugar skulls", "Candles", "Marigolds", "All of the above"],
     "answer_index": 3,
     "category": "Culture",
@@ -3261,7 +3267,7 @@ const List sample_data = [
   {
     "id": 364,
     "question":
-    "The \"Boryeong Mud Festival\" in South Korea originally promoted:\n",
+        "The \"Boryeong Mud Festival\" in South Korea originally promoted:\n",
     "options": [
       "Mud cosmetics",
       "Agricultural heritage",
@@ -3325,7 +3331,7 @@ const List sample_data = [
   {
     "id": 370,
     "question":
-    "The \"Obon Festival\" in Japan includes the custom of sending floating lanterns down rivers. What does this symbolize?\n",
+        "The \"Obon Festival\" in Japan includes the custom of sending floating lanterns down rivers. What does this symbolize?\n",
     "options": [
       "Letting go of grief",
       "Guiding ancestral spirits",
@@ -3339,7 +3345,7 @@ const List sample_data = [
   {
     "id": 371,
     "question":
-    "The \"Timkat Festival\" in Ethiopia is a reenactment of which sacrament?\n",
+        "The \"Timkat Festival\" in Ethiopia is a reenactment of which sacrament?\n",
     "options": ["Baptism", "Communion", "Marriage", "Anointing"],
     "answer_index": 0,
     "category": "Culture",
@@ -3348,7 +3354,7 @@ const List sample_data = [
   {
     "id": 372,
     "question":
-    "The \"Golden Eagle Festival\" in Mongolia takes place during which season?\n",
+        "The \"Golden Eagle Festival\" in Mongolia takes place during which season?\n",
     "options": ["Spring", "Summer", "Fall", "Winter"],
     "answer_index": 2,
     "category": "Culture",
@@ -3357,7 +3363,7 @@ const List sample_data = [
   {
     "id": 373,
     "question":
-    "\"Krampusnacht\" is celebrated in conjunction with which feast day?\n",
+        "\"Krampusnacht\" is celebrated in conjunction with which feast day?\n",
     "options": [
       "Saint Nicholas Day",
       "All Saints' Day",
@@ -3371,7 +3377,7 @@ const List sample_data = [
   {
     "id": 374,
     "question":
-    "The \"Carnival of Binche\" in Belgium is recognized by UNESCO as what type of heritage?\n",
+        "The \"Carnival of Binche\" in Belgium is recognized by UNESCO as what type of heritage?\n",
     "options": [
       "Tangible Cultural Heritage",
       "Intangible Cultural Heritage",
@@ -3385,7 +3391,7 @@ const List sample_data = [
   {
     "id": 375,
     "question":
-    "\"Inti Raymi,\" celebrated in Cusco, Peru, takes place on what date?\n",
+        "\"Inti Raymi,\" celebrated in Cusco, Peru, takes place on what date?\n",
     "options": ["June 21", "June 24", "July 1", "July 4"],
     "answer_index": 1,
     "category": "Culture",
@@ -3394,7 +3400,7 @@ const List sample_data = [
   {
     "id": 376,
     "question":
-    "The \"White Nights Festival\" in Saint Petersburg, Russia, celebrates what natural phenomenon?\n",
+        "The \"White Nights Festival\" in Saint Petersburg, Russia, celebrates what natural phenomenon?\n",
     "options": [
       "Midnight sun",
       "Aurora borealis",
@@ -3408,7 +3414,7 @@ const List sample_data = [
   {
     "id": 377,
     "question":
-    "The \"Spring Festival\" in China marks the start of which traditional calendar?\n",
+        "The \"Spring Festival\" in China marks the start of which traditional calendar?\n",
     "options": [
       "Solar calendar",
       "Lunisolar calendar",
@@ -3422,7 +3428,7 @@ const List sample_data = [
   {
     "id": 378,
     "question":
-    "\"Songkran,\" the Thai New Year, traditionally lasts how many days?\n",
+        "\"Songkran,\" the Thai New Year, traditionally lasts how many days?\n",
     "options": ["2", "3", "4", "5"],
     "answer_index": 1,
     "category": "Culture",
@@ -3431,7 +3437,7 @@ const List sample_data = [
   {
     "id": 379,
     "question":
-    "The \"Día de Muertos\" (Day of the Dead) combines indigenous beliefs with which religion?\n",
+        "The \"Día de Muertos\" (Day of the Dead) combines indigenous beliefs with which religion?\n",
     "options": ["Christianity", "Judaism", "Buddhism", "Islam"],
     "answer_index": 0,
     "category": "Culture",
@@ -3440,7 +3446,7 @@ const List sample_data = [
   {
     "id": 380,
     "question":
-    "The \"Lozi Kuomboka Festival\" in Zambia involves moving the king to higher ground. What is the mode of transportation?\n",
+        "The \"Lozi Kuomboka Festival\" in Zambia involves moving the king to higher ground. What is the mode of transportation?\n",
     "options": ["Rafts", "Canoes", "Royal barges", "Elephants"],
     "answer_index": 2,
     "category": "Culture",
@@ -3449,7 +3455,7 @@ const List sample_data = [
   {
     "id": 381,
     "question":
-    "The \"Maslenitsa Festival\" in Russia is known for what culinary tradition?\n",
+        "The \"Maslenitsa Festival\" in Russia is known for what culinary tradition?\n",
     "options": [
       "Baking pancakes",
       "Eating dumplings",
@@ -3463,7 +3469,7 @@ const List sample_data = [
   {
     "id": 382,
     "question":
-    "The \"Carnaval de Negros y Blancos\" in Colombia symbolizes what?\n",
+        "The \"Carnaval de Negros y Blancos\" in Colombia symbolizes what?\n",
     "options": [
       "Racial unity and equality",
       "Agricultural abundance",
@@ -3477,7 +3483,7 @@ const List sample_data = [
   {
     "id": 383,
     "question":
-    "\"Vesak,\" celebrated in Sri Lanka, Thailand, and other Buddhist countries, commemorates what?\n",
+        "\"Vesak,\" celebrated in Sri Lanka, Thailand, and other Buddhist countries, commemorates what?\n",
     "options": [
       "Birth, enlightenment, and death of Buddha",
       "Buddha's ascension to heaven",
@@ -3491,7 +3497,7 @@ const List sample_data = [
   {
     "id": 384,
     "question":
-    "The \"Up Helly Aa\" fire festival in Scotland culminates in what?\n",
+        "The \"Up Helly Aa\" fire festival in Scotland culminates in what?\n",
     "options": [
       "Burning a Viking longship",
       "A torch-lit march",
@@ -3505,7 +3511,7 @@ const List sample_data = [
   {
     "id": 385,
     "question":
-    "\"Nowruz,\" the Persian New Year, is traditionally celebrated with what symbolic activity?\n",
+        "\"Nowruz,\" the Persian New Year, is traditionally celebrated with what symbolic activity?\n",
     "options": [
       "Jumping over fire",
       "Releasing birds",
@@ -3519,7 +3525,7 @@ const List sample_data = [
   {
     "id": 386,
     "question":
-    "The \"Midsummer Festival\" in Latvia features wreaths made of:\n",
+        "The \"Midsummer Festival\" in Latvia features wreaths made of:\n",
     "options": ["Birch leaves", "Oak leaves", "Straw", "Lavender"],
     "answer_index": 1,
     "category": "Culture",
@@ -3536,7 +3542,7 @@ const List sample_data = [
   {
     "id": 388,
     "question":
-    "\"Tet,\" the Vietnamese Lunar New Year, includes gifting what for good luck?\n",
+        "\"Tet,\" the Vietnamese Lunar New Year, includes gifting what for good luck?\n",
     "options": [
       "Red envelopes with money",
       "Gold coins",
@@ -3558,7 +3564,7 @@ const List sample_data = [
   {
     "id": 390,
     "question":
-    "The \"Fallas Festival\" in Valencia, Spain, is unique for its:\n",
+        "The \"Fallas Festival\" in Valencia, Spain, is unique for its:\n",
     "options": [
       "Parade of giant puppets",
       "Burning of large sculptures",
@@ -3572,7 +3578,7 @@ const List sample_data = [
   {
     "id": 391,
     "question":
-    "The \"Lantern Festival\" in China coincides with which lunar event?\n",
+        "The \"Lantern Festival\" in China coincides with which lunar event?\n",
     "options": ["Full moon", "New moon", "Eclipse", "Solstice"],
     "answer_index": 0,
     "category": "Culture",
@@ -3594,7 +3600,7 @@ const List sample_data = [
   {
     "id": 393,
     "question":
-    "The \"Venice Film Festival\" is held on which Venetian island?\n",
+        "The \"Venice Film Festival\" is held on which Venetian island?\n",
     "options": ["Murano", "Burano", "Lido", "Torcello"],
     "answer_index": 2,
     "category": "Culture",
@@ -3603,7 +3609,7 @@ const List sample_data = [
   {
     "id": 394,
     "question":
-    "\"Hanami,\" the Japanese cherry blossom viewing, symbolizes:\n",
+        "\"Hanami,\" the Japanese cherry blossom viewing, symbolizes:\n",
     "options": [
       "Transience of life",
       "Prosperity and wealth",
@@ -3662,7 +3668,7 @@ const List sample_data = [
   {
     "id": 400,
     "question":
-    "Which leader is commonly known as the 'Father of India' for nonviolent resistance?",
+        "Which leader is commonly known as the 'Father of India' for nonviolent resistance?",
     "options": [
       "Winston Churchill",
       "Mahatma Gandhi",
@@ -3676,7 +3682,7 @@ const List sample_data = [
   {
     "id": 401,
     "question":
-    "Which country was famously led by Winston Churchill during World War II?",
+        "Which country was famously led by Winston Churchill during World War II?",
     "options": ["France", "United Kingdom", "United States", "Germany"],
     "answer_index": 1,
     "category": "History",
@@ -3685,7 +3691,7 @@ const List sample_data = [
   {
     "id": 402,
     "question":
-    "Who was known as the 'Iron Lady', serving as Prime Minister of the UK?",
+        "Who was known as the 'Iron Lady', serving as Prime Minister of the UK?",
     "options": [
       "Angela Merkel",
       "Margaret Thatcher",
@@ -3699,7 +3705,7 @@ const List sample_data = [
   {
     "id": 403,
     "question":
-    "Which African country was never colonized by a European power?",
+        "Which African country was never colonized by a European power?",
     "options": ["Liberia", "Ghana", "Kenya", "Ethiopia"],
     "answer_index": 3,
     "category": "History",
@@ -3766,7 +3772,7 @@ const List sample_data = [
   {
     "id": 410,
     "question":
-    "Which famous nurse was known as the 'Lady with the Lamp' in the Crimean War?",
+        "Which famous nurse was known as the 'Lady with the Lamp' in the Crimean War?",
     "options": [
       "Clara Barton",
       "Marie Curie",
@@ -3801,7 +3807,7 @@ const List sample_data = [
   {
     "id": 413,
     "question":
-    "Which country was known as the 'Jewel in the Crown' of the British Empire?",
+        "Which country was known as the 'Jewel in the Crown' of the British Empire?",
     "options": ["Australia", "Canada", "South Africa", "India"],
     "answer_index": 3,
     "category": "History",
@@ -3810,7 +3816,7 @@ const List sample_data = [
   {
     "id": 414,
     "question":
-    "Who was the principal author of the Declaration of Independence (USA)?",
+        "Who was the principal author of the Declaration of Independence (USA)?",
     "options": [
       "Alexander Hamilton",
       "Thomas Jefferson",
@@ -3866,7 +3872,7 @@ const List sample_data = [
   {
     "id": 419,
     "question":
-    "Which revolution is associated with the storming of the Bastille (1789)?",
+        "Which revolution is associated with the storming of the Bastille (1789)?",
     "options": [
       "Russian Revolution",
       "French Revolution",
@@ -3896,7 +3902,7 @@ const List sample_data = [
   {
     "id": 422,
     "question":
-    "Which U.S. president famously said, 'The only thing we have to fear is fear itself'?",
+        "Which U.S. president famously said, 'The only thing we have to fear is fear itself'?",
     "options": [
       "Franklin D. Roosevelt",
       "Theodore Roosevelt",
@@ -3918,7 +3924,7 @@ const List sample_data = [
   {
     "id": 424,
     "question":
-    "In which modern-day country were the ancient city-states of Athens and Sparta located?",
+        "In which modern-day country were the ancient city-states of Athens and Sparta located?",
     "options": ["Turkey", "Italy", "Greece", "Cyprus"],
     "answer_index": 2,
     "category": "History",
@@ -3927,7 +3933,7 @@ const List sample_data = [
   {
     "id": 425,
     "question":
-    "Who was known as the 'Sun King' and built the Palace of Versailles in France?",
+        "Who was known as the 'Sun King' and built the Palace of Versailles in France?",
     "options": ["Louis XIV", "Henry IV", "Napoleon Bonaparte", "Francis I"],
     "answer_index": 0,
     "category": "History",
@@ -3936,7 +3942,7 @@ const List sample_data = [
   {
     "id": 426,
     "question":
-    "Which city was famously destroyed by a volcanic eruption in AD 79?",
+        "Which city was famously destroyed by a volcanic eruption in AD 79?",
     "options": ["Alexandria", "Pompeii", "Athens", "Carthage"],
     "answer_index": 1,
     "category": "History",
@@ -3945,7 +3951,7 @@ const List sample_data = [
   {
     "id": 427,
     "question":
-    "Which political leader is associated with the term 'Iron Curtain' in post-WWII Europe?",
+        "Which political leader is associated with the term 'Iron Curtain' in post-WWII Europe?",
     "options": [
       "Franklin D. Roosevelt",
       "Joseph Stalin",
@@ -3985,7 +3991,7 @@ const List sample_data = [
   {
     "id": 430,
     "question":
-    "Which country was the first to grant women the right to vote (1893)?",
+        "Which country was the first to grant women the right to vote (1893)?",
     "options": ["Australia", "New Zealand", "Canada", "Finland"],
     "answer_index": 1,
     "category": "History",
@@ -3994,7 +4000,7 @@ const List sample_data = [
   {
     "id": 431,
     "question":
-    "Which war took place between the North and South regions of the United States (1861–1865)?",
+        "Which war took place between the North and South regions of the United States (1861–1865)?",
     "options": [
       "American Civil War",
       "Mexican-American War",
@@ -4008,7 +4014,7 @@ const List sample_data = [
   {
     "id": 432,
     "question":
-    "Which civilization built the famous 'Hanging Gardens,' one of the Seven Wonders?",
+        "Which civilization built the famous 'Hanging Gardens,' one of the Seven Wonders?",
     "options": ["Babylonians", "Assyrians", "Phoenicians", "Hittites"],
     "answer_index": 0,
     "category": "History",
@@ -4017,7 +4023,7 @@ const List sample_data = [
   {
     "id": 433,
     "question":
-    "Who wrote the 'Communist Manifesto' alongside Friedrich Engels?",
+        "Who wrote the 'Communist Manifesto' alongside Friedrich Engels?",
     "options": ["Karl Marx", "Vladimir Lenin", "Joseph Stalin", "Leon Trotsky"],
     "answer_index": 0,
     "category": "History",
@@ -4026,7 +4032,7 @@ const List sample_data = [
   {
     "id": 434,
     "question":
-    "Which country was divided into North and South after WWII, eventually reuniting in 1990?",
+        "Which country was divided into North and South after WWII, eventually reuniting in 1990?",
     "options": ["Vietnam", "Yugoslavia", "Germany", "Korea"],
     "answer_index": 2,
     "category": "History",
@@ -4035,7 +4041,7 @@ const List sample_data = [
   {
     "id": 435,
     "question":
-    "Who led the Indian independence movement via nonviolent civil disobedience?",
+        "Who led the Indian independence movement via nonviolent civil disobedience?",
     "options": [
       "Jawaharlal Nehru",
       "Mahatma Gandhi",
@@ -4049,7 +4055,7 @@ const List sample_data = [
   {
     "id": 436,
     "question":
-    "Which U.S. president was in office during the Louisiana Purchase (1803)?",
+        "Which U.S. president was in office during the Louisiana Purchase (1803)?",
     "options": [
       "Thomas Jefferson",
       "George Washington",
@@ -4063,7 +4069,7 @@ const List sample_data = [
   {
     "id": 437,
     "question":
-    "What was the last name of the brothers who pioneered the first successful airplane flight in 1903?",
+        "What was the last name of the brothers who pioneered the first successful airplane flight in 1903?",
     "options": ["Smith", "Edison", "Wright", "Bell"],
     "answer_index": 2,
     "category": "History",
@@ -4080,7 +4086,7 @@ const List sample_data = [
   {
     "id": 439,
     "question":
-    "Which European explorer is credited with circumnavigating the globe first (though he died en route)?",
+        "Which European explorer is credited with circumnavigating the globe first (though he died en route)?",
     "options": [
       "Christopher Columbus",
       "Vasco da Gama",
@@ -4110,7 +4116,7 @@ const List sample_data = [
   {
     "id": 442,
     "question":
-    "Which ancient empire was famous for its well-organized Legions and roads?",
+        "Which ancient empire was famous for its well-organized Legions and roads?",
     "options": [
       "Mongol Empire",
       "Aztec Empire",
@@ -4124,7 +4130,7 @@ const List sample_data = [
   {
     "id": 443,
     "question":
-    "Which scientist is famous for the law of gravitation after an apple supposedly fell on his head?",
+        "Which scientist is famous for the law of gravitation after an apple supposedly fell on his head?",
     "options": [
       "Isaac Newton",
       "Galileo Galilei",
@@ -4138,7 +4144,7 @@ const List sample_data = [
   {
     "id": 444,
     "question":
-    "Which country was part of the Axis Powers in WWII alongside Germany and Japan?",
+        "Which country was part of the Axis Powers in WWII alongside Germany and Japan?",
     "options": ["Italy", "United Kingdom", "Spain", "France"],
     "answer_index": 0,
     "category": "History",
@@ -4147,7 +4153,7 @@ const List sample_data = [
   {
     "id": 445,
     "question":
-    "Who was the U.S. president during the majority of World War I?",
+        "Who was the U.S. president during the majority of World War I?",
     "options": [
       "Woodrow Wilson",
       "Theodore Roosevelt",
@@ -4169,7 +4175,7 @@ const List sample_data = [
   {
     "id": 447,
     "question":
-    "The Boer Wars (late 19th–early 20th century) were fought in which region?",
+        "The Boer Wars (late 19th–early 20th century) were fought in which region?",
     "options": ["South Africa", "Egypt", "Australia", "Morocco"],
     "answer_index": 0,
     "category": "History",
@@ -4178,7 +4184,7 @@ const List sample_data = [
   {
     "id": 448,
     "question":
-    "Which English king had six wives, breaking from the Catholic Church to form the Church of England?",
+        "Which English king had six wives, breaking from the Catholic Church to form the Church of England?",
     "options": ["Henry VII", "Henry VIII", "Richard III", "Charles I"],
     "answer_index": 1,
     "category": "History",
@@ -4187,7 +4193,7 @@ const List sample_data = [
   {
     "id": 449,
     "question":
-    "Who discovered the sea route to India around the Cape of Good Hope (1498)?",
+        "Who discovered the sea route to India around the Cape of Good Hope (1498)?",
     "options": [
       "Vasco da Gama",
       "Bartolomeu Dias",
@@ -4201,7 +4207,7 @@ const List sample_data = [
   {
     "id": 450,
     "question":
-    "Who was the first Emperor of a unified China, founding the Qin Dynasty?",
+        "Who was the first Emperor of a unified China, founding the Qin Dynasty?",
     "options": [
       "Sun Yat-sen",
       "Qin Shi Huang",
@@ -4228,7 +4234,7 @@ const List sample_data = [
   {
     "id": 452,
     "question":
-    "Who was the key revolutionary leader of Cuba, seizing power in 1959?",
+        "Who was the key revolutionary leader of Cuba, seizing power in 1959?",
     "options": [
       "Raúl Castro",
       "Che Guevara",
@@ -4242,7 +4248,7 @@ const List sample_data = [
   {
     "id": 453,
     "question":
-    "Which revolutionary is known for leading independence movements in South America (Gran Colombia)?",
+        "Which revolutionary is known for leading independence movements in South America (Gran Colombia)?",
     "options": [
       "Simón Bolívar",
       "Miguel Hidalgo",
@@ -4256,7 +4262,7 @@ const List sample_data = [
   {
     "id": 454,
     "question":
-    "Which ancient Mesopotamian ruler is known for a written code of laws?",
+        "Which ancient Mesopotamian ruler is known for a written code of laws?",
     "options": [
       "Sargon of Akkad",
       "Nebuchadnezzar II",
@@ -4270,7 +4276,7 @@ const List sample_data = [
   {
     "id": 455,
     "question":
-    "Which empire's downfall was marked by the capture of Constantinople in 1453?",
+        "Which empire's downfall was marked by the capture of Constantinople in 1453?",
     "options": [
       "Byzantine Empire",
       "Persian Empire",
@@ -4284,7 +4290,7 @@ const List sample_data = [
   {
     "id": 456,
     "question":
-    "Who was the King of Macedonia that created a vast empire before dying at 32?",
+        "Who was the King of Macedonia that created a vast empire before dying at 32?",
     "options": [
       "Alexander the Great",
       "Philip II",
@@ -4306,7 +4312,7 @@ const List sample_data = [
   {
     "id": 458,
     "question":
-    "Which revolution in 1917 led to the creation of the Soviet Union?",
+        "Which revolution in 1917 led to the creation of the Soviet Union?",
     "options": [
       "Chinese Revolution",
       "French Revolution",
@@ -4320,7 +4326,7 @@ const List sample_data = [
   {
     "id": 459,
     "question":
-    "Who was the main author of the Declaration of the Rights of Woman and the Female Citizen (1791)?",
+        "Who was the main author of the Declaration of the Rights of Woman and the Female Citizen (1791)?",
     "options": [
       "Mary Wollstonecraft",
       "Olympe de Gouges",
@@ -4334,7 +4340,7 @@ const List sample_data = [
   {
     "id": 460,
     "question":
-    "Which Roman general became dictator for life before being assassinated in 44 BC?",
+        "Which Roman general became dictator for life before being assassinated in 44 BC?",
     "options": [
       "Julius Caesar",
       "Pompey",
@@ -4348,7 +4354,7 @@ const List sample_data = [
   {
     "id": 461,
     "question":
-    "Which empire was based in Tenochtitlan (modern-day Mexico City)?",
+        "Which empire was based in Tenochtitlan (modern-day Mexico City)?",
     "options": ["Inca", "Mayan", "Aztec", "Toltec"],
     "answer_index": 2,
     "category": "History",
@@ -4357,7 +4363,7 @@ const List sample_data = [
   {
     "id": 462,
     "question":
-    "Who was the first democratically elected President of South Africa (1994)?",
+        "Who was the first democratically elected President of South Africa (1994)?",
     "options": ["Nelson Mandela", "Jacob Zuma", "Thabo Mbeki", "Desmond Tutu"],
     "answer_index": 0,
     "category": "History",
@@ -4366,7 +4372,7 @@ const List sample_data = [
   {
     "id": 463,
     "question":
-    "Which empire was centered on Constantinople, also known as Byzantium?",
+        "Which empire was centered on Constantinople, also known as Byzantium?",
     "options": [
       "Byzantine Empire",
       "Ottoman Empire",
@@ -4393,7 +4399,7 @@ const List sample_data = [
   {
     "id": 465,
     "question":
-    "Who was the final monarch of the Hawaiian Kingdom before U.S. annexation?",
+        "Who was the final monarch of the Hawaiian Kingdom before U.S. annexation?",
     "options": [
       "King Kamehameha I",
       "Queen Ka‘ahumanu",
@@ -4407,7 +4413,7 @@ const List sample_data = [
   {
     "id": 466,
     "question":
-    "Which Greek historian is often called the 'Father of History'?",
+        "Which Greek historian is often called the 'Father of History'?",
     "options": ["Herodotus", "Thucydides", "Plutarch", "Xenophon"],
     "answer_index": 0,
     "category": "History",
@@ -4416,7 +4422,7 @@ const List sample_data = [
   {
     "id": 467,
     "question":
-    "Which empire's downfall was triggered by Francisco Pizarro's conquest in the 16th century?",
+        "Which empire's downfall was triggered by Francisco Pizarro's conquest in the 16th century?",
     "options": ["Inca Empire", "Aztec Empire", "Mayan Empire", "Mughal Empire"],
     "answer_index": 0,
     "category": "History",
@@ -4425,7 +4431,7 @@ const List sample_data = [
   {
     "id": 468,
     "question":
-    "Which U.S. president authorized the use of the atomic bomb in WWII?",
+        "Which U.S. president authorized the use of the atomic bomb in WWII?",
     "options": [
       "Harry S. Truman",
       "Franklin D. Roosevelt",
@@ -4460,7 +4466,7 @@ const List sample_data = [
   {
     "id": 471,
     "question":
-    "Which U.S. civil rights leader refused to give up her seat on a segregated bus (1955)?",
+        "Which U.S. civil rights leader refused to give up her seat on a segregated bus (1955)?",
     "options": [
       "Rosa Parks",
       "Harriet Tubman",
@@ -4474,7 +4480,7 @@ const List sample_data = [
   {
     "id": 472,
     "question":
-    "Which empire was known for its 'code of law' carved on a stela, discovered in Iran?",
+        "Which empire was known for its 'code of law' carved on a stela, discovered in Iran?",
     "options": ["Babylonian (Hammurabi)", "Assyrian", "Egyptian", "Hittite"],
     "answer_index": 0,
     "category": "History",
@@ -4483,7 +4489,7 @@ const List sample_data = [
   {
     "id": 473,
     "question":
-    "Which event is often dated from 1095 to 1291 involving multiple religious military campaigns?",
+        "Which event is often dated from 1095 to 1291 involving multiple religious military campaigns?",
     "options": [
       "The Crusades",
       "The Reconquista",
@@ -4497,7 +4503,7 @@ const List sample_data = [
   {
     "id": 474,
     "question":
-    "Who overthrew the Provisional Government in Russia and led the Bolsheviks to power?",
+        "Who overthrew the Provisional Government in Russia and led the Bolsheviks to power?",
     "options": [
       "Leon Trotsky",
       "Vladimir Lenin",
@@ -4511,7 +4517,7 @@ const List sample_data = [
   {
     "id": 475,
     "question":
-    "Which Chinese dynasty was established after driving out the Mongol Yuan Dynasty in 1368?",
+        "Which Chinese dynasty was established after driving out the Mongol Yuan Dynasty in 1368?",
     "options": ["Han Dynasty", "Tang Dynasty", "Ming Dynasty", "Qing Dynasty"],
     "answer_index": 2,
     "category": "History",
@@ -4520,7 +4526,7 @@ const List sample_data = [
   {
     "id": 476,
     "question":
-    "Who was the first female Prime Minister of the UK, serving from 1979 to 1990?",
+        "Who was the first female Prime Minister of the UK, serving from 1979 to 1990?",
     "options": [
       "Margaret Thatcher",
       "Theresa May",
@@ -4534,7 +4540,7 @@ const List sample_data = [
   {
     "id": 477,
     "question":
-    "Which event saw the Allied evacuation from France in WWII (1940)?",
+        "Which event saw the Allied evacuation from France in WWII (1940)?",
     "options": [
       "Battle of Britain",
       "Evacuation of Dunkirk",
@@ -4561,7 +4567,7 @@ const List sample_data = [
   {
     "id": 479,
     "question":
-    "Which 19th-century German philosopher wrote 'Thus Spoke Zarathustra'?",
+        "Which 19th-century German philosopher wrote 'Thus Spoke Zarathustra'?",
     "options": ["Karl Marx", "Friedrich Nietzsche", "Georg Hegel", "Max Weber"],
     "answer_index": 1,
     "category": "History",
@@ -4570,7 +4576,7 @@ const List sample_data = [
   {
     "id": 480,
     "question":
-    "Who was the Aztec emperor at the time of the Spanish Conquest by Hernán Cortés?",
+        "Who was the Aztec emperor at the time of the Spanish Conquest by Hernán Cortés?",
     "options": ["Montezuma II", "Cuauhtémoc", "Ahuitzotl", "Nezahualcoyotl"],
     "answer_index": 0,
     "category": "History",
@@ -4579,7 +4585,7 @@ const List sample_data = [
   {
     "id": 481,
     "question":
-    "Which English queen's reign is known as the Elizabethan era (1558–1603)?",
+        "Which English queen's reign is known as the Elizabethan era (1558–1603)?",
     "options": ["Elizabeth I", "Elizabeth II", "Mary I", "Anne"],
     "answer_index": 0,
     "category": "History",
@@ -4588,7 +4594,7 @@ const List sample_data = [
   {
     "id": 482,
     "question":
-    "Who seized power in France in 1799, later crowning himself Emperor in 1804?",
+        "Who seized power in France in 1799, later crowning himself Emperor in 1804?",
     "options": ["Robespierre", "Napoleon Bonaparte", "Louis XVI", "Talleyrand"],
     "answer_index": 1,
     "category": "History",
@@ -4597,7 +4603,7 @@ const List sample_data = [
   {
     "id": 483,
     "question":
-    "Which conflict from 1955 to 1975 involved North and South factions in Southeast Asia?",
+        "Which conflict from 1955 to 1975 involved North and South factions in Southeast Asia?",
     "options": [
       "Korean War",
       "Vietnam War",
@@ -4611,7 +4617,7 @@ const List sample_data = [
   {
     "id": 484,
     "question":
-    "Which treaty ended World War I between Germany and the Allied Powers?",
+        "Which treaty ended World War I between Germany and the Allied Powers?",
     "options": [
       "Treaty of Versailles",
       "Treaty of Paris",
@@ -4625,7 +4631,7 @@ const List sample_data = [
   {
     "id": 485,
     "question":
-    "Who wrote the Declaration of the Rights of Man and of the Citizen (1789) in revolutionary France?",
+        "Who wrote the Declaration of the Rights of Man and of the Citizen (1789) in revolutionary France?",
     "options": [
       "National Constituent Assembly",
       "Maximilien Robespierre",
@@ -4639,7 +4645,7 @@ const List sample_data = [
   {
     "id": 486,
     "question":
-    "Which Civil Rights leader delivered the 'Ballot or the Bullet' speech in 1964?",
+        "Which Civil Rights leader delivered the 'Ballot or the Bullet' speech in 1964?",
     "options": [
       "Malcolm X",
       "Martin Luther King Jr.",
@@ -4653,7 +4659,7 @@ const List sample_data = [
   {
     "id": 487,
     "question":
-    "Which empire was known for its capital at Cusco and the site of Machu Picchu?",
+        "Which empire was known for its capital at Cusco and the site of Machu Picchu?",
     "options": ["Aztec Empire", "Mayan Empire", "Inca Empire", "Toltec Empire"],
     "answer_index": 2,
     "category": "History",
@@ -4662,7 +4668,7 @@ const List sample_data = [
   {
     "id": 488,
     "question":
-    "Which dynasty was the last imperial dynasty of China, ending in 1912?",
+        "Which dynasty was the last imperial dynasty of China, ending in 1912?",
     "options": ["Qing Dynasty", "Ming Dynasty", "Han Dynasty", "Tang Dynasty"],
     "answer_index": 0,
     "category": "History",
@@ -4671,7 +4677,7 @@ const List sample_data = [
   {
     "id": 489,
     "question":
-    "Which event (1787–1799) drastically changed the political and social structure of France?",
+        "Which event (1787–1799) drastically changed the political and social structure of France?",
     "options": [
       "French Revolution",
       "American Revolution",
@@ -4685,7 +4691,7 @@ const List sample_data = [
   {
     "id": 490,
     "question":
-    "Which prime minister guided Britain to victory in WWII (1940–1945)?",
+        "Which prime minister guided Britain to victory in WWII (1940–1945)?",
     "options": [
       "Winston Churchill",
       "Clement Attlee",
@@ -4699,7 +4705,7 @@ const List sample_data = [
   {
     "id": 491,
     "question":
-    "Which reformer started the Protestant Reformation by nailing his '95 Theses' in 1517?",
+        "Which reformer started the Protestant Reformation by nailing his '95 Theses' in 1517?",
     "options": ["John Calvin", "Martin Luther", "Ulrich Zwingli", "John Knox"],
     "answer_index": 1,
     "category": "History",
@@ -4716,7 +4722,7 @@ const List sample_data = [
   {
     "id": 493,
     "question":
-    "Who was known as the 'Maid of Orléans' and a key figure in the Hundred Years' War?",
+        "Who was known as the 'Maid of Orléans' and a key figure in the Hundred Years' War?",
     "options": [
       "Eleanor of Aquitaine",
       "Joan of Arc",
@@ -4730,7 +4736,7 @@ const List sample_data = [
   {
     "id": 494,
     "question":
-    "Which empire collapsed in 476 AD (often marking the start of the Middle Ages in Europe)?",
+        "Which empire collapsed in 476 AD (often marking the start of the Middle Ages in Europe)?",
     "options": [
       "Roman Empire (Western)",
       "Egyptian Empire",
@@ -4757,7 +4763,7 @@ const List sample_data = [
   {
     "id": 496,
     "question":
-    "Who was the founder of the Achaemenid Persian Empire (6th century BC)?",
+        "Who was the founder of the Achaemenid Persian Empire (6th century BC)?",
     "options": ["Xerxes I", "Cyrus the Great", "Darius I", "Cambyses II"],
     "answer_index": 1,
     "category": "History",
@@ -4766,7 +4772,7 @@ const List sample_data = [
   {
     "id": 497,
     "question":
-    "Which Chinese admiral led expansive maritime voyages for the Ming Dynasty (1405–1433)?",
+        "Which Chinese admiral led expansive maritime voyages for the Ming Dynasty (1405–1433)?",
     "options": ["Zhang Qian", "Zheng He", "Kangxi Emperor", "Hongwu Emperor"],
     "answer_index": 1,
     "category": "History",
@@ -4775,7 +4781,7 @@ const List sample_data = [
   {
     "id": 498,
     "question":
-    "Which Holy Roman Emperor famously went on the Third Crusade, known as 'Barbarossa'?",
+        "Which Holy Roman Emperor famously went on the Third Crusade, known as 'Barbarossa'?",
     "options": ["Frederick I", "Henry V", "Charles V", "Otto I"],
     "answer_index": 0,
     "category": "History",
@@ -4784,7 +4790,7 @@ const List sample_data = [
   {
     "id": 499,
     "question":
-    "Which council (1545–1563) was a major part of the Counter-Reformation in the Catholic Church?",
+        "Which council (1545–1563) was a major part of the Counter-Reformation in the Catholic Church?",
     "options": [
       "Council of Nicaea",
       "Council of Trent",
@@ -4798,7 +4804,7 @@ const List sample_data = [
   {
     "id": 500,
     "question":
-    "Which empire was established by Osman I, enduring until the early 20th century?",
+        "Which empire was established by Osman I, enduring until the early 20th century?",
     "options": [
       "Abbasid Caliphate",
       "Ottoman Empire",
@@ -4812,7 +4818,7 @@ const List sample_data = [
   {
     "id": 501,
     "question":
-    "Which English king faced the Peasants' Revolt (1381) during his minority?",
+        "Which English king faced the Peasants' Revolt (1381) during his minority?",
     "options": ["Richard II", "Edward III", "Henry V", "John"],
     "answer_index": 0,
     "category": "History",
@@ -4821,7 +4827,7 @@ const List sample_data = [
   {
     "id": 502,
     "question":
-    "Who launched the Hussite movement in Bohemia, leading to wars after his execution?",
+        "Who launched the Hussite movement in Bohemia, leading to wars after his execution?",
     "options": ["Jan Hus", "John Wycliffe", "Martin Luther", "Jan Žižka"],
     "answer_index": 0,
     "category": "History",
@@ -4830,7 +4836,7 @@ const List sample_data = [
   {
     "id": 503,
     "question":
-    "Which empire was ruled by Basil II, known as the 'Bulgar-Slayer' (10th–11th century)?",
+        "Which empire was ruled by Basil II, known as the 'Bulgar-Slayer' (10th–11th century)?",
     "options": [
       "Byzantine Empire",
       "Carolingian Empire",
@@ -4844,7 +4850,7 @@ const List sample_data = [
   {
     "id": 504,
     "question":
-    "Which dynasty ruled the Frankish Kingdom and is associated with Charlemagne?",
+        "Which dynasty ruled the Frankish Kingdom and is associated with Charlemagne?",
     "options": [
       "Carolingian Dynasty",
       "Merovingian Dynasty",
@@ -4858,7 +4864,7 @@ const List sample_data = [
   {
     "id": 505,
     "question":
-    "Who led the army that conquered the Aztec Empire between 1519 and 1521?",
+        "Who led the army that conquered the Aztec Empire between 1519 and 1521?",
     "options": [
       "Francisco Pizarro",
       "Hernán Cortés",
@@ -4872,7 +4878,7 @@ const List sample_data = [
   {
     "id": 506,
     "question":
-    "Which treaty (1648) ended the Thirty Years' War, shaping modern Europe’s state system?",
+        "Which treaty (1648) ended the Thirty Years' War, shaping modern Europe’s state system?",
     "options": [
       "Peace of Augsburg",
       "Treaty of Westphalia",
@@ -4886,7 +4892,7 @@ const List sample_data = [
   {
     "id": 507,
     "question":
-    "Which empire expanded across the Middle East after Muhammad's death (632 AD)?",
+        "Which empire expanded across the Middle East after Muhammad's death (632 AD)?",
     "options": [
       "Umayyad Caliphate",
       "Ottoman Empire",
@@ -4900,7 +4906,7 @@ const List sample_data = [
   {
     "id": 508,
     "question":
-    "Who was the founder of the Maurya Empire in ancient India (4th century BC)?",
+        "Who was the founder of the Maurya Empire in ancient India (4th century BC)?",
     "options": [
       "Ashoka",
       "Bindusara",
@@ -4914,7 +4920,7 @@ const List sample_data = [
   {
     "id": 509,
     "question":
-    "Which Mesoamerican civilization built the city of Chichén Itzá?",
+        "Which Mesoamerican civilization built the city of Chichén Itzá?",
     "options": ["Toltec", "Maya", "Olmec", "Aztec"],
     "answer_index": 1,
     "category": "History",
@@ -4923,7 +4929,7 @@ const List sample_data = [
   {
     "id": 510,
     "question":
-    "Who was the King of Wessex that defended England against Viking invasions (9th century)?",
+        "Who was the King of Wessex that defended England against Viking invasions (9th century)?",
     "options": [
       "Æthelred the Unready",
       "Harold Godwinson",
@@ -4937,7 +4943,7 @@ const List sample_data = [
   {
     "id": 511,
     "question":
-    "Which emperor famously converted to Christianity after the Battle of the Milvian Bridge (312 AD)?",
+        "Which emperor famously converted to Christianity after the Battle of the Milvian Bridge (312 AD)?",
     "options": [
       "Constantine the Great",
       "Theodosius I",
@@ -4951,7 +4957,7 @@ const List sample_data = [
   {
     "id": 512,
     "question":
-    "The 'An Lushan Rebellion' (755–763) occurred during which Chinese dynasty?",
+        "The 'An Lushan Rebellion' (755–763) occurred during which Chinese dynasty?",
     "options": ["Tang Dynasty", "Song Dynasty", "Han Dynasty", "Qing Dynasty"],
     "answer_index": 0,
     "category": "History",
@@ -4960,7 +4966,7 @@ const List sample_data = [
   {
     "id": 513,
     "question":
-    "Which Persian polymath wrote 'The Book of Healing' and 'The Canon of Medicine'?",
+        "Which Persian polymath wrote 'The Book of Healing' and 'The Canon of Medicine'?",
     "options": ["Rumi", "Avicenna (Ibn Sina)", "Al-Farabi", "Omar Khayyam"],
     "answer_index": 1,
     "category": "History",
@@ -4969,7 +4975,7 @@ const List sample_data = [
   {
     "id": 514,
     "question":
-    "Which city was the capital of the Abbasid Caliphate, founded in 762 AD?",
+        "Which city was the capital of the Abbasid Caliphate, founded in 762 AD?",
     "options": ["Baghdad", "Damascus", "Cairo", "Jerusalem"],
     "answer_index": 0,
     "category": "History",
@@ -4978,7 +4984,7 @@ const List sample_data = [
   {
     "id": 515,
     "question":
-    "Which 16th-century queen reigned over both England and Ireland, known as the 'Virgin Queen'?",
+        "Which 16th-century queen reigned over both England and Ireland, known as the 'Virgin Queen'?",
     "options": ["Mary I", "Elizabeth I", "Anne Boleyn", "Mary II"],
     "answer_index": 1,
     "category": "History",
@@ -4987,7 +4993,7 @@ const List sample_data = [
   {
     "id": 516,
     "question":
-    "Which treaty (1494) divided the New World between Spain and Portugal?",
+        "Which treaty (1494) divided the New World between Spain and Portugal?",
     "options": [
       "Treaty of Zaragoza",
       "Treaty of Tordesillas",
@@ -5001,7 +5007,7 @@ const List sample_data = [
   {
     "id": 517,
     "question":
-    "Who was crowned Emperor of the Romans on Christmas Day in 800 AD by Pope Leo III?",
+        "Who was crowned Emperor of the Romans on Christmas Day in 800 AD by Pope Leo III?",
     "options": [
       "Pepin the Short",
       "Charlemagne",
@@ -5015,7 +5021,7 @@ const List sample_data = [
   {
     "id": 518,
     "question":
-    "Which pharaoh attempted monotheistic worship of Aten, sometimes called the 'heretic pharaoh'?",
+        "Which pharaoh attempted monotheistic worship of Aten, sometimes called the 'heretic pharaoh'?",
     "options": ["Ramses II", "Tutankhamun", "Akhenaten", "Hatshepsut"],
     "answer_index": 2,
     "category": "History",
@@ -5024,7 +5030,7 @@ const List sample_data = [
   {
     "id": 519,
     "question":
-    "Who was the first emperor of the Eastern Roman (Byzantine) Empire, reigning from 395 to 408?",
+        "Who was the first emperor of the Eastern Roman (Byzantine) Empire, reigning from 395 to 408?",
     "options": ["Arcadius", "Justinian I", "Theodosius I", "Zeno"],
     "answer_index": 0,
     "category": "History",
@@ -5033,7 +5039,7 @@ const List sample_data = [
   {
     "id": 520,
     "question":
-    "Which West African empire was known for Timbuktu as a major center of learning?",
+        "Which West African empire was known for Timbuktu as a major center of learning?",
     "options": [
       "Ghana Empire",
       "Songhai Empire",
@@ -5047,7 +5053,7 @@ const List sample_data = [
   {
     "id": 521,
     "question":
-    "Which British archaeologist discovered Tutankhamun's tomb in 1922?",
+        "Which British archaeologist discovered Tutankhamun's tomb in 1922?",
     "options": [
       "Heinrich Schliemann",
       "Howard Carter",
@@ -5061,7 +5067,7 @@ const List sample_data = [
   {
     "id": 522,
     "question":
-    "Which queen of Egypt was the last active ruler of the Ptolemaic Kingdom?",
+        "Which queen of Egypt was the last active ruler of the Ptolemaic Kingdom?",
     "options": ["Cleopatra VII", "Nefertiti", "Hatshepsut", "Arsinoe II"],
     "answer_index": 0,
     "category": "History",
@@ -5070,7 +5076,7 @@ const List sample_data = [
   {
     "id": 523,
     "question":
-    "Which Viking explorer is credited with reaching North America around AD 1000?",
+        "Which Viking explorer is credited with reaching North America around AD 1000?",
     "options": [
       "Leif Erikson",
       "Erik the Red",
@@ -5084,7 +5090,7 @@ const List sample_data = [
   {
     "id": 524,
     "question":
-    "Who established the Yuan Dynasty in China, succeeding the Song Dynasty in 1279?",
+        "Who established the Yuan Dynasty in China, succeeding the Song Dynasty in 1279?",
     "options": ["Kublai Khan", "Genghis Khan", "Ogedei Khan", "Timur"],
     "answer_index": 0,
     "category": "History",
@@ -5106,7 +5112,7 @@ const List sample_data = [
   {
     "id": 526,
     "question":
-    "Which 16th-century Mughal Emperor built the Taj Mahal for his wife?",
+        "Which 16th-century Mughal Emperor built the Taj Mahal for his wife?",
     "options": ["Babur", "Akbar", "Jahangir", "Shah Jahan"],
     "answer_index": 3,
     "category": "History",
@@ -5115,7 +5121,7 @@ const List sample_data = [
   {
     "id": 527,
     "question":
-    "Which empire collapsed following the fall of its capital Tenochtitlan in 1521?",
+        "Which empire collapsed following the fall of its capital Tenochtitlan in 1521?",
     "options": ["Inca Empire", "Aztec Empire", "Mayan Empire", "Toltec Empire"],
     "answer_index": 1,
     "category": "History",
@@ -5124,7 +5130,7 @@ const List sample_data = [
   {
     "id": 528,
     "question":
-    "Which King of England signed the Magna Carta at Runnymede in 1215?",
+        "Which King of England signed the Magna Carta at Runnymede in 1215?",
     "options": [
       "King John",
       "King Richard I",
@@ -5138,7 +5144,7 @@ const List sample_data = [
   {
     "id": 529,
     "question":
-    "Which philosophical text is attributed to Laozi and foundational to Taoism?",
+        "Which philosophical text is attributed to Laozi and foundational to Taoism?",
     "options": ["The Art of War", "I Ching", "Dao De Jing", "Analects"],
     "answer_index": 2,
     "category": "History",
@@ -5160,7 +5166,7 @@ const List sample_data = [
   {
     "id": 531,
     "question":
-    "Which epic poem recounts the Trojan War, traditionally attributed to Homer?",
+        "Which epic poem recounts the Trojan War, traditionally attributed to Homer?",
     "options": ["The Odyssey", "The Iliad", "Aeneid", "Metamorphoses"],
     "answer_index": 1,
     "category": "History",
@@ -5169,7 +5175,7 @@ const List sample_data = [
   {
     "id": 532,
     "question":
-    "Who was the founder of the Mauritanian-based Almoravid dynasty (11th century)?",
+        "Who was the founder of the Mauritanian-based Almoravid dynasty (11th century)?",
     "options": [
       "Ibn Tumart",
       "Abdallah ibn Yasin",
@@ -5183,7 +5189,7 @@ const List sample_data = [
   {
     "id": 533,
     "question":
-    "Which Maya city in present-day Guatemala was one of the most powerful during the Classic Period?",
+        "Which Maya city in present-day Guatemala was one of the most powerful during the Classic Period?",
     "options": ["Palenque", "Chichén Itzá", "Copán", "Tikal"],
     "answer_index": 3,
     "category": "History",
@@ -5192,7 +5198,7 @@ const List sample_data = [
   {
     "id": 534,
     "question":
-    "Which war (1642–1651) was fought between Royalists and Parliamentarians in England?",
+        "Which war (1642–1651) was fought between Royalists and Parliamentarians in England?",
     "options": [
       "English Civil War",
       "War of the Roses",
@@ -5206,7 +5212,7 @@ const List sample_data = [
   {
     "id": 535,
     "question":
-    "Which Carthaginian general led an army (and elephants) over the Alps to attack Rome?",
+        "Which Carthaginian general led an army (and elephants) over the Alps to attack Rome?",
     "options": [
       "Hamilcar Barca",
       "Hannibal Barca",
@@ -5220,7 +5226,7 @@ const List sample_data = [
   {
     "id": 536,
     "question":
-    "Which Islamic caliphate was the last major Arab caliphate before the Mongol invasion (1258)?",
+        "Which Islamic caliphate was the last major Arab caliphate before the Mongol invasion (1258)?",
     "options": [
       "Umayyad Caliphate",
       "Abbasid Caliphate",
@@ -5247,7 +5253,7 @@ const List sample_data = [
   {
     "id": 538,
     "question":
-    "Which grand prince of Moscow ended the Mongol yoke in Russia and was called 'the Great'?",
+        "Which grand prince of Moscow ended the Mongol yoke in Russia and was called 'the Great'?",
     "options": [
       "Ivan III",
       "Ivan IV",
@@ -5261,7 +5267,7 @@ const List sample_data = [
   {
     "id": 539,
     "question":
-    "Which Mesoamerican civilization was known for the city of Teotihuacan?",
+        "Which Mesoamerican civilization was known for the city of Teotihuacan?",
     "options": ["Olmec", "Zapotec", "Teotihuacano", "Mixtec"],
     "answer_index": 2,
     "category": "History",
@@ -5283,7 +5289,7 @@ const List sample_data = [
   {
     "id": 541,
     "question":
-    "Which league was formed by city-states in ancient Greece to oppose Persia (5th century BC)?",
+        "Which league was formed by city-states in ancient Greece to oppose Persia (5th century BC)?",
     "options": [
       "Archaean League",
       "Delian League",
@@ -5297,7 +5303,7 @@ const List sample_data = [
   {
     "id": 542,
     "question":
-    "Who founded the Goryeo Dynasty in the Korean peninsula (918 AD)?",
+        "Who founded the Goryeo Dynasty in the Korean peninsula (918 AD)?",
     "options": [
       "Taejo Wang Geon",
       "Sejong the Great",
@@ -5311,7 +5317,7 @@ const List sample_data = [
   {
     "id": 543,
     "question":
-    "Which treaty ended the Great Northern War (1700–1721) between Russia and Sweden?",
+        "Which treaty ended the Great Northern War (1700–1721) between Russia and Sweden?",
     "options": [
       "Treaty of Oliva",
       "Peace of Aix-la-Chapelle",
@@ -5325,7 +5331,7 @@ const List sample_data = [
   {
     "id": 544,
     "question":
-    "Which kingdom fought the Punic Wars against Rome (264–146 BC)?",
+        "Which kingdom fought the Punic Wars against Rome (264–146 BC)?",
     "options": ["Carthage", "Macedonia", "Gaul", "Sparta"],
     "answer_index": 0,
     "category": "History",
@@ -5382,7 +5388,7 @@ const List sample_data = [
   {
     "id": 551,
     "question":
-    "Christ the Redeemer statue overlooks Rio de Janeiro in which country?",
+        "Christ the Redeemer statue overlooks Rio de Janeiro in which country?",
     "options": ["Chile", "Brazil", "Argentina", "Venezuela"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5471,7 +5477,7 @@ const List sample_data = [
   {
     "id": 562,
     "question":
-    "In which country is the Louvre Museum (with its glass pyramid)?",
+        "In which country is the Louvre Museum (with its glass pyramid)?",
     "options": ["Spain", "Germany", "Belgium", "France"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -5480,7 +5486,7 @@ const List sample_data = [
   {
     "id": 563,
     "question":
-    "On which continent can you visit the city of Marrakech (famous for its medina)?",
+        "On which continent can you visit the city of Marrakech (famous for its medina)?",
     "options": ["Asia", "Europe", "Africa", "South America"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -5497,7 +5503,7 @@ const List sample_data = [
   {
     "id": 565,
     "question":
-    "Which country is home to the Blue Mosque (Sultanahmet Mosque) in Istanbul?",
+        "Which country is home to the Blue Mosque (Sultanahmet Mosque) in Istanbul?",
     "options": ["Greece", "Turkey", "Bulgaria", "Cyprus"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5546,7 +5552,7 @@ const List sample_data = [
   {
     "id": 571,
     "question":
-    "Where can you visit the Palace of Westminster (Houses of Parliament)?",
+        "Where can you visit the Palace of Westminster (Houses of Parliament)?",
     "options": ["United Kingdom", "Belgium", "Ireland", "France"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5563,7 +5569,7 @@ const List sample_data = [
   {
     "id": 573,
     "question":
-    "Which country has the Great Wall, known for sections built during the Ming Dynasty?",
+        "Which country has the Great Wall, known for sections built during the Ming Dynasty?",
     "options": ["China", "South Korea", "Japan", "Mongolia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5572,7 +5578,7 @@ const List sample_data = [
   {
     "id": 574,
     "question":
-    "On which continent would you find Mount Kilimanjaro (famous for trekking)?",
+        "On which continent would you find Mount Kilimanjaro (famous for trekking)?",
     "options": ["South America", "Asia", "Africa", "Europe"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -5589,7 +5595,7 @@ const List sample_data = [
   {
     "id": 576,
     "question":
-    "Where can you find the Charles Bridge, known for its baroque statues?",
+        "Where can you find the Charles Bridge, known for its baroque statues?",
     "options": ["Slovakia", "Czech Republic", "Austria", "Hungary"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5598,7 +5604,7 @@ const List sample_data = [
   {
     "id": 577,
     "question":
-    "Which country houses the windmills of Kinderdijk (a UNESCO World Heritage Site)?",
+        "Which country houses the windmills of Kinderdijk (a UNESCO World Heritage Site)?",
     "options": ["Denmark", "Germany", "Netherlands", "Switzerland"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -5607,7 +5613,7 @@ const List sample_data = [
   {
     "id": 578,
     "question":
-    "On which continent can you explore the ruins of Great Zimbabwe?",
+        "On which continent can you explore the ruins of Great Zimbabwe?",
     "options": ["Africa", "Asia", "Europe", "South America"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5632,7 +5638,7 @@ const List sample_data = [
   {
     "id": 581,
     "question":
-    "The Temple of the Emerald Buddha (Wat Phra Kaew) is in which country?",
+        "The Temple of the Emerald Buddha (Wat Phra Kaew) is in which country?",
     "options": ["Myanmar", "Thailand", "Cambodia", "Laos"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5641,7 +5647,7 @@ const List sample_data = [
   {
     "id": 582,
     "question":
-    "On which continent would you find the Moai statues on Easter Island?",
+        "On which continent would you find the Moai statues on Easter Island?",
     "options": ["Europe", "Oceania (Austrailia)", "South America", "Asia"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -5658,7 +5664,7 @@ const List sample_data = [
   {
     "id": 584,
     "question":
-    "Which country is known for its Tajik-based Silk Road city, Samarkand? (Trick: Samarkand is in...)",
+        "Which country is known for its Tajik-based Silk Road city, Samarkand? (Trick: Samarkand is in...)",
     "options": ["Kyrgyzstan", "Uzbekistan", "Tajikistan", "Iran"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5667,7 +5673,7 @@ const List sample_data = [
   {
     "id": 585,
     "question":
-    "On which continent is Victoria Falls, a major waterfall on the Zambezi River?",
+        "On which continent is Victoria Falls, a major waterfall on the Zambezi River?",
     "options": ["Africa", "Asia", "North America", "Australia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5676,7 +5682,7 @@ const List sample_data = [
   {
     "id": 586,
     "question":
-    "The city of Bruges, noted for medieval architecture, is in which country?",
+        "The city of Bruges, noted for medieval architecture, is in which country?",
     "options": ["France", "Sweden", "Germany", "Belgium"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -5685,7 +5691,7 @@ const List sample_data = [
   {
     "id": 587,
     "question":
-    "Which country contains the Golden Temple (Harmandir Sahib) in Amritsar?",
+        "Which country contains the Golden Temple (Harmandir Sahib) in Amritsar?",
     "options": ["India", "Sri Lanka", "Pakistan", "Malaysia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5702,7 +5708,7 @@ const List sample_data = [
   {
     "id": 589,
     "question":
-    "Where can we explore the famous Charles Bridge and Old Town Square?",
+        "Where can we explore the famous Charles Bridge and Old Town Square?",
     "options": ["Czech Republic", "Belgium", "Austria", "Poland"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5743,7 +5749,7 @@ const List sample_data = [
   {
     "id": 594,
     "question":
-    "On which continent will you find the Dead Sea, a famous salt lake?",
+        "On which continent will you find the Dead Sea, a famous salt lake?",
     "options": ["Asia", "Africa", "Australia", "Europe"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5752,7 +5758,7 @@ const List sample_data = [
   {
     "id": 595,
     "question":
-    "Himeji Castle, known as the 'White Heron Castle,' is in which country?",
+        "Himeji Castle, known as the 'White Heron Castle,' is in which country?",
     "options": ["China", "Taiwan", "Japan", "South Korea"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -5761,7 +5767,7 @@ const List sample_data = [
   {
     "id": 596,
     "question":
-    "The Alhambra palace in Granada was expanded during the Nasrid Dynasty. In which country is it located?",
+        "The Alhambra palace in Granada was expanded during the Nasrid Dynasty. In which country is it located?",
     "options": ["Portugal", "Spain", "Morocco", "France"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5770,7 +5776,7 @@ const List sample_data = [
   {
     "id": 597,
     "question":
-    "The Forbidden City in Beijing was mainly built during which dynasty’s era (14th–17th c.)?",
+        "The Forbidden City in Beijing was mainly built during which dynasty’s era (14th–17th c.)?",
     "options": ["Tang Dynasty", "Ming Dynasty", "Qing Dynasty", "Yuan Dynasty"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5779,7 +5785,7 @@ const List sample_data = [
   {
     "id": 598,
     "question":
-    "In which country is the rock fortress of Sigiriya, dating back to the 5th century?",
+        "In which country is the rock fortress of Sigiriya, dating back to the 5th century?",
     "options": ["Sri Lanka", "India", "Bangladesh", "Cambodia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5788,7 +5794,7 @@ const List sample_data = [
   {
     "id": 599,
     "question":
-    "Hagia Sophia in Istanbul served as a cathedral, then a mosque. Which empire built it originally (6th c.)?",
+        "Hagia Sophia in Istanbul served as a cathedral, then a mosque. Which empire built it originally (6th c.)?",
     "options": [
       "Byzantine Empire",
       "Ottoman Empire",
@@ -5802,7 +5808,7 @@ const List sample_data = [
   {
     "id": 600,
     "question":
-    "Which country is home to Canterbury Cathedral, a major pilgrimage site since medieval times?",
+        "Which country is home to Canterbury Cathedral, a major pilgrimage site since medieval times?",
     "options": ["Denmark", "Iceland", "Sweden", "United Kingdom"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -5811,7 +5817,7 @@ const List sample_data = [
   {
     "id": 601,
     "question":
-    "The ancient city of Persepolis was a ceremonial capital of the Achaemenid Empire, located in which modern country?",
+        "The ancient city of Persepolis was a ceremonial capital of the Achaemenid Empire, located in which modern country?",
     "options": ["Iraq", "Iran", "Syria", "Turkey"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5820,7 +5826,7 @@ const List sample_data = [
   {
     "id": 602,
     "question":
-    "In which country is the Potala Palace, once the winter residence of the Dalai Lama?",
+        "In which country is the Potala Palace, once the winter residence of the Dalai Lama?",
     "options": ["Bhutan", "India", "China", "Nepal"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -5829,7 +5835,7 @@ const List sample_data = [
   {
     "id": 603,
     "question":
-    "The Acropolis of Athens was significantly restored during the 5th century BC. Which civilization built it?",
+        "The Acropolis of Athens was significantly restored during the 5th century BC. Which civilization built it?",
     "options": ["Greek", "Roman", "Egyptian", "Persian"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5838,7 +5844,7 @@ const List sample_data = [
   {
     "id": 604,
     "question":
-    "Which country is home to the fortified town of Carcassonne, known for medieval walls?",
+        "Which country is home to the fortified town of Carcassonne, known for medieval walls?",
     "options": ["Spain", "France", "Italy", "Switzerland"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5847,7 +5853,7 @@ const List sample_data = [
   {
     "id": 605,
     "question":
-    "The city of Tikal, an ancient Mayan site, thrived between AD 200–900 in which modern country?",
+        "The city of Tikal, an ancient Mayan site, thrived between AD 200–900 in which modern country?",
     "options": ["Mexico", "Honduras", "Guatemala", "Belize"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -5856,7 +5862,7 @@ const List sample_data = [
   {
     "id": 606,
     "question":
-    "The Mezquita–Cathedral of Córdoba reflects Moorish architecture. In which country is it located?",
+        "The Mezquita–Cathedral of Córdoba reflects Moorish architecture. In which country is it located?",
     "options": ["Egypt", "Spain", "Portugal", "Italy"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5865,7 +5871,7 @@ const List sample_data = [
   {
     "id": 607,
     "question":
-    "Angkor Wat was constructed for the Khmer Empire. In which modern country is it found?",
+        "Angkor Wat was constructed for the Khmer Empire. In which modern country is it found?",
     "options": ["Vietnam", "Laos", "Cambodia", "Myanmar"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -5874,7 +5880,7 @@ const List sample_data = [
   {
     "id": 608,
     "question":
-    "In which country can you explore Cappadocia, famous for its 'fairy chimneys' and rock-cut churches?",
+        "In which country can you explore Cappadocia, famous for its 'fairy chimneys' and rock-cut churches?",
     "options": ["Turkey", "Armenia", "Syria", "Georgia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5883,7 +5889,7 @@ const List sample_data = [
   {
     "id": 609,
     "question":
-    "Which country contains the fortified Inca ruins at Sacsayhuamán near Cusco?",
+        "Which country contains the fortified Inca ruins at Sacsayhuamán near Cusco?",
     "options": ["Peru", "Bolivia", "Ecuador", "Colombia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5892,7 +5898,7 @@ const List sample_data = [
   {
     "id": 610,
     "question":
-    "The Monastery of Rila, founded in the 10th century, is in which Balkan country?",
+        "The Monastery of Rila, founded in the 10th century, is in which Balkan country?",
     "options": ["Serbia", "Bulgaria", "Romania", "Albania"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5901,7 +5907,7 @@ const List sample_data = [
   {
     "id": 611,
     "question":
-    "The rock churches of Lalibela, carved from living rock, lie in which African country?",
+        "The rock churches of Lalibela, carved from living rock, lie in which African country?",
     "options": ["Sudan", "Ethiopia", "Kenya", "Egypt"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5910,7 +5916,7 @@ const List sample_data = [
   {
     "id": 612,
     "question":
-    "Which country features the medieval Buda Castle, overlooking the Danube River?",
+        "Which country features the medieval Buda Castle, overlooking the Danube River?",
     "options": ["Hungary", "Slovakia", "Austria", "Czech Republic"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5919,7 +5925,7 @@ const List sample_data = [
   {
     "id": 613,
     "question":
-    "The City of Valletta, fortified in the 16th century by the Knights Hospitaller, is in which country?",
+        "The City of Valletta, fortified in the 16th century by the Knights Hospitaller, is in which country?",
     "options": ["Cyprus", "Malta", "Greece", "Italy"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5928,7 +5934,7 @@ const List sample_data = [
   {
     "id": 614,
     "question":
-    "Which empire built the 'Eternal City' of Tenochtitlan, now Mexico City?",
+        "Which empire built the 'Eternal City' of Tenochtitlan, now Mexico City?",
     "options": ["Aztec Empire", "Inca Empire", "Mayan Empire", "Olmec Empire"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5937,7 +5943,7 @@ const List sample_data = [
   {
     "id": 615,
     "question":
-    "The Schönbrunn Palace, summer residence of the Habsburgs, is in which country?",
+        "The Schönbrunn Palace, summer residence of the Habsburgs, is in which country?",
     "options": ["Germany", "Austria", "Hungary", "Liechtenstein"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5946,7 +5952,7 @@ const List sample_data = [
   {
     "id": 616,
     "question":
-    "Which country’s capital includes the famous 'Gyeongbokgung Palace,' built in 1395?",
+        "Which country’s capital includes the famous 'Gyeongbokgung Palace,' built in 1395?",
     "options": ["Japan", "South Korea", "China", "Thailand"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5955,7 +5961,7 @@ const List sample_data = [
   {
     "id": 617,
     "question":
-    "The medieval Monastery of Alcobaça was founded in the 12th century in which country?",
+        "The medieval Monastery of Alcobaça was founded in the 12th century in which country?",
     "options": ["Spain", "Portugal", "France", "Italy"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5964,7 +5970,7 @@ const List sample_data = [
   {
     "id": 618,
     "question":
-    "Which country has the remarkable archaeological site of Leptis Magna, once part of the Roman Empire?",
+        "Which country has the remarkable archaeological site of Leptis Magna, once part of the Roman Empire?",
     "options": ["Libya", "Algeria", "Tunisia", "Egypt"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5973,7 +5979,7 @@ const List sample_data = [
   {
     "id": 619,
     "question":
-    "The 'Painted Monasteries of Bucovina' are found in which European country?",
+        "The 'Painted Monasteries of Bucovina' are found in which European country?",
     "options": ["Romania", "Ukraine", "Moldova", "Poland"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -5982,7 +5988,7 @@ const List sample_data = [
   {
     "id": 620,
     "question":
-    "Which country features the fortress of Masada, an ancient stronghold near the Dead Sea?",
+        "Which country features the fortress of Masada, an ancient stronghold near the Dead Sea?",
     "options": ["Jordan", "Israel", "Syria", "Lebanon"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -5991,7 +5997,7 @@ const List sample_data = [
   {
     "id": 621,
     "question":
-    "Castel del Monte, built by Emperor Frederick II in the 13th century, is in which country?",
+        "Castel del Monte, built by Emperor Frederick II in the 13th century, is in which country?",
     "options": ["France", "Switzerland", "Monaco", "Italy"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -6000,7 +6006,7 @@ const List sample_data = [
   {
     "id": 622,
     "question":
-    "Which country is known for the Church of the Savior on Spilled Blood in St. Petersburg?",
+        "Which country is known for the Church of the Savior on Spilled Blood in St. Petersburg?",
     "options": ["Russia", "Finland", "Sweden", "Estonia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6009,7 +6015,7 @@ const List sample_data = [
   {
     "id": 623,
     "question":
-    "Borobudur was built in the 8th/9th century under the Sailendra Dynasty in which country?",
+        "Borobudur was built in the 8th/9th century under the Sailendra Dynasty in which country?",
     "options": ["Malaysia", "Indonesia", "Vietnam", "Brunei"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6018,7 +6024,7 @@ const List sample_data = [
   {
     "id": 624,
     "question":
-    "Which country has the medieval Cliffside 'Hanging Monastery' near Mount Heng?",
+        "Which country has the medieval Cliffside 'Hanging Monastery' near Mount Heng?",
     "options": ["China", "India", "Nepal", "Japan"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6027,7 +6033,7 @@ const List sample_data = [
   {
     "id": 625,
     "question":
-    "The Roman Baths, constructed around natural hot springs, are in which country?",
+        "The Roman Baths, constructed around natural hot springs, are in which country?",
     "options": ["France", "Italy", "United Kingdom", "Belgium"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6036,7 +6042,7 @@ const List sample_data = [
   {
     "id": 626,
     "question":
-    "Which country’s ancient capital, Polonnaruwa, showcases impressive Sinhalese ruins?",
+        "Which country’s ancient capital, Polonnaruwa, showcases impressive Sinhalese ruins?",
     "options": ["Sri Lanka", "India", "Cambodia", "Thailand"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6045,7 +6051,7 @@ const List sample_data = [
   {
     "id": 627,
     "question":
-    "The fortifications of Kotor on the Adriatic coast lie in which European country?",
+        "The fortifications of Kotor on the Adriatic coast lie in which European country?",
     "options": ["Croatia", "Montenegro", "Bosnia and Herzegovina", "Albania"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6067,7 +6073,7 @@ const List sample_data = [
   {
     "id": 629,
     "question":
-    "Which country is known for the old city of Yazd, famous for its windcatchers and Zoroastrian heritage?",
+        "Which country is known for the old city of Yazd, famous for its windcatchers and Zoroastrian heritage?",
     "options": ["Egypt", "Iran", "Oman", "Iraq"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6076,7 +6082,7 @@ const List sample_data = [
   {
     "id": 630,
     "question":
-    "The Mont-Saint-Michel Abbey, set on a tidal island, is in which country?",
+        "The Mont-Saint-Michel Abbey, set on a tidal island, is in which country?",
     "options": ["France", "United Kingdom", "Spain", "Belgium"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6085,7 +6091,7 @@ const List sample_data = [
   {
     "id": 631,
     "question":
-    "Where is the Emperor Qin Shi Huang’s Terracotta Army, created to guard his tomb?",
+        "Where is the Emperor Qin Shi Huang’s Terracotta Army, created to guard his tomb?",
     "options": ["Thailand", "South Korea", "Japan", "China"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -6094,7 +6100,7 @@ const List sample_data = [
   {
     "id": 632,
     "question":
-    "Which country houses the Pope’s official residence, the Apostolic Palace (though it’s a city-state inside Rome)?",
+        "Which country houses the Pope’s official residence, the Apostolic Palace (though it’s a city-state inside Rome)?",
     "options": ["Vatican City", "Italy", "Monaco", "Malta"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6103,7 +6109,7 @@ const List sample_data = [
   {
     "id": 633,
     "question":
-    "St. Basil’s Cathedral, known for its colorful domes, is in which city and country?",
+        "St. Basil’s Cathedral, known for its colorful domes, is in which city and country?",
     "options": [
       "Minsk, Belarus",
       "Moscow, Russia",
@@ -6117,7 +6123,7 @@ const List sample_data = [
   {
     "id": 634,
     "question":
-    "The ancient city of Volubilis, with Roman ruins, is found in which modern African country?",
+        "The ancient city of Volubilis, with Roman ruins, is found in which modern African country?",
     "options": ["Algeria", "Morocco", "Tunisia", "Libya"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6126,7 +6132,7 @@ const List sample_data = [
   {
     "id": 635,
     "question":
-    "Which country is home to the Pyramids of Teotihuacan, constructed centuries before the Aztecs?",
+        "Which country is home to the Pyramids of Teotihuacan, constructed centuries before the Aztecs?",
     "options": ["Guatemala", "Ecuador", "Mexico", "Peru"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6135,7 +6141,7 @@ const List sample_data = [
   {
     "id": 636,
     "question":
-    "In which country do we find the Corinth Canal, first proposed in ancient times?",
+        "In which country do we find the Corinth Canal, first proposed in ancient times?",
     "options": ["Turkey", "Greece", "Bulgaria", "Albania"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6144,7 +6150,7 @@ const List sample_data = [
   {
     "id": 637,
     "question":
-    "Which empire left the iconic Sanchi Stupa (2nd century BC) in modern-day India?",
+        "Which empire left the iconic Sanchi Stupa (2nd century BC) in modern-day India?",
     "options": [
       "Gupta Empire",
       "Maurya Empire",
@@ -6158,7 +6164,7 @@ const List sample_data = [
   {
     "id": 638,
     "question":
-    "The imposing fortress of Soroca is found along the Dniester River in which country?",
+        "The imposing fortress of Soroca is found along the Dniester River in which country?",
     "options": ["Moldova", "Ukraine", "Romania", "Slovakia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6167,7 +6173,7 @@ const List sample_data = [
   {
     "id": 639,
     "question":
-    "Which country can you visit to see the palace of Knossos, linked with the Minoan civilization?",
+        "Which country can you visit to see the palace of Knossos, linked with the Minoan civilization?",
     "options": ["Italy", "Greece", "Cyprus", "Malta"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6176,7 +6182,7 @@ const List sample_data = [
   {
     "id": 640,
     "question":
-    "The ruined city of Petra was once capital of the Nabatean Kingdom. On which continent is it?",
+        "The ruined city of Petra was once capital of the Nabatean Kingdom. On which continent is it?",
     "options": ["Asia", "Africa", "Europe", "South America"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6185,7 +6191,7 @@ const List sample_data = [
   {
     "id": 641,
     "question":
-    "Which country features the Bagan Archaeological Zone, with thousands of Buddhist temples?",
+        "Which country features the Bagan Archaeological Zone, with thousands of Buddhist temples?",
     "options": ["Myanmar", "Thailand", "Laos", "Cambodia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6194,7 +6200,7 @@ const List sample_data = [
   {
     "id": 642,
     "question":
-    "The city of Fez, with its medieval medina, is a UNESCO site in which African country?",
+        "The city of Fez, with its medieval medina, is a UNESCO site in which African country?",
     "options": ["Tunisia", "Morocco", "Algeria", "Egypt"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6203,7 +6209,7 @@ const List sample_data = [
   {
     "id": 643,
     "question":
-    "In which country is Bran Castle, often linked to the Dracula legend?",
+        "In which country is Bran Castle, often linked to the Dracula legend?",
     "options": ["Serbia", "Bulgaria", "Romania", "Hungary"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6220,7 +6226,7 @@ const List sample_data = [
   {
     "id": 645,
     "question":
-    "Which country hosts Göbekli Tepe, an archaeological site predating Stonehenge?",
+        "Which country hosts Göbekli Tepe, an archaeological site predating Stonehenge?",
     "options": ["Iraq", "Turkey", "Syria", "Armenia"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6229,7 +6235,7 @@ const List sample_data = [
   {
     "id": 646,
     "question":
-    "The Ajanta Caves (2nd c. BC to 6th c. AD) are rock-cut Buddhist monuments in which country?",
+        "The Ajanta Caves (2nd c. BC to 6th c. AD) are rock-cut Buddhist monuments in which country?",
     "options": ["Sri Lanka", "Myanmar", "India", "Nepal"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6238,7 +6244,7 @@ const List sample_data = [
   {
     "id": 647,
     "question":
-    "In which country can you find the medieval rock-hewn churches of Ivanovo, dating to the 13th/14th centuries?",
+        "In which country can you find the medieval rock-hewn churches of Ivanovo, dating to the 13th/14th centuries?",
     "options": ["Croatia", "Bulgaria", "North Macedonia", "Serbia"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6247,7 +6253,7 @@ const List sample_data = [
   {
     "id": 648,
     "question":
-    "Skellig Michael, an early Christian monastic site on a rugged island, lies off which country’s coast?",
+        "Skellig Michael, an early Christian monastic site on a rugged island, lies off which country’s coast?",
     "options": ["Iceland", "Scotland", "Ireland", "Wales"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6256,7 +6262,7 @@ const List sample_data = [
   {
     "id": 649,
     "question":
-    "Which country is home to Lalibela, a pilgrimage town with 11 monolithic churches?",
+        "Which country is home to Lalibela, a pilgrimage town with 11 monolithic churches?",
     "options": ["Ghana", "Ethiopia", "Kenya", "Sudan"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6265,7 +6271,7 @@ const List sample_data = [
   {
     "id": 650,
     "question":
-    "The Valley of the Kings, where many Pharaohs were entombed, is found in which African nation?",
+        "The Valley of the Kings, where many Pharaohs were entombed, is found in which African nation?",
     "options": ["Egypt", "Sudan", "Ethiopia", "Libya"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6274,7 +6280,7 @@ const List sample_data = [
   {
     "id": 651,
     "question":
-    "Sukhothai Historical Park, cradle of Thai civilization (13th c.), is in which country?",
+        "Sukhothai Historical Park, cradle of Thai civilization (13th c.), is in which country?",
     "options": ["Cambodia", "Thailand", "Malaysia", "Laos"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6283,7 +6289,7 @@ const List sample_data = [
   {
     "id": 652,
     "question":
-    "In which modern country are the ancient cliff dwellings of Mesa Verde (Ancestral Puebloans)?",
+        "In which modern country are the ancient cliff dwellings of Mesa Verde (Ancestral Puebloans)?",
     "options": ["Mexico", "United States", "Canada", "Guatemala"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6292,7 +6298,7 @@ const List sample_data = [
   {
     "id": 653,
     "question":
-    "The Monastery of Ostrog, built into a cliff, is a key pilgrimage site in which Balkan country?",
+        "The Monastery of Ostrog, built into a cliff, is a key pilgrimage site in which Balkan country?",
     "options": [
       "Montenegro",
       "Serbia",
@@ -6306,7 +6312,7 @@ const List sample_data = [
   {
     "id": 654,
     "question":
-    "Which country has the elaborate rock tombs of Myra, once part of ancient Lycia?",
+        "Which country has the elaborate rock tombs of Myra, once part of ancient Lycia?",
     "options": ["Jordan", "Cyprus", "Turkey", "Greece"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6315,7 +6321,7 @@ const List sample_data = [
   {
     "id": 655,
     "question":
-    "Timgad (Thamugadi), a Roman colonial town founded by Emperor Trajan, lies in which modern country?",
+        "Timgad (Thamugadi), a Roman colonial town founded by Emperor Trajan, lies in which modern country?",
     "options": ["Italy", "Algeria", "Morocco", "Tunisia"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6324,7 +6330,7 @@ const List sample_data = [
   {
     "id": 656,
     "question":
-    "Nan Madol, a ruined city built on artificial islets, is found in which Pacific island country?",
+        "Nan Madol, a ruined city built on artificial islets, is found in which Pacific island country?",
     "options": ["Fiji", "Micronesia", "Vanuatu", "Samoa"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6333,7 +6339,7 @@ const List sample_data = [
   {
     "id": 657,
     "question":
-    "The rock-cut city of Uplistsikhe, dating from the 1st millennium BC, is in which Caucasus country?",
+        "The rock-cut city of Uplistsikhe, dating from the 1st millennium BC, is in which Caucasus country?",
     "options": ["Armenia", "Georgia", "Azerbaijan", "Turkey"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6342,7 +6348,7 @@ const List sample_data = [
   {
     "id": 658,
     "question":
-    "Which country features the 10th-century Brihadeeswarar Temple, built by Chola kings?",
+        "Which country features the 10th-century Brihadeeswarar Temple, built by Chola kings?",
     "options": ["Sri Lanka", "Bangladesh", "India", "Malaysia"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6351,7 +6357,7 @@ const List sample_data = [
   {
     "id": 659,
     "question":
-    "The Painted Rock Shelter of Bhimbetka (Stone Age rock art) is found in which country?",
+        "The Painted Rock Shelter of Bhimbetka (Stone Age rock art) is found in which country?",
     "options": ["South Africa", "Australia", "Brazil", "India"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -6360,7 +6366,7 @@ const List sample_data = [
   {
     "id": 660,
     "question":
-    "In which country is the Derawar Fort, a large square fortress in the Cholistan Desert?",
+        "In which country is the Derawar Fort, a large square fortress in the Cholistan Desert?",
     "options": ["Pakistan", "Iran", "Afghanistan", "Turkmenistan"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6369,7 +6375,7 @@ const List sample_data = [
   {
     "id": 661,
     "question":
-    "The rock-hewn churches of Ivanovo are in the valley of the Roussenski Lom River, in which nation?",
+        "The rock-hewn churches of Ivanovo are in the valley of the Roussenski Lom River, in which nation?",
     "options": ["Bulgaria", "Romania", "Serbia", "Moldova"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6378,7 +6384,7 @@ const List sample_data = [
   {
     "id": 662,
     "question":
-    "Takht-e Soleyman, once an important Zoroastrian sanctuary, is found in which Middle Eastern country?",
+        "Takht-e Soleyman, once an important Zoroastrian sanctuary, is found in which Middle Eastern country?",
     "options": ["Iraq", "Syria", "Iran", "Jordan"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6387,7 +6393,7 @@ const List sample_data = [
   {
     "id": 663,
     "question":
-    "In which country can you visit Timbuktu, historically famed for Islamic scholarship?",
+        "In which country can you visit Timbuktu, historically famed for Islamic scholarship?",
     "options": ["Niger", "Nigeria", "Chad", "Mali"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -6396,7 +6402,7 @@ const List sample_data = [
   {
     "id": 664,
     "question":
-    "The remote mountainous kingdom of Mustang, famous for Lo Manthang, is in which country?",
+        "The remote mountainous kingdom of Mustang, famous for Lo Manthang, is in which country?",
     "options": ["Nepal", "Bhutan", "India", "China"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6405,7 +6411,7 @@ const List sample_data = [
   {
     "id": 665,
     "question":
-    "Which country has the Drakensberg mountain range with rock art by the San people?",
+        "Which country has the Drakensberg mountain range with rock art by the San people?",
     "options": ["Tanzania", "South Africa", "Zimbabwe", "Mozambique"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6414,7 +6420,7 @@ const List sample_data = [
   {
     "id": 666,
     "question":
-    "The Stone Spheres of the Diquís (pre-Columbian megalithic spheres) are found in which Central American nation?",
+        "The Stone Spheres of the Diquís (pre-Columbian megalithic spheres) are found in which Central American nation?",
     "options": ["Costa Rica", "Honduras", "El Salvador", "Panama"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6423,7 +6429,7 @@ const List sample_data = [
   {
     "id": 667,
     "question":
-    "The Citadel of Aleppo, a large medieval fortress, stands in which Middle Eastern country?",
+        "The Citadel of Aleppo, a large medieval fortress, stands in which Middle Eastern country?",
     "options": ["Syria", "Lebanon", "Iraq", "Jordan"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6432,7 +6438,7 @@ const List sample_data = [
   {
     "id": 668,
     "question":
-    "Pumapunku, part of the ancient Tiwanaku site, is found in which South American country?",
+        "Pumapunku, part of the ancient Tiwanaku site, is found in which South American country?",
     "options": ["Peru", "Bolivia", "Chile", "Colombia"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6441,7 +6447,7 @@ const List sample_data = [
   {
     "id": 669,
     "question":
-    "Vat Phou is a ruined Khmer Hindu temple complex in which Southeast Asian country?",
+        "Vat Phou is a ruined Khmer Hindu temple complex in which Southeast Asian country?",
     "options": ["Thailand", "Vietnam", "Myanmar", "Laos"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -6450,7 +6456,7 @@ const List sample_data = [
   {
     "id": 670,
     "question":
-    "The Great Blue Hole, a giant marine sinkhole, is off the coast of which country?",
+        "The Great Blue Hole, a giant marine sinkhole, is off the coast of which country?",
     "options": ["Honduras", "Belize", "Bahamas", "Cuba"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6459,7 +6465,7 @@ const List sample_data = [
   {
     "id": 671,
     "question":
-    "Which country hosts the Kiyomizu-dera temple (dating from 778) in Kyoto?",
+        "Which country hosts the Kiyomizu-dera temple (dating from 778) in Kyoto?",
     "options": ["Japan", "China", "South Korea", "Taiwan"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6468,7 +6474,7 @@ const List sample_data = [
   {
     "id": 672,
     "question":
-    "In which country is the medieval fortress of Rasnov, built by Teutonic Knights in the 13th c.?",
+        "In which country is the medieval fortress of Rasnov, built by Teutonic Knights in the 13th c.?",
     "options": ["Romania", "Czech Republic", "Germany", "Poland"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6477,7 +6483,7 @@ const List sample_data = [
   {
     "id": 673,
     "question":
-    "The Sacred City of Kandy, known for the Temple of the Tooth, is in which island nation?",
+        "The Sacred City of Kandy, known for the Temple of the Tooth, is in which island nation?",
     "options": ["Maldives", "Sri Lanka", "Madagascar", "Mauritius"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6486,7 +6492,7 @@ const List sample_data = [
   {
     "id": 674,
     "question":
-    "Tanah Lot, a rock formation home to a pilgrimage temple, is found off the coast of which country?",
+        "Tanah Lot, a rock formation home to a pilgrimage temple, is found off the coast of which country?",
     "options": ["Indonesia", "Malaysia", "Papua New Guinea", "Timor-Leste"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6495,7 +6501,7 @@ const List sample_data = [
   {
     "id": 675,
     "question":
-    "In which country is the archaeological wonder of the Rock-Hewn Churches of Tigray?",
+        "In which country is the archaeological wonder of the Rock-Hewn Churches of Tigray?",
     "options": ["Sudan", "Ethiopia", "Nigeria", "Egypt"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6504,7 +6510,7 @@ const List sample_data = [
   {
     "id": 676,
     "question":
-    "Rapa Nui National Park, known for the Moai statues, is part of which country’s territory?",
+        "Rapa Nui National Park, known for the Moai statues, is part of which country’s territory?",
     "options": ["Chile", "Peru", "Argentina", "Ecuador"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6513,7 +6519,7 @@ const List sample_data = [
   {
     "id": 677,
     "question":
-    "The Bandiagara Escarpment (Land of the Dogons) is in which West African country?",
+        "The Bandiagara Escarpment (Land of the Dogons) is in which West African country?",
     "options": ["Senegal", "Burkina Faso", "Niger", "Mali"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -6522,7 +6528,7 @@ const List sample_data = [
   {
     "id": 678,
     "question":
-    "Takht-i-Bahi, a Buddhist monastic complex from 1st c. AD, is in which modern country?",
+        "Takht-i-Bahi, a Buddhist monastic complex from 1st c. AD, is in which modern country?",
     "options": ["Pakistan", "Afghanistan", "India", "Nepal"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6531,7 +6537,7 @@ const List sample_data = [
   {
     "id": 679,
     "question":
-    "Which country hosts Lalish, a sacred site for the Yazidi faith?",
+        "Which country hosts Lalish, a sacred site for the Yazidi faith?",
     "options": ["Iraq", "Syria", "Iran", "Armenia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6540,7 +6546,7 @@ const List sample_data = [
   {
     "id": 680,
     "question":
-    "Djemila, a well-preserved Roman city in North Africa, is found in which country?",
+        "Djemila, a well-preserved Roman city in North Africa, is found in which country?",
     "options": ["Libya", "Tunisia", "Algeria", "Morocco"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6549,7 +6555,7 @@ const List sample_data = [
   {
     "id": 681,
     "question":
-    "The medieval fortress of Chufut-Kale is perched atop cliffs in Crimea, controlled by which country?",
+        "The medieval fortress of Chufut-Kale is perched atop cliffs in Crimea, controlled by which country?",
     "options": [
       "Ukraine (internationally recognized)",
       "Russia",
@@ -6563,7 +6569,7 @@ const List sample_data = [
   {
     "id": 682,
     "question":
-    "Bagan, once the capital of a powerful Burmese kingdom (9th–13th c.), is in which nation?",
+        "Bagan, once the capital of a powerful Burmese kingdom (9th–13th c.), is in which nation?",
     "options": ["Thailand", "Laos", "Myanmar", "Vietnam"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6572,7 +6578,7 @@ const List sample_data = [
   {
     "id": 683,
     "question":
-    "The Citadel of Erbil claims to be one of the oldest continuously inhabited sites. In which country?",
+        "The Citadel of Erbil claims to be one of the oldest continuously inhabited sites. In which country?",
     "options": ["Iraq", "Syria", "Turkey", "Armenia"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6581,7 +6587,7 @@ const List sample_data = [
   {
     "id": 684,
     "question":
-    "Rock-Hewn Churches of Ivanovo (13th c.) are found in which Eastern European country?",
+        "Rock-Hewn Churches of Ivanovo (13th c.) are found in which Eastern European country?",
     "options": ["Serbia", "Bulgaria", "Romania", "Moldova"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6590,7 +6596,7 @@ const List sample_data = [
   {
     "id": 685,
     "question":
-    "Which country has Sigiriya, a rock fortress said to have been built by King Kasyapa (5th c.)?",
+        "Which country has Sigiriya, a rock fortress said to have been built by King Kasyapa (5th c.)?",
     "options": ["Sri Lanka", "Thailand", "India", "Nepal"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6599,7 +6605,7 @@ const List sample_data = [
   {
     "id": 686,
     "question":
-    "Clonmacnoise, an early Christian site with ruins of a cathedral, stands in which country?",
+        "Clonmacnoise, an early Christian site with ruins of a cathedral, stands in which country?",
     "options": ["Scotland", "Ireland", "Wales", "England"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6608,7 +6614,7 @@ const List sample_data = [
   {
     "id": 687,
     "question":
-    "The Zabid Historic City (once a capital) is found in which Middle Eastern country on the Red Sea?",
+        "The Zabid Historic City (once a capital) is found in which Middle Eastern country on the Red Sea?",
     "options": ["Yemen", "Saudi Arabia", "Oman", "Eritrea"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6617,7 +6623,7 @@ const List sample_data = [
   {
     "id": 688,
     "question":
-    "Which country claims the famed Painted Churches of Troodos, a UNESCO set of Byzantine churches?",
+        "Which country claims the famed Painted Churches of Troodos, a UNESCO set of Byzantine churches?",
     "options": ["Cyprus", "Greece", "Turkey", "Bulgaria"],
     "answer_index": 0,
     "category": "Monuments/Landmarks",
@@ -6626,7 +6632,7 @@ const List sample_data = [
   {
     "id": 689,
     "question":
-    "Palenque, a Maya city-state known for its exquisite architecture, is in which modern nation?",
+        "Palenque, a Maya city-state known for its exquisite architecture, is in which modern nation?",
     "options": ["Guatemala", "Mexico", "Honduras", "El Salvador"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6635,7 +6641,7 @@ const List sample_data = [
   {
     "id": 690,
     "question":
-    "The remote island of Socotra, known for unique 'Dragon’s Blood' trees, belongs to which country?",
+        "The remote island of Socotra, known for unique 'Dragon’s Blood' trees, belongs to which country?",
     "options": ["Somalia", "Djibouti", "Eritrea", "Yemen"],
     "answer_index": 3,
     "category": "Monuments/Landmarks",
@@ -6644,7 +6650,7 @@ const List sample_data = [
   {
     "id": 691,
     "question":
-    "Taklamakan Desert sites (including Niya ruins) are in which vast Asian country?",
+        "Taklamakan Desert sites (including Niya ruins) are in which vast Asian country?",
     "options": ["Mongolia", "China", "Kazakhstan", "Pakistan"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -6653,7 +6659,7 @@ const List sample_data = [
   {
     "id": 692,
     "question":
-    "In which country can you find the site of Great Enclosure at Khami, an important trading center after Great Zimbabwe?",
+        "In which country can you find the site of Great Enclosure at Khami, an important trading center after Great Zimbabwe?",
     "options": ["Zambia", "Botswana", "Zimbabwe", "Mozambique"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6662,7 +6668,7 @@ const List sample_data = [
   {
     "id": 693,
     "question":
-    "Troy, the ancient city from Homer’s Iliad, is an archaeological site in which modern country?",
+        "Troy, the ancient city from Homer’s Iliad, is an archaeological site in which modern country?",
     "options": ["Cyprus", "Greece", "Turkey", "Bulgaria"],
     "answer_index": 2,
     "category": "Monuments/Landmarks",
@@ -6671,7 +6677,7 @@ const List sample_data = [
   {
     "id": 694,
     "question":
-    "Taxila, an ancient center of Gandharan culture, is found in which modern country?",
+        "Taxila, an ancient center of Gandharan culture, is found in which modern country?",
     "options": ["Afghanistan", "Pakistan", "Tajikistan", "Iran"],
     "answer_index": 1,
     "category": "Monuments/Landmarks",
@@ -7663,7 +7669,7 @@ const List sample_data = [
   {
     "id": 816,
     "question":
-    "Which country shares a land border with both Brazil and Argentina?",
+        "Which country shares a land border with both Brazil and Argentina?",
     "options": ["Bolivia", "Uruguay", "Chile", "Paraguay"],
     "answer_index": 3,
     "category": "Geography",
@@ -7728,7 +7734,7 @@ const List sample_data = [
   {
     "id": 824,
     "question":
-    "Which of these countries does NOT border the Mediterranean Sea?",
+        "Which of these countries does NOT border the Mediterranean Sea?",
     "options": ["Algeria", "Portugal", "Syria", "Croatia"],
     "answer_index": 1,
     "category": "Geography",
@@ -7745,7 +7751,7 @@ const List sample_data = [
   {
     "id": 826,
     "question":
-    "Which is the largest by area among these landlocked countries?",
+        "Which is the largest by area among these landlocked countries?",
     "options": ["Ethiopia", "Uganda", "Bolivia", "Lao PDR"],
     "answer_index": 2,
     "category": "Geography",
@@ -7762,7 +7768,7 @@ const List sample_data = [
   {
     "id": 828,
     "question":
-    "Which of these countries shares the longest land border with Russia?",
+        "Which of these countries shares the longest land border with Russia?",
     "options": ["Norway", "China", "Finland", "Ukraine"],
     "answer_index": 1,
     "category": "Geography",
@@ -7787,7 +7793,7 @@ const List sample_data = [
   {
     "id": 831,
     "question":
-    "Which country in the Arabian Peninsula is the largest by area?",
+        "Which country in the Arabian Peninsula is the largest by area?",
     "options": ["Oman", "Saudi Arabia", "Yemen", "Kuwait"],
     "answer_index": 1,
     "category": "Geography",
@@ -7796,7 +7802,7 @@ const List sample_data = [
   {
     "id": 832,
     "question":
-    "Which of these South American countries does NOT border the Pacific Ocean?",
+        "Which of these South American countries does NOT border the Pacific Ocean?",
     "options": ["Colombia", "Peru", "Paraguay", "Chile"],
     "answer_index": 2,
     "category": "Geography",
@@ -7813,7 +7819,7 @@ const List sample_data = [
   {
     "id": 834,
     "question":
-    "Which is the largest of the Great Lakes in North America by surface area?",
+        "Which is the largest of the Great Lakes in North America by surface area?",
     "options": ["Lake Superior", "Lake Michigan", "Lake Huron", "Lake Erie"],
     "answer_index": 0,
     "category": "Geography",
@@ -7878,7 +7884,7 @@ const List sample_data = [
   {
     "id": 842,
     "question":
-    "Which island is the largest in the world by area (excluding continents)?",
+        "Which island is the largest in the world by area (excluding continents)?",
     "options": ["New Guinea", "Borneo", "Greenland", "Madagascar"],
     "answer_index": 2,
     "category": "Geography",
@@ -7919,7 +7925,7 @@ const List sample_data = [
   {
     "id": 847,
     "question":
-    "Which of these countries is located entirely on the Balkan Peninsula?",
+        "Which of these countries is located entirely on the Balkan Peninsula?",
     "options": ["Greece", "Romania", "Croatia", "Slovenia"],
     "answer_index": 0,
     "category": "Geography",
@@ -7984,7 +7990,7 @@ const List sample_data = [
   {
     "id": 855,
     "question":
-    "Which of these countries is entirely landlocked in South America?",
+        "Which of these countries is entirely landlocked in South America?",
     "options": ["Bolivia", "Chile", "Ecuador", "Venezuela"],
     "answer_index": 0,
     "category": "Geography",
@@ -7993,7 +7999,7 @@ const List sample_data = [
   {
     "id": 856,
     "question":
-    "Which country does NOT border the Democratic Republic of the Congo?",
+        "Which country does NOT border the Democratic Republic of the Congo?",
     "options": ["Zambia", "Tanzania", "Uganda", "Namibia"],
     "answer_index": 3,
     "category": "Geography",
@@ -8031,7 +8037,7 @@ const List sample_data = [
   {
     "id": 860,
     "question":
-    "Which of these countries is the largest by area in the Arabian Peninsula?",
+        "Which of these countries is the largest by area in the Arabian Peninsula?",
     "options": ["Oman", "Yemen", "Kuwait", "Saudi Arabia"],
     "answer_index": 3,
     "category": "Geography",
@@ -8040,7 +8046,7 @@ const List sample_data = [
   {
     "id": 861,
     "question":
-    "Which country in Europe does NOT use the Euro as its currency?",
+        "Which country in Europe does NOT use the Euro as its currency?",
     "options": ["Sweden", "Belgium", "Portugal", "Slovakia"],
     "answer_index": 0,
     "category": "Geography",
@@ -8086,7 +8092,7 @@ const List sample_data = [
   {
     "id": 866,
     "question":
-    "Which of these is the smallest by area among the former Soviet republics?",
+        "Which of these is the smallest by area among the former Soviet republics?",
     "options": ["Estonia", "Armenia", "Kyrgyzstan", "Azerbaijan"],
     "answer_index": 1,
     "category": "Geography",
@@ -8153,7 +8159,7 @@ const List sample_data = [
   {
     "id": 873,
     "question":
-    "Which is the largest country on the Arabian Peninsula by population?",
+        "Which is the largest country on the Arabian Peninsula by population?",
     "options": ["Saudi Arabia", "Yemen", "Oman", "Kuwait"],
     "answer_index": 0,
     "category": "Geography",

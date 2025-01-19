@@ -7,6 +7,10 @@ class NoMoreQuestionsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
+
     return Scaffold(
       // appBar: AppBar(
       //   title: const Text("Geography App"),
@@ -15,7 +19,8 @@ class NoMoreQuestionsScreen extends StatelessWidget {
       //   elevation: 0.0,
       // ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
+        padding:
+            EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,8 +48,7 @@ class NoMoreQuestionsScreen extends StatelessWidget {
                   onPressed: () {
                     Get.to(() => const HomeScreen());
                   },
-                  child: const Text('BACK TO HOME SCREEN')
-              ),
+                  child: const Text('BACK TO HOME SCREEN')),
             )
           ],
         ),

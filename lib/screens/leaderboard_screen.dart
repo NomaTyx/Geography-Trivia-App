@@ -10,11 +10,17 @@ class LeaderboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+    PlayerDataController playerDataController =
+        Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
 
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
+        padding:
+            EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -24,9 +30,7 @@ class LeaderboardScreen extends StatelessWidget {
                 radius: 40.0,
               ),
             ),
-            Divider(
-              height: 30
-            ),
+            Divider(height: 30),
             const Center(
               child: Text(
                 'LEADERBOARD',
@@ -39,11 +43,11 @@ class LeaderboardScreen extends StatelessWidget {
               ),
             ),
             const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Expanded(
                     flex: 1,
-                    child: Text("Rank", textAlign: TextAlign.center ),
+                    child: Text("Rank", textAlign: TextAlign.center),
                   ),
                   Expanded(
                     flex: 1,
@@ -51,55 +55,63 @@ class LeaderboardScreen extends StatelessWidget {
                   ),
                   Expanded(
                       flex: 1,
-                      child: Text("Score", textAlign: TextAlign.center)
-                  ),
-                  Expanded(flex: 2, child: Text("Region", textAlign: TextAlign.center)),
-                ]
-            ),
+                      child: Text("Score", textAlign: TextAlign.center)),
+                  Expanded(
+                      flex: 2,
+                      child: Text("Region", textAlign: TextAlign.center)),
+                ]),
             SizedBox(
               height: 500,
-              child:ListView.separated(
+              child: ListView.separated(
                 shrinkWrap: true,
                 padding: const EdgeInsets.all(15),
                 itemCount: min(playerDataController.topPlayersList.length, 10),
                 itemBuilder: (BuildContext context, int index) {
                   return SizedBox(
-                    height: 30,
+                      height: 30,
                       // row with rank, name, region, total score
-                    child: Row(
-                      children: [
+                      child: Row(children: [
                         Expanded(
                           flex: 1,
-                          child: Text("#${(index + 1).toString()}", textAlign: TextAlign.center),
+                          child: Text("#${(index + 1).toString()}",
+                              textAlign: TextAlign.center),
                         ),
                         Expanded(
                           flex: 1,
-                          child: Text(playerDataController.topPlayersList[index]["Name"], textAlign: TextAlign.center),
+                          child: Text(
+                              playerDataController.topPlayersList[index]
+                                  ["Name"],
+                              textAlign: TextAlign.center),
                         ),
                         Expanded(
                             flex: 1,
-                            child: Text(playerDataController.topPlayersList[index]["Score"].toString(), textAlign: TextAlign.center)
-                        ),
-                        Expanded(flex: 2, child: Text(playerDataController.topPlayersList[index]["Region"], textAlign: TextAlign.center)),
-                      ]
-                    )
-                  );
+                            child: Text(
+                                playerDataController.topPlayersList[index]
+                                        ["Score"]
+                                    .toString(),
+                                textAlign: TextAlign.center)),
+                        Expanded(
+                            flex: 2,
+                            child: Text(
+                                playerDataController.topPlayersList[index]
+                                    ["Region"],
+                                textAlign: TextAlign.center)),
+                      ]));
                 },
-                separatorBuilder: (BuildContext context, int index) => const Divider(),
+                separatorBuilder: (BuildContext context, int index) =>
+                    const Divider(),
               ),
             ),
             ElevatedButton(
                 onPressed: () {
                   Get.to(() => const HomeScreen());
                 },
-                child: const Text('BACK TO HOME SCREEN')
-            ),
+                child: const Text('BACK TO HOME SCREEN')),
             ElevatedButton(
                 onPressed: () async {
                   await playerDataController.findTopPlayers(10);
                 },
-                child: const Text('test top 10 list')
-            )
+                child: const Text('test top 10 list'))
           ],
         ),
       ),

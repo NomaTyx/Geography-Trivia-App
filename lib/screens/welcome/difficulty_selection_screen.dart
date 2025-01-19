@@ -11,6 +11,10 @@ class DifficultySelectionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -20,49 +24,48 @@ class DifficultySelectionScreen extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            const Center(
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/toge.jpg'),
-                radius: 40.0,
-              ),
+        padding: EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
+        child: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/originalAssets/southAmericaBackground.png'),
+              //fit: BoxFit.cover,
             ),
-            Divider(
-              height: 30,
-            ),
-            const Center(
-              child: Text(
-                'CHOOSE QUESTION DIFFICULTY',
-                style: TextStyle(
-                  letterSpacing: 2.0,
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Center(
+                child: Text(
+                  'CHOOSE QUESTION DIFFICULTY',
+                  style: TextStyle(
+                    letterSpacing: 2.0,
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                  ),
                 ),
               ),
-            ),
-            Divider(
-              height: 75,
-            ),
+              Divider(
+                height: 75,
+              ),
 
-            //PLAY BUTTON
-            customButton(context, 'EASY', 1),
-            Divider(
-              height: dividerHeight,
-            ),
+              //PLAY BUTTON
+              customButton(context, 'EASY', 1),
+              Divider(
+                height: dividerHeight,
+              ),
 
-            //SETTINGS BUTTON
-            customButton(context, 'MEDIUM', 2),
-            Divider(
-              height: dividerHeight,
-            ),
+              //SETTINGS BUTTON
+              customButton(context, 'MEDIUM', 2),
+              Divider(
+                height: dividerHeight,
+              ),
 
-            //LEADERBOARD BUTTON
-            customButton(context, 'HARD', 3),
-          ],
+              //LEADERBOARD BUTTON
+              customButton(context, 'HARD', 3),
+            ],
+          ),
         ),
       ),
     );
@@ -78,11 +81,9 @@ Widget customButton(BuildContext context, String buttonText, int difficultyValue
       onPressed: () {
         controller.setDifficulty(difficultyValue);
         controller.beginQuiz();
-        if(controller.findValidQuestion() == -1)
-        {
+        if (controller.findValidQuestion() == -1) {
           Get.to(() => const NoMoreQuestionsScreen());
-        }
-        else {
+        } else {
           Get.to(() => const QuizScreen());
         }
       },

@@ -11,10 +11,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //local variables go here i think
+    //local variables go here i thinks
     var size = MediaQuery.of(context).size;
     double width = size.width;
     double height = size.height;
+    print("width: $width, height: $height");
 
     return Scaffold(
       // appBar: AppBar(
@@ -24,27 +25,27 @@ class HomeScreen extends StatelessWidget {
       //   elevation: 0.0,
       // ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
+        padding: EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Divider(height: 30, thickness: 0),
             const Center(
               child: Text(
                 'International IQ',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   letterSpacing: 2.0,
-                  fontSize: 30.0,
+                  fontSize: 45.0,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Acme',
                   color: Colors.blue,
                 ),
               ),
             ),
-            const Center(
+            Center(
               child: Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
-                  child: CircleAvatar(
+                  padding: EdgeInsets.fromLTRB(0, height * 0.05, 0, height * 0.05),
+                  child: const CircleAvatar(
                     backgroundImage: AssetImage(
                         'assets/originalAssets/globe.png'),
                     radius: 120.0,
@@ -72,13 +73,13 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-Widget titleButton(BuildContext context, String buttonText, onPressMethod) {
+Widget titleButton(BuildContext context, String buttonText, onPressScreen) {
   return SizedBox(
     width: 900,
     height: 75,
     child: ElevatedButton(
       onPressed: () {
-        Get.to(onPressMethod);
+        Get.to(onPressScreen);
       },
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all<Color>(Colors.grey),

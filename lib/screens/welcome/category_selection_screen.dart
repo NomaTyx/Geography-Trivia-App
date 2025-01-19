@@ -11,6 +11,11 @@ class CategorySelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     QuestionController questionController = Get.put(QuestionController());
+
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -20,50 +25,49 @@ class CategorySelectionScreen extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            const Center(
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/toge.jpg'),
-                radius: 40.0,
-              ),
+        padding: EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
+        child: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/originalAssets/southAmericaBackground.png'),
+              //fit: BoxFit.cover,
             ),
-            Divider(
-              height: 30,
-            ),
-            const Center(
-              child: Text(
-                'CHOOSE QUESTION CATEGORY',
-                style: TextStyle(
-                  letterSpacing: 2.0,
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Center(
+                child: Text(
+                  'CHOOSE QUESTION CATEGORY',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    letterSpacing: 2.0,
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                  ),
                 ),
               ),
-            ),
-            ListView.separated(
-              shrinkWrap: true,
-              padding: const EdgeInsets.all(9),
-              itemCount: questionController.categoryList.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Container(
-                  height: 50,
-                  child: ElevatedButton(
-                    child: Text(questionController.categoryList[index]),
-                    onPressed: () {
-                      questionController.setCategory(questionController.categoryList[index]);
-                      Get.to(() => const DifficultySelectionScreen());
-                    },
-                  ),
-                );
-              },
-              separatorBuilder: (BuildContext context, int index) => const Divider(),
-            )
-
-          ],
+              ListView.separated(
+                shrinkWrap: true,
+                padding: const EdgeInsets.all(9),
+                itemCount: questionController.categoryList.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Container(
+                    height: width / 9,
+                    child: ElevatedButton(
+                      child: Text(questionController.categoryList[index]),
+                      onPressed: () {
+                        questionController.setCategory(questionController.categoryList[index]);
+                        Get.to(() => const DifficultySelectionScreen());
+                      },
+                    ),
+                  );
+                },
+                separatorBuilder: (BuildContext context, int index) => const Divider(),
+              )
+            ],
+          ),
         ),
       ),
     );
@@ -72,11 +76,10 @@ class CategorySelectionScreen extends StatelessWidget {
 
 Widget customButton(BuildContext context, String buttonText, String category) {
   QuestionController controller;
-  if(!Get.isRegistered<QuestionController>()) {
+  if (!Get.isRegistered<QuestionController>()) {
     //get.put is a function that lets us access the same instance of our controller class in any file. basically put get.put in any file you want to access the difficulty value.
     controller = Get.put(QuestionController());
-  }
-  else{
+  } else {
     //get.find lets us find a controller of the given type.
     controller = Get.find<QuestionController>();
   }

@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'dart:io';
@@ -73,17 +74,14 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
 
   void setPlayerName(String name) {
     playerName = name;
-    print("the player's name is $playerName");
   }
 
   void setPlayerRegion(String region) {
      playerRegion = region;
-     print("the player's region is $playerRegion");
   }
 
   Future<void> addToPlayerScore(int score) async {
     playerScoreTotal += score;
-    print("score total is $playerScoreTotal");
     final data = {"Score": playerScoreTotal.value};
     playerDatabase.collection("users").doc(deviceID).set(data, SetOptions(merge: true));
   }
@@ -97,7 +95,7 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
   }
 
   Future<void> findTopPlayers(int numOfPlayers) async {
-    final docRef = await playerDatabase.collection("users");
+    final docRef = playerDatabase.collection("users");
     await docRef.orderBy("Score", descending: true).limit(numOfPlayers).get().then(
         (querySnapshot) {
           topPlayersList.clear();
@@ -108,11 +106,4 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
         }
     );
   }
-}
-
-class Player {
-  String? deviceID;
-  String? playerName;
-  String? playerRegion;
-  RxInt playerScoreTotal = 0.obs;
 }

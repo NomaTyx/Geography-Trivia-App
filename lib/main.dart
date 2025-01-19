@@ -32,9 +32,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
+
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: new ThemeData(scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 248, 1)),
+      theme: ThemeData(scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 248, 1)),
       home: const HomeController(),
     );
   }

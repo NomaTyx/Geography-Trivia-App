@@ -9,31 +9,33 @@ class NameScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+    PlayerDataController playerDataController =
+        Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
     String name = 'timmy';
+
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
 
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
-
+        padding:
+            EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-
             const Center(
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/toge.jpg'),
                 radius: 80.0,
               ),
             ),
-
             Divider(
               height: 30,
             ),
-
             const Center(
-              child:
-              Text('Hi! Please enter your name.',
+              child: Text(
+                'Hi! Please enter your name.',
                 style: TextStyle(
                   letterSpacing: 2.0,
                   fontSize: 30.0,
@@ -42,45 +44,43 @@ class NameScreen extends StatelessWidget {
                 ),
               ),
             ),
-
             Divider(
               height: 30,
             ),
-
             TextField(
               decoration: InputDecoration(hintText: "Name"),
               onChanged: (String value) {
                 name = value;
               },
             ),
-
             Divider(
               height: 30,
             ),
-
             ElevatedButton(
                 onPressed: () => {
-                  if(name != '') {
-                    playerDataController.setPlayerName(name),
-                    Get.to(RegionScreen())
-                  }
-                  else {
-                    showDialog<String>(
-                      context: context,
-                      builder: (BuildContext context) => AlertDialog(
-                        title: const Text('I\'m sure you have a name'),
-                        content: const Text('If you don\'t have a name, come up with one.'),
-                        actions: <Widget>[
-                          TextButton(
-                            onPressed: () => Navigator.pop(context, 'OK'),
-                            child: const Text('OK'),
+                      if (name != '')
+                        {
+                          playerDataController.setPlayerName(name),
+                          Get.to(RegionScreen())
+                        }
+                      else
+                        {
+                          showDialog<String>(
+                            context: context,
+                            builder: (BuildContext context) => AlertDialog(
+                              title: const Text('I\'m sure you have a name'),
+                              content: const Text(
+                                  'If you don\'t have a name, come up with one.'),
+                              actions: <Widget>[
+                                TextButton(
+                                  onPressed: () => Navigator.pop(context, 'OK'),
+                                  child: const Text('OK'),
+                                ),
+                              ],
+                            ),
                           ),
-                        ],
-                      ),
-                    ),
-                  }
-                },
-
+                        }
+                    },
                 child: Text("Done"))
           ],
         ),
@@ -91,14 +91,29 @@ class NameScreen extends StatelessWidget {
 
 class RegionScreen extends StatelessWidget {
   RegionScreen({super.key});
-  final List<String> regionList = <String>['Africa', 'Asia', 'Europe', 'North America', 'Oceania', 'South America', 'Antarctica'];
-  final PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+
+  final List<String> regionList = <String>[
+    'Africa',
+    'Asia',
+    'Europe',
+    'North America',
+    'Oceania',
+    'South America',
+    'Antarctica'
+  ];
+  final PlayerDataController playerDataController =
+      Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
+
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
+        padding:
+            EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -126,40 +141,41 @@ class RegionScreen extends StatelessWidget {
               height: 30,
             ),
             ListView.separated(
-                shrinkWrap: true,
-                padding: const EdgeInsets.all(9),
-                itemCount: regionList.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    height: 50,
-                    child: ElevatedButton(
-                      child: Text(regionList[index]),
-                      onPressed: () {
-                        if(regionList[index] != "Antarctica") {
-                          playerDataController.setPlayerRegion(regionList[index]);
-                          playerDataController.addUser();
-                          Get.to(HomeScreen());
-                        }
-                        else {
-                          showDialog<String>(
-                            context: context,
-                            builder: (BuildContext context) => AlertDialog(
-                              title: const Text('Nice try, bucko'),
-                              content: const Text('You don\'t live in antarctica'),
-                              actions: <Widget>[
-                                TextButton(
-                                  onPressed: () => Navigator.pop(context, 'OK'),
-                                  child: const Text('OK'),
-                                ),
-                              ],
-                            ),
-                          );
-                        }
-                      },
-                    ),
-                  );
-                },
-                separatorBuilder: (BuildContext context, int index) => const Divider(),
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(9),
+              itemCount: regionList.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Container(
+                  height: 50,
+                  child: ElevatedButton(
+                    child: Text(regionList[index]),
+                    onPressed: () {
+                      if (regionList[index] != "Antarctica") {
+                        playerDataController.setPlayerRegion(regionList[index]);
+                        playerDataController.addUser();
+                        Get.to(HomeScreen());
+                      } else {
+                        showDialog<String>(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                            title: const Text('Nice try, bucko'),
+                            content:
+                                const Text('You don\'t live in antarctica'),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () => Navigator.pop(context, 'OK'),
+                                child: const Text('OK'),
+                              ),
+                            ],
+                          ),
+                        );
+                      }
+                    },
+                  ),
+                );
+              },
+              separatorBuilder: (BuildContext context, int index) =>
+                  const Divider(),
             )
           ],
         ),

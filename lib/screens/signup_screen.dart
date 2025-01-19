@@ -18,11 +18,14 @@ class _MyAppState extends State<SignUpScreen> {
   Widget build(BuildContext context) {
     AuthServices authServices;
 
-    if(!Get.isRegistered<AuthServices>()) {
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
+
+    if (!Get.isRegistered<AuthServices>()) {
       //get.put is a function that lets us access the same instance of our controller class in any file. basically put get.put in any file you want to access the difficulty value.
       authServices = Get.put(AuthServices());
-    }
-    else{
+    } else {
       //get.find lets us find a controller of the given type.
       authServices = Get.find<AuthServices>();
     }
@@ -30,7 +33,8 @@ class _MyAppState extends State<SignUpScreen> {
     String email = '', password = '';
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 90.0, 30.0, 0),
+        padding:
+            EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -40,9 +44,7 @@ class _MyAppState extends State<SignUpScreen> {
                 radius: 40.0,
               ),
             ),
-            Divider(
-              height: 30
-            ),
+            Divider(height: 30),
             const Center(
               child: Text(
                 'Sign up!',
@@ -54,9 +56,7 @@ class _MyAppState extends State<SignUpScreen> {
                 ),
               ),
             ),
-            Divider(
-              height: 30
-            ),
+            Divider(height: 30),
             TextField(
               decoration: InputDecoration(hintText: 'enter your email address'),
               onChanged: (String value) {
@@ -68,7 +68,8 @@ class _MyAppState extends State<SignUpScreen> {
             ),
             TextField(
               //specifically not asking them to confirm a password because im not a PUSSY (also idk how to do it)
-              decoration: InputDecoration(hintText: 'enter your desired password'),
+              decoration:
+                  InputDecoration(hintText: 'enter your desired password'),
               onChanged: (String value) {
                 password = value;
               },
@@ -77,7 +78,9 @@ class _MyAppState extends State<SignUpScreen> {
               height: 80,
             ),
             ElevatedButton(
-                onPressed: () {authServices.signUp(email, password);},
+                onPressed: () {
+                  authServices.signUp(email, password);
+                },
                 child: Text("Create account"))
           ],
         ),
