@@ -76,6 +76,7 @@ flutter:
     - assets/icons/
     - assets/originalAssets/
 
+
   fonts:
     - family: Acme
       fonts:

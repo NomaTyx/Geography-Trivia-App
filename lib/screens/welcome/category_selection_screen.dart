@@ -33,40 +33,44 @@ class CategorySelectionScreen extends StatelessWidget {
               //fit: BoxFit.cover,
             ),
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              const Center(
-                child: Text(
-                  'CHOOSE QUESTION CATEGORY',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    letterSpacing: 2.0,
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+          child: SizedBox(
+            height: height * 0.7,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                const Center(
+                  child: Text(
+                    'CHOOSE QUESTION CATEGORY',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      letterSpacing: 2.0,
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue,
+                    ),
                   ),
                 ),
-              ),
-              ListView.separated(
-                shrinkWrap: true,
-                padding: const EdgeInsets.all(9),
-                itemCount: questionController.categoryList.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    height: width / 9,
-                    child: ElevatedButton(
-                      child: Text(questionController.categoryList[index]),
-                      onPressed: () {
-                        questionController.setCategory(questionController.categoryList[index]);
-                        Get.to(() => const DifficultySelectionScreen());
-                      },
-                    ),
-                  );
-                },
-                separatorBuilder: (BuildContext context, int index) => const Divider(),
-              )
-            ],
+                ListView.separated(
+                  shrinkWrap: true,
+                  padding: const EdgeInsets.all(9),
+                  itemCount: questionController.categoryList.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      height: height / 15,
+                      child: ElevatedButton(
+                        child: Text(questionController.categoryList[index]),
+                        onPressed: () {
+                          questionController.setCategory(questionController.categoryList[index]);
+                          Get.to(() => DifficultySelectionScreen());
+                        },
+                      ),
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) => SizedBox(height: height / 50),
+                )
+              ],
+            ),
           ),
         ),
       ),
@@ -89,7 +93,7 @@ Widget customButton(BuildContext context, String buttonText, String category) {
     child: ElevatedButton(
       onPressed: () {
         controller.setCategory(category);
-        Get.to(() => const DifficultySelectionScreen());
+        Get.to(() => DifficultySelectionScreen());
       },
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all<Color>(Colors.grey),

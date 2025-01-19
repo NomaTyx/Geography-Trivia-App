@@ -7,7 +7,9 @@ import 'package:geography_trivia_app/controllers/question_controller.dart';
 double dividerHeight = 35;
 
 class DifficultySelectionScreen extends StatelessWidget {
-  const DifficultySelectionScreen({super.key});
+  DifficultySelectionScreen({super.key});
+
+  QuestionController questionController = Get.find<QuestionController>();
 
   @override
   Widget build(BuildContext context) {
@@ -32,39 +34,49 @@ class DifficultySelectionScreen extends StatelessWidget {
               //fit: BoxFit.cover,
             ),
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              const Center(
-                child: Text(
-                  'CHOOSE QUESTION DIFFICULTY',
-                  style: TextStyle(
-                    letterSpacing: 2.0,
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+          child: SizedBox(
+            height: height * 0.7,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                const Center(
+                  child: Text(
+                    'CHOOSE QUESTION DIFFICULTY',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      letterSpacing: 2.0,
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue,
+                    ),
                   ),
                 ),
-              ),
-              Divider(
-                height: 75,
-              ),
-
-              //PLAY BUTTON
-              customButton(context, 'EASY', 1),
-              Divider(
-                height: dividerHeight,
-              ),
-
-              //SETTINGS BUTTON
-              customButton(context, 'MEDIUM', 2),
-              Divider(
-                height: dividerHeight,
-              ),
-
-              //LEADERBOARD BUTTON
-              customButton(context, 'HARD', 3),
-            ],
+                ListView.separated(
+                  shrinkWrap: true,
+                  padding: const EdgeInsets.all(9),
+                  itemCount: questionController.difficultyList.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      height: height / 15,
+                      child: ElevatedButton(
+                        child: Text(questionController.difficultyList[index]),
+                        onPressed: () {
+                          questionController.setDifficulty(index + 1);
+                          questionController.beginQuiz();
+                          if (questionController.findValidQuestion() == -1) {
+                            Get.to(() => const NoMoreQuestionsScreen());
+                          } else {
+                            Get.to(() => const QuizScreen());
+                          }
+                        },
+                      ),
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) => SizedBox(height: height / 50),
+                )
+              ],
+            ),
           ),
         ),
       ),
