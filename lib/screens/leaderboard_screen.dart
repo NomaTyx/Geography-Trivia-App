@@ -10,8 +10,7 @@ class LeaderboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    PlayerDataController playerDataController =
-        Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
+    PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
 
     var size = MediaQuery.of(context).size;
     double width = size.width;
@@ -19,8 +18,7 @@ class LeaderboardScreen extends StatelessWidget {
 
     return Scaffold(
       body: Padding(
-        padding:
-            EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
+        padding: EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -42,24 +40,18 @@ class LeaderboardScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: Text("Rank", textAlign: TextAlign.center),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Text("Name", textAlign: TextAlign.center),
-                  ),
-                  Expanded(
-                      flex: 1,
-                      child: Text("Score", textAlign: TextAlign.center)),
-                  Expanded(
-                      flex: 2,
-                      child: Text("Region", textAlign: TextAlign.center)),
-                ]),
+            const Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+              Expanded(
+                flex: 1,
+                child: Text("Rank", textAlign: TextAlign.center),
+              ),
+              Expanded(
+                flex: 1,
+                child: Text("Name", textAlign: TextAlign.center),
+              ),
+              Expanded(flex: 1, child: Text("Score", textAlign: TextAlign.center)),
+              Expanded(flex: 2, child: Text("Region", textAlign: TextAlign.center)),
+            ]),
             SizedBox(
               height: 500,
               child: ListView.separated(
@@ -73,33 +65,23 @@ class LeaderboardScreen extends StatelessWidget {
                       child: Row(children: [
                         Expanded(
                           flex: 1,
-                          child: Text("#${(index + 1).toString()}",
-                              textAlign: TextAlign.center),
+                          child: Text("#${(index + 1).toString()}", textAlign: TextAlign.center),
                         ),
                         Expanded(
                           flex: 1,
-                          child: Text(
-                              playerDataController.topPlayersList[index]
-                                  ["Name"],
-                              textAlign: TextAlign.center),
+                          child: Text(playerDataController.topPlayersList[index]["Name"], textAlign: TextAlign.center),
                         ),
                         Expanded(
                             flex: 1,
-                            child: Text(
-                                playerDataController.topPlayersList[index]
-                                        ["Score"]
-                                    .toString(),
+                            child: Text(playerDataController.topPlayersList[index]["Score"].toString(),
                                 textAlign: TextAlign.center)),
                         Expanded(
                             flex: 2,
-                            child: Text(
-                                playerDataController.topPlayersList[index]
-                                    ["Region"],
+                            child: Text(playerDataController.topPlayersList[index]["Region"],
                                 textAlign: TextAlign.center)),
                       ]));
                 },
-                separatorBuilder: (BuildContext context, int index) =>
-                    const Divider(),
+                separatorBuilder: (BuildContext context, int index) => const Divider(),
               ),
             ),
             ElevatedButton(

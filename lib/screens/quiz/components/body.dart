@@ -21,7 +21,6 @@ class Body extends StatelessWidget {
     questionController = Get.find<QuestionController>();
     return Stack(
       children: [
-        WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.fill),
         SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

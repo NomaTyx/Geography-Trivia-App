@@ -46,11 +46,9 @@ class HomeScreen extends StatelessWidget {
               child: Padding(
                   padding: EdgeInsets.fromLTRB(0, height * 0.05, 0, height * 0.05),
                   child: const CircleAvatar(
-                    backgroundImage: AssetImage(
-                        'assets/originalAssets/globe.png'),
+                    backgroundImage: AssetImage('assets/originalAssets/globe.png'),
                     radius: 120.0,
-                  )
-              ),
+                  )),
             ),
             Center(
               child: SizedBox(

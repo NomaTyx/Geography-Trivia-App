@@ -35,6 +35,9 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   final List<String> _categories = ["Capitals", "Geography", "Languages", "History", "Culture"];
   List<String> get categoryList => _categories;
 
+  final List<String> _difficulties = ["Easy", "Medium", "Hard"];
+  List<String> get difficultyList => _difficulties;
+
   // ignore: prefer_final_fields
   late RxList<int> _answeredQuestionsIDList = <int>[].obs;
   List<int> get answeredQuestions => _answeredQuestionsIDList;
