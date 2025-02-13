@@ -75,17 +75,20 @@ Widget titleButton(BuildContext context, String buttonText, onPressScreen) {
   return SizedBox(
     width: 900,
     height: 75,
-    child: ElevatedButton(
+    child: OutlinedButton(
       onPressed: () {
         Get.to(onPressScreen);
       },
       style: ButtonStyle(
-        backgroundColor: WidgetStateProperty.all<Color>(Colors.grey),
+        backgroundColor: WidgetStateProperty.all<Color>(Color.fromRGBO(214, 214, 197, 1)), 
+        side: WidgetStateProperty.all(BorderSide(color: Color.fromRGBO(60, 98, 26, 1), width: 2.5)),
+        shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)))
       ),
       child: Text(
         buttonText,
         style: const TextStyle(
           letterSpacing: 2.0,
+          color: Colors.black,
         ),
       ),
     ),
