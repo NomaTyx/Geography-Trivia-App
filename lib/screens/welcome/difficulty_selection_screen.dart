@@ -28,12 +28,13 @@ class DifficultySelectionScreen extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
+        padding: EdgeInsets.fromLTRB(0, height * 0.1, 0, 0),
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/originalAssets/southAmericaBackground.png'),
-              //fit: BoxFit.cover,
+                image: AssetImage('assets/originalAssets/southAmericaBackground.png'),
+                alignment: Alignment(0, 2),
+                fit: BoxFit.contain
             ),
           ),
           child: SizedBox(
@@ -47,12 +48,11 @@ class DifficultySelectionScreen extends StatelessWidget {
                 ),
                 ListView.separated(
                   shrinkWrap: true,
-                  padding: const EdgeInsets.all(9),
+                  //edge insets are like this to wrangle the buttons into the right size
+                  padding: EdgeInsets.fromLTRB(width * 0.15, 0, width * 0.15, 0),
                   itemCount: questionController.difficultyList.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return SizedBox(
-                      height: height / 15,
-                      child: longButton(
+                    return longButton(
                         context,
                         questionController.difficultyList[index],
                         () {
@@ -64,7 +64,6 @@ class DifficultySelectionScreen extends StatelessWidget {
                             Get.to(() => const QuizScreen());
                           }
                         },
-                      ),
                     );
                   },
                   separatorBuilder: (BuildContext context, int index) => SizedBox(height: height / 50),
