@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/screens/settings_screen.dart';
 import 'package:get/get.dart';
 import '../../controllers/question_controller.dart';
-import 'components/body.dart';
+import 'quizScreenComponents/body.dart';
 
 class QuizScreen extends StatelessWidget {
   const QuizScreen({super.key});
