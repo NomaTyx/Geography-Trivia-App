@@ -4,6 +4,8 @@ import 'package:geography_trivia_app/screens/quiz/quiz_screen.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 
+import '../../controllers/ui_components.dart';
+
 double dividerHeight = 35;
 
 class DifficultySelectionScreen extends StatelessWidget {
@@ -40,17 +42,8 @@ class DifficultySelectionScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                const Center(
-                  child: Text(
-                    'CHOOSE QUESTION DIFFICULTY',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      letterSpacing: 2.0,
-                      fontSize: 30.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue,
-                    ),
-                  ),
+                Center(
+                  child: headerText(context, 'CHOOSE QUESTION DIFFICULTY', 35.0),
                 ),
                 ListView.separated(
                   shrinkWrap: true,
@@ -59,9 +52,10 @@ class DifficultySelectionScreen extends StatelessWidget {
                   itemBuilder: (BuildContext context, int index) {
                     return SizedBox(
                       height: height / 15,
-                      child: ElevatedButton(
-                        child: Text(questionController.difficultyList[index]),
-                        onPressed: () {
+                      child: longButton(
+                        context,
+                        questionController.difficultyList[index],
+                        () {
                           questionController.setDifficulty(index + 1);
                           questionController.beginQuiz();
                           if (questionController.findValidQuestion() == -1) {
