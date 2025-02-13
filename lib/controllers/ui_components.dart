@@ -7,7 +7,7 @@ Widget longButton(BuildContext context, String buttonText, Function()? onPress) 
   double width = size.width;
   double height = size.height;
 
-  //creates a sizedbox that drives the maximum size of the button.
+  //creates a sizedbox that drives the minimum size of the button.
   return SizedBox(
     width: width * 0.9,
     height: height / 13,
