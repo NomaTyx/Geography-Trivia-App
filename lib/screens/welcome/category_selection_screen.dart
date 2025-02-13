@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geography_trivia_app/controllers/ui_components.dart';
 import 'package:geography_trivia_app/screens/welcome/difficulty_selection_screen.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
@@ -25,12 +26,13 @@ class CategorySelectionScreen extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
+        padding: EdgeInsets.fromLTRB(0, height * 0.1, 0, 0),
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/originalAssets/southAmericaBackground.png'),
-              //fit: BoxFit.cover,
+              alignment: Alignment(0, 2),
+              fit: BoxFit.contain
             ),
           ),
           child: SizedBox(
@@ -39,33 +41,18 @@ class CategorySelectionScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                const Center(
-                  child: Text(
-                    'CHOOSE QUESTION CATEGORY',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      letterSpacing: 2.0,
-                      fontSize: 30.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue,
-                    ),
-                  ),
+                Center(
+                  child: headerText(context, 'CHOOSE QUESTION CATEGORY', 35.0),
                 ),
                 ListView.separated(
                   shrinkWrap: true,
-                  padding: const EdgeInsets.all(9),
+                  padding: EdgeInsets.fromLTRB(width * 0.15, 0, width * 0.15, 0),
                   itemCount: questionController.categoryList.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return SizedBox(
-                      height: height / 15,
-                      child: ElevatedButton(
-                        child: Text(questionController.categoryList[index]),
-                        onPressed: () {
+                    return longButton(context, questionController.categoryList[index], () {
                           questionController.setCategory(questionController.categoryList[index]);
                           Get.to(() => DifficultySelectionScreen());
-                        },
-                      ),
-                    );
+                        });
                   },
                   separatorBuilder: (BuildContext context, int index) => SizedBox(height: height / 50),
                 )
