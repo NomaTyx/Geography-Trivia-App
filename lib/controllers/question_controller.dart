@@ -32,7 +32,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
         .toList();
   List<Question> get questionList => _questions;
 
-  final List<String> _categories = ["Capitals", "Geography", "Languages", "History", "Culture"];
+  final List<String> _categories = ["Capitals", "Geography", "Monuments/Landmarks", "History", "Culture"];
   List<String> get categoryList => _categories;
 
   final List<String> _difficulties = ["Easy", "Medium", "Hard"];
