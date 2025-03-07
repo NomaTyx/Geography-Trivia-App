@@ -22,7 +22,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   final List<Question> _questions = sample_data
         .map(
           (question) => Question(
-          id: question['id'],
+          id: question["id"],
           question: question['question'],
           options: question['options'],
           answer: question['answer_index'],
@@ -75,7 +75,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     //is this too expensive on startup?
     _questions.shuffle(Random());
 
-    //probably do some weird thign like making a temporary list and then casting back and forth
+    //probably do some weird thing like making a temporary list and then casting back and forth
     //sets the local variables equal to the stored value if it exists
     if(GetStorage().hasData("answeredQuestionsList")) {
       _answeredQuestionsIDList.value = GetStorage().read("answeredQuestionsList").cast<int>();

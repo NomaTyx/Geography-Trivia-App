@@ -18,14 +18,13 @@ class Question {
 
 //the difficulty variable in the questions may become obsolete, depending on how I end up handling it.
 const List sample_data = [
-  [
     {
       "id": 0,
       "question": "What is the capital of France?",
       "options": ["Rome", "Paris", "Nice", "Venice"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 1,
@@ -33,7 +32,7 @@ const List sample_data = [
       "options": ["Munich", "Zurich", "Berlin", "Frankfurt"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 2,
@@ -41,15 +40,15 @@ const List sample_data = [
       "options": ["Milan", "Rome", "Naples", "Venice"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 3,
       "question": "What is the capital of Japan?",
-      "options": ["Tokyo", "Hiroshima  ", "Kyoto", "Seoul"],
+      "options": ["Tokyo", "Hiroshima", "Kyoto", "Seoul"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 4,
@@ -57,7 +56,7 @@ const List sample_data = [
       "options": ["New York", "Los Angeles", "Chicago", "Washington D.C."],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 5,
@@ -65,7 +64,7 @@ const List sample_data = [
       "options": ["Manchester", "London", "Edinburgh", "Birmingham"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 6,
@@ -73,7 +72,7 @@ const List sample_data = [
       "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 7,
@@ -81,7 +80,7 @@ const List sample_data = [
       "options": ["Beijing", "Shanghai", "Guangzhou", "Hong Kong"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 8,
@@ -89,7 +88,7 @@ const List sample_data = [
       "options": ["Alexandria", "Giza", "Cairo", "Abu Dhabi"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 9,
@@ -97,7 +96,7 @@ const List sample_data = [
       "options": ["Oslo", "Moscow", "Novosibirsk", "Kazan"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 10,
@@ -105,7 +104,7 @@ const List sample_data = [
       "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 11,
@@ -113,7 +112,7 @@ const List sample_data = [
       "options": ["Rio de Janeiro", "São Paulo", "Salvador", "Brasilia"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 12,
@@ -121,7 +120,7 @@ const List sample_data = [
       "options": ["Cabo San Lucas", "San Miguel de Allende", "Mexico City", "Cancún"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 13,
@@ -129,7 +128,7 @@ const List sample_data = [
       "options": ["Buenos Aires", "Rosario", "Córdoba", "Mendoza"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 14,
@@ -137,7 +136,7 @@ const List sample_data = [
       "options": ["Daegu", "Tokyo", "Busan", "Seoul"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 15,
@@ -145,7 +144,7 @@ const List sample_data = [
       "options": ["Ankara", "Budapest", "Istanbul", "Izmir"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 16,
@@ -153,7 +152,7 @@ const List sample_data = [
       "options": ["Cape Town", "Johannesburg", "Pretoria", "Durban"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 17,
@@ -161,7 +160,7 @@ const List sample_data = [
       "options": ["New Delhi", "Mumbai", "Bengaluru", "Kolkata"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 18,
@@ -169,7 +168,7 @@ const List sample_data = [
       "options": ["Chiang Mai", "Bangkok", "Pattaya", "Phuket"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 19,
@@ -177,7 +176,7 @@ const List sample_data = [
       "options": ["Barcelona", "Valencia", "Seville", "Madrid"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 20,
@@ -185,7 +184,7 @@ const List sample_data = [
       "options": ["Santorini", "Athens", "Patras", "Thessaloniki"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 21,
@@ -193,7 +192,7 @@ const List sample_data = [
       "options": ["Rotterdam", "Utrecht", "The Hague", "Amsterdam"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 22,
@@ -201,7 +200,7 @@ const List sample_data = [
       "options": ["Stockholm", "Malmö", "Gothenburg", "Uppsala"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 23,
@@ -209,7 +208,7 @@ const List sample_data = [
       "options": ["Stavanger", "Oslo", "Bergen", "Larvik"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 24,
@@ -217,7 +216,7 @@ const List sample_data = [
       "options": ["Copenhagen", "Aarhus", "Odense", "Aalborg"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 25,
@@ -225,7 +224,7 @@ const List sample_data = [
       "options": ["Brussels", "Antwerp", "Bruges", "Ghent"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 26,
@@ -233,7 +232,7 @@ const List sample_data = [
       "options": ["Zurich", "Geneva", "Bern", "Basel"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 27,
@@ -241,7 +240,7 @@ const List sample_data = [
       "options": ["Porto", "Lisbon", "Faro", "Coimbra"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 28,
@@ -249,7 +248,7 @@ const List sample_data = [
       "options": ["Debrecen", "Budapest", "Szeged", "Pécs"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 29,
@@ -257,7 +256,7 @@ const List sample_data = [
       "options": ["Haifa", "Tel Aviv", "Beersheba", "Jerusalem"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 30,
@@ -265,7 +264,7 @@ const List sample_data = [
       "options": ["Manila", "Davao", "Cebu City", "Quezon City"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 31,
@@ -273,7 +272,7 @@ const List sample_data = [
       "options": ["Sentosa", "Singapore", "Marina Bay", "Pulau Ujong"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 32,
@@ -281,7 +280,7 @@ const List sample_data = [
       "options": ["Auckland", "Christchurch", "Wellington", "Hamilton"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 33,
@@ -289,7 +288,7 @@ const List sample_data = [
       "options": ["Trujillo", "Lima", "Arequipa", "Cusco"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 34,
@@ -297,7 +296,7 @@ const List sample_data = [
       "options": ["Santiago", "Antofagasta", "Concepción", "Valparaíso"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 35,
@@ -305,7 +304,7 @@ const List sample_data = [
       "options": ["Barranquilla", "Cali", "Medellín", "Bogotá"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 36,
@@ -313,7 +312,7 @@ const List sample_data = [
       "options": ["Hanoi", "Da Nang", "Ho Chi Minh City", "Hue"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 37,
@@ -321,7 +320,7 @@ const List sample_data = [
       "options": ["Bandung", "Surabaya", "Yogyakarta", "Jakarta"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 38,
@@ -329,7 +328,7 @@ const List sample_data = [
       "options": ["Penang", "Johor Bahru", "Kuala Lumpur", "George Town"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 39,
@@ -337,7 +336,7 @@ const List sample_data = [
       "options": ["Kyiv", "Kharkiv", "Lviv", "Odessa"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 40,
@@ -345,7 +344,7 @@ const List sample_data = [
       "options": ["Tangier", "Marrakesh", "Casablanca", "Rabat"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 41,
@@ -353,7 +352,7 @@ const List sample_data = [
       "options": ["Helsinki", "Oulu", "Turku", "Tampere"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 42,
@@ -361,7 +360,7 @@ const List sample_data = [
       "options": ["Split", "Zagreb", "Rijeka", "Dubrovnik"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 43,
@@ -369,7 +368,7 @@ const List sample_data = [
       "options": ["Astana", "Almaty", "Shymkent", "Karaganda"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 44,
@@ -377,7 +376,7 @@ const List sample_data = [
       "options": ["Osh", "Jalal-Abad", "Batken", "Bishkek"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 45,
@@ -385,7 +384,7 @@ const List sample_data = [
       "options": ["Vientiane", "Pakse", "Luang Prabang", "Savannakhet"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 46,
@@ -393,7 +392,7 @@ const List sample_data = [
       "options": ["Daugavpils", "Liepaja", "Riga", "Jelgava"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 47,
@@ -401,7 +400,7 @@ const List sample_data = [
       "options": ["Teyateyaneng", "Maseru", "Mafeteng", "Hlotse"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 48,
@@ -409,7 +408,7 @@ const List sample_data = [
       "options": ["Kaunas", "Vilnius", "Klaipeda", "Šiauliai"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 49,
@@ -417,7 +416,7 @@ const List sample_data = [
       "options": ["Esch-sur-Alzette", "Differdange", "Luxembourg City", "Ettelbruck"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 50,
@@ -425,7 +424,7 @@ const List sample_data = [
       "options": ["Toamasina", "Antananarivo", "Mahajanga", "Toliara"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 51,
@@ -433,7 +432,7 @@ const List sample_data = [
       "options": ["Blantyre", "Zomba", "Lilongwe", "Mzuzu"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 52,
@@ -441,7 +440,7 @@ const List sample_data = [
       "options": ["Penang", "Johor Bahru", "Kuala Lumpur", "George Town"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 53,
@@ -449,7 +448,7 @@ const List sample_data = [
       "options": ["Valletta", "Birkirkara", "Sliema", "St. Julian's"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 54,
@@ -457,7 +456,7 @@ const List sample_data = [
       "options": ["Cabo San Lucas", "San Miguel de Allende", "Mexico City", "Cancún"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 55,
@@ -465,7 +464,7 @@ const List sample_data = [
       "options": ["Chișinău", "Bălți", "Orhei", "Ungheni"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 56,
@@ -473,7 +472,7 @@ const List sample_data = [
       "options": ["Erdenet", "Darkhan", "Ulaanbaatar", "Choibalsan"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 57,
@@ -481,7 +480,7 @@ const List sample_data = [
       "options": ["Bijelo Polje", "Nikšić", "Podgorica", "Herceg Novi"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 58,
@@ -489,7 +488,7 @@ const List sample_data = [
       "options": ["Tangier", "Marrakesh", "Casablanca", "Rabat"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 59,
@@ -497,7 +496,7 @@ const List sample_data = [
       "options": ["Maputo", "Matola", "Nampula", "Beira"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 60,
@@ -505,7 +504,7 @@ const List sample_data = [
       "options": ["Yangon", "Mandalay", "Naypyidaw", "Bagan"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 61,
@@ -513,7 +512,7 @@ const List sample_data = [
       "options": ["Walvis Bay", "Swakopmund", "Rundu", "Windhoek"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 62,
@@ -521,7 +520,7 @@ const List sample_data = [
       "options": ["Pokhara", "Lalitpur", "Kathmandu", "Bharatpur"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 63,
@@ -529,7 +528,7 @@ const List sample_data = [
       "options": ["Rotterdam", "Utrecht", "The Hague", "Amsterdam"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 64,
@@ -537,7 +536,7 @@ const List sample_data = [
       "options": ["Auckland", "Christchurch", "Wellington", "Hamilton"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 65,
@@ -545,7 +544,7 @@ const List sample_data = [
       "options": ["Bitola", "Skopje", "Ohrid", "Tetovo"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 66,
@@ -553,7 +552,7 @@ const List sample_data = [
       "options": ["Stavanger", "Oslo", "Bergen", "Larvik"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 67,
@@ -561,7 +560,7 @@ const List sample_data = [
       "options": ["Salalah", "Sohar", "Nizwa", "Muscat"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 68,
@@ -569,7 +568,7 @@ const List sample_data = [
       "options": ["Ciudad del Este", "San Lorenzo", "Encarnación", "Asunción"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 69,
@@ -577,7 +576,7 @@ const List sample_data = [
       "options": ["Trujillo", "Lima", "Arequipa", "Cusco"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 70,
@@ -585,7 +584,7 @@ const List sample_data = [
       "options": ["Manila", "Davao", "Cebu City", "Quezon City"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 71,
@@ -593,7 +592,7 @@ const List sample_data = [
       "options": ["Porto", "Lisbon", "Faro", "Coimbra"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 72,
@@ -601,7 +600,7 @@ const List sample_data = [
       "options": ["Lusail", "Doha", "Al Wakrah", "Al Khor"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 73,
@@ -609,7 +608,7 @@ const List sample_data = [
       "options": ["Oslo", "Moscow", "Novosibirsk", "Kazan"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 74,
@@ -617,7 +616,7 @@ const List sample_data = [
       "options": ["Belgrade", "Novi Sad", "Niš", "Kragujevac"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 75,
@@ -625,7 +624,7 @@ const List sample_data = [
       "options": ["Sentosa", "Singapore", "Marina Bay", "Pulau Ujong"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 76,
@@ -633,7 +632,7 @@ const List sample_data = [
       "options": ["Košice", "Prešov", "Bratislava", "Nitra"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 77,
@@ -641,7 +640,7 @@ const List sample_data = [
       "options": ["Ljubljana", "Maribor", "Celje", "Kranj"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 78,
@@ -649,7 +648,7 @@ const List sample_data = [
       "options": ["Cape Town", "Johannesburg", "Pretoria", "Durban"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 79,
@@ -657,7 +656,7 @@ const List sample_data = [
       "options": ["Daegu", "Tokyo", "Busan", "Seoul"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 80,
@@ -665,7 +664,7 @@ const List sample_data = [
       "options": ["Barcelona", "Valencia", "Seville", "Madrid"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 81,
@@ -673,7 +672,7 @@ const List sample_data = [
       "options": ["Colombo", "Kandy", "Sri Jayawardenepura Kotte", "Galle"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 82,
@@ -681,7 +680,7 @@ const List sample_data = [
       "options": ["Stockholm", "Malmö", "Gothenburg", "Uppsala"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 83,
@@ -689,7 +688,7 @@ const List sample_data = [
       "options": ["Zurich", "Geneva", "Bern", "Basel"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 84,
@@ -697,7 +696,7 @@ const List sample_data = [
       "options": ["Norak", "Danghara", "Panjakent", "Dunshabe"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 85,
@@ -705,7 +704,7 @@ const List sample_data = [
       "options": ["Mwanza", "Arusha", "Dodoma", "Dar es Salaam"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 86,
@@ -713,7 +712,7 @@ const List sample_data = [
       "options": ["Chiang Mai", "Bangkok", "Pattaya", "Phuket"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 87,
@@ -721,7 +720,7 @@ const List sample_data = [
       "options": ["Tunis", "Sfax", "Sousse", "Kairouan"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 88,
@@ -729,7 +728,7 @@ const List sample_data = [
       "options": ["Ankara", "Budapest", "Istanbul", "Izmir"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 89,
@@ -737,7 +736,7 @@ const List sample_data = [
       "options": ["Mary", "Türkmenabat", "Daşoguz", "Ashgabat"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 90,
@@ -745,7 +744,7 @@ const List sample_data = [
       "options": ["Gulu", "Kampala", "Mbarara", "Jinja"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 91,
@@ -753,7 +752,7 @@ const List sample_data = [
       "options": ["Kyiv", "Kharkiv", "Lviv", "Odessa"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 92,
@@ -761,7 +760,7 @@ const List sample_data = [
       "options": ["Dubai", "Sharjah", "Abu Dhabi", "Al Ain"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 93,
@@ -769,7 +768,7 @@ const List sample_data = [
       "options": ["Manchester", "London", "Edinburgh", "Birmingham"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 94,
@@ -777,7 +776,7 @@ const List sample_data = [
       "options": ["New York", "Los Angeles", "Chicago", "Washington D.C."],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 95,
@@ -785,7 +784,7 @@ const List sample_data = [
       "options": ["Montevideo", "Maldonado", "Salto", "Punta del Este"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 96,
@@ -793,7 +792,7 @@ const List sample_data = [
       "options": ["Tashkent", "Namangan", "Bukhara", "Andijan"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 97,
@@ -801,7 +800,7 @@ const List sample_data = [
       "options": ["Vatican City", "Rome", "St. Peter's", "Holy See"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 98,
@@ -809,7 +808,7 @@ const List sample_data = [
       "options": ["Caracas", "Maracaibo", "Valencia", "Barquisimeto"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 99,
@@ -817,7 +816,7 @@ const List sample_data = [
       "options": ["Hanoi", "Da Nang", "Ho Chi Minh City", "Hue"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 100,
@@ -825,7 +824,7 @@ const List sample_data = [
       "options": ["Kitwe", "Ndola", "Kabwe", "Lusaka"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 101,
@@ -833,7 +832,7 @@ const List sample_data = [
       "options": ["Sandy Point", "Basseterre", "Charlestown", "Nevis"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 102,
@@ -841,7 +840,7 @@ const List sample_data = [
       "options": ["Georgetown", "Arnos Vale", "Calliaqua", "Kingstown"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 103,
@@ -849,7 +848,7 @@ const List sample_data = [
       "options": ["Gizo", "Honiara", "Auki", "Tulagi"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 104,
@@ -857,7 +856,7 @@ const List sample_data = [
       "options": ["Port Vila", "Luganville", "Santo", "Tanna"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 105,
@@ -865,7 +864,7 @@ const List sample_data = [
       "options": ["Yap", "Chuuk", "Palikir", "Pohnpei"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 106,
@@ -873,7 +872,7 @@ const List sample_data = [
       "options": ["Berbérati", "Bambari", "Birao", "Bangui"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 107,
@@ -881,15 +880,15 @@ const List sample_data = [
       "options": ["Abéché", "Moundou", "N'Djamena*", "Sarh"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 108,
       "question": "What is the capital of Equatorial Guinea?",
-      "options": [" Aconibe", "Ebebiyin", "Bata", "Malabo"],
+      "options": ["Aconibe", "Ebebiyin", "Bata", "Malabo"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 109,
@@ -897,7 +896,7 @@ const List sample_data = [
       "options": ["Principe", "Santo Amaro", "Neves", "São Tomé"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 110,
@@ -905,7 +904,7 @@ const List sample_data = [
       "options": ["Gabú", "Bafata", "Bissau", "Bolama"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 111,
@@ -913,7 +912,7 @@ const List sample_data = [
       "options": ["Mindelo", "Praia", "Porto Novo", "Santa Maria"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 112,
@@ -921,7 +920,7 @@ const List sample_data = [
       "options": ["Benghazi", "Misrata", "Tripoli", "Tobruk"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 113,
@@ -929,7 +928,7 @@ const List sample_data = [
       "options": ["Mbuji-Mayi", "Kisangani", "Lubumbashi", "Kinshasa"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 114,
@@ -937,7 +936,7 @@ const List sample_data = [
       "options": ["Luanda", "Benguela", "Lubango", "Huambo"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 115,
@@ -945,7 +944,7 @@ const List sample_data = [
       "options": ["Kismayo", "Baidoa", "Mogadishu", "Hargeisa"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 116,
@@ -953,7 +952,7 @@ const List sample_data = [
       "options": ["Massawa", "Asmara", "Assab", "Keren"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 117,
@@ -961,7 +960,7 @@ const List sample_data = [
       "options": ["Kassala", "Port Sudan", "Omdurman", "Khartoum"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 118,
@@ -969,7 +968,7 @@ const List sample_data = [
       "options": ["Malakal", "Bentiu", "Juba", "Wau"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 119,
@@ -977,7 +976,7 @@ const List sample_data = [
       "options": ["Gao", "Kayes", "Sikasso", "Bamako"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 120,
@@ -985,7 +984,7 @@ const List sample_data = [
       "options": ["Maradi", "Niamey", "Zinder", "Agadez"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 121,
@@ -993,7 +992,7 @@ const List sample_data = [
       "options": ["Bobo-Dioulasso", "Ouahigouya", "Ouagadougou", "Koudougou"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 122,
@@ -1001,7 +1000,7 @@ const List sample_data = [
       "options": ["Parakou", "Porto-Novo", "Abomey", "Cotonou"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 123,
@@ -1009,7 +1008,7 @@ const List sample_data = [
       "options": ["Atakpamé", "Kpalimé", "Sokodé", "Lomé"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 124,
@@ -1017,7 +1016,7 @@ const List sample_data = [
       "options": ["Port Moresby", "Lae", "Mount Hagen", "Madang"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 125,
@@ -1025,7 +1024,7 @@ const List sample_data = [
       "options": ["Ainaro", "Dili", "Liquiçá", "Baucau"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 126,
@@ -1033,7 +1032,7 @@ const List sample_data = [
       "options": ["Tortola", "Virgin Gorda", "Road Town", "Jost Van Dyke"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 127,
@@ -1041,7 +1040,7 @@ const List sample_data = [
       "options": ["Plymouth", "Brades", "Little Bay", "Gerald's"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 128,
@@ -1049,7 +1048,7 @@ const List sample_data = [
       "options": ["North Caicos", "South Caicos", "Providenciales", "Grand Turk"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 129,
@@ -1057,7 +1056,7 @@ const List sample_data = [
       "options": ["Blowing Point", "The Valley", "South Hill", "North Side"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 130,
@@ -1065,15 +1064,15 @@ const List sample_data = [
       "options": ["Port Stanley", "East Falkland", "West Falkland", "Stanley"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 131,
       "question": "What is the capital of Dominica?",
-      "options": ["Portsmouth", "Salisbury", "Roseau", " Marigot"],
+      "options": ["Portsmouth", "Salisbury", "Roseau", "Marigot"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 132,
@@ -1081,7 +1080,7 @@ const List sample_data = [
       "options": ["West Bay", "Bodden Town", "George Town", "North Side"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 133,
@@ -1089,7 +1088,7 @@ const List sample_data = [
       "options": ["Tahiti", "Bora Bora", "Moorea", "Papeete"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 134,
@@ -1097,7 +1096,7 @@ const List sample_data = [
       "options": ["Bounty Bay", "Adamstown", "Down Rope", "London"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 135,
@@ -1105,15 +1104,15 @@ const List sample_data = [
       "options": ["Scott Base", "Palmer Station", "McMurdo Station", "No capital"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 136,
       "question": "What is the capital of Western Sahara?",
-      "options": ["Tindouf", " Dakhla", "Laayoune", "Smara"],
+      "options": ["Tindouf", "Dakhla", "Laayoune", "Smara"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 137,
@@ -1121,7 +1120,7 @@ const List sample_data = [
       "options": ["Nkayi", "Brazzaville", "Dolisie", "Pointe-Noire"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 138,
@@ -1129,7 +1128,7 @@ const List sample_data = [
       "options": ["Tbilisi", "Gori", "Sukhumi", "Tskhinvali"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 139,
@@ -1137,15 +1136,15 @@ const List sample_data = [
       "options": ["Moengo", "Lelydorp", "Nieuw Nickerie", "Paramaribo"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 140,
       "question": "What is the capital of Guyana?",
-      "options": ["Linden", " Anna Regina", "Georgetown", "New Amsterdam"],
+      "options": ["Linden", "Anna Regina", "Georgetown", "New Amsterdam"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 141,
@@ -1153,7 +1152,7 @@ const List sample_data = [
       "options": ["Belize City", "San Ignacio", "Belmopan", "Orange Walk"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 142,
@@ -1161,7 +1160,7 @@ const List sample_data = [
       "options": ["Tegucigalpa", "San Pedro Sula", "La Ceiba", "Choloma"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 143,
@@ -1169,7 +1168,7 @@ const List sample_data = [
       "options": ["La Libertad", "San Salvador", "San Miguel", "Santa Ana"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 144,
@@ -1177,15 +1176,15 @@ const List sample_data = [
       "options": ["Alajuela", "Liberia", "San José", "Cartago"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 145,
       "question": "What is the capital of Cuba?",
-      "options": ["Santiago de Cuba", " Camagüey", "Havana", "Holguín"],
+      "options": ["Santiago de Cuba", "Camagüey", "Havana", "Holguín"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 146,
@@ -1193,7 +1192,7 @@ const List sample_data = [
       "options": ["Santiago", "San Cristóbal", "La Romana", "Santo Domingo"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 147,
@@ -1201,7 +1200,7 @@ const List sample_data = [
       "options": ["Granada", "Managua", "Masaya", "León"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 148,
@@ -1209,7 +1208,7 @@ const List sample_data = [
       "options": ["Punakha", "Paro", "Wangdue Phodrang", "Thimphu"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 149,
@@ -1217,7 +1216,7 @@ const List sample_data = [
       "options": ["Batumi", "Kutaisi", "Rustavi", "Tbilisi"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 150,
@@ -1225,7 +1224,7 @@ const List sample_data = [
       "options": ["Mitrovica", "Ferizaj", "Pristina", "Peja"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 151,
@@ -1233,7 +1232,7 @@ const List sample_data = [
       "options": ["Freeport", "Nassau", "Marsh Harbour", "Lucaya"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 152,
@@ -1241,7 +1240,7 @@ const List sample_data = [
       "options": ["Montego Bay", "Ocho Rios", "Negril", "Kingston"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 153,
@@ -1249,7 +1248,7 @@ const List sample_data = [
       "options": ["Port of Spain", "Scarborough", "San Fernando", "Chaguanas"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 154,
@@ -1257,7 +1256,7 @@ const List sample_data = [
       "options": ["Rodney Bay", "Soufrière", "Vieux Fort", "Castries"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 155,
@@ -1265,7 +1264,7 @@ const List sample_data = [
       "options": ["Kandahar", "Kabul", "Herat", "Mazar-i-Sharif"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 156,
@@ -1273,7 +1272,7 @@ const List sample_data = [
       "options": ["Durrës", "Tirana", "Vlorë", " Shkodër"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 157,
@@ -1281,7 +1280,7 @@ const List sample_data = [
       "options": ["Chittagong", "Dhaka", "Rajshahi", "Khulna"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 158,
@@ -1289,7 +1288,7 @@ const List sample_data = [
       "options": ["Thimphu", "Paro", "Phuentsholing", "Punakha"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 159,
@@ -1297,7 +1296,7 @@ const List sample_data = [
       "options": ["Ngozi", "Bujumbura", "Rumonge", "Gitega"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 160,
@@ -1305,7 +1304,7 @@ const List sample_data = [
       "options": ["Sihanoukville", "Battambang", "Phnom Penh", "Siem Reap"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 161,
@@ -1313,7 +1312,7 @@ const List sample_data = [
       "options": ["Tadjoura", "Ali Sabieh", "Djibouti", "Dikhil"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 162,
@@ -1321,7 +1320,7 @@ const List sample_data = [
       "options": [" Franceville", "Oyem", "Port-Gentil", "Libreville"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 163,
@@ -1329,7 +1328,7 @@ const List sample_data = [
       "options": ["Banjul", "Serrekunda", "Brikama", "Farafenni"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 164,
@@ -1337,7 +1336,7 @@ const List sample_data = [
       "options": ["Takoradi", "Accra", "Kumasi", "Tamale"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 165,
@@ -1345,7 +1344,7 @@ const List sample_data = [
       "options": ["Hillsborough", "Grenville", "St. George’s", "Carriacou"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 166,
@@ -1353,7 +1352,7 @@ const List sample_data = [
       "options": ["Cap-Haïtien", "Jacmel", "Les Cayes", "Port-au-Prince"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 167,
@@ -1361,7 +1360,7 @@ const List sample_data = [
       "options": ["Basra", "Mosul", "Erbil", "Baghdad"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 168,
@@ -1369,7 +1368,7 @@ const List sample_data = [
       "options": ["Amman", "Aqaba", "Irbid", "Madaba"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 169,
@@ -1377,7 +1376,7 @@ const List sample_data = [
       "options": ["Kiritimati", "Betio", "Tarawa", "Abemama"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 170,
@@ -1385,7 +1384,7 @@ const List sample_data = [
       "options": ["Luang Prabang", "Savannakhet", "Paksé", "Vientiane"],
       "answer_index": 3,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 171,
@@ -1393,7 +1392,7 @@ const List sample_data = [
       "options": ["Tripoli", "Sidon", "Beirut", "Tyre"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 172,
@@ -1401,7 +1400,7 @@ const List sample_data = [
       "options": ["Buchanan", "Gbarnga", "Monrovia", "Robertsport"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 173,
@@ -1409,7 +1408,7 @@ const List sample_data = [
       "options": ["Antananarivo", "Toamasina", "Mahajanga", "Toliara"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 174,
@@ -1417,7 +1416,7 @@ const List sample_data = [
       "options": ["Blantyre", "Mzuzu", "Lilongwe", "Zomba"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 175,
@@ -1425,7 +1424,7 @@ const List sample_data = [
       "options": ["Kiffa", "Nouadhibou", "Nouakchott", "Rosso"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 176,
@@ -1433,7 +1432,7 @@ const List sample_data = [
       "options": ["Monte Carlo", "Monaco", "La Condamine", "Moneghetti"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 177,
@@ -1441,7 +1440,7 @@ const List sample_data = [
       "options": ["Bhaktapur", "Lalitpur", "Kathmandu", "Pokhara"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 178,
@@ -1449,7 +1448,7 @@ const List sample_data = [
       "options": ["Granada", "León", "Managua", "Matagalpa"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 179,
@@ -1457,7 +1456,7 @@ const List sample_data = [
       "options": ["Butare", "Gisenyi", "Kigali", "Ruhengeri"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 180,
@@ -1465,7 +1464,7 @@ const List sample_data = [
       "options": ["Dakar", "Saint-Louis", "Thiès", "Ziguinchor"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 181,
@@ -1473,7 +1472,7 @@ const List sample_data = [
       "options": ["Bo", "Freetown", "Kenema", "Makeni"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 182,
@@ -1481,7 +1480,7 @@ const List sample_data = [
       "options": ["Colombo (official)", "Sri Jayawardenepura Kotte (legislative)*", "Kandy", "Galle"],
       "answer_index": 0,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 183,
@@ -1489,7 +1488,7 @@ const List sample_data = [
       "options": ["Aleppo", "Damascus", "Homs", "Latakia"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 184,
@@ -1497,7 +1496,7 @@ const List sample_data = [
       "options": ["Arusha", "Dar es Salaam", "Dodoma", "Mwanza"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 185,
@@ -1505,7 +1504,7 @@ const List sample_data = [
       "options": ["Arima", "Scarborough", " Port of Spain", "San Fernando"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 186,
@@ -1513,7 +1512,7 @@ const List sample_data = [
       "options": ["Entebbe", "Jinja", "Kampala", "Gulu"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 187,
@@ -1521,7 +1520,7 @@ const List sample_data = [
       "options": ["Aden", "Al Hudaydah", "Sana’a", "Taiz"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 188,
@@ -1529,7 +1528,7 @@ const List sample_data = [
       "options": ["Livingstone", "Lusaka", "Ndola", "Kitwe"],
       "answer_index": 1,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 189,
@@ -1537,7 +1536,7 @@ const List sample_data = [
       "options": ["Bulawayo", "Gweru", "Harare", "Mutare"],
       "answer_index": 2,
       "category": "Capitals",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 190,
@@ -1545,7 +1544,7 @@ const List sample_data = [
       "options": ["Nepal", "Pakistan", "Bangladesh", "India"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 191,
@@ -1553,7 +1552,7 @@ const List sample_data = [
       "options": ["Brazil", "Mexico", "Russia", "United States"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 192,
@@ -1561,7 +1560,7 @@ const List sample_data = [
       "options": ["France", "Italy", "Portugal", "Spain"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 193,
@@ -1569,7 +1568,7 @@ const List sample_data = [
       "options": ["Argentina", "Canada", "Israel", "United States"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 194,
@@ -1577,7 +1576,7 @@ const List sample_data = [
       "options": ["Austria", "Denmark", "Germany", "Switzerland"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 195,
@@ -1585,7 +1584,7 @@ const List sample_data = [
       "options": ["China", "Japan", "South Korea", "Vietnam"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 196,
@@ -1593,7 +1592,7 @@ const List sample_data = [
       "options": ["Argentina", "Brazil", "Colombia", "Venezuela"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 197,
@@ -1601,7 +1600,7 @@ const List sample_data = [
       "options": ["Australia", " Canada", "United Kingdom", "United States"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 198,
@@ -1609,7 +1608,7 @@ const List sample_data = [
       "options": ["Greece", "Italy", "Portugal", "Spain"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 199,
@@ -1617,7 +1616,7 @@ const List sample_data = [
       "options": ["England", "Ireland", "Scotland", "Wales"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 200,
@@ -1625,7 +1624,7 @@ const List sample_data = [
       "options": ["Christianity", "Islam", "Hinduism", "Judaism"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 201,
@@ -1633,7 +1632,7 @@ const List sample_data = [
       "options": ["Bangladesh", "Bhutan", "India", "Nepal"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 202,
@@ -1641,7 +1640,7 @@ const List sample_data = [
       "options": ["Argentina", "Mexico", "Peru", "Spain"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 203,
@@ -1649,7 +1648,7 @@ const List sample_data = [
       "options": ["China", "Japan", "South Korea", "Vietnam"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 204,
@@ -1657,7 +1656,7 @@ const List sample_data = [
       "options": ["Australia", "Canada", "United Kingdom", "United States"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 205,
@@ -1665,7 +1664,7 @@ const List sample_data = [
       "options": ["China", " Japan", "South Korea", "Vietnam"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 206,
@@ -1673,7 +1672,7 @@ const List sample_data = [
       "options": ["Argentina", "Bolivia", "Ecuador", "Peru"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 207,
@@ -1681,7 +1680,7 @@ const List sample_data = [
       "options": ["Germany", "France", "United Kingdom", "Italy"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 208,
@@ -1689,7 +1688,7 @@ const List sample_data = [
       "options": ["Bangladesh", "India", "Nepal", "Sri Lanka"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 209,
@@ -1697,7 +1696,7 @@ const List sample_data = [
       "options": ["Red, black, and green", "White, blue, and red", "Green, white, and blue", "Red, white, and black"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 210,
@@ -1705,7 +1704,7 @@ const List sample_data = [
       "options": ["Solar Calendar", "Lunar Calendar", "Gregorian Calendar", "Mayan Calendar"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 211,
@@ -1713,7 +1712,7 @@ const List sample_data = [
       "options": ["England", "Ireland", "Scotland", "Wales"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 212,
@@ -1721,7 +1720,7 @@ const List sample_data = [
       "options": ["California", "Florida", "Louisiana", "Texas"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 213,
@@ -1729,7 +1728,7 @@ const List sample_data = [
       "options": ["Australia", "Ireland", "Scotland", "Wales"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 214,
@@ -1737,7 +1736,7 @@ const List sample_data = [
       "options": ["Belgium", "France", " Luxembourg", "Switzerland"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 215,
@@ -1745,7 +1744,7 @@ const List sample_data = [
       "options": ["China", "Japan", "South Korea", "Thailand"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 216,
@@ -1753,7 +1752,7 @@ const List sample_data = [
       "options": ["United Kingdom", "United States", " Canada", "Australia"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 217,
@@ -1761,7 +1760,7 @@ const List sample_data = [
       "options": ["Greece", "Turkey", " Italy", "Bulgaria"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 218,
@@ -1769,7 +1768,7 @@ const List sample_data = [
       "options": ["Morocco", "Algeria", " Spain", "Portugal"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 219,
@@ -1777,7 +1776,7 @@ const List sample_data = [
       "options": [" Laos", "Vietnam", "Thailand", "Cambodia"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 220,
@@ -1785,7 +1784,7 @@ const List sample_data = [
       "options": ["South Korea", " Japan", "China", "Vietnam"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 221,
@@ -1793,7 +1792,7 @@ const List sample_data = [
       "options": [" Ireland", "Scotland", "Wales", " England"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 222,
@@ -1801,7 +1800,7 @@ const List sample_data = [
       "options": ["Argentina", "Brazil", "Colombia", "Venezuela"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 223,
@@ -1809,7 +1808,7 @@ const List sample_data = [
       "options": ["Chile", "Colombia", "Ecuador", "Venezuela"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 224,
@@ -1817,7 +1816,7 @@ const List sample_data = [
       "options": [" Latvia", "Estonia", "Lithuania", "Poland"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 225,
@@ -1825,7 +1824,7 @@ const List sample_data = [
       "options": ["Belgium", "Netherlands", "France", "Germany"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 226,
@@ -1833,7 +1832,7 @@ const List sample_data = [
       "options": ["Philippines", "Thailand", "Malaysia", "Indonesia"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 227,
@@ -1841,7 +1840,7 @@ const List sample_data = [
       "options": ["Venezuela", "Colombia", " Ecuador", "Peru"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 228,
@@ -1849,7 +1848,7 @@ const List sample_data = [
       "options": ["Ireland", "Norway", "Scotland", "Wales"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 229,
@@ -1857,7 +1856,7 @@ const List sample_data = [
       "options": ["Tokyo", "Osaka", "Kyoto", "Nagoya"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 230,
@@ -1865,7 +1864,7 @@ const List sample_data = [
       "options": ["Indonesia", " Philippines", "Malaysia", "Thailand"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 231,
@@ -1873,7 +1872,7 @@ const List sample_data = [
       "options": ["Bolivia", "Chile", "Ecuador", "Peru"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 232,
@@ -1881,7 +1880,7 @@ const List sample_data = [
       "options": [" Kazakhstan", "Mongolia", "Russia", "China"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 233,
@@ -1889,7 +1888,7 @@ const List sample_data = [
       "options": ["East Asia", "Central Asia", " South Asia", "Middle East"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 234,
@@ -1897,7 +1896,7 @@ const List sample_data = [
       "options": ["Malaysia", "Philippines", " Indonesia", "Singapore"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 235,
@@ -1905,7 +1904,7 @@ const List sample_data = [
       "options": ["Poland", "Belarus", "Ukraine", " Russia"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 236,
@@ -1913,7 +1912,7 @@ const List sample_data = [
       "options": ["Japan", "South Korea", "China", "Vietnam"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 237,
@@ -1921,7 +1920,7 @@ const List sample_data = [
       "options": ["Spain", "Italy", "Mexico", "Brazil"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 238,
@@ -1929,7 +1928,7 @@ const List sample_data = [
       "options": ["India ", "Pakistan", "Bangladesh", "Nepal"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 239,
@@ -1937,7 +1936,7 @@ const List sample_data = [
       "options": ["France", "Spain", "Portugal", "Italy"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 240,
@@ -1945,15 +1944,15 @@ const List sample_data = [
       "options": ["United States", "Canada", "United Kingdom", "Ireland"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 241,
       "question": "The \"Fallas Festival,\" famous for its massive sculptures, takes place in which city?",
       "options": ["Madrid", "Barcelona", "Valencia", "Seville"],
       "answer_index": 2,
-      "category": 1,
-      "difficulty": "Easy"
+      "category": "Culture",
+      "difficulty": 1
     },
     {
       "id": 242,
@@ -1961,7 +1960,7 @@ const List sample_data = [
       "options": ["Canada", "United States", "France", "Belgium"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 243,
@@ -1969,7 +1968,7 @@ const List sample_data = [
       "options": ["Denmark", "Sweden", "Finland", "Norway"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 244,
@@ -1977,7 +1976,7 @@ const List sample_data = [
       "options": ["Japan", "China", "South Korea", "Vietnam"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 245,
@@ -1985,7 +1984,7 @@ const List sample_data = [
       "options": ["Brazil", "Colombia", "Venezuela", "Ecuador"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 246,
@@ -1993,7 +1992,7 @@ const List sample_data = [
       "options": ["Estonia", "Lithuania", "Latvia", "Poland"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 247,
@@ -2001,7 +2000,7 @@ const List sample_data = [
       "options": ["North America", "Europe", "Latin America", "Southeast Asia"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 248,
@@ -2009,7 +2008,7 @@ const List sample_data = [
       "options": ["Japan", "China", "South Korea", "Taiwan"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 249,
@@ -2017,7 +2016,7 @@ const List sample_data = [
       "options": ["Laos", "Vietnam", "Thailand", "Cambodia"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 250,
@@ -2025,7 +2024,7 @@ const List sample_data = [
       "options": [" France", "Italy", "Spain", "Portugal"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 251,
@@ -2033,7 +2032,7 @@ const List sample_data = [
       "options": [" Czech Republic", "Slovakia", "Hungary", "Austria"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 252,
@@ -2041,7 +2040,7 @@ const List sample_data = [
       "options": ["Norway", "Sweden", "Russia", "Finland"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 253,
@@ -2049,7 +2048,7 @@ const List sample_data = [
       "options": ["France", "Italy", "Spain", "Germany"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 254,
@@ -2057,7 +2056,7 @@ const List sample_data = [
       "options": ["Japan", "South Korea", "China", "Vietnam"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 255,
@@ -2065,7 +2064,7 @@ const List sample_data = [
       "options": ["Bolivia", "Peru", "Ecuador", "Chile"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 256,
@@ -2073,7 +2072,7 @@ const List sample_data = [
       "options": ["Jamaica", "Trinidad and Tobago", "Bahamas", "Barbados"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 257,
@@ -2081,7 +2080,7 @@ const List sample_data = [
       "options": ["Sudan", "Kenya", "Ethiopia", "Eritrea"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 258,
@@ -2089,7 +2088,7 @@ const List sample_data = [
       "options": ["Afghanistan", "Iran", "Iraq", "Turkey"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 259,
@@ -2097,7 +2096,7 @@ const List sample_data = [
       "options": ["Malaysia", "Philippines", "Indonesia", "Thailand"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 260,
@@ -2105,7 +2104,7 @@ const List sample_data = [
       "options": [" India", "Sri Lanka", "Philippines", "Indonesia"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 261,
@@ -2113,7 +2112,7 @@ const List sample_data = [
       "options": ["South Korea", "Japan", "Russia", "China"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 262,
@@ -2121,7 +2120,7 @@ const List sample_data = [
       "options": ["Burmese New Year", "Khmer New Year", "Lao New Year", "Thai New Year"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 263,
@@ -2129,7 +2128,7 @@ const List sample_data = [
       "options": ["Trinidad and Tobago", "Venezuela", "Brazil", "Colombia"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 264,
@@ -2137,7 +2136,7 @@ const List sample_data = [
       "options": ["Afghanistan", "India", "Pakistan", "Iran"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 265,
@@ -2145,7 +2144,7 @@ const List sample_data = [
       "options": ["India", "Bangladesh", "Nepal", "Sri Lanka"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 266,
@@ -2153,7 +2152,7 @@ const List sample_data = [
       "options": ["Kazakhstan", "Russia", "Mongolia", "Kyrgyzstan"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 267,
@@ -2161,7 +2160,7 @@ const List sample_data = [
       "options": ["Boats", "Lanterns", "Candles", "Flowers"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 268,
@@ -2169,7 +2168,7 @@ const List sample_data = [
       "options": ["Malaysia", "Thailand", "Indonesia", "Philippines"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 269,
@@ -2177,7 +2176,7 @@ const List sample_data = [
       "options": ["Ukraine", "Poland", "Russia", "Belarus"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 270,
@@ -2185,7 +2184,7 @@ const List sample_data = [
       "options": ["Ecuador", "Venezuela", "Brazil", "Colombia"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 271,
@@ -2193,7 +2192,7 @@ const List sample_data = [
       "options": ["Vietnam", "China", "Japan", "South Korea"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 272,
@@ -2201,7 +2200,7 @@ const List sample_data = [
       "options": ["Sri Lanka", "Myanmar", "Thailand", "India"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 273,
@@ -2209,7 +2208,7 @@ const List sample_data = [
       "options": ["Harvest", "Ancestral spirits", "Cherry blossoms", "Buddha's enlightenment"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 274,
@@ -2217,7 +2216,7 @@ const List sample_data = [
       "options": ["Masked balls", "Fireworks displays", "Boat races", "Dance competitions"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 275,
@@ -2225,7 +2224,7 @@ const List sample_data = [
       "options": ["Berlin", "Hamburg", "Munich", "Frankfurt"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 276,
@@ -2233,7 +2232,7 @@ const List sample_data = [
       "options": ["Rat", "Ox", "Tiger", "Rabbit"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 277,
@@ -2241,7 +2240,7 @@ const List sample_data = [
       "options": ["South Korea", "China", "Vietnam", "Japan"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 278,
@@ -2249,7 +2248,7 @@ const List sample_data = [
       "options": ["Japan", "South Korea", "China", "Taiwan"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 279,
@@ -2257,7 +2256,7 @@ const List sample_data = [
       "options": ["Loi Krathong", "Carnival of Venice", "Day of the Dead", "Oktoberfest"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 280,
@@ -2265,7 +2264,7 @@ const List sample_data = [
       "options": ["Barcelona", "Valencia", "Madrid", "Seville"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 281,
@@ -2273,7 +2272,7 @@ const List sample_data = [
       "options": ["Snowman", "Fire dragon", "Ice queen", "Lantern bearer"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 282,
@@ -2281,7 +2280,7 @@ const List sample_data = [
       "options": ["South Korea", "China", "Japan", "Vietnam"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 283,
@@ -2290,7 +2289,7 @@ const List sample_data = [
       "options": ["Argentina", "Chile", "Peru", "Brazil"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 284,
@@ -2298,7 +2297,7 @@ const List sample_data = [
       "options": ["Pakistan", "India", "Nepal", "Bangladesh"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 285,
@@ -2306,7 +2305,7 @@ const List sample_data = [
       "options": ["Spain", "Italy", "Germany", "France"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 286,
@@ -2315,7 +2314,7 @@ const List sample_data = [
       "options": ["Islam", "Hinduism", "Buddhism", "Sikhism"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 287,
@@ -2323,7 +2322,7 @@ const List sample_data = [
       "options": ["Harvest season", "Ancestral spirits", "Cherry blossoms", "Buddha's enlightenment"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 288,
@@ -2331,7 +2330,7 @@ const List sample_data = [
       "options": ["Brazil", "Mexico", "Spain", "Argentina"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 289,
@@ -2339,7 +2338,7 @@ const List sample_data = [
       "options": ["Rat", "Ox", "Tiger", "Rabbit"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 290,
@@ -2347,7 +2346,7 @@ const List sample_data = [
       "options": ["Fireworks displays", "Masked balls", "Boat races", "Dance competitions"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 291,
@@ -2355,7 +2354,7 @@ const List sample_data = [
       "options": ["Japan", "South Korea", "China", "Mongolia"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 292,
@@ -2363,7 +2362,7 @@ const List sample_data = [
       "options": ["Snowman mascot", "Fire dragon", "Ice queen", "Lantern bearer"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 293,
@@ -2371,7 +2370,7 @@ const List sample_data = [
       "options": ["Barcelona", "Valencia", "Madrid", "Seville"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 294,
@@ -2379,7 +2378,7 @@ const List sample_data = [
       "options": ["Japan", "Vietnam", "China", "South Korea"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 295,
@@ -2387,7 +2386,7 @@ const List sample_data = [
       "options": ["Vietnam", "South Korea", "Japan", "Taiwan"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 296,
@@ -2395,7 +2394,7 @@ const List sample_data = [
       "options": ["Wood", "Banana leaves", "Paper", "Plastic"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 297,
@@ -2403,7 +2402,7 @@ const List sample_data = [
       "options": ["Venezuela", "Ecuador", "Colombia", "Peru"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 298,
@@ -2411,7 +2410,7 @@ const List sample_data = [
       "options": ["Rain god", "Sun god", "Earth goddess", "Sky god"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 299,
@@ -2419,7 +2418,7 @@ const List sample_data = [
       "options": ["Estonia", "Lithuania", "Latvia", "Finland"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 300,
@@ -2427,7 +2426,7 @@ const List sample_data = [
       "options": ["Racing camels", "Camel trading", "Camel beauty contests", "All of the above"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 301,
@@ -2435,7 +2434,7 @@ const List sample_data = [
       "options": ["A grand parade", "A fireworks display", "Burning of sculptures", "A music concert"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 302,
@@ -2443,7 +2442,7 @@ const List sample_data = [
       "options": ["Fireworks", "Cherry blossoms", "Lanterns", "Birds"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 303,
@@ -2451,7 +2450,7 @@ const List sample_data = [
       "options": ["Norway", "Sweden", "Denmark", "Finland"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 304,
@@ -2459,7 +2458,7 @@ const List sample_data = [
       "options": ["Belgium", "Luxembourg", "France", "Monaco"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 305,
@@ -2467,7 +2466,7 @@ const List sample_data = [
       "options": ["Austria", "Germany", "Switzerland", "Hungary"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 306,
@@ -2475,7 +2474,7 @@ const List sample_data = [
       "options": ["Russia", "Norway", "Sweden", "Finland"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 307,
@@ -2483,7 +2482,7 @@ const List sample_data = [
       "options": ["Fireworks and lanterns", "Water fights", "Kite flying", "Camel racing"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 308,
@@ -2491,7 +2490,7 @@ const List sample_data = [
       "options": ["Scotland", "Ireland", "Wales", "England"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 309,
@@ -2499,7 +2498,7 @@ const List sample_data = [
       "options": ["Christmas Day and New Year’s Day", "Easter Sunday", "Carnival Monday", "Independence Day"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 310,
@@ -2507,7 +2506,7 @@ const List sample_data = [
       "options": ["Samba parades", "Food stalls", "Sports competitions", "Street performances"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 311,
@@ -2515,7 +2514,7 @@ const List sample_data = [
       "options": ["Showa Day", "Constitution Memorial Day", "Mountain Day", "Greenery Day"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 312,
@@ -2523,7 +2522,7 @@ const List sample_data = [
       "options": ["Southeast Asia", "Latin America", "Eastern Europe", "North America"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 313,
@@ -2531,7 +2530,7 @@ const List sample_data = [
       "options": ["Dumplings", "Noodles", "Mooncakes", "Spring rolls"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 314,
@@ -2539,7 +2538,7 @@ const List sample_data = [
       "options": ["Easter", "Lent", "Advent", "Pentecost"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 315,
@@ -2547,7 +2546,7 @@ const List sample_data = [
       "options": ["Throwing water", "Releasing lanterns", "Fireworks", "Planting trees"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 316,
@@ -2555,7 +2554,7 @@ const List sample_data = [
       "options": ["Virgin Mary", "Santo Niño (Child Jesus)", "Saint Peter", "Saint Francis"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 317,
@@ -2563,7 +2562,7 @@ const List sample_data = [
       "options": ["Confucius", "Qu Yuan", "Sun Tzu", "Liu Bang"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 318,
@@ -2571,7 +2570,7 @@ const List sample_data = [
       "options": ["Chrysanthemum", "Cherry blossom", "Lotus", "Plum blossom"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 319,
@@ -2579,7 +2578,7 @@ const List sample_data = [
       "options": ["Dancing around a maypole", "Building bonfires", "Lantern lighting", "Eating mooncakes"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 320,
@@ -2587,7 +2586,7 @@ const List sample_data = [
       "options": ["Julian Calendar", "Persian Calendar", "Hebrew Calendar", "Islamic Calendar"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 321,
@@ -2595,7 +2594,7 @@ const List sample_data = [
       "options": ["Thailand", "Sri Lanka", "Myanmar", "Cambodia"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 322,
@@ -2603,7 +2602,7 @@ const List sample_data = [
       "options": ["Belgium", "Netherlands", "France", "Switzerland"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 323,
@@ -2611,7 +2610,7 @@ const List sample_data = [
       "options": ["1588", "1605", "1649", "1707"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 324,
@@ -2619,7 +2618,7 @@ const List sample_data = [
       "options": ["Gift-giving to children", "Scaring naughty children", "Decorating trees", "Singing carols"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 325,
@@ -2627,7 +2626,7 @@ const List sample_data = [
       "options": ["Mud wrestling", "Mud baths", "Mud painting", "All of the above"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 326,
@@ -2635,7 +2634,7 @@ const List sample_data = [
       "options": ["Moscow", "Saint Petersburg", "Sochi", "Kazan"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 327,
@@ -2643,7 +2642,7 @@ const List sample_data = [
       "options": ["Samba", "Tango", "Salsa", "Flamenco"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 328,
@@ -2651,7 +2650,7 @@ const List sample_data = [
       "options": ["Horse racing", "Eagle hunting", "Archery contests", "Wrestling matches"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 329,
@@ -2659,7 +2658,7 @@ const List sample_data = [
       "options": ["Spring Festival", "Harvest Festival", "Mid-Autumn Festival", "Double Ninth Festival"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 330,
@@ -2667,7 +2666,7 @@ const List sample_data = [
       "options": ["Tang", "Han", "Zhou", "Ming"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 331,
@@ -2676,7 +2675,7 @@ const List sample_data = [
       "options": ["India", "Malaysia", "Sri Lanka", "Singapore"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 332,
@@ -2685,7 +2684,7 @@ const List sample_data = [
       "options": ["Pakistan", "Afghanistan", "India", "Iran"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 333,
@@ -2693,7 +2692,7 @@ const List sample_data = [
       "options": ["Seville", "Valencia", "Pamplona", "Madrid"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 334,
@@ -2701,7 +2700,7 @@ const List sample_data = [
       "options": ["Rajasthan", "Gujarat", "Uttar Pradesh", "Madhya Pradesh"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 335,
@@ -2709,7 +2708,7 @@ const List sample_data = [
       "options": ["Machu Picchu", "Sacsayhuamán", "Cusco Cathedral", "Sacred Valley"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 336,
@@ -2717,7 +2716,7 @@ const List sample_data = [
       "options": ["Darius the Great", "Cyrus the Great", "Xerxes", "Artaxerxes"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 337,
@@ -2726,7 +2725,7 @@ const List sample_data = [
       "options": ["Lombardy", "Piedmont", "Veneto", "Emilia-Romagna"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 338,
@@ -2734,7 +2733,7 @@ const List sample_data = [
       "options": ["Khalkha Mongols", "Kazakhs", "Uzbeks", "Buryats"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 339,
@@ -2747,7 +2746,7 @@ const List sample_data = [
       ],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 340,
@@ -2755,7 +2754,7 @@ const List sample_data = [
       "options": ["Tikal", "Chichen Itza", "Copan", "Palenque"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 341,
@@ -2763,7 +2762,7 @@ const List sample_data = [
       "options": ["December 5", "December 6", "December 24", "January 6"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 342,
@@ -2771,7 +2770,7 @@ const List sample_data = [
       "options": ["Jani", "Kupala", "Ligo", "Saulgriezi"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 343,
@@ -2779,7 +2778,7 @@ const List sample_data = [
       "options": ["Baptism of Jesus", "Last Supper", "Resurrection", "Exodus"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 344,
@@ -2787,7 +2786,7 @@ const List sample_data = [
       "options": ["Banh Tet (sticky rice cake)", "Pho (noodle soup)", "Goi Cuon (spring rolls)", "Xoi (sticky rice)"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 345,
@@ -2795,7 +2794,7 @@ const List sample_data = [
       "options": ["Yamaboko", "Mikoshi", "Dashi", "Omikoshi"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 346,
@@ -2803,7 +2802,7 @@ const List sample_data = [
       "options": ["Thracian Valley", "Valley of Roses", "Danube Plain", "Maritsa Basin"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 347,
@@ -2811,7 +2810,7 @@ const List sample_data = [
       "options": ["Lighting lanterns to guide spirits", "Firewalking", "Kite flying", "Releasing water lilies"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 348,
@@ -2819,7 +2818,7 @@ const List sample_data = [
       "options": ["Pasto", "Cali", "Medellin", "Bogota"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 349,
@@ -2827,7 +2826,7 @@ const List sample_data = [
       "options": ["Moscow", "Helsinki", "Saint Petersburg", "Oslo"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 350,
@@ -2840,7 +2839,7 @@ const List sample_data = [
       ],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 351,
@@ -2848,7 +2847,7 @@ const List sample_data = [
       "options": ["Caucasus Mountains", "Alborz Mountains", "Pamir Mountains", "Zagros Mountains"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 352,
@@ -2856,7 +2855,7 @@ const List sample_data = [
       "options": ["Wealth and prosperity", "Protection from evil spirits", "Good harvest", "Long life"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 353,
@@ -2864,7 +2863,7 @@ const List sample_data = [
       "options": ["Clowns", "Gilles", "Jesters", "Harlequins"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 354,
@@ -2872,7 +2871,7 @@ const List sample_data = [
       "options": ["Summer solstice", "Winter solstice", "Spring equinox", "Autumn equinox"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 355,
@@ -2880,7 +2879,7 @@ const List sample_data = [
       "options": ["Banana-leaf boats", "Candles in jars", "Paper lanterns", "Wooden carvings"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 356,
@@ -2888,7 +2887,7 @@ const List sample_data = [
       "options": ["Sugar skulls", "Candles", "Marigolds", "All of the above"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 357,
@@ -2896,7 +2895,7 @@ const List sample_data = [
       "options": ["Viking heritage", "Harvest season", "Winter solstice", "Scottish independence"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 358,
@@ -2904,7 +2903,7 @@ const List sample_data = [
       "options": ["Bavaria", "Tirol", "Salzburg", "Carinthia"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 359,
@@ -2912,7 +2911,7 @@ const List sample_data = [
       "options": ["Lunar eclipse", "End of monsoon season", "Reverse flow of Tonle Sap River", "Mekong River flood"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 360,
@@ -2920,7 +2919,7 @@ const List sample_data = [
       "options": ["Ulaanbaatar", "Bayan-Ölgii", "Erdenet", "Darkhan"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 361,
@@ -2933,7 +2932,7 @@ const List sample_data = [
       ],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 362,
@@ -2946,7 +2945,7 @@ const List sample_data = [
       ],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 363,
@@ -2954,7 +2953,7 @@ const List sample_data = [
       "options": ["Burning large sculptures", "Lantern releases", "Firewalking ceremonies", "Parades through the city"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 364,
@@ -2962,7 +2961,7 @@ const List sample_data = [
       "options": ["Mud cosmetics", "Agricultural heritage", "Tourism along the coast", "Military traditions"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 365,
@@ -2975,7 +2974,7 @@ const List sample_data = [
       ],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 366,
@@ -2983,7 +2982,7 @@ const List sample_data = [
       "options": ["3", "4", "5", "6"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 367,
@@ -2991,7 +2990,7 @@ const List sample_data = [
       "options": ["Polytheistic roots", "Greek cultural influences", "Focus on nature worship", "All of the above"],
       "answer_index": 3,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 368,
@@ -2999,7 +2998,7 @@ const List sample_data = [
       "options": ["6", "7", "8", "9"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 369,
@@ -3007,7 +3006,7 @@ const List sample_data = [
       "options": ["1930", "1932", "1934", "1936"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 370,
@@ -3021,7 +3020,7 @@ const List sample_data = [
       ],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 371,
@@ -3029,7 +3028,7 @@ const List sample_data = [
       "options": ["Baptism", "Communion", "Marriage", "Anointing"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 372,
@@ -3037,7 +3036,7 @@ const List sample_data = [
       "options": ["Spring", "Summer", "Fall", "Winter"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 373,
@@ -3045,7 +3044,7 @@ const List sample_data = [
       "options": ["Saint Nicholas Day", "All Saints' Day", "Christmas Eve", "Epiphany"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 374,
@@ -3058,7 +3057,7 @@ const List sample_data = [
       ],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 375,
@@ -3066,7 +3065,7 @@ const List sample_data = [
       "options": ["June 21", "June 24", "July 1", "July 4"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 376,
@@ -3074,7 +3073,7 @@ const List sample_data = [
       "options": ["Midnight sun", "Aurora borealis", "Total lunar eclipse", "Halley's comet"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 377,
@@ -3082,7 +3081,7 @@ const List sample_data = [
       "options": ["Solar calendar", "Lunisolar calendar", "Gregorian calendar", "Buddhist calendar"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 378,
@@ -3090,7 +3089,7 @@ const List sample_data = [
       "options": ["2", "3", "4", "5"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 379,
@@ -3098,7 +3097,7 @@ const List sample_data = [
       "options": ["Christianity", "Judaism", "Buddhism", "Islam"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 380,
@@ -3107,7 +3106,7 @@ const List sample_data = [
       "options": ["Rafts", "Canoes", "Royal barges", "Elephants"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 381,
@@ -3115,7 +3114,7 @@ const List sample_data = [
       "options": ["Baking pancakes", "Eating dumplings", "Drinking kvass", "Roasting meat"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 382,
@@ -3123,7 +3122,7 @@ const List sample_data = [
       "options": ["Racial unity and equality", "Agricultural abundance", "Indigenous heritage", "Political freedom"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 383,
@@ -3136,7 +3135,7 @@ const List sample_data = [
       ],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 384,
@@ -3149,7 +3148,7 @@ const List sample_data = [
       ],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 385,
@@ -3157,7 +3156,7 @@ const List sample_data = [
       "options": ["Jumping over fire", "Releasing birds", "Planting trees", "Writing wishes on paper"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 386,
@@ -3165,7 +3164,7 @@ const List sample_data = [
       "options": ["Birch leaves", "Oak leaves", "Straw", "Lavender"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 387,
@@ -3173,7 +3172,7 @@ const List sample_data = [
       "options": ["April", "May", "June", "July"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 388,
@@ -3181,7 +3180,7 @@ const List sample_data = [
       "options": ["Red envelopes with money", "Gold coins", "Fresh flowers", "Lanterns"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 389,
@@ -3189,7 +3188,7 @@ const List sample_data = [
       "options": ["Falconry", "Eagle hunting", "Horseback archery", "Wrestling"],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 390,
@@ -3202,7 +3201,7 @@ const List sample_data = [
       ],
       "answer_index": 1,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 391,
@@ -3210,7 +3209,7 @@ const List sample_data = [
       "options": ["Full moon", "New moon", "Eclipse", "Solstice"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 392,
@@ -3218,7 +3217,7 @@ const List sample_data = [
       "options": ["Victory of light over darkness", "Harvest season", "Birth of Lord Krishna", "Arrival of spring"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 393,
@@ -3226,7 +3225,7 @@ const List sample_data = [
       "options": ["Murano", "Burano", "Lido", "Torcello"],
       "answer_index": 2,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 394,
@@ -3234,7 +3233,7 @@ const List sample_data = [
       "options": ["Transience of life", "Prosperity and wealth", "Gratitude to ancestors", "Fertility and growth"],
       "answer_index": 0,
       "category": "Culture",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 395,
@@ -3242,7 +3241,7 @@ const List sample_data = [
       "options": ["China", "Egypt", "India", "Brazil"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 396,
@@ -3250,7 +3249,7 @@ const List sample_data = [
       "options": ["Abraham Lincoln", "George Washington", "John Adams", "Thomas Jefferson"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 397,
@@ -3258,7 +3257,7 @@ const List sample_data = [
       "options": ["Saudi Arabia", "India", "China", "Indonesia"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 398,
@@ -3266,7 +3265,7 @@ const List sample_data = [
       "options": ["Spain", "Italy", "France", "Belgium"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 399,
@@ -3274,7 +3273,7 @@ const List sample_data = [
       "options": ["Egypt", "Mexico", "Peru", "Turkey"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 400,
@@ -3282,7 +3281,7 @@ const List sample_data = [
       "options": ["Winston Churchill", "Mahatma Gandhi", "Nelson Mandela", "Jawaharlal Nehru"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 401,
@@ -3290,7 +3289,7 @@ const List sample_data = [
       "options": ["France", "United Kingdom", "United States", "Germany"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 402,
@@ -3298,7 +3297,7 @@ const List sample_data = [
       "options": ["Angela Merkel", "Margaret Thatcher", "Queen Victoria", "Theresa May"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 403,
@@ -3306,7 +3305,7 @@ const List sample_data = [
       "options": ["Liberia", "Ghana", "Kenya", "Ethiopia"],
       "answer_index": 3,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 404,
@@ -3314,7 +3313,7 @@ const List sample_data = [
       "options": ["George Washington", "Abraham Lincoln", "Theodore Roosevelt", "Ulysses S. Grant"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 405,
@@ -3322,7 +3321,7 @@ const List sample_data = [
       "options": ["Germany", "Italy", "Russia", "Hungary"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 406,
@@ -3330,7 +3329,7 @@ const List sample_data = [
       "options": ["The Inca", "The Maya", "The Aztec", "The Olmec"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 407,
@@ -3338,7 +3337,7 @@ const List sample_data = [
       "options": ["New York", "Dallas", "Miami", "Chicago"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 408,
@@ -3346,7 +3345,7 @@ const List sample_data = [
       "options": ["Nelson Mandela", "Martin Luther King Jr.", "John F. Kennedy", "Malcolm X"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 409,
@@ -3354,7 +3353,7 @@ const List sample_data = [
       "options": ["The Greeks", "The Romans", "The Persians", "The Babylonians"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 410,
@@ -3362,7 +3361,7 @@ const List sample_data = [
       "options": ["Clara Barton", "Marie Curie", "Florence Nightingale", "Susan B. Anthony"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 411,
@@ -3370,7 +3369,7 @@ const List sample_data = [
       "options": ["Spain", "Germany", "Italy", "Austria"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 412,
@@ -3378,7 +3377,7 @@ const List sample_data = [
       "options": ["Persian Empire", "Ottoman Empire", "Egyptian Empire", "Mongol Empire"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 413,
@@ -3386,7 +3385,7 @@ const List sample_data = [
       "options": ["Australia", "Canada", "South Africa", "India"],
       "answer_index": 3,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 414,
@@ -3394,7 +3393,7 @@ const List sample_data = [
       "options": ["Alexander Hamilton", "Thomas Jefferson", "James Madison", "Benjamin Franklin"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 415,
@@ -3402,7 +3401,7 @@ const List sample_data = [
       "options": ["China", "Korea", "Japan", "Thailand"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 416,
@@ -3410,7 +3409,7 @@ const List sample_data = [
       "options": ["The Bill of Rights", "Magna Carta", "The U.S. Constitution", "Declaration of Independence"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 417,
@@ -3418,7 +3417,7 @@ const List sample_data = [
       "options": ["Roman Empire", "British Empire", "Ottoman Empire", "Mughal Empire"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 418,
@@ -3426,7 +3425,7 @@ const List sample_data = [
       "options": ["Berlin", "Moscow", "Rome", "Paris"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 419,
@@ -3434,7 +3433,7 @@ const List sample_data = [
       "options": ["Russian Revolution", "French Revolution", "American Revolution", "Haitian Revolution"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 420,
@@ -3442,7 +3441,7 @@ const List sample_data = [
       "options": ["Yuri Gagarin", "Buzz Aldrin", "Neil Armstrong", "John Glenn"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 421,
@@ -3450,7 +3449,7 @@ const List sample_data = [
       "options": ["Sumerians", "Egyptians", "Chinese", "Indus Valley"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 422,
@@ -3458,7 +3457,7 @@ const List sample_data = [
       "options": ["Franklin D. Roosevelt", "Theodore Roosevelt", "John F. Kennedy", "Woodrow Wilson"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 423,
@@ -3466,7 +3465,7 @@ const List sample_data = [
       "options": ["Iraq", "Iran", "Israel", "Syria"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 424,
@@ -3474,7 +3473,7 @@ const List sample_data = [
       "options": ["Turkey", "Italy", "Greece", "Cyprus"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 425,
@@ -3482,7 +3481,7 @@ const List sample_data = [
       "options": ["Louis XIV", "Henry IV", "Napoleon Bonaparte", "Francis I"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 426,
@@ -3490,7 +3489,7 @@ const List sample_data = [
       "options": ["Alexandria", "Pompeii", "Athens", "Carthage"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 427,
@@ -3498,7 +3497,7 @@ const List sample_data = [
       "options": ["Franklin D. Roosevelt", "Joseph Stalin", "Winston Churchill", "Adolf Hitler"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 428,
@@ -3506,7 +3505,7 @@ const List sample_data = [
       "options": ["Roman Empire", "Mongol Empire", "Russian Empire", "Byzantine Empire"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 429,
@@ -3514,7 +3513,7 @@ const List sample_data = [
       "options": ["Alexander Fleming", "Marie Curie", "Albert Einstein", "Louis Pasteur"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 430,
@@ -3522,7 +3521,7 @@ const List sample_data = [
       "options": ["Australia", "New Zealand", "Canada", "Finland"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 431,
@@ -3530,7 +3529,7 @@ const List sample_data = [
       "options": ["American Civil War", "Mexican-American War", "Revolutionary War", "War of 1812"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 432,
@@ -3538,7 +3537,7 @@ const List sample_data = [
       "options": ["Babylonians", "Assyrians", "Phoenicians", "Hittites"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 433,
@@ -3546,7 +3545,7 @@ const List sample_data = [
       "options": ["Karl Marx", "Vladimir Lenin", "Joseph Stalin", "Leon Trotsky"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 434,
@@ -3554,7 +3553,7 @@ const List sample_data = [
       "options": ["Vietnam", "Yugoslavia", "Germany", "Korea"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 435,
@@ -3562,7 +3561,7 @@ const List sample_data = [
       "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Bhagat Singh"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 436,
@@ -3570,7 +3569,7 @@ const List sample_data = [
       "options": ["Thomas Jefferson", "George Washington", "John Adams", "James Madison"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 437,
@@ -3578,7 +3577,7 @@ const List sample_data = [
       "options": ["Smith", "Edison", "Wright", "Bell"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 438,
@@ -3586,7 +3585,7 @@ const List sample_data = [
       "options": ["Egyptians", "Romans", "Sumerians", "Persians"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 439,
@@ -3595,7 +3594,7 @@ const List sample_data = [
       "options": ["Christopher Columbus", "Vasco da Gama", "Ferdinand Magellan", "James Cook"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 440,
@@ -3603,7 +3602,7 @@ const List sample_data = [
       "options": ["Niels Bohr", "Nikola Tesla", "Albert Einstein", "Max Planck"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 441,
@@ -3611,7 +3610,7 @@ const List sample_data = [
       "options": ["Russia", "Germany", "Austria", "Turkey"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 442,
@@ -3619,7 +3618,7 @@ const List sample_data = [
       "options": ["Mongol Empire", "Aztec Empire", "Roman Empire", "Persian Empire"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 443,
@@ -3627,7 +3626,7 @@ const List sample_data = [
       "options": ["Isaac Newton", "Galileo Galilei", "Johannes Kepler", "Rene Descartes"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 444,
@@ -3635,7 +3634,7 @@ const List sample_data = [
       "options": ["Italy", "United Kingdom", "Spain", "France"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 445,
@@ -3643,7 +3642,7 @@ const List sample_data = [
       "options": ["Woodrow Wilson", "Theodore Roosevelt", "Franklin D. Roosevelt", "Calvin Coolidge"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 446,
@@ -3651,7 +3650,7 @@ const List sample_data = [
       "options": ["Germany", "France", "Italy", "England"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 447,
@@ -3659,7 +3658,7 @@ const List sample_data = [
       "options": ["South Africa", "Egypt", "Australia", "Morocco"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 448,
@@ -3667,7 +3666,7 @@ const List sample_data = [
       "options": ["Henry VII", "Henry VIII", "Richard III", "Charles I"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 449,
@@ -3675,7 +3674,7 @@ const List sample_data = [
       "options": ["Vasco da Gama", "Bartolomeu Dias", "Francis Drake", "Ferdinand Magellan"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 450,
@@ -3683,7 +3682,7 @@ const List sample_data = [
       "options": ["Sun Yat-sen", "Qin Shi Huang", "Emperor Gaozu", "Kangxi Emperor"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 451,
@@ -3691,7 +3690,7 @@ const List sample_data = [
       "options": ["World War II", "World War I", "Napoleonic Wars", "Crimean War"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 452,
@@ -3699,7 +3698,7 @@ const List sample_data = [
       "options": ["Raúl Castro", "Che Guevara", "Fulgencio Batista", "Fidel Castro"],
       "answer_index": 3,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 453,
@@ -3707,7 +3706,7 @@ const List sample_data = [
       "options": ["Simón Bolívar", "Miguel Hidalgo", "José de San Martín", "Benito Juárez"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 454,
@@ -3715,7 +3714,7 @@ const List sample_data = [
       "options": ["Sargon of Akkad", "Nebuchadnezzar II", "Hammurabi", "Ashurbanipal"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 455,
@@ -3723,7 +3722,7 @@ const List sample_data = [
       "options": ["Byzantine Empire", "Persian Empire", "Russian Empire", "Holy Roman Empire"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 456,
@@ -3731,7 +3730,7 @@ const List sample_data = [
       "options": ["Alexander the Great", "Philip II", "Darius III", "Antiochus III"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 457,
@@ -3739,7 +3738,7 @@ const List sample_data = [
       "options": ["Germany", "Italy", "Austria-Hungary", "Greece"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 458,
@@ -3747,7 +3746,7 @@ const List sample_data = [
       "options": ["Chinese Revolution", "French Revolution", "Russian Revolution", "Mexican Revolution"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 459,
@@ -3755,7 +3754,7 @@ const List sample_data = [
       "options": ["Mary Wollstonecraft", "Olympe de Gouges", "Marie Antoinette", "Charlotte Corday"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 460,
@@ -3763,7 +3762,7 @@ const List sample_data = [
       "options": ["Julius Caesar", "Pompey", "Marcus Licinius Crassus", "Mark Antony"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 461,
@@ -3771,7 +3770,7 @@ const List sample_data = [
       "options": ["Inca", "Mayan", "Aztec", "Toltec"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 462,
@@ -3779,7 +3778,7 @@ const List sample_data = [
       "options": ["Nelson Mandela", "Jacob Zuma", "Thabo Mbeki", "Desmond Tutu"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 463,
@@ -3787,7 +3786,7 @@ const List sample_data = [
       "options": ["Byzantine Empire", "Ottoman Empire", "Seljuk Empire", "Holy Roman Empire"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 464,
@@ -3795,7 +3794,7 @@ const List sample_data = [
       "options": ["World War I", "Crimean War", "World War II", "Franco-Prussian War"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 465,
@@ -3803,7 +3802,7 @@ const List sample_data = [
       "options": ["King Kamehameha I", "Queen Ka‘ahumanu", "Queen Lili‘uokalani", "King Kalākaua"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 466,
@@ -3811,7 +3810,7 @@ const List sample_data = [
       "options": ["Herodotus", "Thucydides", "Plutarch", "Xenophon"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 467,
@@ -3819,7 +3818,7 @@ const List sample_data = [
       "options": ["Inca Empire", "Aztec Empire", "Mayan Empire", "Mughal Empire"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 468,
@@ -3827,7 +3826,7 @@ const List sample_data = [
       "options": ["Harry S. Truman", "Franklin D. Roosevelt", "Dwight D. Eisenhower", "Woodrow Wilson"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 469,
@@ -3835,7 +3834,7 @@ const List sample_data = [
       "options": ["Suleiman the Magnificent", "Osman I", "Mehmed II", "Bayezid I"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 470,
@@ -3843,7 +3842,7 @@ const List sample_data = [
       "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Titian"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 471,
@@ -3851,7 +3850,7 @@ const List sample_data = [
       "options": ["Rosa Parks", "Harriet Tubman", "Sojourner Truth", "Ella Baker"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 472,
@@ -3859,7 +3858,7 @@ const List sample_data = [
       "options": ["Babylonian (Hammurabi)", "Assyrian", "Egyptian", "Hittite"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 473,
@@ -3867,7 +3866,7 @@ const List sample_data = [
       "options": ["The Crusades", "The Reconquista", "The Hundred Years' War", "The Punic Wars"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 474,
@@ -3875,7 +3874,7 @@ const List sample_data = [
       "options": ["Leon Trotsky", "Vladimir Lenin", "Joseph Stalin", "Nikita Khrushchev"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 475,
@@ -3883,7 +3882,7 @@ const List sample_data = [
       "options": ["Han Dynasty", "Tang Dynasty", "Ming Dynasty", "Qing Dynasty"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 476,
@@ -3891,7 +3890,7 @@ const List sample_data = [
       "options": ["Margaret Thatcher", "Theresa May", "Angela Merkel", "Queen Elizabeth II"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 477,
@@ -3899,7 +3898,7 @@ const List sample_data = [
       "options": ["Battle of Britain", "Evacuation of Dunkirk", "Operation Barbarossa", "Battle of Stalingrad"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 478,
@@ -3907,7 +3906,7 @@ const List sample_data = [
       "options": ["Mali Empire", "Songhai Empire", "Ghana Empire", "Benin Empire"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 479,
@@ -3915,7 +3914,7 @@ const List sample_data = [
       "options": ["Karl Marx", "Friedrich Nietzsche", "Georg Hegel", "Max Weber"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 480,
@@ -3923,7 +3922,7 @@ const List sample_data = [
       "options": ["Montezuma II", "Cuauhtémoc", "Ahuitzotl", "Nezahualcoyotl"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 481,
@@ -3931,7 +3930,7 @@ const List sample_data = [
       "options": ["Elizabeth I", "Elizabeth II", "Mary I", "Anne"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 482,
@@ -3939,7 +3938,7 @@ const List sample_data = [
       "options": ["Robespierre", "Napoleon Bonaparte", "Louis XVI", "Talleyrand"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 483,
@@ -3947,7 +3946,7 @@ const List sample_data = [
       "options": ["Korean War", "Vietnam War", "Cambodian Civil War", "Malayan Emergency"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 484,
@@ -3955,7 +3954,7 @@ const List sample_data = [
       "options": ["Treaty of Versailles", "Treaty of Paris", "Treaty of Utrecht", "Treaty of Westphalia"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 485,
@@ -3963,7 +3962,7 @@ const List sample_data = [
       "options": ["National Constituent Assembly", "Maximilien Robespierre", "Napoleon Bonaparte", "Georges Danton"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 486,
@@ -3971,7 +3970,7 @@ const List sample_data = [
       "options": ["Malcolm X", "Martin Luther King Jr.", "Medgar Evers", "Marcus Garvey"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 487,
@@ -3979,7 +3978,7 @@ const List sample_data = [
       "options": ["Aztec Empire", "Mayan Empire", "Inca Empire", "Toltec Empire"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 488,
@@ -3987,7 +3986,7 @@ const List sample_data = [
       "options": ["Qing Dynasty", "Ming Dynasty", "Han Dynasty", "Tang Dynasty"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 489,
@@ -3995,7 +3994,7 @@ const List sample_data = [
       "options": ["French Revolution", "American Revolution", "Paris Commune", "Industrial Revolution"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 490,
@@ -4003,7 +4002,7 @@ const List sample_data = [
       "options": ["Winston Churchill", "Clement Attlee", "Neville Chamberlain", "Anthony Eden"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 491,
@@ -4011,7 +4010,7 @@ const List sample_data = [
       "options": ["John Calvin", "Martin Luther", "Ulrich Zwingli", "John Knox"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 492,
@@ -4019,7 +4018,7 @@ const List sample_data = [
       "options": ["Aztec", "Inca", "Maya", "Olmec"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 493,
@@ -4027,7 +4026,7 @@ const List sample_data = [
       "options": ["Eleanor of Aquitaine", "Joan of Arc", "Catherine de' Medici", "Christine de Pizan"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 494,
@@ -4035,7 +4034,7 @@ const List sample_data = [
       "options": ["Roman Empire (Western)", "Egyptian Empire", "Maurya Empire", "Hittite Empire"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 495,
@@ -4043,7 +4042,7 @@ const List sample_data = [
       "options": ["Treaty of Utrecht", "Treaty of Paris", "Treaty of Versailles", "Treaty of Westphalia"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 496,
@@ -4051,7 +4050,7 @@ const List sample_data = [
       "options": ["Xerxes I", "Cyrus the Great", "Darius I", "Cambyses II"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 497,
@@ -4059,7 +4058,7 @@ const List sample_data = [
       "options": ["Zhang Qian", "Zheng He", "Kangxi Emperor", "Hongwu Emperor"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 498,
@@ -4067,7 +4066,7 @@ const List sample_data = [
       "options": ["Frederick I", "Henry V", "Charles V", "Otto I"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 499,
@@ -4075,7 +4074,7 @@ const List sample_data = [
       "options": ["Council of Nicaea", "Council of Trent", "Lateran Council", "Council of Constance"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 500,
@@ -4083,7 +4082,7 @@ const List sample_data = [
       "options": ["Abbasid Caliphate", "Ottoman Empire", "Safavid Empire", "Timurid Empire"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 501,
@@ -4091,7 +4090,7 @@ const List sample_data = [
       "options": ["Richard II", "Edward III", "Henry V", "John"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 502,
@@ -4099,7 +4098,7 @@ const List sample_data = [
       "options": ["Jan Hus", "John Wycliffe", "Martin Luther", "Jan Žižka"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 503,
@@ -4107,7 +4106,7 @@ const List sample_data = [
       "options": ["Byzantine Empire", "Carolingian Empire", "Bulgarian Empire", "Kievan Rus"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 504,
@@ -4115,7 +4114,7 @@ const List sample_data = [
       "options": ["Carolingian Dynasty", "Merovingian Dynasty", "Capetian Dynasty", "Ottonian Dynasty"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 505,
@@ -4123,7 +4122,7 @@ const List sample_data = [
       "options": ["Francisco Pizarro", "Hernán Cortés", "Pedro de Alvarado", "Vasco Núñez de Balboa"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 506,
@@ -4131,7 +4130,7 @@ const List sample_data = [
       "options": ["Peace of Augsburg", "Treaty of Westphalia", "Treaty of Tordesillas", "Treaty of Nijmegen"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 507,
@@ -4139,7 +4138,7 @@ const List sample_data = [
       "options": ["Umayyad Caliphate", "Ottoman Empire", "Fatimid Caliphate", "Timurid Empire"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 508,
@@ -4147,7 +4146,7 @@ const List sample_data = [
       "options": ["Ashoka", "Bindusara", "Chandragupta Maurya", "Chandragupta II"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 509,
@@ -4155,7 +4154,7 @@ const List sample_data = [
       "options": ["Toltec", "Maya", "Olmec", "Aztec"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 510,
@@ -4163,7 +4162,7 @@ const List sample_data = [
       "options": ["Æthelred the Unready", "Harold Godwinson", "Edward the Confessor", "Alfred the Great"],
       "answer_index": 3,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 511,
@@ -4171,7 +4170,7 @@ const List sample_data = [
       "options": ["Constantine the Great", "Theodosius I", "Justinian I", "Diocletian"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 512,
@@ -4179,7 +4178,7 @@ const List sample_data = [
       "options": ["Tang Dynasty", "Song Dynasty", "Han Dynasty", "Qing Dynasty"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 513,
@@ -4187,7 +4186,7 @@ const List sample_data = [
       "options": ["Rumi", "Avicenna (Ibn Sina)", "Al-Farabi", "Omar Khayyam"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 514,
@@ -4195,7 +4194,7 @@ const List sample_data = [
       "options": ["Baghdad", "Damascus", "Cairo", "Jerusalem"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 515,
@@ -4203,7 +4202,7 @@ const List sample_data = [
       "options": ["Mary I", "Elizabeth I", "Anne Boleyn", "Mary II"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 516,
@@ -4211,7 +4210,7 @@ const List sample_data = [
       "options": ["Treaty of Zaragoza", "Treaty of Tordesillas", "Treaty of Alcáçovas", "Peace of Augsburg"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 517,
@@ -4219,7 +4218,7 @@ const List sample_data = [
       "options": ["Pepin the Short", "Charlemagne", "Louis the Pious", "Charles the Bald"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 518,
@@ -4227,7 +4226,7 @@ const List sample_data = [
       "options": ["Ramses II", "Tutankhamun", "Akhenaten", "Hatshepsut"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 519,
@@ -4235,7 +4234,7 @@ const List sample_data = [
       "options": ["Arcadius", "Justinian I", "Theodosius I", "Zeno"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 520,
@@ -4243,7 +4242,7 @@ const List sample_data = [
       "options": ["Ghana Empire", "Songhai Empire", "Mali Empire", "Kanem-Bornu Empire"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 521,
@@ -4251,7 +4250,7 @@ const List sample_data = [
       "options": ["Heinrich Schliemann", "Howard Carter", "Arthur Evans", "Giovanni Belzoni"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 522,
@@ -4259,7 +4258,7 @@ const List sample_data = [
       "options": ["Cleopatra VII", "Nefertiti", "Hatshepsut", "Arsinoe II"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 523,
@@ -4267,7 +4266,7 @@ const List sample_data = [
       "options": ["Leif Erikson", "Erik the Red", "Harald Hardrada", "Bjorn Ironside"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 524,
@@ -4275,7 +4274,7 @@ const List sample_data = [
       "options": ["Kublai Khan", "Genghis Khan", "Ogedei Khan", "Timur"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 525,
@@ -4283,7 +4282,7 @@ const List sample_data = [
       "options": ["Henry II", "William the Conqueror", "Edward the Confessor", "Stephen of Blois"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 526,
@@ -4291,7 +4290,7 @@ const List sample_data = [
       "options": ["Babur", "Akbar", "Jahangir", "Shah Jahan"],
       "answer_index": 3,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 527,
@@ -4299,7 +4298,7 @@ const List sample_data = [
       "options": ["Inca Empire", "Aztec Empire", "Mayan Empire", "Toltec Empire"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 528,
@@ -4307,7 +4306,7 @@ const List sample_data = [
       "options": ["King John", "King Richard I", "King Henry III", "King Edward I"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 529,
@@ -4315,7 +4314,7 @@ const List sample_data = [
       "options": ["The Art of War", "I Ching", "Dao De Jing", "Analects"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 530,
@@ -4323,7 +4322,7 @@ const List sample_data = [
       "options": ["Ivan the Terrible (Ivan IV)", "Peter the Great", "Ivan III (the Great)", "Michael Romanov"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 531,
@@ -4331,7 +4330,7 @@ const List sample_data = [
       "options": ["The Odyssey", "The Iliad", "Aeneid", "Metamorphoses"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 532,
@@ -4339,7 +4338,7 @@ const List sample_data = [
       "options": ["Ibn Tumart", "Abdallah ibn Yasin", "Musa ibn Nusayr", "Muhammad ibn Abd al-Karim"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 533,
@@ -4347,7 +4346,7 @@ const List sample_data = [
       "options": ["Palenque", "Chichén Itzá", "Copán", "Tikal"],
       "answer_index": 3,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 534,
@@ -4355,7 +4354,7 @@ const List sample_data = [
       "options": ["English Civil War", "War of the Roses", "Anglo-Spanish War", "Nine Years' War"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 535,
@@ -4363,7 +4362,7 @@ const List sample_data = [
       "options": ["Hamilcar Barca", "Hannibal Barca", "Hasdrubal Barca", "Mago Barca"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 536,
@@ -4371,7 +4370,7 @@ const List sample_data = [
       "options": ["Umayyad Caliphate", "Abbasid Caliphate", "Fatimid Caliphate", "Almoravid Dynasty"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 537,
@@ -4379,7 +4378,7 @@ const List sample_data = [
       "options": ["Robert the Bruce", "Harold Godwinson", "Henry II", "William the Conqueror"],
       "answer_index": 3,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 538,
@@ -4387,7 +4386,7 @@ const List sample_data = [
       "options": ["Ivan III", "Ivan IV", "Yaroslav the Wise", "Vladimir the Great"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 539,
@@ -4395,7 +4394,7 @@ const List sample_data = [
       "options": ["Olmec", "Zapotec", "Teotihuacano", "Mixtec"],
       "answer_index": 2,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 540,
@@ -4403,7 +4402,7 @@ const List sample_data = [
       "options": ["Grand Alliance Treaty", "Treaty of The Hague", "Treaty of Ryswick", "Act of Settlement"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 541,
@@ -4411,7 +4410,7 @@ const List sample_data = [
       "options": ["Archaean League", "Delian League", "Amphictyonic League", "Peloponnesian League"],
       "answer_index": 1,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 542,
@@ -4419,7 +4418,7 @@ const List sample_data = [
       "options": ["Taejo Wang Geon", "Sejong the Great", "Wang Kon", "Taejong Yi Bang-won"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 543,
@@ -4427,7 +4426,7 @@ const List sample_data = [
       "options": ["Treaty of Oliva", "Peace of Aix-la-Chapelle", "Treaty of Utrecht", "Treaty of Nystad"],
       "answer_index": 3,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 544,
@@ -4435,7 +4434,7 @@ const List sample_data = [
       "options": ["Carthage", "Macedonia", "Gaul", "Sparta"],
       "answer_index": 0,
       "category": "History",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 545,
@@ -4443,7 +4442,7 @@ const List sample_data = [
       "options": ["Belgium", "Canada", "France", "Spain"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 546,
@@ -4451,7 +4450,7 @@ const List sample_data = [
       "options": ["Asia", "South America", "Africa", "Europe"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 547,
@@ -4459,7 +4458,7 @@ const List sample_data = [
       "options": ["Italy", "Portugal", "Romania", "Austria"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 548,
@@ -4467,7 +4466,7 @@ const List sample_data = [
       "options": ["Bolivia", "Peru", "Colombia", "Ecuador"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 549,
@@ -4475,7 +4474,7 @@ const List sample_data = [
       "options": ["United States", "Canada", "Mexico", "Brazil"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 550,
@@ -4483,7 +4482,7 @@ const List sample_data = [
       "options": ["Pakistan", "Nepal", "India", "Bangladesh"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 551,
@@ -4491,7 +4490,7 @@ const List sample_data = [
       "options": ["Chile", "Brazil", "Argentina", "Venezuela"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 552,
@@ -4499,7 +4498,7 @@ const List sample_data = [
       "options": ["Asia", "Europe", "South America", "Africa"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 553,
@@ -4507,7 +4506,7 @@ const List sample_data = [
       "options": ["New Zealand", "Australia", "Fiji", "England"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 554,
@@ -4515,7 +4514,7 @@ const List sample_data = [
       "options": ["France", "Scotland", "Ireland", "England"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 555,
@@ -4523,7 +4522,7 @@ const List sample_data = [
       "options": ["Germany", "Sweden", "Netherlands", "Denmark"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 556,
@@ -4531,7 +4530,7 @@ const List sample_data = [
       "options": ["Jordan", "Lebanon", "Iran", "Iraq"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 557,
@@ -4539,7 +4538,7 @@ const List sample_data = [
       "options": ["Egypt", "Italy", "France", "Portugal"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 558,
@@ -4547,7 +4546,7 @@ const List sample_data = [
       "options": ["Spain", "Morocco", "Belgium", "Turkey"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 559,
@@ -4555,7 +4554,7 @@ const List sample_data = [
       "options": ["Asia", "South America", "Europe", "United States"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 560,
@@ -4563,7 +4562,7 @@ const List sample_data = [
       "options": ["Honduras", "Belize", "Mexico", "Guatemala"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 561,
@@ -4571,7 +4570,7 @@ const List sample_data = [
       "options": ["Switzerland", "Czech Republic", "Germany", "Denmark"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 562,
@@ -4579,7 +4578,7 @@ const List sample_data = [
       "options": ["Spain", "Germany", "Belgium", "France"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 563,
@@ -4587,7 +4586,7 @@ const List sample_data = [
       "options": ["Asia", "Europe", "Africa", "South America"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 564,
@@ -4595,7 +4594,7 @@ const List sample_data = [
       "options": ["China", "Japan", "South Korea", "Thailand"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 565,
@@ -4603,7 +4602,7 @@ const List sample_data = [
       "options": ["Greece", "Turkey", "Bulgaria", "Cyprus"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 566,
@@ -4611,7 +4610,7 @@ const List sample_data = [
       "options": ["Greece", "Tunisia", "Spain", "Malta"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 567,
@@ -4619,7 +4618,7 @@ const List sample_data = [
       "options": ["Africa", "South America", "Australia", "Asia"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 568,
@@ -4627,7 +4626,7 @@ const List sample_data = [
       "options": ["Qatar", "Kuwait", "United Arab Emirates", "Bahrain"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 569,
@@ -4635,7 +4634,7 @@ const List sample_data = [
       "options": ["Turkey", "Egypt", "Jordan", "Israel"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 570,
@@ -4643,7 +4642,7 @@ const List sample_data = [
       "options": ["Asia", "Africa", "North America", "Europe"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 571,
@@ -4651,7 +4650,7 @@ const List sample_data = [
       "options": ["United Kingdom", "Belgium", "Ireland", "France"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 572,
@@ -4659,7 +4658,7 @@ const List sample_data = [
       "options": ["Sweden", "Iceland", "Norway", "Finland"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 573,
@@ -4667,7 +4666,7 @@ const List sample_data = [
       "options": ["China", "South Korea", "Japan", "Mongolia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 574,
@@ -4675,7 +4674,7 @@ const List sample_data = [
       "options": ["South America", "Asia", "Africa", "Europe"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 575,
@@ -4683,7 +4682,7 @@ const List sample_data = [
       "options": ["Croatia", "Portugal", "Italy", "Greece"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 576,
@@ -4691,7 +4690,7 @@ const List sample_data = [
       "options": ["Slovakia", "Czech Republic", "Austria", "Hungary"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 577,
@@ -4699,7 +4698,7 @@ const List sample_data = [
       "options": ["Denmark", "Germany", "Netherlands", "Switzerland"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 578,
@@ -4707,7 +4706,7 @@ const List sample_data = [
       "options": ["Africa", "Asia", "Europe", "South America"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 579,
@@ -4715,7 +4714,7 @@ const List sample_data = [
       "options": ["Poland", "Norway", "France", "England"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 580,
@@ -4723,7 +4722,7 @@ const List sample_data = [
       "options": ["Asia", "Africa", "South America", "Europe"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 581,
@@ -4731,7 +4730,7 @@ const List sample_data = [
       "options": ["Myanmar", "Thailand", "Cambodia", "Laos"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 582,
@@ -4739,7 +4738,7 @@ const List sample_data = [
       "options": ["Europe", "Oceania (Austrailia)", "South America", "Asia"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 583,
@@ -4747,7 +4746,7 @@ const List sample_data = [
       "options": ["Portugal", "Spain", "Italy", "Morocco"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 584,
@@ -4755,7 +4754,7 @@ const List sample_data = [
       "options": ["Kyrgyzstan", "Uzbekistan", "Tajikistan", "Iran"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 585,
@@ -4763,7 +4762,7 @@ const List sample_data = [
       "options": ["Africa", "Asia", "North America", "Australia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 586,
@@ -4771,7 +4770,7 @@ const List sample_data = [
       "options": ["France", "Sweden", "Germany", "Belgium"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 587,
@@ -4779,7 +4778,7 @@ const List sample_data = [
       "options": ["India", "Sri Lanka", "Pakistan", "Malaysia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 588,
@@ -4787,7 +4786,7 @@ const List sample_data = [
       "options": ["Africa", "Asia", "Europe", "South America"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 589,
@@ -4795,7 +4794,7 @@ const List sample_data = [
       "options": ["Czech Republic", "Belgium", "Austria", "Poland"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 590,
@@ -4803,7 +4802,7 @@ const List sample_data = [
       "options": ["Spain", "France", "Monaco", "Italy"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 591,
@@ -4811,7 +4810,7 @@ const List sample_data = [
       "options": ["Asia", "Africa", "Europe", "Australia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 592,
@@ -4819,7 +4818,7 @@ const List sample_data = [
       "options": ["Wales", "Northern Ireland", "Scotland", "England"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 593,
@@ -4827,7 +4826,7 @@ const List sample_data = [
       "options": ["United States", "Canada", "Mexico", "Costa Rica"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 594,
@@ -4835,7 +4834,7 @@ const List sample_data = [
       "options": ["Asia", "Africa", "Australia", "Europe"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 595,
@@ -4843,7 +4842,7 @@ const List sample_data = [
       "options": ["China", "Taiwan", "Japan", "South Korea"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 596,
@@ -4852,7 +4851,7 @@ const List sample_data = [
       "options": ["Portugal", "Spain", "Morocco", "France"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 597,
@@ -4860,7 +4859,7 @@ const List sample_data = [
       "options": ["Tang Dynasty", "Ming Dynasty", "Qing Dynasty", "Yuan Dynasty"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 598,
@@ -4868,7 +4867,7 @@ const List sample_data = [
       "options": ["Sri Lanka", "India", "Bangladesh", "Cambodia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 599,
@@ -4877,7 +4876,7 @@ const List sample_data = [
       "options": ["Byzantine Empire", "Ottoman Empire", "Roman Empire", "Seljuk Empire"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 600,
@@ -4885,7 +4884,7 @@ const List sample_data = [
       "options": ["Denmark", "Iceland", "Sweden", "United Kingdom"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 601,
@@ -4894,7 +4893,7 @@ const List sample_data = [
       "options": ["Iraq", "Iran", "Syria", "Turkey"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 602,
@@ -4902,7 +4901,7 @@ const List sample_data = [
       "options": ["Bhutan", "India", "China", "Nepal"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 603,
@@ -4911,7 +4910,7 @@ const List sample_data = [
       "options": ["Greek", "Roman", "Egyptian", "Persian"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 604,
@@ -4919,7 +4918,7 @@ const List sample_data = [
       "options": ["Spain", "France", "Italy", "Switzerland"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 605,
@@ -4927,7 +4926,7 @@ const List sample_data = [
       "options": ["Mexico", "Honduras", "Guatemala", "Belize"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 606,
@@ -4935,7 +4934,7 @@ const List sample_data = [
       "options": ["Egypt", "Spain", "Portugal", "Italy"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 607,
@@ -4943,7 +4942,7 @@ const List sample_data = [
       "options": ["Vietnam", "Laos", "Cambodia", "Myanmar"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 608,
@@ -4951,7 +4950,7 @@ const List sample_data = [
       "options": ["Turkey", "Armenia", "Syria", "Georgia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 609,
@@ -4959,7 +4958,7 @@ const List sample_data = [
       "options": ["Peru", "Bolivia", "Ecuador", "Colombia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 610,
@@ -4967,7 +4966,7 @@ const List sample_data = [
       "options": ["Serbia", "Bulgaria", "Romania", "Albania"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 611,
@@ -4975,7 +4974,7 @@ const List sample_data = [
       "options": ["Sudan", "Ethiopia", "Kenya", "Egypt"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 612,
@@ -4983,7 +4982,7 @@ const List sample_data = [
       "options": ["Hungary", "Slovakia", "Austria", "Czech Republic"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 613,
@@ -4992,7 +4991,7 @@ const List sample_data = [
       "options": ["Cyprus", "Malta", "Greece", "Italy"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 614,
@@ -5000,7 +4999,7 @@ const List sample_data = [
       "options": ["Aztec Empire", "Inca Empire", "Mayan Empire", "Olmec Empire"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 615,
@@ -5008,7 +5007,7 @@ const List sample_data = [
       "options": ["Germany", "Austria", "Hungary", "Liechtenstein"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 616,
@@ -5016,7 +5015,7 @@ const List sample_data = [
       "options": ["Japan", "South Korea", "China", "Thailand"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 617,
@@ -5024,7 +5023,7 @@ const List sample_data = [
       "options": ["Spain", "Portugal", "France", "Italy"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 618,
@@ -5033,7 +5032,7 @@ const List sample_data = [
       "options": ["Libya", "Algeria", "Tunisia", "Egypt"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 619,
@@ -5041,7 +5040,7 @@ const List sample_data = [
       "options": ["Romania", "Ukraine", "Moldova", "Poland"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 620,
@@ -5049,7 +5048,7 @@ const List sample_data = [
       "options": ["Jordan", "Israel", "Syria", "Lebanon"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 621,
@@ -5057,7 +5056,7 @@ const List sample_data = [
       "options": ["France", "Switzerland", "Monaco", "Italy"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 622,
@@ -5065,7 +5064,7 @@ const List sample_data = [
       "options": ["Russia", "Finland", "Sweden", "Estonia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 623,
@@ -5073,7 +5072,7 @@ const List sample_data = [
       "options": ["Malaysia", "Indonesia", "Vietnam", "Brunei"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 624,
@@ -5081,7 +5080,7 @@ const List sample_data = [
       "options": ["China", "India", "Nepal", "Japan"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 625,
@@ -5089,7 +5088,7 @@ const List sample_data = [
       "options": ["France", "Italy", "United Kingdom", "Belgium"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 626,
@@ -5097,7 +5096,7 @@ const List sample_data = [
       "options": ["Sri Lanka", "India", "Cambodia", "Thailand"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 627,
@@ -5105,7 +5104,7 @@ const List sample_data = [
       "options": ["Croatia", "Montenegro", "Bosnia and Herzegovina", "Albania"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 628,
@@ -5113,7 +5112,7 @@ const List sample_data = [
       "options": ["Songhai Empire", "Mali Empire", "Ghana Empire", "Kanem-Bornu Empire"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 629,
@@ -5122,7 +5121,7 @@ const List sample_data = [
       "options": ["Egypt", "Iran", "Oman", "Iraq"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 630,
@@ -5130,7 +5129,7 @@ const List sample_data = [
       "options": ["France", "United Kingdom", "Spain", "Belgium"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 631,
@@ -5138,7 +5137,7 @@ const List sample_data = [
       "options": ["Thailand", "South Korea", "Japan", "China"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 632,
@@ -5147,7 +5146,7 @@ const List sample_data = [
       "options": ["Vatican City", "Italy", "Monaco", "Malta"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 633,
@@ -5155,7 +5154,7 @@ const List sample_data = [
       "options": ["Minsk, Belarus", "Moscow, Russia", "Kiev, Ukraine", "Warsaw, Poland"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 634,
@@ -5163,7 +5162,7 @@ const List sample_data = [
       "options": ["Algeria", "Morocco", "Tunisia", "Libya"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 635,
@@ -5171,7 +5170,7 @@ const List sample_data = [
       "options": ["Guatemala", "Ecuador", "Mexico", "Peru"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 636,
@@ -5179,7 +5178,7 @@ const List sample_data = [
       "options": ["Turkey", "Greece", "Bulgaria", "Albania"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 637,
@@ -5187,7 +5186,7 @@ const List sample_data = [
       "options": ["Gupta Empire", "Maurya Empire", "Mughal Empire", "Chola Empire"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 638,
@@ -5195,7 +5194,7 @@ const List sample_data = [
       "options": ["Moldova", "Ukraine", "Romania", "Slovakia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 639,
@@ -5203,7 +5202,7 @@ const List sample_data = [
       "options": ["Italy", "Greece", "Cyprus", "Malta"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 640,
@@ -5211,7 +5210,7 @@ const List sample_data = [
       "options": ["Asia", "Africa", "Europe", "South America"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 641,
@@ -5219,7 +5218,7 @@ const List sample_data = [
       "options": ["Myanmar", "Thailand", "Laos", "Cambodia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 642,
@@ -5227,7 +5226,7 @@ const List sample_data = [
       "options": ["Tunisia", "Morocco", "Algeria", "Egypt"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 643,
@@ -5235,7 +5234,7 @@ const List sample_data = [
       "options": ["Serbia", "Bulgaria", "Romania", "Hungary"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 644,
@@ -5243,7 +5242,7 @@ const List sample_data = [
       "options": ["Egypt", "Israel", "Jordan", "Saudi Arabia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 645,
@@ -5251,7 +5250,7 @@ const List sample_data = [
       "options": ["Iraq", "Turkey", "Syria", "Armenia"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 646,
@@ -5259,7 +5258,7 @@ const List sample_data = [
       "options": ["Sri Lanka", "Myanmar", "India", "Nepal"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 647,
@@ -5268,7 +5267,7 @@ const List sample_data = [
       "options": ["Croatia", "Bulgaria", "North Macedonia", "Serbia"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 648,
@@ -5277,7 +5276,7 @@ const List sample_data = [
       "options": ["Iceland", "Scotland", "Ireland", "Wales"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 649,
@@ -5285,7 +5284,7 @@ const List sample_data = [
       "options": ["Ghana", "Ethiopia", "Kenya", "Sudan"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 650,
@@ -5293,7 +5292,7 @@ const List sample_data = [
       "options": ["Egypt", "Sudan", "Ethiopia", "Libya"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 651,
@@ -5301,7 +5300,7 @@ const List sample_data = [
       "options": ["Cambodia", "Thailand", "Malaysia", "Laos"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 652,
@@ -5309,7 +5308,7 @@ const List sample_data = [
       "options": ["Mexico", "United States", "Canada", "Guatemala"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 653,
@@ -5317,7 +5316,7 @@ const List sample_data = [
       "options": ["Montenegro", "Serbia", "Bosnia and Herzegovina", "North Macedonia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 654,
@@ -5325,7 +5324,7 @@ const List sample_data = [
       "options": ["Jordan", "Cyprus", "Turkey", "Greece"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 655,
@@ -5333,7 +5332,7 @@ const List sample_data = [
       "options": ["Italy", "Algeria", "Morocco", "Tunisia"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 656,
@@ -5341,7 +5340,7 @@ const List sample_data = [
       "options": ["Fiji", "Micronesia", "Vanuatu", "Samoa"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 657,
@@ -5349,7 +5348,7 @@ const List sample_data = [
       "options": ["Armenia", "Georgia", "Azerbaijan", "Turkey"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 658,
@@ -5357,7 +5356,7 @@ const List sample_data = [
       "options": ["Sri Lanka", "Bangladesh", "India", "Malaysia"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 659,
@@ -5365,7 +5364,7 @@ const List sample_data = [
       "options": ["South Africa", "Australia", "Brazil", "India"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 660,
@@ -5373,7 +5372,7 @@ const List sample_data = [
       "options": ["Pakistan", "Iran", "Afghanistan", "Turkmenistan"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 661,
@@ -5381,7 +5380,7 @@ const List sample_data = [
       "options": ["Bulgaria", "Romania", "Serbia", "Moldova"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 662,
@@ -5390,7 +5389,7 @@ const List sample_data = [
       "options": ["Iraq", "Syria", "Iran", "Jordan"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 663,
@@ -5398,7 +5397,7 @@ const List sample_data = [
       "options": ["Niger", "Nigeria", "Chad", "Mali"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 664,
@@ -5406,7 +5405,7 @@ const List sample_data = [
       "options": ["Nepal", "Bhutan", "India", "China"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 665,
@@ -5414,7 +5413,7 @@ const List sample_data = [
       "options": ["Tanzania", "South Africa", "Zimbabwe", "Mozambique"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 666,
@@ -5423,7 +5422,7 @@ const List sample_data = [
       "options": ["Costa Rica", "Honduras", "El Salvador", "Panama"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 667,
@@ -5431,7 +5430,7 @@ const List sample_data = [
       "options": ["Syria", "Lebanon", "Iraq", "Jordan"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 668,
@@ -5439,7 +5438,7 @@ const List sample_data = [
       "options": ["Peru", "Bolivia", "Chile", "Colombia"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 669,
@@ -5447,7 +5446,7 @@ const List sample_data = [
       "options": ["Thailand", "Vietnam", "Myanmar", "Laos"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 670,
@@ -5455,7 +5454,7 @@ const List sample_data = [
       "options": ["Honduras", "Belize", "Bahamas", "Cuba"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 671,
@@ -5463,7 +5462,7 @@ const List sample_data = [
       "options": ["Japan", "China", "South Korea", "Taiwan"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 672,
@@ -5471,7 +5470,7 @@ const List sample_data = [
       "options": ["Romania", "Czech Republic", "Germany", "Poland"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 673,
@@ -5479,7 +5478,7 @@ const List sample_data = [
       "options": ["Maldives", "Sri Lanka", "Madagascar", "Mauritius"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 674,
@@ -5487,7 +5486,7 @@ const List sample_data = [
       "options": ["Indonesia", "Malaysia", "Papua New Guinea", "Timor-Leste"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 675,
@@ -5495,7 +5494,7 @@ const List sample_data = [
       "options": ["Sudan", "Ethiopia", "Nigeria", "Egypt"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 676,
@@ -5503,7 +5502,7 @@ const List sample_data = [
       "options": ["Chile", "Peru", "Argentina", "Ecuador"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 677,
@@ -5511,7 +5510,7 @@ const List sample_data = [
       "options": ["Senegal", "Burkina Faso", "Niger", "Mali"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 678,
@@ -5519,7 +5518,7 @@ const List sample_data = [
       "options": ["Pakistan", "Afghanistan", "India", "Nepal"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 679,
@@ -5527,7 +5526,7 @@ const List sample_data = [
       "options": ["Iraq", "Syria", "Iran", "Armenia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 680,
@@ -5535,7 +5534,7 @@ const List sample_data = [
       "options": ["Libya", "Tunisia", "Algeria", "Morocco"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 681,
@@ -5543,7 +5542,7 @@ const List sample_data = [
       "options": ["Ukraine (internationally recognized)", "Russia", "Belarus", "Georgia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 682,
@@ -5551,7 +5550,7 @@ const List sample_data = [
       "options": ["Thailand", "Laos", "Myanmar", "Vietnam"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 683,
@@ -5559,7 +5558,7 @@ const List sample_data = [
       "options": ["Iraq", "Syria", "Turkey", "Armenia"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 684,
@@ -5567,7 +5566,7 @@ const List sample_data = [
       "options": ["Serbia", "Bulgaria", "Romania", "Moldova"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 685,
@@ -5575,7 +5574,7 @@ const List sample_data = [
       "options": ["Sri Lanka", "Thailand", "India", "Nepal"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 686,
@@ -5583,7 +5582,7 @@ const List sample_data = [
       "options": ["Scotland", "Ireland", "Wales", "England"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 687,
@@ -5591,7 +5590,7 @@ const List sample_data = [
       "options": ["Yemen", "Saudi Arabia", "Oman", "Eritrea"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 688,
@@ -5599,7 +5598,7 @@ const List sample_data = [
       "options": ["Cyprus", "Greece", "Turkey", "Bulgaria"],
       "answer_index": 0,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 689,
@@ -5607,7 +5606,7 @@ const List sample_data = [
       "options": ["Guatemala", "Mexico", "Honduras", "El Salvador"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 690,
@@ -5615,7 +5614,7 @@ const List sample_data = [
       "options": ["Somalia", "Djibouti", "Eritrea", "Yemen"],
       "answer_index": 3,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 691,
@@ -5623,7 +5622,7 @@ const List sample_data = [
       "options": ["Mongolia", "China", "Kazakhstan", "Pakistan"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 692,
@@ -5632,7 +5631,7 @@ const List sample_data = [
       "options": ["Zambia", "Botswana", "Zimbabwe", "Mozambique"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 693,
@@ -5640,7 +5639,7 @@ const List sample_data = [
       "options": ["Cyprus", "Greece", "Turkey", "Bulgaria"],
       "answer_index": 2,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 694,
@@ -5648,7 +5647,7 @@ const List sample_data = [
       "options": ["Afghanistan", "Pakistan", "Tajikistan", "Iran"],
       "answer_index": 1,
       "category": "Monuments/Landmarks",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 695,
@@ -5656,7 +5655,7 @@ const List sample_data = [
       "options": ["Switzerland", "Bolivia", "Germany", "Paraguay"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 696,
@@ -5664,7 +5663,7 @@ const List sample_data = [
       "options": ["Canada", "Guatemala", "Venezuela", "Ecuador"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 697,
@@ -5672,7 +5671,7 @@ const List sample_data = [
       "options": ["Brazil", "India", "Austria", "Spain"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 698,
@@ -5680,7 +5679,7 @@ const List sample_data = [
       "options": ["Russia", "North Pole", "Denmark (via Greenland)", "Mexico"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 699,
@@ -5688,7 +5687,7 @@ const List sample_data = [
       "options": ["Argentina", "France", "New Zealand", "Germany"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 700,
@@ -5696,7 +5695,7 @@ const List sample_data = [
       "options": ["India", "Belgium", "China", "Australia"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 701,
@@ -5704,7 +5703,7 @@ const List sample_data = [
       "options": ["Chad", "Mongolia", "Nepal", "South Korea"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 702,
@@ -5712,7 +5711,7 @@ const List sample_data = [
       "options": ["Chile", "Colombia", "Panama", "Costa Rica"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 703,
@@ -5720,7 +5719,7 @@ const List sample_data = [
       "options": ["Egypt", "Hungary", "Thailand", "Canada"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 704,
@@ -5728,7 +5727,7 @@ const List sample_data = [
       "options": ["Central African Republic", "Nigeria", "Mali", "Algeria"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 705,
@@ -5736,7 +5735,7 @@ const List sample_data = [
       "options": ["Iceland", "Brazil", "Cuba", "Sweden"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 706,
@@ -5744,7 +5743,7 @@ const List sample_data = [
       "options": ["Russia", "Japan", "Denmark", "Vatican City"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 707,
@@ -5752,7 +5751,7 @@ const List sample_data = [
       "options": ["Czech Republic", "Austria", "Italy", "Switzerland"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 708,
@@ -5760,7 +5759,7 @@ const List sample_data = [
       "options": ["Costa Rica", "Panama", "Mexico", "Cuba"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 709,
@@ -5768,7 +5767,7 @@ const List sample_data = [
       "options": ["Portugal", "Nepal", "Italy", "South Africa"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 710,
@@ -5776,7 +5775,7 @@ const List sample_data = [
       "options": ["Botswana", "Zimbabwe", "Namibia", "Zambia"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 711,
@@ -5784,7 +5783,7 @@ const List sample_data = [
       "options": ["Brazil", "Bolivia", "Ecuador", "Panama"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 712,
@@ -5792,7 +5791,7 @@ const List sample_data = [
       "options": ["China", "India", "Chile", "Belgium"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 713,
@@ -5800,7 +5799,7 @@ const List sample_data = [
       "options": ["Bolivia", "Slovakia", "Kenya", "Uganda"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 714,
@@ -5808,7 +5807,7 @@ const List sample_data = [
       "options": ["Argentina", "Panama", "Chile", "Guyana"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 715,
@@ -5816,7 +5815,7 @@ const List sample_data = [
       "options": ["Nigeria", "Ethiopia", "South Sudan", "Democratic Republic of the Congo"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 716,
@@ -5824,7 +5823,7 @@ const List sample_data = [
       "options": ["Canada", "Mexico", "Cuba", "All of the above"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 717,
@@ -5832,7 +5831,7 @@ const List sample_data = [
       "options": ["France", "United Kingdom", "India", "Norway"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 718,
@@ -5840,7 +5839,7 @@ const List sample_data = [
       "options": ["Russia", "China", "Uruguay", "Switzerland"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 719,
@@ -5848,7 +5847,7 @@ const List sample_data = [
       "options": ["Honduras", "Nepal", "Mongolia", "Luxembourg"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 720,
@@ -5856,7 +5855,7 @@ const List sample_data = [
       "options": ["Spain", "Portugal", "Ireland", "Iceland"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 721,
@@ -5864,7 +5863,7 @@ const List sample_data = [
       "options": ["South Africa", "Egypt", "Chad", "Sweden"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 722,
@@ -5872,7 +5871,7 @@ const List sample_data = [
       "options": ["Austria", "France", "Belgium", "Portugal"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 723,
@@ -5880,7 +5879,7 @@ const List sample_data = [
       "options": ["Japan", "Brazil", "Italy", "Australia"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 724,
@@ -5888,7 +5887,7 @@ const List sample_data = [
       "options": ["Bolivia", "Kazakhstan", "Laos", "Norway"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 725,
@@ -5896,7 +5895,7 @@ const List sample_data = [
       "options": ["Mongolia", "Peru", "Poland", "Ecuador"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 726,
@@ -5904,7 +5903,7 @@ const List sample_data = [
       "options": ["Sweden", "Austria", "France", "Argentina"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 727,
@@ -5912,7 +5911,7 @@ const List sample_data = [
       "options": ["Bolivia", "Chile", "Venezuela", "Peru"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 728,
@@ -5920,7 +5919,7 @@ const List sample_data = [
       "options": ["Russia", "Uruguay", "Belgium", "Kuwait"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 729,
@@ -5928,7 +5927,7 @@ const List sample_data = [
       "options": ["United States", "Mexico", "Spain", "Singapore"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 730,
@@ -5936,7 +5935,7 @@ const List sample_data = [
       "options": ["Czech Republic", "Paraguay", "Vietnam", "Bolivia"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 731,
@@ -5944,7 +5943,7 @@ const List sample_data = [
       "options": ["Laos", "Myanmar (Burma)", "Vietnam", "Indonesia"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 732,
@@ -5952,7 +5951,7 @@ const List sample_data = [
       "options": ["Switzerland", "Japan", "Chile", "Turkey"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 733,
@@ -5960,7 +5959,7 @@ const List sample_data = [
       "options": ["United States", "Greenland (Denmark)", "Russia", "All of the above"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 734,
@@ -5968,7 +5967,7 @@ const List sample_data = [
       "options": ["Russia", "Kenya", "Cuba", "Greece"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 735,
@@ -5976,7 +5975,7 @@ const List sample_data = [
       "options": ["Algeria", "France", "Egypt", "Luxembourg"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 736,
@@ -5984,7 +5983,7 @@ const List sample_data = [
       "options": ["Uzbekistan", "Afghanistan", "Serbia", "Belgium"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 737,
@@ -5992,7 +5991,7 @@ const List sample_data = [
       "options": ["Panama", "Guatemala", "Nicaragua", "Costa Rica"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 738,
@@ -6000,7 +5999,7 @@ const List sample_data = [
       "options": ["South Korea", "Denmark", "Kazakhstan", "Iceland"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 739,
@@ -6008,7 +6007,7 @@ const List sample_data = [
       "options": ["Ukraine", "Kazakhstan", "Nepal", "Mongolia"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 740,
@@ -6016,7 +6015,7 @@ const List sample_data = [
       "options": ["China", "Peru", "Italy", "Ireland"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 741,
@@ -6024,7 +6023,7 @@ const List sample_data = [
       "options": ["Nigeria", "Spain", "Austria", "Singapore"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 742,
@@ -6032,7 +6031,7 @@ const List sample_data = [
       "options": ["Austria", "Czech Republic", "Greece", "Hungary"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 743,
@@ -6040,7 +6039,7 @@ const List sample_data = [
       "options": ["Greece", "Chad", "South Africa", "Iraq"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 744,
@@ -6048,7 +6047,7 @@ const List sample_data = [
       "options": ["Uganda", "Kenya", "Australia", "Spain"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 745,
@@ -6056,7 +6055,7 @@ const List sample_data = [
       "options": ["Germany", "Ukraine", "Greece", "Belarus"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 746,
@@ -6064,7 +6063,7 @@ const List sample_data = [
       "options": ["United Kingdom", "Japan", "Pakistan", "Russia"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 747,
@@ -6072,7 +6071,7 @@ const List sample_data = [
       "options": ["China", "Netherlands", "India", "Egypt"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 748,
@@ -6080,7 +6079,7 @@ const List sample_data = [
       "options": ["Bolivia", "Rwanda", "Laos", "Thailand"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 749,
@@ -6088,7 +6087,7 @@ const List sample_data = [
       "options": ["Cuba", "Poland", "Mexico", "Argentina"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 750,
@@ -6096,7 +6095,7 @@ const List sample_data = [
       "options": ["Portugal", "Nepal", "Norway", "Chile"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 751,
@@ -6104,7 +6103,7 @@ const List sample_data = [
       "options": ["United States", "Denmark (via Greenland)", "France (via Saint Pierre)", "Russia"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 752,
@@ -6112,7 +6111,7 @@ const List sample_data = [
       "options": ["Australia", "Belgium", "Vietnam", "Colombia"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 753,
@@ -6120,7 +6119,7 @@ const List sample_data = [
       "options": ["Egypt", "Canada", "Greece", "Denmark"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 754,
@@ -6128,7 +6127,7 @@ const List sample_data = [
       "options": ["Russia", "Malta", "United Kingdom", "Sweden"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Medium"
+      "difficulty": 2
     },
     {
       "id": 755,
@@ -6136,7 +6135,7 @@ const List sample_data = [
       "options": ["China", "Russia", "Australia", "Canada"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 756,
@@ -6144,7 +6143,7 @@ const List sample_data = [
       "options": ["Mexico", "Nigeria", "Canada", "Japan"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 757,
@@ -6152,7 +6151,7 @@ const List sample_data = [
       "options": ["France", "Brazil", "South Africa", "India"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 758,
@@ -6160,7 +6159,7 @@ const List sample_data = [
       "options": ["United States", "Australia", "China", "Argentina"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 759,
@@ -6168,7 +6167,7 @@ const List sample_data = [
       "options": ["Egypt", "Germany", "Russia", "Brazil"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 760,
@@ -6176,7 +6175,7 @@ const List sample_data = [
       "options": ["Japan", "Algeria", "Czech Republic", "Canada"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 761,
@@ -6184,7 +6183,7 @@ const List sample_data = [
       "options": ["Russia", "Belarus", "France", "Poland"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 762,
@@ -6192,7 +6191,7 @@ const List sample_data = [
       "options": ["China", "Australia", "Zambia", "India"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 763,
@@ -6200,7 +6199,7 @@ const List sample_data = [
       "options": ["Argentina", "South Korea", "South Africa", "Iceland"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 764,
@@ -6208,7 +6207,7 @@ const List sample_data = [
       "options": ["Chile", "Kenya", "Canada", "Turkey"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 765,
@@ -6216,7 +6215,7 @@ const List sample_data = [
       "options": ["Morocco", "Brazil", "Sweden", "Japan"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 766,
@@ -6224,7 +6223,7 @@ const List sample_data = [
       "options": ["Spain", "Mexico", "China", "Australia"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 767,
@@ -6232,7 +6231,7 @@ const List sample_data = [
       "options": ["Argentina", "Poland", "Austria", "Canada"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 768,
@@ -6240,7 +6239,7 @@ const List sample_data = [
       "options": ["Brazil", "Australia", "Canada", "Spain"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 769,
@@ -6248,7 +6247,7 @@ const List sample_data = [
       "options": ["Egypt", "Russia", "Poland", "Chile"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 770,
@@ -6256,7 +6255,7 @@ const List sample_data = [
       "options": ["China", "Brazil", "Austria", "Russia"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 771,
@@ -6264,7 +6263,7 @@ const List sample_data = [
       "options": ["Italy", "Spain", "Nigeria", "France"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 772,
@@ -6272,7 +6271,7 @@ const List sample_data = [
       "options": ["Germany", "Argentina", "India", "Portugal"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 773,
@@ -6280,7 +6279,7 @@ const List sample_data = [
       "options": ["Guatemala", "Sweden", "Morocco", "China"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 774,
@@ -6288,7 +6287,7 @@ const List sample_data = [
       "options": ["Kenya", "Colombia", "Russia", "Belgium"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 775,
@@ -6296,7 +6295,7 @@ const List sample_data = [
       "options": ["Uganda", "Mexico", "Japan", "Chile"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 776,
@@ -6304,7 +6303,7 @@ const List sample_data = [
       "options": ["Peru", "Nigeria", "Kenya", "Poland"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 777,
@@ -6312,7 +6311,7 @@ const List sample_data = [
       "options": ["Brazil", "Mexico", "Argentina", "China"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 778,
@@ -6320,7 +6319,7 @@ const List sample_data = [
       "options": ["Australia", "Austria", "Poland", "Laos"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 779,
@@ -6328,7 +6327,7 @@ const List sample_data = [
       "options": ["Spain", "New Zealand", "Zambia", "Sweden"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 780,
@@ -6336,7 +6335,7 @@ const List sample_data = [
       "options": ["Thailand", "Argentina", "Greece", "Canada"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 781,
@@ -6344,7 +6343,7 @@ const List sample_data = [
       "options": ["Egypt", "Vietnam", "Mexico", "France"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 782,
@@ -6352,7 +6351,7 @@ const List sample_data = [
       "options": ["Germany", "Mexico", "Spain", "Brazil"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 783,
@@ -6360,7 +6359,7 @@ const List sample_data = [
       "options": ["Denmark", "China", "Egypt", "Chile"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 784,
@@ -6368,7 +6367,7 @@ const List sample_data = [
       "options": ["China", "Japan", "Argentina", "India"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 785,
@@ -6376,7 +6375,7 @@ const List sample_data = [
       "options": ["France", "Mexico", "Brazil", "Japan"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 786,
@@ -6384,7 +6383,7 @@ const List sample_data = [
       "options": ["United Kingdom", "Bolivia", "China", "Nigeria"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 787,
@@ -6392,7 +6391,7 @@ const List sample_data = [
       "options": ["Sweden", "Argentina", "China", "Australia"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 788,
@@ -6400,7 +6399,7 @@ const List sample_data = [
       "options": ["Turkey", "Laos", "Egypt", "Sweden"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 789,
@@ -6408,7 +6407,7 @@ const List sample_data = [
       "options": ["Russia", "Thailand", "Iceland", "Kenya"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 790,
@@ -6416,7 +6415,7 @@ const List sample_data = [
       "options": ["Chile", "Poland", "South Korea", "India"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 791,
@@ -6424,7 +6423,7 @@ const List sample_data = [
       "options": ["Argentina", "Canada", "Italy", "Japan"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 792,
@@ -6432,7 +6431,7 @@ const List sample_data = [
       "options": ["Germany", "Mexico", "Nigeria", "China"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 793,
@@ -6440,7 +6439,7 @@ const List sample_data = [
       "options": ["Brazil", "Spain", "Thailand", "Kenya"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 794,
@@ -6448,7 +6447,7 @@ const List sample_data = [
       "options": ["Chile", "Russia", "South Africa", "Australia"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 795,
@@ -6456,7 +6455,7 @@ const List sample_data = [
       "options": ["France", "Zimbabwe", "Japan", "Peru"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 796,
@@ -6464,7 +6463,7 @@ const List sample_data = [
       "options": ["Mexico", "Canada", "Saudi Arabia", "All of the above"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 797,
@@ -6472,7 +6471,7 @@ const List sample_data = [
       "options": ["Egypt", "China", "Chile", "Sweden"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 798,
@@ -6480,7 +6479,7 @@ const List sample_data = [
       "options": ["Cuba", "Iceland", "South Korea", "Nigeria"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 799,
@@ -6488,7 +6487,7 @@ const List sample_data = [
       "options": ["Kenya", "Argentina", "Chile", "Italy"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 800,
@@ -6496,7 +6495,7 @@ const List sample_data = [
       "options": ["United Kingdom", "Bolivia", "Denmark", "Brazil"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 801,
@@ -6504,7 +6503,7 @@ const List sample_data = [
       "options": ["Ukraine", "Morocco", "Japan", "Mexico"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 802,
@@ -6512,7 +6511,7 @@ const List sample_data = [
       "options": ["Peru", "India", "France", "Chile"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 803,
@@ -6520,7 +6519,7 @@ const List sample_data = [
       "options": ["Brazil", "Japan", "Canada", "South Africa"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 804,
@@ -6528,7 +6527,7 @@ const List sample_data = [
       "options": ["Egypt", "Italy", "Cuba", "Canada"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 805,
@@ -6536,7 +6535,7 @@ const List sample_data = [
       "options": ["Chad", "Ethiopia", "Mongolia", "India"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 806,
@@ -6544,7 +6543,7 @@ const List sample_data = [
       "options": ["Morocco", "Mexico", "Germany", "Brazil"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 807,
@@ -6552,7 +6551,7 @@ const List sample_data = [
       "options": ["Argentina", "Netherlands", "Cuba", "Tanzania"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 808,
@@ -6560,7 +6559,7 @@ const List sample_data = [
       "options": ["China", "Venezuela", "Cameroon", "Australia"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 809,
@@ -6568,7 +6567,7 @@ const List sample_data = [
       "options": ["Chile", "South Korea", "Poland", "Ivory Coast"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 810,
@@ -6576,7 +6575,7 @@ const List sample_data = [
       "options": ["Japan", "South Africa", "Egypt", "Switzerland"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
       "id": 811,
@@ -6584,393 +6583,391 @@ const List sample_data = [
       "options": ["Kenya", "Iceland", "Argentina", "Bolivia"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Easy"
+      "difficulty": 1
     },
     {
-      {
-        "id": 812,
-        "question": "Which country does NOT border France?",
-        "options": ["Spain", "Italy", "Belgium", "Portugal"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Easy"
-      },
-      {
-        "id": 813,
-        "question": "Which country is completely in Europe?",
-        "options": ["Norway", "Egypt", "Colombia", "China"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Easy"
-      },
-      {
-        "id": 814,
-        "question": "Which of these countries is in Asia?",
-        "options": ["Morocco", "Mexico", "Vietnam", "Brazil"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Easy"
-      },
-      {
-        "id": 815,
-        "question": "Which country does NOT border Kazakhstan?",
-        "options": ["Russia", "Uzbekistan", "Turkmenistan", "Tajikistan"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 816,
-        "question": "Which country shares a land border with both Brazil and Argentina?",
-        "options": ["Bolivia", "Uruguay", "Chile", "Paraguay"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 817,
-        "question": "Which is the largest island nation (by area) among these?",
-        "options": ["Madagascar", "Cuba", "Iceland", "Sri Lanka"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 818,
-        "question": "Which country does NOT border the Black Sea?",
-        "options": ["Turkey", "Romania", "Bulgaria", "North Macedonia"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 819,
-        "question": "Which country is the largest in the Caucasus region by area?",
-        "options": ["Armenia", "Georgia", "Azerbaijan", "Chechnya"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 820,
-        "question": "Which country does NOT border China?",
-        "options": ["Nepal", "Myanmar", "Mongolia", "Thailand"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 821,
-        "question": "Which of these countries is landlocked?",
-        "options": ["Gabon", "Eritrea", "Zambia", "Mozambique"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 822,
-        "question": "Which country does NOT border Germany?",
-        "options": ["Switzerland", "Czech Republic", "Luxembourg", "Slovakia"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 823,
-        "question": "Which country is the largest by area in Central Asia?",
-        "options": ["Tajikistan", "Uzbekistan", "Kyrgyzstan", "Kazakhstan"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 824,
-        "question": "Which of these countries does NOT border the Mediterranean Sea?",
-        "options": ["Algeria", "Portugal", "Syria", "Croatia"],
-        "answer_index": 1,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 825,
-        "question": "Which country does NOT border India?",
-        "options": ["Bangladesh", "Sri Lanka", "China", "Afghanistan"],
-        "answer_index": 1,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 826,
-        "question": "Which is the largest by area among these landlocked countries?",
-        "options": ["Ethiopia", "Uganda", "Bolivia", "Lao PDR"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 827,
-        "question": "Which country does NOT border the Baltic Sea?",
-        "options": ["Estonia", "Latvia", "Belarus", "Lithuania"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 828,
-        "question": "Which of these countries shares the longest land border with Russia?",
-        "options": ["Norway", "China", "Finland", "Ukraine"],
-        "answer_index": 1,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 829,
-        "question": "Which country does NOT border Myanmar (Burma)?",
-        "options": ["Thailand", "Bangladesh", "Laos", "Malaysia"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 830,
-        "question": "Which is the largest island of Japan by area?",
-        "options": ["Honshu", "Hokkaido", "Kyushu", "Shikoku"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 831,
-        "question": "Which country in the Arabian Peninsula is the largest by area?",
-        "options": ["Oman", "Saudi Arabia", "Yemen", "Kuwait"],
-        "answer_index": 1,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 832,
-        "question": "Which of these South American countries does NOT border the Pacific Ocean?",
-        "options": ["Colombia", "Peru", "Paraguay", "Chile"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 833,
-        "question": "Which country does NOT border the Caspian Sea?",
-        "options": ["Iran", "Turkmenistan", "Uzbekistan", "Russia"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 834,
-        "question": "Which is the largest of the Great Lakes in North America by surface area?",
-        "options": ["Lake Superior", "Lake Michigan", "Lake Huron", "Lake Erie"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 835,
-        "question": "Which country does NOT border Tanzania?",
-        "options": ["Kenya", "Mozambique", "Rwanda", "Angola"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 836,
-        "question": "Which of these countries does NOT border Romania?",
-        "options": ["Ukraine", "Serbia", "Bulgaria", "Moldova"],
-        "answer_index": 1,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 837,
-        "question": "Which island is the largest in the Mediterranean Sea?",
-        "options": ["Cyprus", "Sardinia", "Sicily", "Crete"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 838,
-        "question": "Which country does NOT border Uzbekistan?",
-        "options": ["Kyrgyzstan", "Kazakhstan", "Turkmenistan", "Armenia"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 839,
-        "question": "Which is the largest lake in Africa by surface area?",
-        "options": ["Lake Victoria", "Lake Tanganyika", "Lake Malawi", "Lake Chad"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 840,
-        "question": "Which of these countries does NOT border Mexico?",
-        "options": ["Guatemala", "Belize", "Honduras", "United States"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 841,
-        "question": "Which country does NOT border Libya?",
-        "options": ["Egypt", "Sudan", "Algeria", "Chad"],
-        "answer_index": 1,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 842,
-        "question": "Which island is the largest in the world by area (excluding continents)?",
-        "options": ["New Guinea", "Borneo", "Greenland", "Madagascar"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 843,
-        "question": "Which country does NOT border the Persian Gulf?",
-        "options": ["Iraq", "Iran", "Oman", "Jordan"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 844,
-        "question": "Which is the largest country in Central America by area?",
-        "options": ["Nicaragua", "Honduras", "Guatemala", "Costa Rica"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 845,
-        "question": "Which country does NOT border Serbia?",
-        "options": ["Croatia", "Hungary", "Bosnia and Herzegovina", "Romania"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 846,
-        "question": "Which is the largest of the British Isles?",
-        "options": ["Great Britain", "Ireland", "Isle of Man", "Isle of Wight"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 847,
-        "question": "Which of these countries is located entirely on the Balkan Peninsula?",
-        "options": ["Greece", "Romania", "Croatia", "Slovenia"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 848,
-        "question": "Which country does NOT border Lake Victoria?",
-        "options": ["Tanzania", "Kenya", "Rwanda", "Uganda"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 849,
-        "question": "Which is the largest emirate in the UAE by area?",
-        "options": ["Abu Dhabi", "Dubai", "Sharjah", "Fujairah"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 850,
-        "question": "Which country does NOT share a border with Bolivia?",
-        "options": ["Peru", "Chile", "Argentina", "Ecuador"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 851,
-        "question": "Which country is the largest in the Horn of Africa by area?",
-        "options": ["Djibouti", "Eritrea", "Somalia", "Ethiopia"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 852,
-        "question": "Which of these countries does NOT border the Red Sea?",
-        "options": ["Eritrea", "Saudi Arabia", "Yemen", "Oman"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 853,
-        "question": "Which country does NOT border Saudi Arabia?",
-        "options": ["United Arab Emirates", "Kuwait", "Qatar", "Jordan"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 854,
-        "question": "Which is the southernmost country in Central America?",
-        "options": ["Costa Rica", "Honduras", "Panama", "El Salvador"],
-        "answer_index": 2,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 855,
-        "question": "Which of these countries is entirely landlocked in South America?",
-        "options": ["Bolivia", "Chile", "Ecuador", "Venezuela"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 856,
-        "question": "Which country does NOT border the Democratic Republic of the Congo?",
-        "options": ["Zambia", "Tanzania", "Uganda", "Namibia"],
-        "answer_index": 3,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 857,
-        "question": "Which is the largest desert in Asia?",
-        "options": ["Gobi", "Thar", "Karakum", "Taklamakan"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 858,
-        "question": "Which of these lakes is entirely in Canada?",
-        "options": ["Great Bear Lake", "Lake Superior", "Lake Erie", "Lake Michigan"],
-        "answer_index": 0,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
-      {
-        "id": 859,
-        "question": "Which country does NOT border Guatemala?",
-        "options": ["Belize", "Costa Rica", "Honduras", "El Salvador"],
-        "answer_index": 1,
-        "category": "Geography",
-        "difficulty": "Hard"
-      },
+      "id": 812,
+      "question": "Which country does NOT border France?",
+      "options": ["Spain", "Italy", "Belgium", "Portugal"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 1
+    },
+    {
+      "id": 813,
+      "question": "Which country is completely in Europe?",
+      "options": ["Norway", "Egypt", "Colombia", "China"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 1
+    },
+    {
+      "id": 814,
+      "question": "Which of these countries is in Asia?",
+      "options": ["Morocco", "Mexico", "Vietnam", "Brazil"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 1
+    },
+    {
+      "id": 815,
+      "question": "Which country does NOT border Kazakhstan?",
+      "options": ["Russia", "Uzbekistan", "Turkmenistan", "Tajikistan"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 816,
+      "question": "Which country shares a land border with both Brazil and Argentina?",
+      "options": ["Bolivia", "Uruguay", "Chile", "Paraguay"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 817,
+      "question": "Which is the largest island nation (by area) among these?",
+      "options": ["Madagascar", "Cuba", "Iceland", "Sri Lanka"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 818,
+      "question": "Which country does NOT border the Black Sea?",
+      "options": ["Turkey", "Romania", "Bulgaria", "North Macedonia"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 819,
+      "question": "Which country is the largest in the Caucasus region by area?",
+      "options": ["Armenia", "Georgia", "Azerbaijan", "Chechnya"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 820,
+      "question": "Which country does NOT border China?",
+      "options": ["Nepal", "Myanmar", "Mongolia", "Thailand"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 821,
+      "question": "Which of these countries is landlocked?",
+      "options": ["Gabon", "Eritrea", "Zambia", "Mozambique"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 822,
+      "question": "Which country does NOT border Germany?",
+      "options": ["Switzerland", "Czech Republic", "Luxembourg", "Slovakia"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 823,
+      "question": "Which country is the largest by area in Central Asia?",
+      "options": ["Tajikistan", "Uzbekistan", "Kyrgyzstan", "Kazakhstan"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 824,
+      "question": "Which of these countries does NOT border the Mediterranean Sea?",
+      "options": ["Algeria", "Portugal", "Syria", "Croatia"],
+      "answer_index": 1,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 825,
+      "question": "Which country does NOT border India?",
+      "options": ["Bangladesh", "Sri Lanka", "China", "Afghanistan"],
+      "answer_index": 1,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 826,
+      "question": "Which is the largest by area among these landlocked countries?",
+      "options": ["Ethiopia", "Uganda", "Bolivia", "Lao PDR"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 827,
+      "question": "Which country does NOT border the Baltic Sea?",
+      "options": ["Estonia", "Latvia", "Belarus", "Lithuania"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 828,
+      "question": "Which of these countries shares the longest land border with Russia?",
+      "options": ["Norway", "China", "Finland", "Ukraine"],
+      "answer_index": 1,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 829,
+      "question": "Which country does NOT border Myanmar (Burma)?",
+      "options": ["Thailand", "Bangladesh", "Laos", "Malaysia"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 830,
+      "question": "Which is the largest island of Japan by area?",
+      "options": ["Honshu", "Hokkaido", "Kyushu", "Shikoku"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 831,
+      "question": "Which country in the Arabian Peninsula is the largest by area?",
+      "options": ["Oman", "Saudi Arabia", "Yemen", "Kuwait"],
+      "answer_index": 1,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 832,
+      "question": "Which of these South American countries does NOT border the Pacific Ocean?",
+      "options": ["Colombia", "Peru", "Paraguay", "Chile"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 833,
+      "question": "Which country does NOT border the Caspian Sea?",
+      "options": ["Iran", "Turkmenistan", "Uzbekistan", "Russia"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 834,
+      "question": "Which is the largest of the Great Lakes in North America by surface area?",
+      "options": ["Lake Superior", "Lake Michigan", "Lake Huron", "Lake Erie"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 835,
+      "question": "Which country does NOT border Tanzania?",
+      "options": ["Kenya", "Mozambique", "Rwanda", "Angola"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 836,
+      "question": "Which of these countries does NOT border Romania?",
+      "options": ["Ukraine", "Serbia", "Bulgaria", "Moldova"],
+      "answer_index": 1,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 837,
+      "question": "Which island is the largest in the Mediterranean Sea?",
+      "options": ["Cyprus", "Sardinia", "Sicily", "Crete"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 838,
+      "question": "Which country does NOT border Uzbekistan?",
+      "options": ["Kyrgyzstan", "Kazakhstan", "Turkmenistan", "Armenia"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 839,
+      "question": "Which is the largest lake in Africa by surface area?",
+      "options": ["Lake Victoria", "Lake Tanganyika", "Lake Malawi", "Lake Chad"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 840,
+      "question": "Which of these countries does NOT border Mexico?",
+      "options": ["Guatemala", "Belize", "Honduras", "United States"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 841,
+      "question": "Which country does NOT border Libya?",
+      "options": ["Egypt", "Sudan", "Algeria", "Chad"],
+      "answer_index": 1,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 842,
+      "question": "Which island is the largest in the world by area (excluding continents)?",
+      "options": ["New Guinea", "Borneo", "Greenland", "Madagascar"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 843,
+      "question": "Which country does NOT border the Persian Gulf?",
+      "options": ["Iraq", "Iran", "Oman", "Jordan"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 844,
+      "question": "Which is the largest country in Central America by area?",
+      "options": ["Nicaragua", "Honduras", "Guatemala", "Costa Rica"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 845,
+      "question": "Which country does NOT border Serbia?",
+      "options": ["Croatia", "Hungary", "Bosnia and Herzegovina", "Romania"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 846,
+      "question": "Which is the largest of the British Isles?",
+      "options": ["Great Britain", "Ireland", "Isle of Man", "Isle of Wight"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 847,
+      "question": "Which of these countries is located entirely on the Balkan Peninsula?",
+      "options": ["Greece", "Romania", "Croatia", "Slovenia"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 848,
+      "question": "Which country does NOT border Lake Victoria?",
+      "options": ["Tanzania", "Kenya", "Rwanda", "Uganda"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 849,
+      "question": "Which is the largest emirate in the UAE by area?",
+      "options": ["Abu Dhabi", "Dubai", "Sharjah", "Fujairah"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 850,
+      "question": "Which country does NOT share a border with Bolivia?",
+      "options": ["Peru", "Chile", "Argentina", "Ecuador"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 851,
+      "question": "Which country is the largest in the Horn of Africa by area?",
+      "options": ["Djibouti", "Eritrea", "Somalia", "Ethiopia"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 852,
+      "question": "Which of these countries does NOT border the Red Sea?",
+      "options": ["Eritrea", "Saudi Arabia", "Yemen", "Oman"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 853,
+      "question": "Which country does NOT border Saudi Arabia?",
+      "options": ["United Arab Emirates", "Kuwait", "Qatar", "Jordan"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 854,
+      "question": "Which is the southernmost country in Central America?",
+      "options": ["Costa Rica", "Honduras", "Panama", "El Salvador"],
+      "answer_index": 2,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 855,
+      "question": "Which of these countries is entirely landlocked in South America?",
+      "options": ["Bolivia", "Chile", "Ecuador", "Venezuela"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 856,
+      "question": "Which country does NOT border the Democratic Republic of the Congo?",
+      "options": ["Zambia", "Tanzania", "Uganda", "Namibia"],
+      "answer_index": 3,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 857,
+      "question": "Which is the largest desert in Asia?",
+      "options": ["Gobi", "Thar", "Karakum", "Taklamakan"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 858,
+      "question": "Which of these lakes is entirely in Canada?",
+      "options": ["Great Bear Lake", "Lake Superior", "Lake Erie", "Lake Michigan"],
+      "answer_index": 0,
+      "category": "Geography",
+      "difficulty": 3
+    },
+    {
+      "id": 859,
+      "question": "Which country does NOT border Guatemala?",
+      "options": ["Belize", "Costa Rica", "Honduras", "El Salvador"],
+      "answer_index": 1,
+      "category": "Geography",
+      "difficulty": 3
     },
     {
       "id": 860,
@@ -6978,7 +6975,7 @@ const List sample_data = [
       "options": ["Oman", "Yemen", "Kuwait", "Saudi Arabia"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 861,
@@ -6986,7 +6983,7 @@ const List sample_data = [
       "options": ["Sweden", "Belgium", "Portugal", "Slovakia"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 862,
@@ -6994,7 +6991,7 @@ const List sample_data = [
       "options": ["Iraq", "Syria", "Saudi Arabia", "Lebanon"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 863,
@@ -7002,7 +6999,7 @@ const List sample_data = [
       "options": ["Caribbean Sea", "Mediterranean Sea", "Bering Sea", "Philippine Sea"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 864,
@@ -7010,7 +7007,7 @@ const List sample_data = [
       "options": ["Luxembourg", "Germany", "Switzerland", "Netherlands"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 865,
@@ -7018,7 +7015,7 @@ const List sample_data = [
       "options": ["Canada", "Indonesia", "Russia", "Philippines"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 866,
@@ -7026,7 +7023,7 @@ const List sample_data = [
       "options": ["Estonia", "Armenia", "Kyrgyzstan", "Azerbaijan"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 867,
@@ -7034,7 +7031,7 @@ const List sample_data = [
       "options": ["Bolivia", "Ecuador", "Uruguay", "Paraguay"],
       "answer_index": 1,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 868,
@@ -7042,7 +7039,7 @@ const List sample_data = [
       "options": ["DR Congo", "Sudan", "Libya", "Chad"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 869,
@@ -7050,7 +7047,7 @@ const List sample_data = [
       "options": ["Lake Baikal", "Lake Tanganyika", "Caspian Sea", "Lake Superior"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 870,
@@ -7058,7 +7055,7 @@ const List sample_data = [
       "options": ["Canada", "Denmark (Greenland)", "Norway", "Estonia"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 871,
@@ -7066,7 +7063,7 @@ const List sample_data = [
       "options": ["Baffin Island", "Victoria Island", "Ellesmere Island", "Newfoundland"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 872,
@@ -7074,7 +7071,7 @@ const List sample_data = [
       "options": ["Iran", "Turkmenistan", "Kazakhstan", "Pakistan"],
       "answer_index": 2,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 873,
@@ -7082,7 +7079,7 @@ const List sample_data = [
       "options": ["Saudi Arabia", "Yemen", "Oman", "Kuwait"],
       "answer_index": 0,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     },
     {
       "id": 874,
@@ -7090,7 +7087,6 @@ const List sample_data = [
       "options": ["Mongolia", "Chad", "Niger", "Kazakhstan"],
       "answer_index": 3,
       "category": "Geography",
-      "difficulty": "Hard"
+      "difficulty": 3
     }
-  ]
-];
+  ];
