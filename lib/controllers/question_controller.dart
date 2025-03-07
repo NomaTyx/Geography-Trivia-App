@@ -64,10 +64,15 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   int _numOfCorrectAns = 0;
   int get numOfCorrectAns => _numOfCorrectAns;
 
+  ///Spot in questionList that the currently displayed question occupies. Useful for question skipping logic
+  late int _currentQuestionIndex;
+  int get currentQuestionIndex => _currentQuestionIndex;
+
   // called immediately after the widget is allocated memory
   @override
   void onInit() {
 
+    //is this too expensive on startup?
     _questions.shuffle(Random());
 
     //probably do some weird thign like making a temporary list and then casting back and forth
@@ -138,6 +143,13 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     });
   }
 
+  ///takes the current question and moves it to the end of the list
+  void skipQuestion() {
+    var temp = questionList.removeAt(_currentQuestionIndex);
+    questionList.add(temp);
+    nextQuestion();
+  }
+
   void nextQuestion() {
     _isAnswered = false;
     _pageController.nextPage(duration: const Duration(milliseconds: 250), curve: Curves.ease);
@@ -177,6 +189,7 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
       var currentQuestion = questionList[i];
       if (currentQuestion.difficulty == selectedDifficulty && currentQuestion.category == selectedCategory) {
         if (!answeredQuestions.contains(currentQuestion.id)) {
+          _currentQuestionIndex = i;
           return i;
         }
       }
