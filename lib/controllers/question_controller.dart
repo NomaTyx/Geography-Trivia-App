@@ -142,17 +142,13 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     _isAnswered = false;
     _pageController.nextPage(duration: const Duration(milliseconds: 250), curve: Curves.ease);
 
-      // Reset the counter
     _animationController.reset();
-
 
     //if the user has somehow answered the last question
     if(findValidQuestion() == -1) {
       Get.to(() => const ScoreScreen());
     }
 
-    // Then start it again
-    // Once timer is finish go to the next qn
     _animationController.forward().whenComplete(nextQuestion);
   }
 
