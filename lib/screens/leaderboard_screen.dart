@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/controllers/player_data_controller.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
