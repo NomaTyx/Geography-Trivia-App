@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/constants.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
+import 'package:geography_trivia_app/controllers/ui_components.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
 import 'package:get/get.dart';
 import 'package:flutter_svg/svg.dart';
@@ -26,31 +27,12 @@ class ScoreScreen extends StatelessWidget {
           Column(
             children: [
               const Spacer(flex: 3),
-              Text(
-                "Score",
-                style: Theme.of(context)
-                    .textTheme
-                    .displaySmall
-                    ?.copyWith(color: kSecondaryColor),
-              ),
+              headerText(context, "You got $score points!", 35.0),
               const Spacer(),
-              Text(
-                "You got $score points!",
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineMedium
-                    ?.copyWith(color: kSecondaryColor),
-              ),
+              headerText(context,  "Total score: ${playerDataController.playerScoreTotal}", 30.0),
+              const Spacer(flex: 2),
+              longButton(context, "Return to Home Screen", () {Get.to(const HomeScreen());}),
               const Spacer(),
-              Text(
-                "Your total score is ${playerDataController.playerScoreTotal} points!",
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineMedium
-                    ?.copyWith(color: kSecondaryColor),
-              ),
-              const Spacer(flex: 3),
-              ElevatedButton(onPressed: () {Get.to(const HomeScreen());}, child: const Text('RETURN TO HOME SCREEN')),
             ],
           ),
         ],
