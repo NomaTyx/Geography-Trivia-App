@@ -43,3 +43,9 @@ Widget headerText(BuildContext context, String text, double fontSize) {
     ),
   );
 }
+
+Widget noInternetPopup(BuildContext context) {
+  return AlertDialog(
+
+  );
+}

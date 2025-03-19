@@ -84,7 +84,6 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
     //every time answeredQuestionsList changes, this will be called.
     ever(_answeredQuestionsIDList, (_) {
       GetStorage().write('answeredQuestionsList', _answeredQuestionsIDList);
-      print("written to storage");
     });
 
     super.onInit();
@@ -101,7 +100,8 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
         });
     }
     catch (e) {
-      print("animationController already exists");
+      //this is only here if the animationcontroller doesn't exist.
+      //i tried doing an if statement but it uh. Didn't work?
     }
 
     // start our animation
@@ -170,12 +170,10 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
 
   void setDifficulty(int difficultyToSet) {
     _selectedDifficulty = difficultyToSet;
-    print("The difficulty has been set to $difficultyToSet");
   }
 
   void setCategory(String categoryToSet) {
     _selectedCategory = categoryToSet;
-    print("The category has been set to $categoryToSet");
 
     resetRoundScore();
   }

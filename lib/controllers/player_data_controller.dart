@@ -17,7 +17,6 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
   void onInit() {
     if(GetStorage().hasData("totalScore")) {
       playerScoreTotal = GetStorage().read("totalScore");
-      print("player score is ${playerScoreTotal.value}");
     }
 
     ever(playerScoreTotal, (_) {
@@ -28,7 +27,6 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
   }
 
   Future<void> addUser() async {
-    print(playerName);
     // Create a new user with a first and last name
     var user = <String, dynamic>{
       "Name": playerName ?? "no name detected",
@@ -53,7 +51,6 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
         return data.identifierForVendor.toString(); //UUID for iOS
       }
     } catch (e) {
-      print('Failed to get platform version');
     }
     return "no ID detected";
   }
@@ -91,7 +88,6 @@ class PlayerDataController extends GetxController with GetSingleTickerProviderSt
     GetStorage().write('totalScore', 0);
     final data = {"Score": 0};
     playerDatabase.collection("users").doc(deviceID).set(data, SetOptions(merge: true));
-    print("score resetted");
   }
 
   Future<void> findTopPlayers(int numOfPlayers) async {

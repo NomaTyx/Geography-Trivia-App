@@ -7,9 +7,7 @@ class NoInternetScreen extends StatelessWidget {
   
   Widget build(BuildContext context) {
     return Scaffold(
-      body: longButton(context, "I'm connected to the internet!", onPress),
+      body: longButton(context, "I'm connected to the internet!", () => {print("hi")}),
     );
   }
-  
-  
 }

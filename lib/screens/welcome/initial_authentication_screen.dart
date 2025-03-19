@@ -145,7 +145,7 @@ class RegionScreen extends StatelessWidget {
               padding: const EdgeInsets.all(9),
               itemCount: regionList.length,
               itemBuilder: (BuildContext context, int index) {
-                return Container(
+                return SizedBox(
                   height: 50,
                   child: ElevatedButton(
                     child: Text(regionList[index]),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:geography_trivia_app/controllers/auth_services.dart';
+import 'package:geography_trivia_app/deprecated%20auth%20files/auth_services.dart';
 import 'package:get/get.dart';
 
 FirebaseAuth auth = FirebaseAuth.instance;
