@@ -13,18 +13,15 @@ class AuthServices extends GetxController with GetSingleTickerProviderStateMixin
   Future<void> signUp(String email, String password) async {
     try {
       await auth.createUserWithEmailAndPassword(email: email, password: password);
-      print("trying to sign user up");
     } catch (e) {
-      print("failed to sign user in");
+      //nothing here lol
     }
   }
 
   Future<void> logIn(String email, String password) async {
     try {
       await auth.signInWithEmailAndPassword(email: email, password: password);
-      print("trying to log in");
     } catch (e) {
-      print("failed to log user in");
     }
   }
 
@@ -32,7 +29,6 @@ class AuthServices extends GetxController with GetSingleTickerProviderStateMixin
     try {
       await auth.currentUser?.updateDisplayName(desiredName);
     } catch (e) {
-      print("Error: updatedisplayname failed");
     }
   }
 
@@ -68,7 +64,6 @@ class AuthServices extends GetxController with GetSingleTickerProviderStateMixin
         deviceID = data.identifierForVendor; //UUID for iOS
       }
     } catch (e) {
-      print('Failed to get platform version');
     }
   }
 }
