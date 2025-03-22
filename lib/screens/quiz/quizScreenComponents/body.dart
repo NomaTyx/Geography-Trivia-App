@@ -16,10 +16,7 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    late QuestionController questionController;
-
-    //get.find lets us access an already created instance of a controller.
-    questionController = Get.find<QuestionController>();
+    QuestionController questionController = Get.find<QuestionController>();
     return Stack(
       children: [
         SafeArea(
@@ -60,7 +57,7 @@ class Body extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                     child: SizedBox(
                       height: 40,
-                      child: shortButton(context, "Done", () {Get.to(() => const ScoreScreen());})
+                      child: shortButton(context, "Skip", () => {questionController.skipQuestion()})
                     ),
                   ),
                 ],

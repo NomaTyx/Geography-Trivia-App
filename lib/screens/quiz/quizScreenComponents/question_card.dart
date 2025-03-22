@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:geography_trivia_app/controllers/ui_components.dart';
+import 'package:geography_trivia_app/screens/score/score_screen.dart';
 import 'package:get/get.dart';
 import 'package:geography_trivia_app/controllers/question_controller.dart';
 import 'package:geography_trivia_app/question_list.dart';
@@ -30,7 +32,8 @@ class QuestionCard extends StatelessWidget {
 
       child: ListView(
         children: [
-          Column(children: [
+          Column(
+            children: [
             Text(
               question.question,
               style: Theme.of(context)
@@ -51,6 +54,8 @@ class QuestionCard extends StatelessWidget {
                   press: () => {controller.checkAns(question, index)}
               ),
             ),
+              const SizedBox(height: kDefaultPadding * 4),
+            longButton(context, "Done", () => {Get.to(() => const ScoreScreen())})
           ],),
         ]
       )

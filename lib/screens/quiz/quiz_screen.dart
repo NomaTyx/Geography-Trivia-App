@@ -32,7 +32,6 @@ class QuizScreen extends StatelessWidget {
               },
               icon: const Icon(Icons.settings),
             ),
-            SizedBox(height: height / 24, child: shortButton(context, "Skip", () => {controller.skipQuestion()}))
           ],
         ),
       ),
