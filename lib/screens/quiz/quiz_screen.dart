@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geography_trivia_app/controllers/ui_components.dart';
 import 'package:geography_trivia_app/screens/settings_screen.dart';
 import 'package:get/get.dart';
 import '../../controllers/question_controller.dart';
@@ -10,6 +11,10 @@ class QuizScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     QuestionController controller = Get.find<QuestionController>();
+
+    var size = MediaQuery.of(context).size;
+    double width = size.width;
+    double height = size.height;
 
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -27,10 +32,7 @@ class QuizScreen extends StatelessWidget {
               },
               icon: const Icon(Icons.settings),
             ),
-            TextButton(
-                onPressed: controller.skipQuestion,
-                child: const Text("Skip")
-            ),
+            SizedBox(height: height / 24, child: shortButton(context, "Skip", () => {controller.skipQuestion()}))
           ],
         ),
       ),
