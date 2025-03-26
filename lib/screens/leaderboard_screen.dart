@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:geography_trivia_app/controllers/player_data_controller.dart';
 import 'package:geography_trivia_app/screens/welcome/home_screen.dart';
 import 'package:get/get.dart';
+import 'package:geography_trivia_app/controllers/ui_components.dart';
 
 class LeaderboardScreen extends StatelessWidget {
   const LeaderboardScreen({super.key});
@@ -27,18 +28,12 @@ class LeaderboardScreen extends StatelessWidget {
                 radius: 40.0,
               ),
             ),
-            Divider(height: 30),
-            const Center(
-              child: Text(
-                'LEADERBOARD',
-                style: TextStyle(
-                  letterSpacing: 2.0,
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
-                ),
-              ),
+            Spacer(),
+            Center(
+              child:
+                headerText(context, "LEADERBOARD", 35)
             ),
+            Spacer(),
             const Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
               Expanded(
                 flex: 1,
