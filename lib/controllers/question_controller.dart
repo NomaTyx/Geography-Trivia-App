@@ -114,8 +114,8 @@ class QuestionController extends GetxController with GetSingleTickerProviderStat
   // // called just before the Controller is deleted from memory
   @override
   void onClose() {
-    _animationController.dispose();
-    _pageController.dispose();
+    _animationController?.dispose();
+    _pageController?.dispose();
     super.onClose();
   }
 
