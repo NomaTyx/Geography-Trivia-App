@@ -22,12 +22,6 @@ class LeaderboardScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const Center(
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/toge.jpg'),
-                radius: 40.0,
-              ),
-            ),
             Spacer(),
             Center(
               child:
