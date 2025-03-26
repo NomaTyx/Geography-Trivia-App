@@ -12,7 +12,6 @@ class ScoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     QuestionController questionController = Get.find<QuestionController>();
     PlayerDataController playerDataController = Get.put(PlayerDataController()) ?? Get.find<PlayerDataController>();
 
@@ -24,14 +23,19 @@ class ScoreScreen extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
+          const Image(
+              image: AssetImage('assets/originalAssets/AfricaBackground.png'),
+          ),
           Column(
             children: [
               const Spacer(flex: 3),
               headerText(context, "You got $score points!", 35.0),
               const Spacer(),
-              headerText(context,  "Total score: ${playerDataController.playerScoreTotal}", 30.0),
+              headerText(context, "Total score: ${playerDataController.playerScoreTotal}", 30.0),
               const Spacer(flex: 2),
-              longButton(context, "Return to Home Screen", () {Get.to(const HomeScreen());}),
+              longButton(context, "Return to Home Screen", () {
+                Get.to(const HomeScreen());
+              }),
               const Spacer(),
             ],
           ),

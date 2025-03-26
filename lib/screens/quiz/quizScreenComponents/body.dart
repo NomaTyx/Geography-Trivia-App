@@ -19,6 +19,7 @@ class Body extends StatelessWidget {
     QuestionController questionController = Get.find<QuestionController>();
     return Stack(
       children: [
+
         SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
