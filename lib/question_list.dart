@@ -11,9 +11,8 @@ class Question {
       this.difficulty = 1,
       this.category = "placeholder cat 1"});
 
-  String ToString(Question question) {
-    return "question: ${this.question}";
-  }
+  @override
+  String toString() => 'Question: ${this.question}';
 }
 
 //the difficulty variable in the questions may become obsolete, depending on how I end up handling it.
