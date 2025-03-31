@@ -23,14 +23,12 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Center(
-              child: headerText(context, 'International IQ', 45.0)
-            ),
+            Center(child: headerText(context, 'International IQ', 45.0)),
             Center(
               child: Padding(
                   padding: EdgeInsets.fromLTRB(0, height * 0.05, 0, height * 0.05),
                   child: Transform(
-                    //transform measures things in radians for some godforsaken reason
+                      //transform measures things in radians for some godforsaken reason
                       transform: Matrix4.rotationZ(-3.1415926535897932 / 8),
                       alignment: FractionalOffset.center,
                       child: const CircleAvatar(
