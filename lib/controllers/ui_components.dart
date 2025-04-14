@@ -20,10 +20,10 @@ Widget longButton(BuildContext context, String buttonText, Function()? onPress) 
       ),
       child: Text(
         buttonText,
-        style: const TextStyle(
+        style: TextStyle(
             letterSpacing: 2.0,
             color: Colors.black,
-            fontSize: 15
+            fontSize: height / 64
         ),
       ),
     ),
@@ -48,10 +48,10 @@ Widget shortButton(BuildContext context, String buttonText, Function()? onPress)
       ),
       child: Text(
         buttonText,
-        style: const TextStyle(
+        style: TextStyle(
             letterSpacing: 1,
             color: Colors.black,
-            fontSize: 15
+            fontSize: height / 64
         ),
       ),
     ),

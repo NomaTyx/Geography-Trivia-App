@@ -48,6 +48,7 @@ class HomeScreen extends StatelessWidget {
                       Get.to(() => CategorySelectionScreen());
                     }),
                     longButton(context, 'SETTINGS', () {
+                      print("$height $width");
                       Get.to(() => SettingsScreen());
                     }),
                     longButton(context, 'LEADERBOARD', () {
