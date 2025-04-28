@@ -18,16 +18,13 @@ class LeaderboardScreen extends StatelessWidget {
 
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.fromLTRB(width * 0.07, height * 0.1, width * 0.07, 0),
+        padding: EdgeInsets.fromLTRB(width * 0.07, height * 0.01, width * 0.07, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Spacer(),
-            Center(
-              child:
-                headerText(context, "LEADERBOARD", 35)
-            ),
-            Spacer(),
+            Spacer(flex: 3),
+            Center(child: headerText(context, "LEADERBOARD", 35)),
+            Spacer(flex: 2),
             const Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
               Expanded(
                 flex: 1,
@@ -41,14 +38,13 @@ class LeaderboardScreen extends StatelessWidget {
               Expanded(flex: 2, child: Text("Region", textAlign: TextAlign.center)),
             ]),
             SizedBox(
-              height: 500,
               child: ListView.separated(
                 shrinkWrap: true,
                 padding: const EdgeInsets.all(15),
                 itemCount: min(playerDataController.topPlayersList.length, 10),
                 itemBuilder: (BuildContext context, int index) {
                   return SizedBox(
-                      height: 30,
+                      height: height * 30 / 1000,
                       // row with rank, name, region, total score
                       child: Row(children: [
                         Expanded(
@@ -72,16 +68,9 @@ class LeaderboardScreen extends StatelessWidget {
                 separatorBuilder: (BuildContext context, int index) => const Divider(),
               ),
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Get.to(() => const HomeScreen());
-                },
-                child: const Text('BACK TO HOME SCREEN')),
-            ElevatedButton(
-                onPressed: () async {
-                  await playerDataController.findTopPlayers(10);
-                },
-                child: const Text('test top 10 list'))
+            Spacer(flex: 1),
+            longButton(context, 'BACK TO HOME SCREEN', () {Get.to(() => const HomeScreen());}),
+            Spacer(flex: 2),
           ],
         ),
       ),
