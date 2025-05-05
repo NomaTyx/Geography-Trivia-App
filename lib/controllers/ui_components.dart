@@ -72,6 +72,20 @@ Widget headerText(BuildContext context, String text, double fontSize) {
   );
 }
 
+Widget headerTextWithColor(BuildContext context, String text, double fontSize, Color color) {
+  return Text(
+    text,
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      letterSpacing: 2.0,
+      fontSize: fontSize,
+      fontWeight: FontWeight.bold,
+      fontFamily: 'FacultyGlyphic',
+      color: color,
+    ),
+  );
+}
+
 Widget noInternetPopup(BuildContext context) {
   return AlertDialog(
 

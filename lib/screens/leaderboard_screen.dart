@@ -23,7 +23,7 @@ class LeaderboardScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Spacer(flex: 3),
-            Center(child: headerText(context, "LEADERBOARD", 35)),
+            Center(child: headerTextWithColor(context, "LEADERBOARD", 35, Color.fromRGBO(60, 98, 26, 1))),
             Spacer(flex: 2),
             const Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
               Expanded(
